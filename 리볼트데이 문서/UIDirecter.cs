@@ -9,7 +9,7 @@ public class UIDirecter : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		
+		Debug.Log("이정현 입니다");
 	}
 	
 	// Update is called once per frame
