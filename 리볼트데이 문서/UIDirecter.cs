@@ -12,7 +12,7 @@ public class UIDirecter : MonoBehaviour
 		Debug.Log("이정현 입니다");
 		Debug.Log("초갈우진입니다.");
 		Debug.Log("제가루우진입니다.");
-		Debug.Log("제가루우르진입니다.);
+		Debug.Log("제가루우르진입니다");
 	}
 	
 	// Update is called once per frame
