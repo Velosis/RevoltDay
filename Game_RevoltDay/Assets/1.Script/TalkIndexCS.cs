@@ -10,12 +10,22 @@ public class TalkIndexCS : MonoBehaviour {
     private bool _TalkSkip;
     private bool _TalkCut;
 
+    // 각종 이펙트 정보
+    public List<int> _ShakingEffIndex = new List<int>();
+    private UIShakingCS _ShakingCS;
+
+    // 섬광 이펙트 정보
+    public List<bool> _RedFlashIndex = new List<bool>();
+    public List<bool> _WhiteFlashIndex = new List<bool>();
+
+    // 대화 대기 정보
+    public List<float> _Wait = new List<float>();
+
     // 페이드 전환 정보
-    public List<string> _fadeIn = new List<string>();
-    public List<string> _fadeOut = new List<string>();
+    public List<int> _fadeIn = new List<int>();
+    public List<int> _fadeOut = new List<int>();
     public List<bool> _fadeQIn = new List<bool>();
     public List<bool> _fadeQOut = new List<bool>();
-
 
     // 출력되는 사운드 정보
     public List<string> _SoundIndex = new List<string>();
@@ -24,9 +34,11 @@ public class TalkIndexCS : MonoBehaviour {
     private AudioSource _Bgm;
 
     // 출력되는 이미지 정보
+    public List<string> _CGimgIndex = new List<string>();
     public List<string> _L_imgIndex = new List<string>();
     public List<string> _R_imgIndex = new List<string>();
 
+    private GameObject CGImg;
     private GameObject L_chacterImg;
     private GameObject R_chacterImg;
 
@@ -48,13 +60,19 @@ public class TalkIndexCS : MonoBehaviour {
     private WaitForSeconds _nextTextDaleyWait;
 
     private FadeEffCS _fadeEffCS;
+    private FlashEffCS _flasgEffCS;
 
     private void Awake()
     {
+        _ShakingCS = GameObject.Find("TalkMainScreen").GetComponent<UIShakingCS>();
+
+
         _Se = GameObject.Find("SoundMgr").GetComponent<AudioSource>();
         _Bgm = GameObject.Find("BgmMgr").GetComponent<AudioSource>();
         _fadeEffCS = GameObject.Find("Fade_Eff").GetComponent<FadeEffCS>();
+        _flasgEffCS = GameObject.Find("Flash_Eff").GetComponent<FlashEffCS>();
 
+        CGImg = GameObject.Find("CGImg");
         L_chacterImg = GameObject.Find("L_ChacterImg");
         R_chacterImg = GameObject.Find("R_ChacterImg");
         _textBox = GameObject.Find("TalkText").GetComponent<Text>();
@@ -80,18 +98,23 @@ public class TalkIndexCS : MonoBehaviour {
         for (int s = 0; s < _textIndex.Count; s++)
         {
             _talkNameBox.text = _talkName[s];
+            falsgSys(s);
+            CGImageSetting(s);
             imageSetting(s);
             soundPlay(s);
             bgmPlay(s);
             fadeSys(s);
             fadeQSys(s);
+            ShakingSys(s);
 
             _currText = ""; // 기존 문구 초기화
 
             if (fullText[s] == "null")
             {
                 _textBox.text = _currText;
-                yield return _nextTextDaleyWait;
+                if (_Wait[s] != 0) yield return new WaitForSeconds(_Wait[s]);
+                else yield return _nextTextDaleyWait;
+
                 continue;
             }
 
@@ -109,8 +132,9 @@ public class TalkIndexCS : MonoBehaviour {
 
             _TalkSkip = false;
             _TalkCut = false;
-            yield return _nextTextDaleyWait;
 
+            if (_Wait[s] != 0) yield return new WaitForSeconds(_Wait[s]);
+            else yield return _nextTextDaleyWait;
         }
 
         Debug.Log("대화 종료");
@@ -118,6 +142,9 @@ public class TalkIndexCS : MonoBehaviour {
 
     public void imageSetting(int talkValue)
     {
+        if (_L_imgIndex[talkValue] == "null" ||
+            _R_imgIndex[talkValue] == "null") return;
+
         GameObject tempImg = null;
 
         ResourceMgrCS._imgBox.TryGetValue(_L_imgIndex[talkValue], out tempImg);
@@ -134,7 +161,18 @@ public class TalkIndexCS : MonoBehaviour {
         //R_chacterImg.GetComponent<RectTransform>().Translate(
         //    -R_chacterImg.GetComponent<RectTransform>().rect.width / 2.0f, R_chacterImg.GetComponent<RectTransform>().rect.height / 2.0f, 0);
     }
-    
+
+    public void CGImageSetting(int talkValue)
+    {
+        if (_CGimgIndex[talkValue] == "null") return;
+
+        GameObject tempImg = null;
+
+        ResourceMgrCS._CGImg.TryGetValue(_CGimgIndex[talkValue], out tempImg);
+        CGImg.GetComponent<Image>().sprite = tempImg.GetComponent<Image>().sprite;
+        //CGImg.GetComponent<RectTransform>().sizeDelta = tempImg.GetComponent<RectTransform>().sizeDelta;
+    }
+
     public void soundPlay(int talkValue)
     {
         if (_SoundIndex[talkValue] == "null") return;
@@ -178,8 +216,8 @@ public class TalkIndexCS : MonoBehaviour {
 
     public void fadeSys(int talkValue)
     {
-        if (_fadeIn[talkValue] == "null" &&
-            _fadeOut[talkValue] == "null") return;
+        if (_fadeIn[talkValue] == 0 &&
+            _fadeOut[talkValue] == 0) return;
 
         if (_fadeEffCS._isFadeStart)
         {
@@ -187,43 +225,36 @@ public class TalkIndexCS : MonoBehaviour {
             return;
         }
 
-        if (_fadeIn[talkValue] != "null")
+        if (_fadeIn[talkValue] != 0) StartCoroutine(_fadeEffCS.FadeIn(_fadeIn[talkValue]));
+        if (_fadeOut[talkValue] != 0) StartCoroutine(_fadeEffCS.FadeIn(_fadeOut[talkValue]));
+    }
+
+    public void ShakingSys(int talkVlaue)
+    {
+        if (_ShakingEffIndex[talkVlaue] == 0) return;
+
+        if (_ShakingCS._isShaking)
         {
-            switch (_fadeIn[talkValue])
-            {
-                case "fadeIn_1s":
-                    StartCoroutine(_fadeEffCS.FadeIn(1.0f));
-                    break;
-                case "fadeIn_2s":
-                    StartCoroutine(_fadeEffCS.FadeIn(2.0f));
-                    break;
-                case "fadeIn_3s":
-                    StartCoroutine(_fadeEffCS.FadeIn(3.0f));
-                    break;
-                default:
-                    Debug.Log(talkValue+ "줄_" + "fadeInSys : 정의되지 않은 명령어 입니다.");
-                    return;
-            }
+            Debug.Log("ShakingSys : 이미 실행 중 입니다.");
+            return;
         }
 
-        if (_fadeOut[talkValue] != "null")
+        StartCoroutine(_ShakingCS.ShakingOn(_ShakingEffIndex[talkVlaue]));
+    }
+
+    public void falsgSys(int talkValue)
+    {
+        if (!_RedFlashIndex[talkValue] &&
+            !_WhiteFlashIndex[talkValue]) return;
+
+        if (_flasgEffCS._isFlashStart)
         {
-            switch (_fadeOut[talkValue])
-            {
-                case "fadeOut_1s":
-                    StartCoroutine(_fadeEffCS.FadeIn(1.0f));
-                    break;
-                case "fadeOut_2s":
-                    StartCoroutine(_fadeEffCS.FadeIn(2.0f));
-                    break;
-                case "fadeOut_3s":
-                    StartCoroutine(_fadeEffCS.FadeIn(3.0f));
-                    break;
-                default:
-                    Debug.Log(talkValue + "줄_" + "fadeOutSys : 정의되지 않은 명령어 입니다.");
-                    return;
-            }
+            Debug.Log("falsgSys : 이미 실행 중 입니다.");
+            return;
         }
+
+        if (_RedFlashIndex[talkValue]) StartCoroutine(_flasgEffCS.RedFlashIn(1.0f));
+        if (_WhiteFlashIndex[talkValue]) StartCoroutine(_flasgEffCS.WhiteFlashIn(1.0f));
     }
 }
 

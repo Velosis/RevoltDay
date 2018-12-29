@@ -55,5 +55,4 @@ public class FadeEffCS : MonoBehaviour {
 
     public void FadeInQuick()  { this.GetComponent<Image>().color = new Color(0, 0, 0, 1); }
     public void FadeOutQuick() { this.GetComponent<Image>().color = new Color(0, 0, 0, 0); }
-
 }

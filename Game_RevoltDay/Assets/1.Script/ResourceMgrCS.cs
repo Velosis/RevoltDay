@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 
 public class ResourceMgrCS : MonoBehaviour {
     static public Dictionary<string, GameObject> _imgBox = new Dictionary<string, GameObject>();
+    static public Dictionary<string, GameObject> _CGImg = new Dictionary<string, GameObject>();
     static public Dictionary<string, AudioClip> _SoundBox = new Dictionary<string, AudioClip>();
     static public Dictionary<string, AudioClip> _BgmBox = new Dictionary<string, AudioClip>();
 
@@ -27,11 +28,11 @@ public class ResourceMgrCS : MonoBehaviour {
         }
 
         tempResList = null;
-        tempResList = Resources.LoadAll("4.BgmList");
+        tempResList = Resources.LoadAll("5.CGImg");
         for (int i = 0; i < tempResList.Length; i++)
         {
-            AudioClip tempGO = tempResList[i] as AudioClip;
-            _BgmBox.Add(tempGO.name, tempGO);
+            GameObject tempGO = tempResList[i] as GameObject;
+            _CGImg.Add(tempGO.name, tempGO);
         }
     }
 }

@@ -69,7 +69,9 @@
     <Compile Include="Assets\1.Script\TileMakerCS.cs" />
     <Compile Include="Assets\1.Script\TileMapDataCS.cs" />
     <Compile Include="Assets\FadeEffCS.cs" />
+    <Compile Include="Assets\FlashEffCS.cs" />
     <Compile Include="Assets\Resources\CSVReader.cs" />
+    <Compile Include="Assets\UIShakingCS.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/wjdwltn/Documents/GitHub/RevoltDay/Game_RevoltDay/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
