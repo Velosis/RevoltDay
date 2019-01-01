@@ -20,6 +20,14 @@ public class ResourceMgrCS : MonoBehaviour {
         }
 
         tempResList = null;
+        tempResList = Resources.LoadAll("5.CGImg");
+        for (int i = 0; i < tempResList.Length; i++)
+        {
+            GameObject tempGO = tempResList[i] as GameObject;
+            _CGImg.Add(tempGO.name, tempGO);
+        }
+
+        tempResList = null;
         tempResList = Resources.LoadAll("3.SoundList");
         for (int i = 0; i < tempResList.Length; i++)
         {
@@ -28,11 +36,13 @@ public class ResourceMgrCS : MonoBehaviour {
         }
 
         tempResList = null;
-        tempResList = Resources.LoadAll("5.CGImg");
+        tempResList = Resources.LoadAll("4.BgmList");
         for (int i = 0; i < tempResList.Length; i++)
         {
-            GameObject tempGO = tempResList[i] as GameObject;
-            _CGImg.Add(tempGO.name, tempGO);
+            AudioClip tempGO = tempResList[i] as AudioClip;
+            _BgmBox.Add(tempGO.name, tempGO);
         }
+
+
     }
 }

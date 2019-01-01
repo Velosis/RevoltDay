@@ -222,7 +222,7 @@ public class TalkIndexCS : MonoBehaviour {
         ResourceMgrCS._BgmBox.TryGetValue(_BgmIndex[talkValue], out tempAudio);
 
         _Bgm.clip = tempAudio;
-        _Bgm.loop = false;
+        _Bgm.loop = true;
         _Bgm.volume = 1.0f; // 0.0f ~ 1.0f == 0% ~ 100%
         _Bgm.Play();
     }

@@ -21,10 +21,20 @@ public enum eDuelState
     BattleEnd // 전투 종료에 따른 계산 처리
 }
 
+public enum eScreenEffColor
+{
+    Red,
+    Black
+}
+
+
 public class DuelSysCS : MonoBehaviour {
 
     public GameObject _playerChrImg;
     public GameObject _enemyChrImg;
+
+    private Vector3 _orginChrImgPos;
+    private bool _isHitEff;
 
     public eDuelType _playerType;
     public eDuelType _enemyType;
@@ -35,6 +45,11 @@ public class DuelSysCS : MonoBehaviour {
 
     public bool _isNextState;
     public bool _isBackState;
+
+    private eScreenEffColor _flashColor;
+    private float _flashValue;
+    private float _flashOutValue;
+    private bool _isFlashStart;
 
     private GameObject _playerHpText;
     private GameObject _playerAtkText;
@@ -52,6 +67,9 @@ public class DuelSysCS : MonoBehaviour {
     private RectTransform _L_ChrMovementPos;
     private RectTransform _R_ChrMovementPos;
 
+    private Vector3 _L_OrginChrPos;
+    private Vector3 _R_OrginChrPos;
+
     private GameObject _duelStartScreen;
     private GameObject _diceFighterStartScreen;
     private GameObject _battleButton;
@@ -61,6 +79,8 @@ public class DuelSysCS : MonoBehaviour {
     private GameObject _L_ChrType;
     private GameObject _R_ChrType;
     private GameObject _diceDropImg;
+    private Vector3 _OrginDiceImgPos;
+
     private GameObject _bounsImg;
     private GameObject _bounsImgMovementPos;
 
@@ -72,14 +92,23 @@ public class DuelSysCS : MonoBehaviour {
     private GameObject _enemyDiceText;
     private GameObject _bounsDiceText;
 
+    private GameObject _screenHitEff;
+
     private bool _isPlayerTypeWin;
     private bool _isEnemyTypeWin;
 
     private float _currTimer;
 
+    public string _currBgmName;
+    public string _currHitSeName;
+
+    private AudioSource _seMgr;
+    private AudioSource _BgmMgr;
+
     private void Awake()
     {
-
+        _seMgr = GameObject.Find("SoundMgr").GetComponent<AudioSource>();
+        _BgmMgr = GameObject.Find("BgmMgr").GetComponent<AudioSource>();
 
         _playerChrImg = GameObject.Find("L_ChrImg");
         _enemyChrImg = GameObject.Find("R_ChrImg");
@@ -95,6 +124,8 @@ public class DuelSysCS : MonoBehaviour {
 
         _L_ChrCenterPos = GameObject.Find("L_ChrCenter").GetComponent<RectTransform>();
         _R_ChrCenterPos = GameObject.Find("R_ChrCenter").GetComponent<RectTransform>();
+        _L_OrginChrPos = _L_ChrCenterPos.transform.position;
+        _R_OrginChrPos = _R_ChrCenterPos.transform.position;
 
         _L_ChrMovementPos = GameObject.Find("L_ChrMovementPos").GetComponent<RectTransform>();
         _R_ChrMovementPos = GameObject.Find("R_ChrMovementPos").GetComponent<RectTransform>();
@@ -114,6 +145,8 @@ public class DuelSysCS : MonoBehaviour {
         _diceDropImg = GameObject.Find("DiceDropImg");
         _playerDiceText = GameObject.Find("DiceDropImg/playerDice");
         _enemyDiceText = GameObject.Find("DiceDropImg/enemyDice");
+
+        _OrginDiceImgPos = _diceDropImg.transform.position;
         _diceDropImg.SetActive(false);
 
         _bounsImg = GameObject.Find("BounsDiceImg");
@@ -121,6 +154,9 @@ public class DuelSysCS : MonoBehaviour {
         _bounsImg.SetActive(false);
 
         _bounsImgMovementPos = GameObject.Find("BounsDiceImgMovementPos");
+        _screenHitEff = GameObject.Find("ScreenHitEff");
+        _screenHitEff.SetActive(false);
+        _flashColor = eScreenEffColor.Black;
 
         _currTimer = 0.0f;
 
@@ -144,6 +180,21 @@ public class DuelSysCS : MonoBehaviour {
 
     private void Start()
     {
+        AudioClip _currBgm = null;
+        ResourceMgrCS._BgmBox.TryGetValue(_currBgmName, out _currBgm);
+        
+        _BgmMgr.clip = _currBgm;
+        _BgmMgr.loop = true;
+        _BgmMgr.volume = 1.0f;
+        _BgmMgr.Play();
+
+        AudioClip _currHitSe = null;
+        ResourceMgrCS._SoundBox.TryGetValue(_currHitSeName, out _currHitSe);
+
+        _seMgr.clip = _currHitSe;
+        _seMgr.loop = false;
+        _seMgr.volume = 1.0f;
+
         _currState = eDuelState.DuelStart;
         Debug.Log("게임 시작" + _currState.ToString());
 
@@ -155,7 +206,7 @@ public class DuelSysCS : MonoBehaviour {
         StopAllCoroutines(); // 코루틴 예외 처리
 
         // 예외처리
-        _isNextState = _isBackState = false;
+        _isNextState = _isBackState = _isFlashStart = _isHitEff = false;
         _currTimer = 0.0f;
 
         switch (state)
@@ -193,6 +244,21 @@ public class DuelSysCS : MonoBehaviour {
 
     public IEnumerator DuelStart()
     {
+        StartCoroutine(screenHitEff(0.5f, eScreenEffColor.Black));
+
+        // 초기값 세팅
+        _battleButton.SetActive(true);
+        _skillButton.SetActive(true);
+        _runButton.SetActive(true);
+        _L_ChrType.SetActive(false);
+        _R_ChrType.SetActive(false);
+        _bounsImg.SetActive(false);
+        _diceDropImg.SetActive(false);
+
+        _L_ChrCenterPos.transform.position = _L_OrginChrPos;
+        _R_ChrCenterPos.transform.position = _R_OrginChrPos;
+        _diceDropImg.transform.position = _OrginDiceImgPos;
+
         _playerChrImg.GetComponent<Image>().sprite = PlayerInfoCS._currPlayerImg.sprite;
 
         while (true)
@@ -246,8 +312,6 @@ public class DuelSysCS : MonoBehaviour {
     {
         _L_ChrType.SetActive(true);
         _R_ChrType.SetActive(true);
-
-
 
         _L_ChrType.GetComponent<Image>().color = new Color(1, 1, 1, 0);
         _R_ChrType.GetComponent<Image>().color = new Color(1, 1, 1, 0);
@@ -377,7 +441,6 @@ public class DuelSysCS : MonoBehaviour {
                         _currTimer = 2.0f;
                     }
                 }
-                Debug.Log("_bounsDice : " + _bounsDice.ToString());
 
                 _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
                 yield return new WaitForSeconds(1.0f);
@@ -394,12 +457,18 @@ public class DuelSysCS : MonoBehaviour {
         {
             _enemyHP -= _playerAtk + _playerDice;
             _enemyHpText.GetComponent<Text>().text = _enemyHP.ToString();
+            StartCoroutine(ChrImgHitEff(false));
+            Debug.Log("플레이어 공격");
         }
+
+        yield return new WaitForSeconds(2.0f);
 
         if (_enemyAtk + _enemyDice != 0)
         {
             _playerHP -= _enemyAtk + _enemyDice;
             _playerHpText.GetComponent<Text>().text = _playerHP.ToString();
+            StartCoroutine(ChrImgHitEff(true));
+            Debug.Log("상대 공격");
         }
 
         yield return new WaitForSeconds(2.0f);
@@ -414,8 +483,77 @@ public class DuelSysCS : MonoBehaviour {
         DuelStateSet(eDuelState.DuelStart);
     }
 
-    public void hitEff()
+    public IEnumerator screenHitEff(float timer, eScreenEffColor isColor)
     {
+        _screenHitEff.SetActive(true);
+        switch (isColor)
+        {
+            case eScreenEffColor.Red:
+                _screenHitEff.GetComponent<Image>().color = new Color(1, 0, 0, 0);
+                break;
+            case eScreenEffColor.Black:
+                _screenHitEff.GetComponent<Image>().color = new Color(0, 0, 0, 0);
+                break;
+            default:
+                break;
+        }
 
+        _flashValue = 255.0f;
+        _flashOutValue = (255.0f / timer) * 0.1f;
+        Image tempColor = _screenHitEff.GetComponent<Image>();
+
+        while (!_isFlashStart)
+        {
+            _flashValue -= _flashOutValue;
+            _screenHitEff.GetComponent<Image>().color = new Color(tempColor.color.r, tempColor.color.g, tempColor.color.b, _flashValue / 255.0f);
+            if (_flashValue <= 0.0f) _isFlashStart = true;
+            yield return new WaitForSeconds(0.1f);
+        }
+        _flashValue = 0.0f;
+        _isFlashStart = false;
+        _screenHitEff.SetActive(false);
+
+        yield return null;
     }
+
+    public IEnumerator ChrImgHitEff(bool isWho)
+    {
+        GameObject tempImg;
+        if (isWho)
+        {
+            _orginChrImgPos = _playerChrImg.transform.position;
+            tempImg = _playerChrImg;
+            Debug.Log("플레이어 히트 실행");
+            _seMgr.Play();
+        }
+        else
+        {
+            _orginChrImgPos = _enemyChrImg.transform.position;
+            tempImg = _enemyChrImg;
+            Debug.Log("상대 히트 실행");
+            _seMgr.Play();
+        }
+
+        _currTimer = 0.0f;
+        _flashValue = 0.0f;
+        _flashOutValue = (255.0f / 1.0f) * 0.1f;
+
+        while (!_isHitEff && _currTimer <= 1.0f)
+        {
+            _currTimer += Time.deltaTime;
+            tempImg.transform.position = _orginChrImgPos;
+            tempImg.transform.Translate(Random.Range(-40.0f, +40.0f), Random.Range(-40.0f, +40.0f), 0, Space.Self);
+
+            _flashValue += _flashOutValue;
+            tempImg.GetComponent<Image>().color = new Color(1, _flashValue / 255.0f, _flashValue / 255.0f, 1);
+
+            if (_flashValue >= 255.0f) _isHitEff = true;
+            yield return null;
+        }
+        _isHitEff = false;
+        tempImg.transform.position = _orginChrImgPos;
+        tempImg.GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        yield return null;
+    }
+
 }
