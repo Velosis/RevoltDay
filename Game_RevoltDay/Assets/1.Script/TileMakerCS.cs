@@ -44,12 +44,26 @@ public class TileMakerCS : MonoBehaviour {
                 _tileMapList[arrIndex].GetComponentInChildren<Text>().text = _cityName[arrIndex].ToString();
                 _tileMapList[arrIndex].GetComponent<TileMapDataCS>()._tileIndex = arrIndex;
                 arrIndex++;
-
             }
         }
-    }
-    private void Start()
-    {
 
+    }
+
+    public int getTileVlaue(float x, float y)
+    {
+        for (int i = 0; i < _tileMapList.Count; i++)
+        {
+            if (_tileMapList[i].GetComponent<RectTransform>().localPosition.x + _tileMapList[i].GetComponent<RectTransform>().sizeDelta.x / 2.0f > x &&
+                _tileMapList[i].GetComponent<RectTransform>().localPosition.x - _tileMapList[i].GetComponent<RectTransform>().sizeDelta.x / 2.0f < x &&
+                _tileMapList[i].GetComponent<RectTransform>().localPosition.y + _tileMapList[i].GetComponent<RectTransform>().sizeDelta.y / 2.0f > y &&
+                _tileMapList[i].GetComponent<RectTransform>().localPosition.y - _tileMapList[i].GetComponent<RectTransform>().sizeDelta.y / 2.0f < y)
+            {
+                int tempNum = i;
+
+                Debug.Log(tempNum + "충돌됨");
+                return tempNum;
+            }
+        }
+        return 0;
     }
 }
