@@ -14,6 +14,6 @@ public class TileMapDataCS : MonoBehaviour {
 
     public void inputPlayer()
     {
-        _playerData.GetComponent<PlayerInfoCS>().PlaterMoveSys(_tileIndex);
+        _playerData.GetComponent<PlayerInfoCS>().PlayerTilePos(_tileIndex);
     }
 }
