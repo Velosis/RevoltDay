@@ -1,26 +1,23 @@
-ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-Dr.parkA,Dr.parkB,1,ì •ì§€ìˆ˜,City,null,null,Gonne,2,0.1,3,0,FALSE,FALSE,TRUE,FALSE
-Dr.parkA,Dr.parkB,2,ì´ìˆœí˜„,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,0,ì •ì§€ìˆ˜,null,null,null,null,0,3.5,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,1,ì´ìˆœí˜„,null,â€¦â€¦.â–¼,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,2,ì •ì§€ìˆ˜,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,0,ì´ìˆœí˜„,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,1,ì •ì§€ìˆ˜,null,ë°•ì‹¤ì¥!â–¼,PonBell,null,0,0.2,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,2,ì´ìˆœí˜„,null,ê°€ì¡±ë“¤ì€!â–¼,null,null,0,0.2,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,0,ì •ì§€ìˆ˜,null,ë‚´ ê°€ì¡±ë“¤ì€ ê´œì°®ì€ê°€!â–¼,null,null,0,0.2,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,1,ì´ìˆœí˜„,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,2,ì •ì§€ìˆ˜,null,â€¦â€¦.â–¼,null,null,0,5.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,0,ì´ìˆœí˜„,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,1,ì •ì§€ìˆ˜,null,í•œì´ì‚¬. ìë„¤ ê¸‰í•œê°€?â–¼,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,2,ì´ìˆœí˜„,null,ì´ëŸ° ì¼ë¡œ ì „í™”í•´ì„œ ë¯¸ì•ˆí•˜ë„¤. ë‚´ ë¶€íƒ í•˜ë‚˜ë§Œ ë“¤ì–´ì£¼ê²Œ.â–¼,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,0,ì •ì§€ìˆ˜,null,ë‚´ ê°€ì¡±ë“¤ì˜ í–‰ë°©ì´ ë¬˜ì—°í•´.â–¼,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,1,ì´ìˆœí˜„,null,ìë„¤ê°€ ë‚ â€¦â€¦.â–¼,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,2,ì •ì§€ìˆ˜,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,0,ì´ìˆœí˜„,null,ì•„ë‹ˆì•¼.â–¼,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,1,ì •ì§€ìˆ˜,null,"ì•„ë‹ˆì•¼, ì•„ë‹ˆì•¼.â–¼",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,2,ì´ìˆœí˜„,null,ê·¸ë˜. ê·¸ë ‡ì§€.â–¼,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,0,ì •ì§€ìˆ˜,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,1,ì´ìˆœí˜„,null,ì•„ë¬´ë¦¬ ê°œíŒë‚œ ì„¸ìƒì´ë¼ë„ ë²•ì¹˜êµ­ê°€ëŠ” ë²•ì¹˜êµ­ê°€ì•¼.â–¼,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,2,ì •ì§€ìˆ˜,null,ì•„ë¬´ë¦¬ ê·¸ ë†ˆì´ë¼ í•œë“¤ ë‚´ ê°€ì¡±ë“¤ì„â€¦â€¦.â–¼,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,0,ì´ìˆœí˜„,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Dr.parkA,Dr.parkB,1,ì •ì§€ìˆ˜,null,"ìš°ì„ , ê·¸ ë…€ì„ì´ ì˜¤ê¸° ì „ì— ëª¨ë“  ìë£Œë¥¼ íšŒìˆ˜í•´ì•¼í•´.â–¼",null,null,0,0.1,0,3,FALSE,FALSE,FALSE,FALSE
+L_chrImg_Index	R_chrImg_Index	Shadow_Index	talk_name_Index	CGImg_Index	Talk_Index	soundEff_Index	BGM_Index	ShakingEff_Index	wait_Index	fadeIn_Index	fadeOut_Index	fadeIn_quick_Index	fadeOut_quick_Index	RedFlash_Index	whiteFlash_Index
+null	null	0		City	null	null	10. They_Might_Not	0	0.1	3	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	¡¦¡¦. 	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+null	null	0		null	null	null	null	0	2.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	¹Ú½ÇÀå! 	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	°¡Á·µéÀº! 	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	³» °¡Á·µéÀº ±¦ÂúÀº°¡! 	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+null	null	0		null	null	21.phonebell	null	0	2.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	¡¦¡¦. 	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+null	null	0		null	null	null	null	0	2.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	ÇÑÀÌ»ç. ÀÚ³× ±ŞÇÑ°¡? 	40.calldwon	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	ÀÌ·± ÀÏ·Î ÀüÈ­ÇØ¼­ ¹Ì¾ÈÇÏ³×. ³» ºÎÅ¹ ÇÏ³ª¸¸ µé¾îÁÖ°Ô. 	null	null	0	1.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	³» °¡Á·µéÀÇ Çà¹æÀÌ ¹¦¿¬ÇØ. 	21.phonebell	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	ÀÚ³×°¡ ³¯¡¦¡¦. 	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+null	null	0		null	null	null	null	0	2.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	¾Æ´Ï¾ß. 	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	"¾Æ´Ï¾ß, ¾Æ´Ï¾ß. "	null	null	0	1.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	±×·¡. ±×·¸Áö. 	40.calldwon	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+null	null	0		null	null	null	null	0	1.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	¾Æ¹«¸® °³ÆÇ³­ ¼¼»óÀÌ¶óµµ ¹ıÄ¡±¹°¡´Â ¹ıÄ¡±¹°¡¾ß. 	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	¾Æ¹«¸® ±× ³ğÀÌ¶ó ÇÑµé ³» °¡Á·µéÀ»¡¦¡¦. 	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE
+null	null	0		null	null	null	null	0	2.1	0	0	FALSE	FALSE	FALSE	FALSE
+suitman	null	1	Dr.¹Ú	null	"¿ì¼±, ±× ³à¼®ÀÌ ¿À±â Àü¿¡ ¸ğµç ÀÚ·á¸¦ È¸¼öÇØ¾ßÇØ. "	null	null	0	0.1	0	0	FALSE	FALSE	FALSE	FALSE

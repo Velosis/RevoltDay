@@ -1,0 +1,11 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,박우주,null,인간과 기계는 달라요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,박우주,null,"당신은 쉽게 죽지만, 난 쉽게 죽지 않아. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,괴한,null,대체 이 괴물은 뭐야……? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,32.Attack2,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,31.dwon,null,0,2.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,괴한2,null,끌고가. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,괴한2,null,시간을 너무 끌었군. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,괴한2,null,"함대표가 귀찮게 굴기 전에, 어서 움직여. ",null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,TRUE,FALSE,FALSE
