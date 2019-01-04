@@ -4527,7 +4527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1d11d9155e7d14ebee6c60fa5a329c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currSceneState: 0
   _currMoveState: 0
   _currPlayerGO: {fileID: 1350883497180816, guid: 0f9e3c45f5cccf34293f0ffbf12ab287,
     type: 2}

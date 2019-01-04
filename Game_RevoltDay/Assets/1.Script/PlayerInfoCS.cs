@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum ePlayerSceneState
-{
-    Map,
-    Talk,
-    Duel
-}
-
 public class PlayerInfoCS : MonoBehaviour {
 
     public enum ePlayerState
@@ -20,7 +13,7 @@ public class PlayerInfoCS : MonoBehaviour {
         MoveHot
     }
 
-    public ePlayerSceneState _currSceneState;
+    private TileMakerCS _tileMakerCS;
     public ePlayerState _currMoveState;
     public GameObject _currPlayerGO;
     static public Image _currPlayerImg;
@@ -34,7 +27,7 @@ public class PlayerInfoCS : MonoBehaviour {
 
     private void Awake()
     {
-        _currSceneState = ePlayerSceneState.Map;
+        _tileMakerCS = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>();
         _currMoveState = ePlayerState.MoveReady;
         _currPlayerImg = _currPlayerGO.GetComponent<Image>();
     }
@@ -50,36 +43,22 @@ public class PlayerInfoCS : MonoBehaviour {
 
     private void Update()
     {
-        switch (_currSceneState)
-        {
-            case ePlayerSceneState.Map:
-                if (_currMoveState != ePlayerState.MoveNon) PlayerMoveSys();
-                break;
-            case ePlayerSceneState.Talk:
-                break;
-            case ePlayerSceneState.Duel:
-                break;
-            default:
-                break;
-        }
+        if (TouchSysCS._currTouchState == eTouchState.DOWN) _tileMakerCS.getTileVlaue(TouchSysCS._touchPos.x, TouchSysCS._touchPos.y);
     }
 
     public void PlayerMoveSys()
     {
         // 터치를 사용한 움직임 구현
+        Debug.Log(_currMoveState.ToString());
         switch (_currMoveState)
         {
-            case ePlayerState.MoveReady:
-                if (TouchSysCS._currTouchState == eTouchState.DOWN) _currMoveState = ePlayerState.MoveSet;
+            case ePlayerState.MoveNon: // 움직이지 않는 상태
                 break;
-            case ePlayerState.MoveSet:
+            case ePlayerState.MoveReady: // 움직임 대기 상태
                 break;
-            case ePlayerState.MoveHot:
-                if (TouchSysCS._currTouchState == eTouchState.DOWN)
-                {
-                    transform.GetComponent<RectTransform>().position = _tilePos;
-                    _currMoveState = ePlayerState.MoveReady;
-                }
+            case ePlayerState.MoveSet: // 이동할 타일이 선택된 상태
+                break;
+            case ePlayerState.MoveHot: // 선택된 타일로 이동
                 break;
             default:
                 break;
@@ -88,12 +67,15 @@ public class PlayerInfoCS : MonoBehaviour {
 
     public void PlayerTilePos(int mapValue)
     {
-        //if (_currMoveState == )
-        _tilePos = _tileMapList[mapValue].GetComponent<RectTransform>().position;
-        _tileValue = mapValue;
-        _currMoveState = ePlayerState.MoveHot;
     }
 
+    public void PlayerIconTouch()
+    {
+        if (ePlayerState.MoveReady != _currMoveState) return;
+
+        _tileMakerCS.getTileVlaue(TouchSysCS._touchPos.x, TouchSysCS._touchPos.y);
+        _currMoveState = ePlayerState.MoveSet;
+    }
     
 
 }
