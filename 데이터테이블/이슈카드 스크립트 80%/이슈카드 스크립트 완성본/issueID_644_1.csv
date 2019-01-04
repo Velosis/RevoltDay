@@ -1,0 +1,10 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,07.Ladybug,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang02,Wish01,1,강소원,null,"여, 경위님. 충성,충성.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Wish01,2,강원진,null,시위대를 해산시켜야하는 겁니까.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Wish01,1,강소원,null,보면 몰라요?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Wish01,1,강소원,null,"난 귀찮으니까, 경위님이 알아서 하세요.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,revoltman,1,시위대,null,"경찰이라는 작자가, 공권력에 기대다니.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,revoltman,1,시위대,null,우리가 왜 일어났는지 모르시오?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,revoltman,2,강원진,null,어쩔 수 없습니다. 저도 원치 않는 상황입니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
