@@ -1,0 +1,13 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang02,Zhang01,0,미스터 장,City,"여, 강원진 경위.",null,04.Gonne,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,강원진,null,볼 일이라도?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,미스터 장,null,강원진 경위에게 흥미진진한 이야기를 하나 해 볼까 해.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,미스터 장,null,들어보실건가?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,강원진,null,사건 해결에 도움이 되는 일이라면 언제든 환영입니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,미스터 장,null,그러니까.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,미스터 장,null,나랑 고스톱하지 않을래?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,강원진,null,사양하겠습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,미스터 장,null,쫄리나봐?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,미스터 장,null,"어, 잠깐. 어디가!",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,미스터 장,null,내 말은 다 듣고 가야지!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,미스터 장,null,이 냉정한 양반같은이라고.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

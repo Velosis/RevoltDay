@@ -1,0 +1,7 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang01,police,1,박정우,City,경위님! ,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,하늘택시가 느닷없이 위에서 떨어져 정차해 있던 차량과 충돌했답니다! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,"심상치 않은 일인 것 같은데, 어떻게 안 되겠습니까? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,강원진,null,…어디입니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,강원진,null,기자가 출입하지 못하도록 잘 감시해주세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
