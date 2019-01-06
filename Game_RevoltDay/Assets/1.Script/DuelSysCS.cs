@@ -18,7 +18,8 @@ public enum eDuelState
     DiceDrop, // 주사위 굴리기 연출
     DiceFirst, // 주사위 계산
     BattleDamge, // 전투 결과에 따른 데미지 계산
-    BattleEnd // 전투 종료에 따른 계산 처리
+    BattleEnd, // 전투 종료에 따른 계산 처리
+    battleReward // 전투 보상 연출
 }
 
 public enum eScreenEffColor
@@ -37,6 +38,7 @@ public class DuelSysCS : MonoBehaviour {
     private bool _isHitEff;
 
     public eDuelType _playerType;
+    public eDuelType _enemyOrginType;
     public eDuelType _enemyType;
 
     public eDuelState _currState;
@@ -73,7 +75,6 @@ public class DuelSysCS : MonoBehaviour {
     private GameObject _duelStartScreen;
     private GameObject _diceFighterStartScreen;
     private GameObject _battleButton;
-    private GameObject _skillButton;
     private GameObject _runButton;
 
     private GameObject _L_ChrType;
@@ -93,6 +94,8 @@ public class DuelSysCS : MonoBehaviour {
     private GameObject _bounsDiceText;
 
     private GameObject _screenHitEff;
+    private GameObject _screenHitShow;
+    private GameObject _screenHitText;
 
     private bool _isPlayerTypeWin;
     private bool _isEnemyTypeWin;
@@ -104,6 +107,10 @@ public class DuelSysCS : MonoBehaviour {
 
     private AudioSource _seMgr;
     private AudioSource _BgmMgr;
+
+    public UIMgr _uIMgrCS;
+
+    public float _enemyTypeRandom;
 
     private void Awake()
     {
@@ -119,7 +126,6 @@ public class DuelSysCS : MonoBehaviour {
         _diceFighterStartScreen.SetActive(false);
 
         _battleButton = GameObject.Find("BattleButton");
-        _skillButton = GameObject.Find("SkillButton");
         _runButton = GameObject.Find("RunButton");
 
         _L_ChrCenterPos = GameObject.Find("L_ChrCenter").GetComponent<RectTransform>();
@@ -156,15 +162,17 @@ public class DuelSysCS : MonoBehaviour {
         _bounsImgMovementPos = GameObject.Find("BounsDiceImgMovementPos");
         _screenHitEff = GameObject.Find("ScreenHitEff");
         _screenHitEff.SetActive(false);
+        _screenHitShow = GameObject.Find("HitEffImg");
+        _screenHitShow.SetActive(false);
+        _screenHitText = GameObject.Find("HitPointText");
+        _screenHitText.SetActive(false);
         _flashColor = eScreenEffColor.Black;
 
         _currTimer = 0.0f;
 
-        // 테스트용 코드
         _isNextState = _isBackState = false;
         _isPlayerTypeWin = _isEnemyTypeWin = false;
-        _playerType = (eDuelType)Random.Range(0 , 2 + 1);
-        _enemyType = (eDuelType)Random.Range(0, 2 + 1);
+        _playerType = 0;
 
         _playerHP = 10;
         _playerAtk = 2;
@@ -232,6 +240,9 @@ public class DuelSysCS : MonoBehaviour {
             case eDuelState.BattleEnd:
                 StartCoroutine(BattleEnd());
                 break;
+            case eDuelState.battleReward:
+                StartCoroutine(RewardSys());
+                break;
             default:
                 Debug.Log("DuelStateSet : 선택된 전투 상태가 없습니다.");
                 break;
@@ -248,7 +259,6 @@ public class DuelSysCS : MonoBehaviour {
 
         // 초기값 세팅
         _battleButton.SetActive(true);
-        _skillButton.SetActive(true);
         _runButton.SetActive(true);
         _L_ChrType.SetActive(false);
         _R_ChrType.SetActive(false);
@@ -259,7 +269,7 @@ public class DuelSysCS : MonoBehaviour {
         _R_ChrCenterPos.transform.position = _R_OrginChrPos;
         _diceDropImg.transform.position = _OrginDiceImgPos;
 
-        _playerChrImg.GetComponent<Image>().sprite = PlayerInfoCS._currPlayerImg.sprite;
+        //_playerChrImg.GetComponent<Image>().sprite = PlayerInfoCS._currPlayerImg.sprite;
 
         while (true)
         {
@@ -284,7 +294,6 @@ public class DuelSysCS : MonoBehaviour {
                 _diceFighterStartScreen.SetActive(false);
                 DuelStateSet(eDuelState.DuelStart);
             }
-
             yield return null;
         }
     }
@@ -292,8 +301,21 @@ public class DuelSysCS : MonoBehaviour {
     public IEnumerator AttackDelay()
     {
         _battleButton.SetActive(false);
-        _skillButton.SetActive(false);
         _runButton.SetActive(false);
+
+        if (Random.Range(1.0f, 100.0f) <= _enemyTypeRandom)
+        {
+            _enemyType = _enemyOrginType;
+        }
+        else
+        {
+            _enemyType = _enemyOrginType;
+            while (_enemyType == _enemyOrginType)
+            {
+                if (Random.Range(1.0f, 100.0f) <= 50.0f) _enemyType = (eDuelType)Random.Range(0, 2 + 1);
+                else _enemyType = (eDuelType)Random.Range(0, 2 + 1);
+            }
+        }
 
         _currTimer = 0.0f;
         while (_currTimer <= 1.0f)
@@ -367,6 +389,17 @@ public class DuelSysCS : MonoBehaviour {
                 _bounsImg.GetComponent<Image>().color = new Color(1, 1, 1, _currTimer);
                 yield return null;
             }
+
+            _currTimer = 0.0f;
+            while (_currTimer <= 1.0f)
+            {
+                _currTimer += Time.deltaTime / 2.0f;
+
+                _bounsDice = Random.Range(1, 6 + 1);
+                _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
+
+                yield return null;
+            }
         }
 
         _diceDropImg.SetActive(true);
@@ -400,16 +433,7 @@ public class DuelSysCS : MonoBehaviour {
         if (_isEnemyTypeWin || _isPlayerTypeWin) // 무승부 일 경우 계산 생략
         {
 
-            _currTimer = 0.0f;
-            while (_currTimer <= 1.0f)
-            {
-                _currTimer += Time.deltaTime / 2.0f;
 
-                _bounsDice = Random.Range(1, 6 + 1);
-                _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
-
-                yield return null;
-            }
 
 
             _currTimer = 0.0f;
@@ -480,7 +504,8 @@ public class DuelSysCS : MonoBehaviour {
         _isPlayerTypeWin = _isEnemyTypeWin = false;
 
         yield return new WaitForSeconds(2.0f);
-        DuelStateSet(eDuelState.DuelStart);
+        if (_enemyHP <= 0 || _playerHP <= 0) DuelStateSet(eDuelState.battleReward);
+        else DuelStateSet(eDuelState.DuelStart);
     }
 
     public IEnumerator screenHitEff(float timer, eScreenEffColor isColor)
@@ -518,26 +543,71 @@ public class DuelSysCS : MonoBehaviour {
 
     public IEnumerator ChrImgHitEff(bool isWho)
     {
+        _screenHitShow.SetActive(false);
+        _screenHitText.SetActive(false);
+
+        RectTransform tempRtTf = _screenHitShow.GetComponent<RectTransform>();
+        RectTransform tempTextPos = _screenHitText.GetComponent<RectTransform>();
+
+        tempRtTf.localPosition = new Vector2(0, 0);
+        tempTextPos.localPosition = new Vector2(0, 0);
+
         GameObject tempImg;
+        Vector2 orginPos = new Vector2(0, 0);
+        _currTimer = 0.0f;
+        _flashValue = 0.0f;
+        _flashOutValue = (255.0f / 1.0f) * 0.1f;
+
         if (isWho)
         {
             _orginChrImgPos = _playerChrImg.transform.position;
             tempImg = _playerChrImg;
-            Debug.Log("플레이어 히트 실행");
+            tempRtTf.localPosition = new Vector2(tempRtTf.localPosition.x + tempRtTf.sizeDelta.x, 0);
+            tempTextPos.localPosition = _playerChrImg.GetComponent<RectTransform>().localPosition;
+            _screenHitShow.SetActive(true);
+            _screenHitText.SetActive(true);
+            _screenHitText.GetComponent<Text>().text = "-" + (_enemyAtk + _enemyDice).ToString();
+            while (_currTimer <= 0.5f)
+            {
+                _currTimer += Time.deltaTime;
+                if (tempRtTf.localPosition.x > orginPos.x) tempRtTf.Translate(Vector3.left * (tempRtTf.sizeDelta.x / 5.0f));
+                else tempRtTf.localPosition = new Vector2(0, 0);
+                yield return null;
+            }
+            _currTimer = 0.0f;
+            while (_currTimer <= 0.3f)
+            {
+                _currTimer += Time.deltaTime;
+                yield return null;
+            }
             _seMgr.Play();
         }
         else
         {
             _orginChrImgPos = _enemyChrImg.transform.position;
             tempImg = _enemyChrImg;
-            Debug.Log("상대 히트 실행");
+            tempRtTf.localPosition = new Vector2(tempRtTf.localPosition.x - tempRtTf.sizeDelta.x, 0);
+            tempTextPos.localPosition = _enemyChrImg.GetComponent<RectTransform>().localPosition;
+            _screenHitShow.SetActive(true);
+            _screenHitText.SetActive(true);
+            _screenHitText.GetComponent<Text>().text = "-" + (_playerAtk + _playerDice).ToString();
+            while (_currTimer <= 0.5f)
+            {
+                _currTimer += Time.deltaTime;
+                if (tempRtTf.localPosition.x < orginPos.x) tempRtTf.Translate(Vector3.right * (tempRtTf.sizeDelta.x / 5.0f));
+                else tempRtTf.localPosition = new Vector2(0, 0);
+                yield return null;
+            }
+            _currTimer = 0.0f;
+            while (_currTimer <= 0.3f)
+            {
+                _currTimer += Time.deltaTime;
+                yield return null;
+            }
             _seMgr.Play();
         }
-
+        _screenHitShow.SetActive(false);
         _currTimer = 0.0f;
-        _flashValue = 0.0f;
-        _flashOutValue = (255.0f / 1.0f) * 0.1f;
-
         while (!_isHitEff && _currTimer <= 1.0f)
         {
             _currTimer += Time.deltaTime;
@@ -553,7 +623,20 @@ public class DuelSysCS : MonoBehaviour {
         _isHitEff = false;
         tempImg.transform.position = _orginChrImgPos;
         tempImg.GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        _screenHitText.SetActive(false);
+
         yield return null;
     }
 
+    public IEnumerator RewardSys()
+    {
+        if (_playerHP <= 0) Debug.Log("게임 오버");
+        else if (_enemyHP <= 0)
+        {
+
+        }
+
+        _uIMgrCS.EndDuel();
+        yield return null;
+    }
 }
