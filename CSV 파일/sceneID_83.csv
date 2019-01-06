@@ -1,0 +1,9 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,07.Ladybug,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang02,Smith02,2,강원진,null,스미스! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Smith02,2,강원진,null,어디로 간 거야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Smith02,1,스미스,null,안 도망가. 안 도망가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Smith02,1,스미스,null,"자, 나랑 같이 즐거운 광경을 보자고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Smith02,1,스미스,null,TV를 봐. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Smith02,1,스미스,null,세상을 뒤엎을 진실이 밝혀진다고! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

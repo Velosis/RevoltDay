@@ -1,0 +1,38 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,경영가,null,절 부르셨다는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,2,강원진,null,경일기업의 이사진이셨다고 들었습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,경영자,null,옛 이야기일 뿐입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,경영자,null,"근데, 그건 왜……? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,2,강원진,null,Q-RAX'에 대해 질문드리려합니다.. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,1,경영자,null,"뭐, 말씀해 보세요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,2,강원진,null,폐기되지 않은 Q-RAX가 있습니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,1,경영자,null,네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,1,경영자,null,비공개적으로 하나가 있긴 합니다만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,1,경영자,null,그 외에도 대표님이 하나 더 만드셨던 거 같기도 합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,1,경영자,null,제가 듣기로는 비공개 물품 하나는 뭐 경찰쪽에서 빼내갔다고들 하던데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,1,경영자,null,그게 진짜라면 그 시제품은 이리저리 이용되다 폐기됐겠죠. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,daegiup,2,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,2,강원진,null,"일단, 감사합니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,경영자,null,"근데, 이런 질문을 했다면 본인 신분부터 밝혀야죠. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,경영자,null,누굽니까 당신? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,2,강원진,null,서울지방경찰청 강원진 경위입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,경영자,null,데이터 있습니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,2,강원진,null,물론입니다. ,36.iliec,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,36.iliec,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,36.iliec,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,강원진,null,……? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,36.iliec,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,36.iliec,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,2,강원진,null,…왜 삭제된거지? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,경영자,null,이봐요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,경영자,null,당신 사기꾼이야? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,2,강원진,null,뭔가 착오가 있는 듯 합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,2,강원진,null,일시적인 오류입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,경영자,null,됐어요. 볼 일 봤으면 다신 오지 말고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,경찰 기록 말소. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,예견된 일이었지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

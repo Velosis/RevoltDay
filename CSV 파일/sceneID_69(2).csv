@@ -1,0 +1,78 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,null,0,강원진,null,함정임씨! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,null,0,강원진,null,……? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,"이봐, 당신들 왜 그래? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,장사장,null,난 자네의 그 잔인함이 무서웠어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,장사장,null,"이제 그만 미스터 장, 자네에게서 벗어나고싶네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,지금…지금 누굴 칼로 찌른 거야? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,곽이사,null,"이 지경이 된 건 모두 미스터 장, 자네 탓이라는 걸 알아주게. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,어억! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,…뭐 하는 거야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,이거 배신이야. 당신들. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,13.SpeakWtihWaltzDance,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,null,0,함정임,null,미스터 장. 대체 이게 무슨 일인 건가요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,null,0,함정임,null,이런 꼴로 계시다니요. 괜찮으신 겁니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,1,미스터 장,null,함대표…? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,1,미스터 장,null,나 좀 살려줘……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,미스터 장? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,그래서 평소의 행실이 중요한 거랍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,절 죽이겠다고 그렇게 고래고래 소리치시던 미스터 장은 어디에 가셨나요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,"정말이지, 우리의 상황이 이렇게 된 게 무척이나 가슴 아프답니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,1,미스터 장,null,잘못했어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,1,미스터 장,null,제발 살려줘. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,"구걸하시려면, 여기 계신 이사님들께 해야지요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,이사님들이 미스터 장께 쌓이신 게 많더군요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,정말이지 아쉬운 상황입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,1,미스터 장,null,부탁이야. 부탁이야 함대표. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,1,미스터 장,null,"이제 당신 밑에서 빌빌 길테니까, 응? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,제가 동화 얘기 하나 해 드릴까요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,옛날 옛적 어느 한 개미가 있었답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,개미는 돈을 좋아했어요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,야금 야금 남의 돈뭉치를 들고 개미집으로 나르던 어느 날. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Zhang01,2,함정임,null,개미는 욕심이 났답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam03,Zhang01,2,함정임,null,"그래서 그만, 주제 넘게 큰 돈가방을 노리고 말았네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam03,Zhang01,2,함정임,null,어떻게 됐을까요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam03,Zhang01,2,함정임,null,돈의 무게를 이기지 못한 채 깔려 죽어버렸지요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam03,Zhang01,2,함정임,null,여기서도 교훈이 있답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang01,2,함정임,null,그 교훈이 무엇인지는 미스터 장이 스스로 알아주셨으면 하는 바람이네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Zhang02,1,미스터 장,null,날 두고 가지 마! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+Zhang02,null,0,미스터 장,null,이러지 마! 이러지 마! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,나 한테 왜 이러는 거야. 제발! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,3.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,3.1,0,0,FALSE,FALSE,TRUE,FALSE
+Zhang02,null,0,미스터 장,null,"함대표, 함대표! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,한 번만 기회를 줘! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,제발 한 번 만! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,날 버리지 마! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,38.Knife1,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,39.Knife2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
+Zhang02,null,0,미스터 장,null,그만 해! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,제발 그만! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

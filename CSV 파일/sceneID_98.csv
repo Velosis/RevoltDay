@@ -1,0 +1,19 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+Park03,gang02,2,박우주,008.CityCiber,당신에게는 스토킹이라는 프로그래밍이 되어있나봐요. ,null,10.They_Might_Not,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,제 창조주의 실책인거같아요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,1,강원진,null,지금이라도 바이오칩의 프로그래밍을 풀어야합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,1,강원진,null,제발! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,아니오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,인간들은 각자 자기들 배만 불리울려고 아둥바둥하고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,"남을 짓밟고, 외면하고, 배신하고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,그게 본 모습이에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,그걸 제대로 드러냈을 뿐인데. 왜? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,1,강원진,null,보세요. 박우주씨. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,1,강원진,null,그럼에도 사람들은 꿋꿋이 열심히 살아가고 있어요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,1,강원진,null,나쁜 사람들도 많아요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,1,강원진,null,"하지만, 그만큼 남과 조화를 이루며 모두와 함께 평온한 삶을 살아가는 이들도 많다구요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,동의하지 못하겠네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,다른 인간들도 함정임과 똑같아. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,쫓아오지마요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,gang02,2,박우주,null,내 마지막 호의에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
