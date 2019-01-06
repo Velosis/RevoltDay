@@ -1,0 +1,32 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,022.masterOffice,null,null,13.SpeakWtihWaltzDance,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,1,유구현,null,이렇게 불쑥 찾아오는 일은 없었으면 하는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,이렇게 찾아오는 데에는 이유가 있는 법이랍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,요즘 청장님과의 관계가 소원해진 것 같아서요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,"청장님께 섭섭한 것도 있고, 제가 잘못한 게 있는게 아닐지, 걱정이 돼 잠을 못 이룬답니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,1,유구현,null,함대표. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,1,유구현,null,진작 미스터 장을 걸러냈으면 일이 여기까지 올 일은 없었을거라 보는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,그 문제에 대해 얘기하러 왔습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,미스터 장을 향한 애틋한 제 마음을 모르실리는 없겠고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,그래도 사람의 관계라는 게 그리 쉽지만은 않더라구요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,1,유구현,null,바쁜 사람 앉혀다 놓고 말이 많군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,1,유구현,null,본론만 말하게. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,안타까운 일이지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu01,2,함정임,null,이제는 미스터 장을 놓아줄 때가 온 것 같습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,1,유구현,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,1,유구현,null,함대표가 이렇게 말할 때면 늘상 찾아오는 일이 있었지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,1,유구현,null,이번에도 죽일 생각인가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,2,함정임,null,유청장님? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,2,함정임,null,저는 깡패가 아니랍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,2,함정임,null,저는 어엿한 법치주의 국가의 시민이자 경영인입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,2,함정임,null,"그렇게 말씀하시니, 정말이지 섭섭하네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,1,유구현,null,함대표의 그 뻔뻔함이 소름끼칠 정도로 무섭다는 걸 알아줬으면 좋겠군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu01,2,함정임,null,말이 심하십니다. 청장님. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,"아, 그렇지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,지금 쯤이면 청장님이 좋아하시는 한라봉 몇 박스가 집에 도착했겠네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,2,함정임,null,"잘 부탁해요, 유청장님? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,1,유구현,null,돈이 치고 넘칠 정도로 많아 쓸 방도를 모르는 사람인가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,2,함정임,null,서로서로 좋은 게 좋은 거랍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu02,2,함정임,null,"청장님이 더 높은 곳으로 올라갈 수 있도록, 저도 힘을 써 보려 하구요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Yu01,1,유구현,null,쓸데없는 참견이군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

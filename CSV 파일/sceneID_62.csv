@@ -1,0 +1,27 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,036.UnderOffice,null,null,07.Ladybug,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,"어허, 이거 강원진 경위님 아니신가. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,이런 누추한 곳까진 무슨 일로? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,2,강원진,null,수서동 폭발 테러. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,2,강원진,null,함정임 대표의 짓이 맞습니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang03,1,미스터 장,null,"강원진 경위, 생각보다 단순하니 귀여운데. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang04,1,미스터 장,null,"이봐, 강경위. 아직도 모르겠어? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,1,미스터 장,null,함정임 엿먹이려고 내가 다 꾸민 짓이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,2,강원진,null,그럼 배후가 미스터 장이라는 말씀입니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,1,미스터 장,null,단순하기는. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,1,미스터 장,null,이 바닥에서는 내 짓이라는 거 모르는 양반들이 없어요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,1,미스터 장,null,그런 빡대가리로 어떻게 경찰을 할 생각을 했답니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,2,강원진,null,사람이 죽었습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang03,1,미스터 장,null,내 알바는 아닙니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang04,1,미스터 장,null,같잖은 위선 떨지마. 역겨우니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,1,미스터 장,null,강원진 경위는 그냥 함정임만 잘 구슬려서 구속하면 되는 거야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,2,강원진,null,당신들 암투는 제 알 바 아닙니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,2,강원진,null,"하지만, 당신 행동 때문에 무고한 경찰들과 시민이 죽었습니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,2,강원진,null,어떻게 책임 지실 겁니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,1,미스터 장,null,"책임은 개뿔 지랄을 해요, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,1,미스터 장,null,유구현 청장 따까리주제에 온갖 착한 척 다하는 게 역겨워서 가만 보실 수가 없네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,2,강원진,null,미스터 장. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,2,강원진,null,오늘 일은 반드시 그에 합당한 벌을 받을 겁니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang04,1,미스터 장,null,"예, 예, 그러시겠지요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang04,1,미스터 장,null,볼일 다 봤음 나가보고. ,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,,,,,,,,,,

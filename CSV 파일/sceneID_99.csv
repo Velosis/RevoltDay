@@ -1,0 +1,22 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,022.masterOffice,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,2,유구현,null,더 할말은 있나.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,1,이지은,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,1,이지은,null,원진씨랑 엮어버릴줄이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,1,이지은,null,역시 경찰청장의 힘은 어쩔 수 없나봐.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,2,유구현,null,"이경위가 진즉 내 일을 도왔더라면, 이렇게 되는 일은 생기지 않았겠지.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,2,유구현,null,본인을 탓하도록 해.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,1,이지은,null,나도 이제 뭐가 뭔지 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,1,이지은,null,당신들한테 이용당한게 아까워서. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,1,이지은,null,"분통은 터지는데, 어째 힘이 없네?",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,2,유구현,null,수갑채워.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,Lee03,2,유구현,null,이지은 경위는 현행범으로 체포하도록 해.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Lee03,0,함정임,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Lee03,0,함정임,null,정말 안타까운 일이랍니다. 이지은 경위님.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Lee03,0,이지은,null,퍽이나 그러시겠네.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,폭력 시위는 점차 늘어가고 있다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,경찰들도 손을 쓸 수 없을 지경에 도달한 지금. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,"이 쯤에서 큰 거 하나를 터트려주면, 나름의 성과가 있겠지. ",null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,TRUE,FALSE,FALSE

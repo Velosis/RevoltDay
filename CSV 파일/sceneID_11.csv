@@ -1,0 +1,78 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,007.DarkSlumCity,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,32.Attack1,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,중년 남성,null,어어억! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,"어어, 잠깐, 그러다 전치 6주라도 나오면 어쩌려고? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,그렇게 과격하게 제압하면 큰 일 날텐데? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,매뉴얼 내에 속해있는 범주입니다. ,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,정도가 심하지 않나 싶은데? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,현행법상 정당방위입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,글쎄…그게 문제가 아닐텐데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,이러다 문제 생기면 형사씨 문제로 끝나는 게 아니라니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,막무가네로 활동하면 답 없어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,문제시 되는 사항이 있을 시 법으로 해결하겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,만일 형사씨 마음대로 해결되지 않는다면. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,그때는 어쩔 생각이신지 묻고싶네? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,현행법 및 경찰공무원 지시사항에서 이탈한 사항이 없습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,기타 의문 사항은 정식적으로 경찰청에 보고드리심이 맞다고 생각됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,같이 일 못해먹겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,정말 막막하네. 대체 어디서 부터 잘못된 건지 감이 안잡히네? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,2,강원진,null,잘못된 점을 파악해서 명확히 설명 시 추후부터 시정하겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,댁이 좋아하는 위험사항 제거는 잘 알겠는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,"아니지, 별로 의미가 없는 대화야. 영양가가 없네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,그 잘나신 매뉴얼이 얼마나 확고하실까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,2,강원진,null,일부 오차율을 빼고는 정확한 판단이었습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,2,강원진,null,…………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,너무 확고하셔서 뭐라 할 말이 없네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,이렇게 일방적으로 활동하시려면 혼자 일 해보는 건 어떨까 생각이 드는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,형사씨 생각은 어때요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,2,강원진,null,지시사항으로는 2인1조 행동이었습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,2,강원진,null,지시 위반은 조직체계 질서에 혼란을 줍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,…………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,이쯤되면 말귀를 못 알아 듣는 게 아닌가 하고 의심이 드는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,본인은 그런 생각이 안 드실까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,2,강원진,null,모두 이해하고 있습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,좀 심한 말 좀 쓸까요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park02,null,0,???,null,아저씨! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,null,0,이지은,null,……? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,중년 남성,null,"쿨럭, 으흡…... ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Park02,1,???,null,지금 뭐 하시는 거죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Park02,1,???,null,지금 이거 폭행이에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Park02,1,???,null,무고한 사람을 때리는 이 몰상식한 행동은 어디서 오는 거죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Park02,2,이지은,null,"전 상관 없고, 다 이 사람이. 그렇죠? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park02,2,강원진,null,서울지방경찰청 소속 강원진 경위입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park02,1,???,null,경찰이 왜 사람을 때려 눕히는 거죠? 무슨 권한으로요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park02,2,강원진,null,공무집행방해 및 상해치사 및 경찰공무원신변보호법에 의거한 합법적 제압입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,1,???,null,아……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,1,???,null,죄송해요. 같은 동네 주민이에요. 요즘들어 평소랑 다른 모습들을 보이셔서……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,1,???,null,"아, 여기 명함. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Park03,2,이지은,null,명함을 줄 만큼 대단한 사람이기라도……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Park03,2,이지은,null,하네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,2,강원진,null,경한기업 연구원 박우주씨. 이 분은 법에 의거해 실형이 선고 될 확률이 높다 판단됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,1,박우주,null,"어떻게, 안 될까요? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,2,이지은,null,"아까보니 경한기업을 싫어하는 것 같은데, 이건 무슨 모순인지 모르겠네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,1,박우주,null,사정이 있어요. 제가 경한 기업에 입사한 것도 이해해줄 만큼의 어떤 사정이. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,1,박우주,null,"그보다, 아저씨는 생각하는 것 같은 그런 나쁜 사람이 아니에요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,1,박우주,null,부탁할게요. 어떻게 안 될까요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,2,강원진,null,법치주의 국가에서 범법행위의 방관은 치안안정에 불이익을 끼치게……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Park03,2,이지은,null,여기 잘나신 분 말씀은 무시들 하시고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Park03,2,이지은,null,"많이 다치신 거 같은데, 치료비는 알아서. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Park03,2,이지은,null,"대신, 이 일에 대해 법적으로 따지고 들어오지만 않으면 우리야 좋죠. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Park03,2,이지은,null,안 그래요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Park03,2,이지은,null,그렇다네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,1,강원진,null,전 그렇지……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Park03,2,이지은,null,명함 잘 받았어요. 추후 연락할 일이 있을 것 같네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Park03,2,이지은,null,나중에 모르는 번호로 연락 가면 받아 둬요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Park03,2,이지은,null,혹시나 보이스피싱 의심해서 끊어버리지 말고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Park03,2,이지은,null,법적으로도 따질 거면 받을 생각도 말고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Park03,2,이지은,null,아셨죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Park03,1,박우주,null,"이 은혜는, 잊지 않을 게요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,2,강원진,null,일방적인 행동……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,1,이지은,null,"자, 여기에는 아무 일도 없는 것 같네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,1,이지은,null,"쓸데없는 곳에 신경 쓰지 말고, 어서 가시죠? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE

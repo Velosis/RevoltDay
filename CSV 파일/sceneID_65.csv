@@ -1,0 +1,30 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang02,nullSmith02,1,스미스,034.Cityholl,대단해! ,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,날 진짜로 찾아낼 줄은 몰랐어. 강원진 형사. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,2,강원진,null,아까의 얘기를 이어나가죠. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,2,강원진,null,원흉은 또 뭡니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,그걸 다 말해주면 재미 없지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,"아, 그래. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,이런 것 정도는 말해줄 수 있겠지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,누군가의 장난질? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,"뭐, 음모가 있다고 보면 되겠군. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,지금 당신들은 누군가의 장난질에 놀아나고 있어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,2,강원진,null,대체 그게 누구죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,말 했잖아. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,말 하면 재미 없다고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,잘 생각해봐. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,강원진 형사는……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,사람이 아니잖아? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,그러니까 쉽게 찾을 수 있을 거야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,2,강원진,null,그게 대체 무슨 소립니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,2,강원진,null,스미스! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,1,스미스,null,"안 돼. 내가 최종적으로 선택할 사람이 강원진 형사일지, 전민원일지는 확정나지 않았으니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,2,강원진,null,대답해요! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,nullSmith02,2,강원진,null,대체 무슨 소립니까! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,스미스가 떠나간다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,잡아야한다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,그렇게 생각하면서도 그가 떠나는 모습을 지켜볼 수 밖에 없었다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,진실을 듣기엔 아직 준비가 되어있지 않아서. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,두려워서. ,,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
