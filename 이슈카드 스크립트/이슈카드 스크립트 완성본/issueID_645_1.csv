@@ -1,5 +1,0 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,07.Ladybug,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,1,강소원,null,"여, 오셨습니까. 충성 충성.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,2,강원진,null,이번에는 바이오칩 착용자들이 문제군요.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,1,강소원,null,빨리 부탁드립니다. 퇴근하게.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
