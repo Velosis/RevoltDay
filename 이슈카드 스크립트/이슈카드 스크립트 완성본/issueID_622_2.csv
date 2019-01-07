@@ -1,3 +1,0 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-gang02,mapia,2,강원진,City,경찰입니다. 즉시 행동을 멈춰주십시오. ,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,mapia,1,제조업자,null,"아, 이거 완전 나가리됐네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
