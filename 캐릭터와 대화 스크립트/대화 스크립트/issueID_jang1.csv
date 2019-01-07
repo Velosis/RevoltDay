@@ -1,0 +1,10 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang02,Zhang01,1,미스터 장,City,나한테 볼 일이라도 있습니까?,null,04.Gonne,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,2,강원진,null,"꼭 볼일이 있어야 하는 거라면, 사죄드립니다.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,아 거 이거 참.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,강원진 경위는 재미가 없다니까.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,강원진 경위가 재미없게 행동하면 나도 재미없어.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,그나저나 강원진 경위님.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,고스톱 좋아하십니까?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,2,강원진,null,안 좋아합니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,"이런, 섭섭해라.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
