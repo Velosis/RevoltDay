@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class TileMakerCS : MonoBehaviour {
 
+    private UIMgr uIMgrCS;
+
     public List<string> _cityName;
     private Text _cityText;
 
@@ -15,12 +17,16 @@ public class TileMakerCS : MonoBehaviour {
 
     private GameObject tempTileMap;
 
+    private Vector3 _tempIcon;
+
     public List<GameObject> TileMapList {
         get { return _tileMapList; }
     }
 
     private void Awake()
     {
+        uIMgrCS = GameObject.Find("UIMgr").GetComponent<UIMgr>();
+
         int arrIndex = 0;
 
         float tempSize = _tileImage.GetComponent<RectTransform>().rect.width;
@@ -43,13 +49,36 @@ public class TileMakerCS : MonoBehaviour {
                 _tileMapList.Add(tempTileMap);
                 _tileMapList[arrIndex].GetComponentInChildren<Text>().text = _cityName[arrIndex].ToString();
                 _tileMapList[arrIndex].GetComponent<TileMapDataCS>()._tileIndex = arrIndex;
+                UIMgr._isSafetyUI += _tileMapList[arrIndex].GetComponent<TileMapDataCS>().isSafetyUI;
+                UIMgr._tileTurnUpdate += _tileMapList[arrIndex].GetComponent<TileMapDataCS>().tileTrunUpdate;
                 arrIndex++;
 
             }
         }
-    }
-    private void Start()
-    {
 
+    }
+
+    public int getTileVlaue(float x, float y)
+    {
+        //_tempIcon = new Vector3(x, y);
+
+        for (int i = 0; i < _tileMapList.Count; i++)
+        {
+            if (_tileMapList[i].GetComponent<RectTransform>().position.x + _tileMapList[i].GetComponent<RectTransform>().sizeDelta.x / 2.0f > x &&
+                _tileMapList[i].GetComponent<RectTransform>().position.x - _tileMapList[i].GetComponent<RectTransform>().sizeDelta.x / 2.0f < x &&
+                _tileMapList[i].GetComponent<RectTransform>().position.y + _tileMapList[i].GetComponent<RectTransform>().sizeDelta.y / 2.0f > y &&
+                _tileMapList[i].GetComponent<RectTransform>().position.y - _tileMapList[i].GetComponent<RectTransform>().sizeDelta.y / 2.0f < y)
+            {
+                int tempNum = i;
+                _tempIcon = _tileMapList[i].GetComponent<RectTransform>().position;
+                return tempNum;
+            }
+        }
+        return -1;
+    }
+
+    private void OnDrawGizmos()
+    {
+        //Gizmos.DrawSphere(_tempIcon, 50.0f);
     }
 }

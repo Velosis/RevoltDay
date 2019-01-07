@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class ResourceMgrCS : MonoBehaviour {
     static public Dictionary<string, GameObject> _imgBox = new Dictionary<string, GameObject>();

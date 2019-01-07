@@ -2,16 +2,58 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum eTableType
+{
+    normal,
+    Blockade,
+    Issue,
+    Crime
+}
+
 public class ReadCsvCS : MonoBehaviour {
 
-    private void Start()
-    {
-        startDateLoad();
-    }
+    public eTableType _tableType;
+    public eSearchSelectType _eSearchSelectType;
+    public string _crimeSceneName;
 
-    void startDateLoad()
+    //private void Start()
+    //{
+    //    startDateLoad();
+    //}
+
+    public void startDateLoad()
     {
-        List<Dictionary<string, object>> date = CSVReader.Read("2.SceneTable/" + name);
+        this.GetComponent<TalkIndexCS>().deleteTalkDate();
+
+        object[] tempResList = null;
+        TextAsset tempGO = null;
+        List<Dictionary<string, object>> date = null;
+
+        switch (_tableType)
+        {
+            case eTableType.normal: // 긴급 이슈
+                tempResList = Resources.LoadAll("2.SceneTable/1.IssueTable");
+                tempGO = tempResList[Random.Range(0, tempResList.Length)] as TextAsset;
+                date = CSVReader.Read("2.SceneTable/1.IssueTable/" + tempGO.name);
+                break;
+            case eTableType.Blockade: // 봉쇄 지역
+                tempResList = Resources.LoadAll("2.SceneTable/0.BlockadeTable");
+                tempGO = tempResList[Random.Range(0, tempResList.Length)] as TextAsset;
+                date = CSVReader.Read("2.SceneTable/0.BlockadeTable/" + tempGO.name);
+                break;
+            case eTableType.Issue: // 긴급 이슈
+                tempResList = Resources.LoadAll("2.SceneTable/1.IssueTable");
+                tempGO = tempResList[Random.Range(0, tempResList.Length)] as TextAsset;
+                date = CSVReader.Read("2.SceneTable/1.IssueTable/" + tempGO.name);
+                break;
+            case eTableType.Crime: // 메인
+                date = CSVReader.Read("2.SceneTable/2.CrimeTable/" + _crimeSceneName);
+                break;
+            default:
+                break;
+        }
+
+        this.GetComponent<TalkIndexCS>()._eSearchSelectType = _eSearchSelectType;
 
         for (var i = 0; i < date.Count; i++)
         {

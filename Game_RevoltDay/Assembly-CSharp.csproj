@@ -62,9 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\1.Script\DuelSysCS.cs" />
-    <Compile Include="Assets\1.Script\EventTableCS.cs" />
+    <Compile Include="Assets\1.Script\EventSysCS.cs" />
+    <Compile Include="Assets\1.Script\NpcSysMgr.cs" />
     <Compile Include="Assets\1.Script\PlayerInfoCS.cs" />
     <Compile Include="Assets\1.Script\ResourceMgrCS.cs" />
+    <Compile Include="Assets\1.Script\SaveSys.cs" />
+    <Compile Include="Assets\1.Script\SearchSelectData.cs" />
     <Compile Include="Assets\1.Script\TalkCS\FadeEffCS.cs" />
     <Compile Include="Assets\1.Script\TalkCS\FlashEffCS.cs" />
     <Compile Include="Assets\1.Script\TalkCS\ReadCsvCS.cs" />
@@ -72,7 +75,12 @@
     <Compile Include="Assets\1.Script\TalkCS\UIShakingCS.cs" />
     <Compile Include="Assets\1.Script\TileMakerCS.cs" />
     <Compile Include="Assets\1.Script\TileMapDataCS.cs" />
+    <Compile Include="Assets\1.Script\TouchSysCS.cs" />
+    <Compile Include="Assets\1.Script\UIMgr.cs" />
+    <Compile Include="Assets\6.SaveData\SaveData.cs" />
     <Compile Include="Assets\Resources\CSVReader.cs" />
+    <Compile Include="Assets\Resources\Simple UI\Samples\IconPreview.cs" />
+    <None Include="Assets\Resources\Simple UI\Fonts\OFL.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/wjdwltn/Documents/GitHub/RevoltDay/Game_RevoltDay/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

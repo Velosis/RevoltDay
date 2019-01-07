@@ -61,8 +61,14 @@ public class TalkIndexCS : MonoBehaviour {
     public float _nextTextDaley; // 스크립트가 출력되는 속도
     private WaitForSeconds _nextTextDaleyWait;
 
+    private GameObject Fade_Eff;
+    private GameObject _flash_Eff;
+
     private FadeEffCS _fadeEffCS;
-    private FlashEffCS _flasgEffCS;
+    private FlashEffCS _flashEffCS;
+    private UIMgr _uIMgrCS;
+
+    public eSearchSelectType _eSearchSelectType;
 
     private void Awake()
     {
@@ -70,8 +76,14 @@ public class TalkIndexCS : MonoBehaviour {
 
         _Se = GameObject.Find("SoundMgr").GetComponent<AudioSource>();
         _Bgm = GameObject.Find("BgmMgr").GetComponent<AudioSource>();
-        _fadeEffCS = GameObject.Find("Fade_Eff").GetComponent<FadeEffCS>();
-        _flasgEffCS = GameObject.Find("Flash_Eff").GetComponent<FlashEffCS>();
+        Fade_Eff = GameObject.Find("Fade_Eff");
+        _flash_Eff = GameObject.Find("Flash_Eff");
+        Fade_Eff.SetActive(false);
+        _flash_Eff.SetActive(false);
+
+        _fadeEffCS = Fade_Eff.GetComponent<FadeEffCS>();
+        _flashEffCS = _flash_Eff.GetComponent<FlashEffCS>();
+        _uIMgrCS = GameObject.Find("UIMgr").GetComponent<UIMgr>();
 
         CGImg = GameObject.Find("CGImg");
         L_chacterImg = GameObject.Find("L_ChacterImg");
@@ -86,8 +98,30 @@ public class TalkIndexCS : MonoBehaviour {
     public void isSkipInput() { _TalkSkip = true; }
     public void isCutInput() { _TalkCut = true; }
 
+    public void deleteTalkDate()
+    {
+        // 데이터 초기화
+        _ShakingEffIndex.Clear();
+        _RedFlashIndex.Clear();
+        _WhiteFlashIndex.Clear();
+        _Wait.Clear();
+        _fadeIn.Clear();
+        _fadeOut.Clear();
+        _fadeQIn.Clear();
+        _fadeQOut.Clear();
+        _SoundIndex.Clear();
+        _BgmIndex.Clear();
+        _CGimgIndex.Clear();
+        _ShadowIndex.Clear();
+        _L_imgIndex.Clear();
+        _R_imgIndex.Clear();
+        _talkName.Clear();
+        _textIndex.Clear();
+    }
+
     public void startTalk()
     {
+        _textBox.text = "";
         _TalkSkip = false;
         _TalkCut = false;
         _fullText = _textIndex;
@@ -139,7 +173,10 @@ public class TalkIndexCS : MonoBehaviour {
             else yield return _nextTextDaleyWait;
         }
 
-        Debug.Log("대화 종료");
+        if (_eSearchSelectType == eSearchSelectType.Duel) _uIMgrCS.StartDuel();
+        else if (_eSearchSelectType == eSearchSelectType.Reasoning) _uIMgrCS.StartDuel();
+        else if (_eSearchSelectType == eSearchSelectType.Non) _uIMgrCS.EndTalk();
+        
     }
 
     public void ShadowSys(int talkValue)
@@ -253,8 +290,18 @@ public class TalkIndexCS : MonoBehaviour {
             return;
         }
 
-        if (_fadeIn[talkValue] != 0) StartCoroutine(_fadeEffCS.FadeIn(_fadeIn[talkValue]));
-        if (_fadeOut[talkValue] != 0) StartCoroutine(_fadeEffCS.FadeIn(_fadeOut[talkValue]));
+        if (_fadeIn[talkValue] != 0)
+        {
+            Fade_Eff.SetActive(true);
+            StartCoroutine(_fadeEffCS.FadeIn(_fadeIn[talkValue]));
+            Fade_Eff.SetActive(false);
+        }
+        if (_fadeOut[talkValue] != 0)
+        {
+            Fade_Eff.SetActive(true);
+            StartCoroutine(_fadeEffCS.FadeIn(_fadeOut[talkValue]));
+            Fade_Eff.SetActive(false);
+        }
     }
 
     public void ShakingSys(int talkVlaue)
@@ -275,14 +322,24 @@ public class TalkIndexCS : MonoBehaviour {
         if (!_RedFlashIndex[talkValue] &&
             !_WhiteFlashIndex[talkValue]) return;
 
-        if (_flasgEffCS._isFlashStart)
+        if (_flashEffCS._isFlashStart)
         {
             Debug.Log("falsgSys : 이미 실행 중 입니다.");
             return;
         }
 
-        if (_RedFlashIndex[talkValue]) StartCoroutine(_flasgEffCS.RedFlashIn(1.0f));
-        if (_WhiteFlashIndex[talkValue]) StartCoroutine(_flasgEffCS.WhiteFlashIn(1.0f));
+        if (_RedFlashIndex[talkValue])
+        {
+            _flash_Eff.SetActive(true);
+            StartCoroutine(_flashEffCS.RedFlashIn(1.0f));
+            _flash_Eff.SetActive(false);
+        }
+        if (_WhiteFlashIndex[talkValue])
+        {
+            _flash_Eff.SetActive(true);
+            StartCoroutine(_flashEffCS.WhiteFlashIn(1.0f));
+            _flash_Eff.SetActive(false);
+        }
     }
 }
 

@@ -1,0 +1,23 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,박정우,null,경위님! 지금 난리도 아닙니다! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,박정우,null,2천만원 상당의 아이들 로봇이 도난당했습니다! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,강원진,null,그쪽으로 출동하겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,mapia,0,강원진,null,"거기, 잠깐 협조좀 해주시겠습니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,mapia,0,범인,null,협조는 개뿔. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,mapia,0,범인,null,경찰이라고 봐준다거나 하지 않으니까 가만히 있어! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,

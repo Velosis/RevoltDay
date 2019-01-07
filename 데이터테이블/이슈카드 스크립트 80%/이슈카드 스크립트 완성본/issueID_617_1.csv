@@ -1,0 +1,10 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,1,박정우,null,"그, 경위님. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,1,박정우,null,개포동에서 나노치료제 시술 관련해서 조사를 갔는데 말이죠. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,1,박정우,null,제가 나름…혼자 해보려고 했는데 무서운 사람들이 많아서요. 그. 저 혼자는…….,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,2,강원진,null,제가 가 보겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,1.1,0,2,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,1.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang02,mapia,1,건달,null,누구 멋대로 수사 하겠다는거야? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,mapia,2,강원진,null,수사에 협조하지 않으신다면 강제 집행이 이루어 질 수 밖에 없습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

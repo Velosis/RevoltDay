@@ -1,0 +1,11 @@
+﻿eventID_Index,playType_Index,clueToken_Index,eventTile_Index,currEventID_Index,nextEventID_Index,selectIcon_Index,settingTile_Index,talkScene_Index,duel_Index,reasoning_Index
+0,gameStart,0,0,0,1,null,0,sceneID_1,null,null
+1,null,0,0,1,2,null,0,null,null,reasoningID_1
+2,null,0,0,2,3,null,0,sceneID_2,null,null
+3,null,0,0,3,4,null,0,sceneID_4,null,null
+4,null,0,0,4,5,null,0,sceneID_5,null,null
+5,null,0,0,5,6,null,0,sceneID_6,null,null
+6,null,0,0,6,7,PlayerIcon,1,null,null,null
+7,tile,0,7,7,8,null,0,sceneID_8,null,null
+8,null,0,0,8,9,PlayerIcon,1,null,null,null
+9,token,2,9,9,10,null,0,sceneID_10,null,null
