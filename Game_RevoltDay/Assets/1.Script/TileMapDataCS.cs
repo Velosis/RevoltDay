@@ -14,7 +14,7 @@ public class TileMapDataCS : MonoBehaviour {
     public GameObject _IssueImgGO;
     public GameObject _CrimeImgGO;
     public GameObject _SafetyImgGO;
-    private float _SafetyValue;
+    public float _SafetyValue;
     public GameObject _SafetyEffImgGO;
 
     public bool _isSafetyEff;
@@ -59,7 +59,7 @@ public class TileMapDataCS : MonoBehaviour {
 
         if (!_isBlockade && !_uIMgrCS._isIssueEvent && Random.Range(0, 100) <= 20 && _playerData.GetComponent<PlayerInfoCS>()._currTrunPoint >= 3)
         {
-            Debug.Log("_isBlockade : " + _isBlockade.ToString());
+            Debug.Log("타일 업데이트_isBlockade : " + _isBlockade);
             _tileMapList[Random.Range(0, _tileMapList.Count)].GetComponent<TileMapDataCS>().setIssueEvent();
         }
     }
@@ -80,12 +80,12 @@ public class TileMapDataCS : MonoBehaviour {
         _uIMgrCS._isIssueEvent = false;
         isIssue(false);
 
-        if (_isBlockade) _SafetyValue = 0.0f;
+        _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value = _SafetyValue = 0.0f;
     }
 
     private bool SafetyCheck()
     {
-        return (_SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value > 0.0f);
+        return (_SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value != 0.0f);
     }
 
     private void Update()
@@ -110,6 +110,7 @@ public class TileMapDataCS : MonoBehaviour {
 
             yield return null;
         }
+        _SafetyEffImgGO.SetActive(false);
 
         _isSafetyEff = false;
     }
