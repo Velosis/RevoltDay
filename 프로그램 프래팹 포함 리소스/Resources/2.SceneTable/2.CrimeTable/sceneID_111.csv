@@ -1,0 +1,40 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+suitman,Yu01,1,유구현,null,전면적으로 부인합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,Yu01,1,유구현,null,전 청렴한 생활을 살아왔습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,Yu01,1,유구현,null,"뇌물수수는 억지에 불과하며, 이는 음모의 일부라고 생각합니다.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,Haam02,2,판사,null,피고 함정임도 같은 생각입니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,Haam02,1,함정임,null,유구현 청장님과는 그 어떠한 일면식도 없습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,Haam02,1,함정임,null,판사님. 이는 유구현 청장이 말한 것 처럼 정계에서 자신들의 입맛대로 우릴 움직이기 위한 술수입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,null,0,판사,null,"네, 잘 들었습니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,null,0,판사,null,최종 판결을 내리겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,유구현 청장 징역 25년. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,함정임 대표. 징역 40년 선고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,언젠가는 돌아오는 게 당연하다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,특별사면으로 풀려날 지도 모른다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"하지만, 그들의 검거는 사회에 큰 파장을 불러 일으켰다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"강원진, 아니, 아담과 나는 수많은 사람들이 지나가는 도로한 복판에서 두 사람의 선고 장면을 건물 위 홀로그램TV를 통해 바라보았다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,어쩌면 이 싸움은 끝이 아닐지도 모른다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"나는, 아직도 인간에 대한 불신을 갖고 있다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"하지만, 나는 다시 지켜보려 한다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,인간들이 얼마나 바뀌어갈지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"정말로, 모두가 행복한 세상이 다가올지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,돈으로 모든 것을 해결하는 세상에서 벗어날지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,지켜볼 생각이다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,그게 내 아버지의 부탁이었으니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,길을 걷는다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,아담은 길거리를 거니는 인간들처럼 내 손을 꼭 붙잡아주었다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"어떠한 감정을 느끼고 있다는 것을 자각하고 있지만, 이게 무슨 감정인지는…사실 모르겠다.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"그래도 난, 인간처럼 살아보려한다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,인간은 기계와 다르지 않다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"하지만, 우린 인간과는 다르다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,기계처럼 차가운 감정으로 부딪히는 시대가 저물면. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,그때는 비로서 나는 인간이라는 사람들을 온전히 이해할 수 있을 거라고 생각한다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,모든 과정을 아담과 지켜보려한다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

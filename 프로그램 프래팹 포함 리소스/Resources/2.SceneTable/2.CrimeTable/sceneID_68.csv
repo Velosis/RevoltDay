@@ -1,0 +1,4 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang03,null,0,강원진,null,…함정임의 위기라. 이지은 경위에게 말해야하는 걸까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,강원진,null,아니야. 내 선에서 해결해야해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

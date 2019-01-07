@@ -1,0 +1,33 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,023.daechidongOffice,null,null,08.Night_Theme,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,1,이지은,null,자료는 전부 정리했어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,어제의 자료만 있었더라도 더 명확하게 잡을 수 있었을텐데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,아무 말 없는 거 보니 원진씨는 아쉽지도 않은 걸까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,2,강원진,null,이지은 경위님. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,2,강원진,null,이 자료를 유구현 청장님께 건네면 안 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,1,이지은,null,"갑자기 무슨 헛소리를 하는 걸까, 원진씨는. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,2,강원진,null,모르겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,2,강원진,null,권력층의 이해 관계를 알 방도가 없습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,2,강원진,null,청장님이 이 자료를 토대로 함정임을 구속할 수도 있습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,2,강원진,null,"하지만, 반대로 이 자료를 소각할 수도 있습니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,2,강원진,null,막아야합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,그거 알아? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"원진씨, 이전이랑 많이 달라졌어. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"딱딱하고 기계적인 모습이었는데, 이젠 사고라는 걸 좀 하더라고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"그래서일까, 난 원진씨한테 마음이 가. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,원진씨도 그렇지 않을까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,2,강원진,null,전 아무런 감정을 느끼고 있지 않습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,2,강원진,null,이지은 경위님. 절 혼란스럽게 하지 말아주십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,난 원진씨를 믿어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,그렇다면 어떻게 할까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,원진씨는 이 자료를 우리가 따로 공개하는 게 맞다고 생각하는걸까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,2,강원진,null,그게 더 좋은 판단이라 생각 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,원진씨의 생각이 얼마나 위험한건지는 알까 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,청장님을 상대하기엔 우리가 너무 작다는 생각은 안 하는 걸까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"원진씨의 걱정은 알 거 같기도 한데, 청장님은 이걸로 함정임과 관계를 끊을 생각이라는 걸 모르는 걸까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,2,강원진,null,이지은 경위님은 알고 있었던 겁니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"글쎄, 난 할말이 없는 것 같네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"난 청장님께 이 자료를 드릴테니, 원진씨는 원진씨 나름대로의 판단을 하는 게 좋지 않을지 모르겠네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

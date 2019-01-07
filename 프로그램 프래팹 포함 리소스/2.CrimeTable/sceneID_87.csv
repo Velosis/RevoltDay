@@ -1,0 +1,16 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,006.Smith,null,null,10.They_Might_Not,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,이를 어쩌나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,경찰들의 내 방에 진입하고 있는 모양이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,"아마, 저 놈들 손에 잡히면 강원진 형사나 나나 둘 다 뒤지는 거겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,"자, 힌트 하나 던져주지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,재미란 재미는 다 봤으니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,집에 가면서 곰곰히 잘 생각해봐. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,우리 모두를 갖고 노는 자가 과연 누구인지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,2,강원진,null,심증만 있을 뿐입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,2,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,그 심증이라도 잘 이용해 보시든지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,빨리 안 빠져나가면 다 죽어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,2,강원진,null,살아서 만나길 빌겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,05.run,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
