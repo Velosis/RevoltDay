@@ -1,23 +1,12 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,°æÀ§´Ô! Å« ÀÏÀÔ´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,°æÇÑ±â¾÷ ÁöÇÏ ÁÖÂ÷Àå¿¡ ³ª³ë ÆøÅº Å×·¯°¡ ÀÏ¾î³µ½À´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,"°æÇÑ±â¾÷Ãø¿¡¼­ Á¶»ç¸¦ ÇØ´Ş¶ó´Âµ¥, µµÅë ¹«¼­¿ö¼­¡¦¡¦. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,°­¿øÁø,null,"¡¦¾Æ, ¿¹. Á¦°¡ °¡º¸°Ú½À´Ï´Ù. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ê²½ìœ„ë‹˜! í° ì¼ì…ë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ê²½í•œê¸°ì—… ë¶€ì„¤ ì§€í•˜ ì£¼ì°¨ì¥ì— ë‚˜ë…¸ í­íƒ„ í…ŒëŸ¬ê°€ ì¼ì–´ë‚¬ìŠµë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,"ê²½í•œê¸°ì—…ì¸¡ì—ì„œ ì¡°ì‚¬ë¥¼ í•´ë‹¬ë¼ëŠ”ë°, ë„í†µ ë¬´ì„œì›Œì„œâ€¦â€¦. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,ê°•ì›ì§„,null,"â€¦ì•„, ì˜ˆ. ì œê°€ ê°€ë³´ê² ìŠµë‹ˆë‹¤. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,3,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,1.1,2,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,32.Attack2,null,2,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,42.pihada,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,revoltman,1,½ÃÀ§´ë,null,°æÂûµµ ¿ª½Ã °æÇÑÀÌ¶û ÇÑ ÆĞ¿´±¸¸¸! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,revoltman,1,½ÃÀ§´ë,null,"¿ì¸®ÀÇ °Å»ç¸¦ ¹æÇØÇÒ »ı°¢ÀÌ°Åµç, ½â ²¨Á®! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
+gang02,revoltman,1,ì‹œìœ„ëŒ€,null,ê²½ì°°ë„ ì—­ì‹œ ê²½í•œì´ë‘ í•œ íŒ¨ì˜€êµ¬ë§Œ! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,revoltman,1,ì‹œìœ„ëŒ€,null,"ìš°ë¦¬ì˜ ê±°ì‚¬ë¥¼ ë°©í•´í•  ìƒê°ì´ê±°ë“ , ì© êº¼ì ¸! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

@@ -1,12 +1,12 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,¹ÚÁ¤¿ì,null,°æÀ§´Ô! Áö±İ ³­¸®µµ ¾Æ´Õ´Ï´Ù! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,¹ÚÁ¤¿ì,null,2Ãµ¸¸¿ø »ó´çÀÇ ¾ÆÀÌµé ·Îº¿ÀÌ µµ³­´çÇß½À´Ï´Ù! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,°­¿øÁø,null,±×ÂÊÀ¸·Î Ãâµ¿ÇÏ°Ú½À´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,ë°•ì •ìš°,null,ê²½ìœ„ë‹˜! ì§€ê¸ˆ ë‚œë¦¬ë„ ì•„ë‹™ë‹ˆë‹¤! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,ë°•ì •ìš°,null,2ì²œë§Œì› ìƒë‹¹ì˜ ì•„ì´ë“¤ ë¡œë´‡ì´ ë„ë‚œë‹¹í–ˆìŠµë‹ˆë‹¤! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,ê°•ì›ì§„,null,ê·¸ìª½ìœ¼ë¡œ ì¶œë™í•˜ê² ìŠµë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,mapia,0,°­¿øÁø,null,"°Å±â, Àá±ñ ÇùÁ¶Á» ÇØÁÖ½Ã°Ú½À´Ï±î. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,mapia,0,¹üÀÎ,null,ÇùÁ¶´Â °³»Ô. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,mapia,0,¹üÀÎ,null,°æÂûÀÌ¶ó°í ºÁÁØ´Ù°Å³ª ÇÏÁö ¾ÊÀ¸´Ï±î °¡¸¸È÷ ÀÖ¾î! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,mapia,0,ê°•ì›ì§„,null,"ê±°ê¸°, ì ê¹ í˜‘ì¡°ì¢€ í•´ì£¼ì‹œê² ìŠµë‹ˆê¹Œ. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,mapia,0,ë²”ì¸,null,í˜‘ì¡°ëŠ” ê°œë¿”. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,mapia,0,ë²”ì¸,null,ê²½ì°°ì´ë¼ê³  ë´ì¤€ë‹¤ê±°ë‚˜ í•˜ì§€ ì•Šìœ¼ë‹ˆê¹Œ ê°€ë§Œíˆ ìˆì–´! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,

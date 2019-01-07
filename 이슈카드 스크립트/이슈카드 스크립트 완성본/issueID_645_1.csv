@@ -1,5 +1,5 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,07.Ladybug,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,1,°­¼Ò¿ø,null,"¿©, ¿À¼Ì½À´Ï±î. Ãæ¼º Ãæ¼º.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,2,°­¿øÁø,null,ÀÌ¹ø¿¡´Â ¹ÙÀÌ¿ÀÄ¨ Âø¿ëÀÚµéÀÌ ¹®Á¦±º¿ä.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,1,°­¼Ò¿ø,null,»¡¸® ºÎÅ¹µå¸³´Ï´Ù. Åğ±ÙÇÏ°Ô.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Wish01,1,ê°•ì†Œì›,null,"ì—¬, ì˜¤ì…¨ìŠµë‹ˆê¹Œ. ì¶©ì„± ì¶©ì„±.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Wish01,2,ê°•ì›ì§„,null,ì´ë²ˆì—ëŠ” ë°”ì´ì˜¤ì¹© ì°©ìš©ìë“¤ì´ ë¬¸ì œêµ°ìš”.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Wish01,1,ê°•ì†Œì›,null,ë¹¨ë¦¬ ë¶€íƒë“œë¦½ë‹ˆë‹¤. í‡´ê·¼í•˜ê²Œ.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

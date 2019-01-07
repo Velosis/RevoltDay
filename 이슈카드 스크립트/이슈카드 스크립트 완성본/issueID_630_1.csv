@@ -1,15 +1,15 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,°æÀ§´Ô! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,¸ğÂîÄÚÀÎÀÌ ±Ş¶ôÇß´ä´Ï´Ù! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,"150Àº ³ÖÀº °Å °°Àºµ¥, ¸ÁÇØ¹ö·È³×¿ä. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,´ë±â¾÷ÀÇ À½¸ğ °°½À´Ï´Ù. ¾È ±×·¸½À´Ï±î? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,°­¿øÁø,null,"ÀÏÀÌ ´õ Ä¿Áö±â Àü¿¡ ÇØ°áÇØ´Ş¶ó, ±× ¸»¾¸ÀÌ½Ê´Ï±î? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,¿ª½Ã °æÀ§´Ô! ´«Ä¡°¡ ºü¸£½Ê´Ï´Ù! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,,null,¡¦¡¦. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ê²½ìœ„ë‹˜! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ëª¨ì°Œì½”ì¸ì´ ê¸‰ë½í–ˆë‹µë‹ˆë‹¤! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,"150ì€ ë„£ì€ ê±° ê°™ì€ë°, ë§í•´ë²„ë ¸ë„¤ìš”. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ëŒ€ê¸°ì—…ì˜ ìŒëª¨ ê°™ìŠµë‹ˆë‹¤. ì•ˆ ê·¸ë ‡ìŠµë‹ˆê¹Œ? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,ê°•ì›ì§„,null,"ì¼ì´ ë” ì»¤ì§€ê¸° ì „ì— í•´ê²°í•´ë‹¬ë¼, ê·¸ ë§ì”€ì´ì‹­ë‹ˆê¹Œ? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ì—­ì‹œ ê²½ìœ„ë‹˜! ëˆˆì¹˜ê°€ ë¹ ë¥´ì‹­ë‹ˆë‹¤! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,,null,â€¦â€¦. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,null,0,°­¿øÁø,null,Æø¶ôÀÌ¶ó. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,ê°•ì›ì§„,null,í­ë½ì´ë¼. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,

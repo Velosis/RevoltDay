@@ -1,10 +1,10 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang02,police,1,¹ÚÁ¤¿ì,null,"±×, °æÀ§´Ô. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,police,1,¹ÚÁ¤¿ì,null,°³Æ÷µ¿¿¡¼­ ³ª³ëÄ¡·áÁ¦ ½Ã¼ú °ü·ÃÇØ¼­ Á¶»ç¸¦ °¬´Âµ¥ ¸»ÀÌÁÒ. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,police,1,¹ÚÁ¤¿ì,null,Á¦°¡ ³ª¸§¡¦È¥ÀÚ ÇØº¸·Á°í Çß´Âµ¥ ¹«¼­¿î »ç¶÷µéÀÌ ¸¹¾Æ¼­¿ä. ±×. Àú È¥ÀÚ´Â¡¦¡¦.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,police,2,°­¿øÁø,null,Á¦°¡ °¡ º¸°Ú½À´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,1,ë°•ì •ìš°,null,"ê·¸, ê²½ìœ„ë‹˜. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,1,ë°•ì •ìš°,null,ë‚˜ë…¸ì¹˜ë£Œì œ ì‹œìˆ  ê´€ë ¨í•´ì„œ ì¡°ì‚¬ë¥¼ ê°”ëŠ”ë° ë§ì´ì£ . ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,1,ë°•ì •ìš°,null,ì œê°€ ë‚˜ë¦„â€¦í˜¼ì í•´ë³´ë ¤ê³  í–ˆëŠ”ë° ë¬´ì„œìš´ ì‚¬ëŒë“¤ì´ ë§ì•„ì„œìš”. ê·¸. ì € í˜¼ìëŠ”â€¦â€¦.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,2,ê°•ì›ì§„,null,ì œê°€ ê°€ ë³´ê² ìŠµë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,1.1,0,2,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,1.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang02,mapia,1,°Ç´Ş,null,´©±¸ ¸Ú´ë·Î ¼ö»ç ÇÏ°Ú´Ù´Â°Å¾ß? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,mapia,2,°­¿øÁø,null,¼ö»ç¿¡ ÇùÁ¶ÇÏÁö ¾ÊÀ¸½Å´Ù¸é °­Á¦ ÁıÇàÀÌ ÀÌ·ç¾î Áú ¼ö ¹Û¿¡ ¾ø½À´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,mapia,1,ê±´ë‹¬,null,ëˆ„êµ¬ ë©‹ëŒ€ë¡œ ìˆ˜ì‚¬ í•˜ê² ë‹¤ëŠ”ê±°ì•¼? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,mapia,2,ê°•ì›ì§„,null,ìˆ˜ì‚¬ì— í˜‘ì¡°í•˜ì§€ ì•Šìœ¼ì‹ ë‹¤ë©´ ê°•ì œ ì§‘í–‰ì´ ì´ë£¨ì–´ ì§ˆ ìˆ˜ ë°–ì— ì—†ìŠµë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

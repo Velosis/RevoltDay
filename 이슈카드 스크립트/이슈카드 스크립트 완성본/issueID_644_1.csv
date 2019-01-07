@@ -1,10 +1,10 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,07.Ladybug,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang02,Wish01,1,°­¼Ò¿ø,null,"¿©, °æÀ§´Ô. Ãæ¼º,Ãæ¼º.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Wish01,2,°­¿øÁø,null,½ÃÀ§´ë¸¦ ÇØ»ê½ÃÄÑ¾ßÇÏ´Â °Ì´Ï±î.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Wish01,1,°­¼Ò¿ø,null,º¸¸é ¸ô¶ó¿ä?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Wish01,1,°­¼Ò¿ø,null,"³­ ±ÍÂúÀ¸´Ï±î, °æÀ§´ÔÀÌ ¾Ë¾Æ¼­ ÇÏ¼¼¿ä.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Wish01,1,ê°•ì†Œì›,null,"ì—¬, ê²½ìœ„ë‹˜. ì¶©ì„±,ì¶©ì„±.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Wish01,2,ê°•ì›ì§„,null,ì‹œìœ„ëŒ€ë¥¼ í•´ì‚°ì‹œì¼œì•¼í•˜ëŠ” ê²ë‹ˆê¹Œ.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Wish01,1,ê°•ì†Œì›,null,ë³´ë©´ ëª°ë¼ìš”?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Wish01,1,ê°•ì†Œì›,null,"ë‚œ ê·€ì°®ìœ¼ë‹ˆê¹Œ, ê²½ìœ„ë‹˜ì´ ì•Œì•„ì„œ í•˜ì„¸ìš”.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,revoltman,1,½ÃÀ§´ë,null,"°æÂûÀÌ¶ó´Â ÀÛÀÚ°¡, °ø±Ç·Â¿¡ ±â´ë´Ù´Ï.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,revoltman,1,½ÃÀ§´ë,null,¿ì¸®°¡ ¿Ö ÀÏ¾î³µ´ÂÁö ¸ğ¸£½Ã¿À?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,revoltman,2,°­¿øÁø,null,¾îÂ¿ ¼ö ¾ø½À´Ï´Ù. Àúµµ ¿øÄ¡ ¾Ê´Â »óÈ²ÀÔ´Ï´Ù.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,revoltman,1,ì‹œìœ„ëŒ€,null,"ê²½ì°°ì´ë¼ëŠ” ì‘ìê°€, ê³µê¶Œë ¥ì— ê¸°ëŒ€ë‹¤ë‹ˆ.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,revoltman,1,ì‹œìœ„ëŒ€,null,ìš°ë¦¬ê°€ ì™œ ì¼ì–´ë‚¬ëŠ”ì§€ ëª¨ë¥´ì‹œì˜¤?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,revoltman,2,ê°•ì›ì§„,null,ì–´ì©” ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ì €ë„ ì›ì¹˜ ì•ŠëŠ” ìƒí™©ì…ë‹ˆë‹¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

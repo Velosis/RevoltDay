@@ -1,3 +1,3 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-gang01,Wish01,1,°­¼Ò¿ø,City,"Åğ±ÙÀÌ³×, Åğ±Ù~.",null,07.Ladybug,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,2,°­¿øÁø,null,¼ö°íÇÏ½Ê½Ã¿À.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang01,Wish01,1,ê°•ì†Œì›,City,"í‡´ê·¼ì´ë„¤, í‡´ê·¼~.",null,07.Ladybug,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Wish01,2,ê°•ì›ì§„,null,ìˆ˜ê³ í•˜ì‹­ì‹œì˜¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

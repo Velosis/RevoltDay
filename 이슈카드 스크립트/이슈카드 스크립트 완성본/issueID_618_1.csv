@@ -1,8 +1,8 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,"°æÀ§´Ô, °æÀ§´Ô! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,°­¿øÁø,null,¡¦¸»¾¸ÇÏ½Ê½Ã¿À. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,¼øÂû ·Îº¿µé ÀÖÀİ½À´Ï±î.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,"ºÎÇ°ÀÌ µµ³­´çÇÏ´Â »ç°ÇÀÌ Á», ÀÚÁÖ ¹ß»ıÇÏÀİ¾Æ¿ä. ±×Ãİ? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,¾î¶»°Ôµç È¥ÀÚ ¼ö»çÇØº¸·Á°í Çß´Âµ¥. ÀÌ°Ô Á» ¹«¼­¿ö¼­¿ä. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,°­¿øÁø,null,"¡¦¿¹, ¾Ë¾Ò½À´Ï´Ù. Á¦°¡ µµ¿Íµå¸®°Ú½À´Ï´Ù. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,"ê²½ìœ„ë‹˜, ê²½ìœ„ë‹˜! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,ê°•ì›ì§„,null,â€¦ë§ì”€í•˜ì‹­ì‹œì˜¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ìˆœì°° ë¡œë´‡ë“¤ ìˆì–ìŠµë‹ˆê¹Œ.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,"ë¶€í’ˆì´ ë„ë‚œë‹¹í•˜ëŠ” ì‚¬ê±´ì´ ì¢€, ìì£¼ ë°œìƒí•˜ì–ì•„ìš”. ê·¸ìµ¸? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ì–´ë–»ê²Œë“  í˜¼ì ìˆ˜ì‚¬í•´ë³´ë ¤ê³  í–ˆëŠ”ë°. ì´ê²Œ ì¢€ ë¬´ì„œì›Œì„œìš”. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,ê°•ì›ì§„,null,"â€¦ì˜ˆ, ì•Œì•˜ìŠµë‹ˆë‹¤. ì œê°€ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

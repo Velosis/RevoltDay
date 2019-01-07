@@ -1,15 +1,15 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,¹ÚÁ¤¿ì,null,°æÀ§´Ô! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,°­¿øÁø,null,¶Ç ¹«½¼ ÀÏÀÔ´Ï±î. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,¹ÚÁ¤¿ì,null,½Å¼¼´ë ¹ÙÀÌ¿ÀÄ¨ÀÌ ¹ßÇ¥µÈ °Å ¾Æ½Ê´Ï±î? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,¹ÚÁ¤¿ì,null,"±Ùµ¥, ¼º´É¸é¿¡¼­ Á» ¹®Á¦°¡ ÀÖ´Ù³×¿ä. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,¹ÚÁ¤¿ì,null,"°©ÀÚ±â ½Ç½ÅÇÑ´Ù´ø°¡, ÇÏ´Âµ¥ ÀÌ ÂÊ¿¡¼­ µ¤°í ÀÖ´Ù°í. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,°­¿øÁø,null,¼ö»çÇØº¸°Ú½À´Ï´Ù.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,ë°•ì •ìš°,null,ê²½ìœ„ë‹˜! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,ê°•ì›ì§„,null,ë˜ ë¬´ìŠ¨ ì¼ì…ë‹ˆê¹Œ. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,ë°•ì •ìš°,null,ì‹ ì„¸ëŒ€ ë°”ì´ì˜¤ì¹©ì´ ë°œí‘œëœ ê±° ì•„ì‹­ë‹ˆê¹Œ? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,ë°•ì •ìš°,null,"ê·¼ë°, ì„±ëŠ¥ë©´ì—ì„œ ì¢€ ë¬¸ì œê°€ ìˆë‹¤ë„¤ìš”. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,ë°•ì •ìš°,null,"ê°‘ìê¸° ì‹¤ì‹ í•œë‹¤ë˜ê°€, í•˜ëŠ”ë° ì´ ìª½ì—ì„œ ë®ê³  ìˆë‹¤ê³ . ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,0,ê°•ì›ì§„,null,ìˆ˜ì‚¬í•´ë³´ê² ìŠµë‹ˆë‹¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,null,0,°­¿øÁø,null,°æÂûÀÔ´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,mapia,0,Á¦Á¶¾÷ÀÚ,null,¼ö»ç¿¡ ÇùÁ¶ÇØÁÖ¼Å¾ß°Ú½À´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,mapia,0,Á¦Á¶¾÷ÀÚ,null,¿ì¸° ¾Æ¹« Àß¸øÇÑ °Ô ¾ø´Ù´Ï±î¿ä? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,ê°•ì›ì§„,null,ê²½ì°°ì…ë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,mapia,0,ì œì¡°ì—…ì,null,ìˆ˜ì‚¬ì— í˜‘ì¡°í•´ì£¼ì…”ì•¼ê² ìŠµë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,mapia,0,ì œì¡°ì—…ì,null,ìš°ë¦° ì•„ë¬´ ì˜ëª»í•œ ê²Œ ì—†ë‹¤ë‹ˆê¹Œìš”? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,

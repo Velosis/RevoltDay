@@ -1,8 +1,8 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-gang01,police,2,°­¿øÁø,City,¹ÚÁ¤¿ì °æÀå´Ô. ,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,°­¿øÁø,null,ÀÌ ºĞµéÀ» ÀüºÎ ¼­·Î ¿¬ÇàÇØÁÖ½Ê½Ê¿À. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,°°ÀÌ °¡´Ù°¡ ¸Â´Â °Ç ¾Æ´Ï°ÚÁÒ¡¦¡¦? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,police,2,°­¿øÁø,null,¡¦¡¦¡¦¡¦¡¦. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang01,police,2,ê°•ì›ì§„,City,ë°•ì •ìš° ê²½ì¥ë‹˜. ,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,ê°•ì›ì§„,null,ì´ ë¶„ë“¤ì„ ì „ë¶€ ì„œë¡œ ì—°í–‰í•´ì£¼ì‹­ì‹­ì˜¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ê°™ì´ ê°€ë‹¤ê°€ ë§ëŠ” ê±´ ì•„ë‹ˆê² ì£ â€¦â€¦? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,2,ê°•ì›ì§„,null,â€¦â€¦â€¦â€¦â€¦. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,

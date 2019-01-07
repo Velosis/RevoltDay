@@ -1,23 +1,11 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-gang01,police,1,¹ÚÁ¤¿ì,City,°æÀ§´ÏÀÓ! ,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,³íÇöµ¿ ¼º¼³±×·ìÀÌ ¿î¿µÇÏ´Â º¸À°¿ø¿¡¼­ ¾ÖµéÀÌ »ç¶óÁ³ ´ÙÁö ¹¼´Ï±î! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,¼ö»çÇß´Ù°¡ Àú±îÁö »ç¶óÁú±îºÁ ¹«¼·½À´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,¹ÚÁ¤¿ì,null,°æÀ§´Ô ¼ÕÀ» ºô·Á¾ß ÇÒ °Í °°Àºµ¥¡¦¡¦. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,°­¿øÁø,null,Á¦°¡ °¡º¸°Ú½À´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,°­¿øÁø,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,°­¿øÁø,null,null,null,null,0,1.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,null,0,°­¿øÁø,null,°æÂûÀÔ´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,null,0,°­¿øÁø,null,±Ù·¡ ¹ß»ıÇÑ ½ÇÁ¾»ç°Ç¿¡ ´ëÇØ Á¶»çÇÏ·¯ ¿Ô½À´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,null,0,º¸À°¿ø ±³»ç,null,ºÎÅ¹µå¸±°Ô¿ä. ºÎµğ ¾ÖµéÀÌ µ¹¾Æ¿Í¾ß ÇÒÅÙµ¥. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang01,police,1,ë°•ì •ìš°,City,ê²½ìœ„ë‹ˆì„! ,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ë³´ìœ¡ì›ì—ì„œ ì• ë“¤ì´ ì‚¬ë¼ì¡Œë‹¤ì§€ ë­¡ë‹ˆê¹Œ! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ìˆ˜ì‚¬í–ˆë‹¤ê°€ ì €ê¹Œì§€ ì‚¬ë¼ì§ˆê¹Œë´ ë¬´ì„­ìŠµë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,ë°•ì •ìš°,null,ê²½ìœ„ë‹˜ ì†ì„ ë¹Œë ¤ì•¼ í•  ê²ƒ ê°™ì€ë°â€¦â€¦. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,ê°•ì›ì§„,null,ì œê°€ ê°€ë³´ê² ìŠµë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,ê°•ì›ì§„,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,ê°•ì›ì§„,null,null,null,null,0,1.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,ê°•ì›ì§„,null,ê²½ì°°ì…ë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,ê°•ì›ì§„,null,ê·¼ë˜ ë°œìƒí•œ ì‹¤ì¢…ì‚¬ê±´ì— ëŒ€í•´ ì¡°ì‚¬í•˜ëŸ¬ ì™”ìŠµë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,ë³´ìœ¡ì› êµì‚¬,null,ë¶€íƒë“œë¦´ê²Œìš”. ë¶€ë”” ì• ë“¤ì´ ëŒì•„ì™€ì•¼ í• í…ë°. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
