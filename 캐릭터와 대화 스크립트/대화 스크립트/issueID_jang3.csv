@@ -1,0 +1,12 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang02,Zhang01,1,미스터 장,City,이런 곳까지 납셨네?,null,04.Gonne,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,2,강원진,null,"제게 관할받은 구역이 강남구인지라, 어쩔 수 없는 경우같습니다.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,물 좋고 공기 나쁜 강남구에서.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,나랑 고스톱하지 않을래?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,2,강원진,null,할 줄 모릅니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,내가 가르쳐 주면 되잖아?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,돈 안 받을게.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,대신 돈은 걸어야하고.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,이게 자본주의의 법칙이야.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,2,강원진,null,사양하겠습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,1,미스터 장,null,너무하는구만.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

@@ -1,0 +1,23 @@
+L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang01,police,1,박정우,City,경위니임! ,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,논현동 성설그룹이 운영하는 보육원에서 애들이 사라졌 다지 뭡니까! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,수사했다가 저까지 사라질까봐 무섭습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,경위님 손을 빌려야 할 것 같은데……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,강원진,null,제가 가보겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,강원진,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,강원진,null,null,null,null,0,1.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,강원진,null,경찰입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,강원진,null,근래 발생한 실종사건에 대해 조사하러 왔습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,보육원 교사,null,부탁드릴게요. 부디 애들이 돌아와야 할텐데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
