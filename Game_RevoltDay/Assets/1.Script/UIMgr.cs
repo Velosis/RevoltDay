@@ -114,6 +114,11 @@ public class UIMgr : MonoBehaviour {
         yield return null;
     }
 
+    public void isOnOff (GameObject isUIGo)
+    {
+        isUIGo.SetActive(!isUIGo.activeSelf);
+    }
+
     private void IssueTableRead()
     {
         List<Dictionary<string, object>> date = CSVReader.Read("2.SceneTable/IssueTable");
