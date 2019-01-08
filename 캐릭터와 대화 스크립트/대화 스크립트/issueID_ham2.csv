@@ -1,14 +1,14 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-gang01,Haam01,0,ÇÔÁ¤ÀÓ,City,»ç°Ç ¼ö»ç´Â Àß µÇ°¡°í ÀÖ³ª¿ä?,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam01,0,°­¿øÁø,null,´öºĞ¿¡ »ç°Ç ÇØ°á¿¡ ³­È²À» °Ş°í ÀÖ½À´Ï´Ù.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam01,0,ÇÔÁ¤ÀÓ,null,Àú´Â ¾Æ¹« °Íµµ ÇÑ °Ô ¾ø´ä´Ï´Ù.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam01,0,ÇÔÁ¤ÀÓ,null,°­¿øÁø °æÀ§´Ô? ¸»ÀÌ¶ó´Â °Ç Ç×»ó Á¶½ÉÇØ¾ß ÇÏ´Â °Å¶ø´Ï´Ù.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam01,0,°­¿øÁø,null,¾ğÁ¨°¡´Â ´ÜÁË¹ŞÀ» °Ì´Ï´Ù.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam01,0,ÇÔÁ¤ÀÓ,null,ÀÌ·±- ¼·¼·ÇØ¶ó.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam01,0,ÇÔÁ¤ÀÓ,null,"½Ä»çµµ ¸ø ÇÏ½Ã´Â °Å °°Àºµ¥, µµ¿òÀÌ¶óµµ µÉ±î ÇØ¼­.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam01,0,ÇÔÁ¤ÀÓ,null,"ÀÚ, ¿ëµ·ÀÌ¶ø´Ï´Ù. ÀÌ¿Õ µ¹¾Æ´Ù´Ï½Ã´Â°Å, ½Ä»ç¶óµµ µçµçÈ÷ ÇÏ¼Å¾ßÁö¿ä.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang01,Haam01,0,í•¨ì •ì„,City,ì‚¬ê±´ ìˆ˜ì‚¬ëŠ” ì˜ ë˜ê°€ê³  ìˆë‚˜ìš”?,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,0,ê°•ì›ì§„,null,ë•ë¶„ì— ì‚¬ê±´ í•´ê²°ì— ë‚œí™©ì„ ê²ªê³  ìˆìŠµë‹ˆë‹¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,0,í•¨ì •ì„,null,ì €ëŠ” ì•„ë¬´ ê²ƒë„ í•œ ê²Œ ì—†ë‹µë‹ˆë‹¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,0,í•¨ì •ì„,null,ê°•ì›ì§„ ê²½ìœ„ë‹˜? ë§ì´ë¼ëŠ” ê±´ í•­ìƒ ì¡°ì‹¬í•´ì•¼ í•˜ëŠ” ê±°ëë‹ˆë‹¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,0,ê°•ì›ì§„,null,ì–¸ì  ê°€ëŠ” ë‹¨ì£„ë°›ì„ ê²ë‹ˆë‹¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,0,í•¨ì •ì„,null,ì´ëŸ°- ì„­ì„­í•´ë¼.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,0,í•¨ì •ì„,null,"ì‹ì‚¬ë„ ëª» í•˜ì‹œëŠ” ê±° ê°™ì€ë°, ë„ì›€ì´ë¼ë„ ë ê¹Œ í•´ì„œ.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,0,í•¨ì •ì„,null,"ì, ìš©ëˆì´ëë‹ˆë‹¤. ì´ì™• ëŒì•„ë‹¤ë‹ˆì‹œëŠ”ê±°, ì‹ì‚¬ë¼ë„ ë“ ë“ íˆ í•˜ì…”ì•¼ì§€ìš”.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Haam01,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam01,1,ÇÔÁ¤ÀÓ,null,"±×·³, ¼ö°íÇÏ½Ã±æ ¹Ù¶ö°Ô¿ä?",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,1,í•¨ì •ì„,null,"ê·¸ëŸ¼, ìˆ˜ê³ í•˜ì‹œê¸¸ ë°”ë„ê²Œìš”?",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,

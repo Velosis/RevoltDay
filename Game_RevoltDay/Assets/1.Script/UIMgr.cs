@@ -40,6 +40,7 @@ public class UIMgr : MonoBehaviour {
     public GameObject _SearchMgr;
     public GameObject _TalkMgr;
     public GameObject _DuelMgr;
+    public GameObject _NpcMgr;
 
     private bool _isSafety;
     public delegate void SafetyUiView(bool isUI);
@@ -50,6 +51,7 @@ public class UIMgr : MonoBehaviour {
     public bool _isIssueEvent;
 
     private PlayerInfoCS _playerInfoCS;
+
     private List<GameObject> _tileMapList;
     private TileMapDataCS _tileMapDataCS;
 
@@ -105,6 +107,18 @@ public class UIMgr : MonoBehaviour {
             else if ((string)date[i]["type_Index"] == "일반") _normalTableList.Add((string)date[i]["IssueName_Index"], tempEventDate);
             else if ((string)date[i]["type_Index"] == "봉쇄") _blockadeTableList.Add((string)date[i]["IssueName_Index"], tempEventDate);
         }
+    }
+
+    public void EndGameTurn()
+    {
+        _playerInfoCS.PlayerTileXZ();
+        StartCoroutine(_NpcMgr.GetComponent<NpcSysMgr>().NpcAct());
+        SetTurnWaitButton(false);
+    }
+
+    public void SetTurnWaitButton(bool isOn)
+    {
+        _wait_buttonUi.GetComponent<Button>().enabled = isOn;
     }
 
     public void StartDuel()
