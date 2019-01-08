@@ -128,27 +128,35 @@ public class NpcSysMgr : MonoBehaviour {
             if (_npcList[i].GetComponent<PlayerInfoCS>()._isAlive) _tempNpcCount++;
         }
         _tempNpcCount -= 1; // 플레이어 보정
+        Debug.Log("NpcAct 시작");
+
         if (_JeonIcon.GetComponent<PlayerInfoCS>()._isAlive && !_JeonIcon.GetComponent<PlayerInfoCS>()._isTurn)
         {
             JeonAI();
 
             yield return new WaitForSeconds(4.0f);
-            StopCoroutine(_npcActIEnumerator);
+            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
         }
         if (_WishIcon.GetComponent<PlayerInfoCS>()._isAlive && !_WishIcon.GetComponent<PlayerInfoCS>()._isTurn)
         {
             wishAI();
             yield return new WaitForSeconds(4.0f);
+            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
+
         }
         if (_YoungIcon.GetComponent<PlayerInfoCS>()._isAlive && !_YoungIcon.GetComponent<PlayerInfoCS>()._isTurn)
         {
             YoungAI();
             yield return new WaitForSeconds(4.0f);
+            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
+
         }
         if (_HamIcon.GetComponent<PlayerInfoCS>()._isAlive && !_HamIcon.GetComponent<PlayerInfoCS>()._isTurn)
         {
             HamAI();
             yield return new WaitForSeconds(4.0f);
+            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
+
         }
 
         yield return null;

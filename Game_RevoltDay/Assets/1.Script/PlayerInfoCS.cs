@@ -252,8 +252,6 @@ public class PlayerInfoCS : MonoBehaviour {
                 case eNpcType.Hamicon:
                     if (_playerInfoCS._currTile == _currTile)
                     {
-                        StopCoroutine(_npcSysMgr._npcActIEnumerator);
-
                         _uIMgrCS.StartDuel();
                         _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType);
                     }
@@ -261,10 +259,7 @@ public class PlayerInfoCS : MonoBehaviour {
                 case eNpcType.Jeonicon:
                     if (_playerInfoCS._currTile == _currTile)
                     {
-                        StopCoroutine(_npcSysMgr._npcActIEnumerator);
-
                         _uIMgrCS.StartDuel();
-
                         _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType);
                     }
                     break;
