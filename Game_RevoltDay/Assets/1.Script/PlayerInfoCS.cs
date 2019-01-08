@@ -10,7 +10,8 @@ public enum eNpcType
     Jeonicon,
     Parkicon,
     Wishicon,
-    Youngicon
+    Youngicon,
+    normalEnemy
 }
 
 public class PlayerInfoCS : MonoBehaviour {
@@ -24,7 +25,10 @@ public class PlayerInfoCS : MonoBehaviour {
 
     public eNpcType _eNpcType;
 
+    private PlayerInfoCS _playerInfoCS;
+
     private UIMgr _uIMgrCS;
+    private NpcSysMgr _npcSysMgr;
     private TileMakerCS _tileMakerCS;
     public ePlayerState _currMoveState;
     public GameObject _currPlayerGO;
@@ -38,14 +42,20 @@ public class PlayerInfoCS : MonoBehaviour {
     public int _tileFirstXZ;
 
     // 현재 정보
+    public int _clueTokenValue = 0;
     public bool _isAlive = false;
     public bool _isTurn = false;
+    public int _daleyTurnCount = 0;
 
     public int _currTile = 0;
     public int _tempCurrTile = 0;
     public int _currActPoint;
     public int _currTrunPoint;
     private int tempTileXZ;
+
+    public int _currHP;
+    public int _MaxHP;
+    public int _atkPoint;
 
     // 기타
     public GameObject _nextTileMark;
@@ -55,8 +65,16 @@ public class PlayerInfoCS : MonoBehaviour {
 
     private void Awake()
     {
-        if (eNpcType.gangicon == _eNpcType) _isAlive = true;
+        if (eNpcType.gangicon == _eNpcType)
+        {
+            _clueTokenValue += 3;
+            _isAlive = true;
+        }
 
+        _currHP = _MaxHP; // 체력 정립
+
+        _npcSysMgr = GameObject.Find("NpcMgr").GetComponent<NpcSysMgr>();
+        _playerInfoCS = GameObject.Find("PlayerIcon").GetComponent<PlayerInfoCS>();
         _uIMgrCS = GameObject.Find("UIMgr").GetComponent<UIMgr>();
         _tileMakerCS = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>();
         _currMoveState = ePlayerState.MoveReady;
@@ -232,8 +250,23 @@ public class PlayerInfoCS : MonoBehaviour {
                     // 플레이어 캐릭터 생략
                     break;
                 case eNpcType.Hamicon:
+                    if (_playerInfoCS._currTile == _currTile)
+                    {
+                        StopCoroutine(_npcSysMgr._npcActIEnumerator);
+
+                        _uIMgrCS.StartDuel();
+                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType);
+                    }
                     break;
                 case eNpcType.Jeonicon:
+                    if (_playerInfoCS._currTile == _currTile)
+                    {
+                        StopCoroutine(_npcSysMgr._npcActIEnumerator);
+
+                        _uIMgrCS.StartDuel();
+
+                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType);
+                    }
                     break;
                 case eNpcType.Parkicon:
                     break;
@@ -241,6 +274,12 @@ public class PlayerInfoCS : MonoBehaviour {
 
                     break;
                 case eNpcType.Youngicon:
+                    if (_playerInfoCS._currTile == _currTile)
+                    {
+                        Debug.Log("보유 토큰 : "+_playerInfoCS._clueTokenValue);
+                        if (_playerInfoCS._clueTokenValue > 0) _playerInfoCS._clueTokenValue -= 1;
+                        Debug.Log("보유 토큰 : " + _playerInfoCS._clueTokenValue);
+                    }
                     break;
                 default:
                     break;
@@ -249,6 +288,19 @@ public class PlayerInfoCS : MonoBehaviour {
 
     }
 
+    public void isDie(bool isAlive)
+    {
+        _isAlive = isAlive;
+
+        if (!isAlive)
+        {
+            transform.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1.0f);
+        }
+        else if (isAlive)
+        {
+            transform.GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        }
+    }
 
     private void OnDrawGizmos()
     {
