@@ -28,8 +28,12 @@ public class EventSysCS : MonoBehaviour {
     public TileMakerCS _tileMakerCS;
     private List<GameObject> _tileMapList;
 
+    private NpcSysMgr _npcSysMgr;
+
     private void Awake()
     {
+        _npcSysMgr = GameObject.Find("NpcMgr").GetComponent<NpcSysMgr>();
+
         _currEventID = 0;
 
         List<Dictionary<string, object>> date = CSVReader.Read("2.SceneTable/EventTable");
@@ -61,9 +65,9 @@ public class EventSysCS : MonoBehaviour {
 
     private void Update()
     {
-        if (!_uIMgrCS._TalkMgr.activeSelf &&
-            !_uIMgrCS._DuelMgr.activeSelf &&
-            !_uIMgrCS._SearchMgr.activeSelf ) eventSys();
+        //if (!_uIMgrCS._TalkMgr.activeSelf &&
+        //    !_uIMgrCS._DuelMgr.activeSelf &&
+        //    !_uIMgrCS._SearchMgr.activeSelf ) eventSys();
     }
 
     public void eventSys()
