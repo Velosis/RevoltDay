@@ -1,5 +1,5 @@
 L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,004.Date,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,004.Date,null,null,01.A_Quiet_Thought,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,0,이지은,null,왔나보네.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,0,강원진,null,"무죄로 풀려났다니, 다행입니다.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,0,이지은,null,다행은 무슨.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
