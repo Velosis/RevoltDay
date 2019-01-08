@@ -1,7 +1,7 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,006.Smith,null,null,10.They_Might_Not,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
 gang01,Smith02,1,스미스,null,이를 어쩌나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Smith02,1,스미스,null,경찰들의 내 방에 진입하고 있는 모양이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Smith02,1,스미스,null,경찰들이 내 방에 진입하고 있는 모양이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Smith02,1,스미스,null,"아마, 저 놈들 손에 잡히면 강원진 형사나 나나 둘 다 뒤지는 거겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Smith02,1,스미스,null,"자, 힌트 하나 던져주지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Smith02,1,스미스,null,재미란 재미는 다 봤으니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
