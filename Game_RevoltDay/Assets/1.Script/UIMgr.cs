@@ -30,17 +30,20 @@ public class eventDate
 }
 
 public class UIMgr : MonoBehaviour {
+    static public bool _sNpeTurnEnd = false;
+
     private GameObject _search_buttonUi;
     private GameObject _Item_buttonUi;
     private GameObject _safety_buttonUi;
     private GameObject _wait_buttonUi;
     private GameObject _shop_buttonUi;
     private GameObject _talk_buttonUi;
+    public GameObject _loadingImg;
+    public string _loadingText;
 
     public GameObject _SearchMgr;
     public GameObject _TalkMgr;
     public GameObject _DuelMgr;
-    public GameObject _NpcMgr;
 
     private bool _isSafety;
     public delegate void SafetyUiView(bool isUI);
@@ -51,9 +54,9 @@ public class UIMgr : MonoBehaviour {
     public bool _isIssueEvent;
 
     private PlayerInfoCS _playerInfoCS;
-
     private List<GameObject> _tileMapList;
     private TileMapDataCS _tileMapDataCS;
+    private NpcSysMgr _npcSysMgr;
 
     public GameObject[] _SearchSelectList;
     public Sprite[] _SearchSpriteList;
@@ -66,6 +69,7 @@ public class UIMgr : MonoBehaviour {
     {
         IssueTableRead();
 
+        _loadingImg.SetActive(false);
         _isSafety = true;
         _search_buttonUi = GameObject.Find("SearchButton");
         _Item_buttonUi = GameObject.Find("ItemButton");
@@ -76,6 +80,7 @@ public class UIMgr : MonoBehaviour {
 
         _playerInfoCS = GameObject.Find("PlayerIcon").GetComponent<PlayerInfoCS>();
         _tileMapList = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>().TileMapList;
+        _npcSysMgr = GameObject.Find("NpcMgr").GetComponent<NpcSysMgr>();
 
         _shop_buttonUi.SetActive(false);
         _talk_buttonUi.SetActive(false);
@@ -89,6 +94,24 @@ public class UIMgr : MonoBehaviour {
         {
             _SearchSelectList[i].transform.GetChild(0).gameObject.SetActive(false);
         }
+    }
+
+    public IEnumerator loadingEff()
+    {
+        _loadingImg.SetActive(true);
+        float tempCurrTimemr = 0.0f;
+        while (tempCurrTimemr <= 1.0f)
+        {
+            tempCurrTimemr += 0.3f;
+            _loadingImg.transform.GetChild(1).GetComponent<Text>().text = _loadingText + ".";
+            yield return new WaitForSeconds(0.2f);
+            _loadingImg.transform.GetChild(1).GetComponent<Text>().text = _loadingText + "..";
+            yield return new WaitForSeconds(0.2f);
+            _loadingImg.transform.GetChild(1).GetComponent<Text>().text = _loadingText + "...";
+            yield return new WaitForSeconds(0.2f);
+        }
+        _loadingImg.SetActive(false);
+        yield return null;
     }
 
     private void IssueTableRead()
@@ -109,16 +132,15 @@ public class UIMgr : MonoBehaviour {
         }
     }
 
-    public void EndGameTurn()
+    public void TurnEndSys()
     {
-        _playerInfoCS.PlayerTileXZ();
-        StartCoroutine(_NpcMgr.GetComponent<NpcSysMgr>().NpcAct());
-        SetTurnWaitButton(false);
-    }
+        if (_sNpeTurnEnd) return;
 
-    public void SetTurnWaitButton(bool isOn)
-    {
-        _wait_buttonUi.GetComponent<Button>().enabled = isOn;
+        _sNpeTurnEnd = true;
+        _playerInfoCS.PlayerTileXZ();
+        StopAllCoroutines();
+        _npcSysMgr._npcActIEnumerator = StartCoroutine(_npcSysMgr.NpcAct());
+       
     }
 
     public void StartDuel()
@@ -165,6 +187,9 @@ public class UIMgr : MonoBehaviour {
 
     public void SearchUiSys()
     {
+
+        StartCoroutine(loadingEff());
+
         int tempPlayerCurrTile = _playerInfoCS._currTile;
         _tileMapDataCS = _tileMapList[tempPlayerCurrTile].GetComponent<TileMapDataCS>();
 

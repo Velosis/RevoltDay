@@ -2,12 +2,70 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class _JeonMoveRoot
+{
+    public enum eRootType
+    {
+        Non,
+        A,
+        B,
+        C,
+        D
+    }
+    public eRootType _currRoot = eRootType.Non;
+    public float _rootChangeValue;
+
+
+    public int _nextRootTile;
+    public int _currRootValue = 0;
+
+    public int[] _currList;
+    public int[] _jeonMoveTileListA;
+    public int[] _jeonMoveTileListB;
+    public int[] _jeonMoveTileListC;
+    public int[] _jeonMoveTileListD;
+}
+
+[System.Serializable]
+public class _YoungIconMoveRoot
+{
+    public int _nextRootTile;
+    public int _currRootValue = 0;
+
+    public int[] _YoungMoveTileList;
+}
+
+[System.Serializable]
+public class _HamMoveRoot
+{
+    public enum eRootType
+    {
+        Non,
+        A,
+        B,
+        C
+    }
+    public eRootType _currRoot = eRootType.Non;
+    public float _rootChangeValue;
+
+    public int _nextRootTile;
+    public int _currRootValue = 0;
+
+    public int[] _currList;
+    public int[] _jeonMoveTileListA;
+    public int[] _jeonMoveTileListB;
+    public int[] _jeonMoveTileListC;
+}
+
 public class NpcSysMgr : MonoBehaviour {
+    public Coroutine _npcActIEnumerator = null;
+
+
     public UIMgr _uIMgrCS;
 
     public GameObject[] _npcList;
     public List<GameObject> _tileMapList;
-    private int _currNpcNum = 0;
     private int _tempNpcCount = 0;
 
     public GameObject _playerIcon;
@@ -16,6 +74,10 @@ public class NpcSysMgr : MonoBehaviour {
     public GameObject _ParkIcon;
     public GameObject _WishIcon;
     public GameObject _YoungIcon;
+
+    public _JeonMoveRoot _JeonRootBox;
+    public _YoungIconMoveRoot _YoungRootBox;
+    public _HamMoveRoot _HamRootBox;
 
     private void Awake()
     {
@@ -52,42 +114,226 @@ public class NpcSysMgr : MonoBehaviour {
 
     private void Start()
     {
-        sttingNPC("WishIcon", 5, eNpcType.Wishicon);
+        sttingNPC(5, eNpcType.Hamicon);
+        sttingNPC(5, eNpcType.Jeonicon);
+        sttingNPC(5, eNpcType.Wishicon);
+        sttingNPC(6, eNpcType.Youngicon);
     }
 
     public IEnumerator NpcAct()
     {
-        Debug.Log("턴시작");
         _tempNpcCount = 0;
         for (int i = 0; i < _npcList.Length; i++)
         {
             if (_npcList[i].GetComponent<PlayerInfoCS>()._isAlive) _tempNpcCount++;
         }
         _tempNpcCount -= 1; // 플레이어 보정
+        Debug.Log("NpcAct 시작");
 
-        while (_tempNpcCount != 0)
+        if (_JeonIcon.GetComponent<PlayerInfoCS>()._isAlive && !_JeonIcon.GetComponent<PlayerInfoCS>()._isTurn)
+        {
+            JeonAI();
+
+            yield return new WaitForSeconds(4.0f);
+            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
+        }
+        if (_WishIcon.GetComponent<PlayerInfoCS>()._isAlive && !_WishIcon.GetComponent<PlayerInfoCS>()._isTurn)
         {
             wishAI();
-            yield return null;
+            yield return new WaitForSeconds(4.0f);
+            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
+
+        }
+        if (_YoungIcon.GetComponent<PlayerInfoCS>()._isAlive && !_YoungIcon.GetComponent<PlayerInfoCS>()._isTurn)
+        {
+            YoungAI();
+            yield return new WaitForSeconds(4.0f);
+            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
+
+        }
+        if (_HamIcon.GetComponent<PlayerInfoCS>()._isAlive && !_HamIcon.GetComponent<PlayerInfoCS>()._isTurn)
+        {
+            HamAI();
+            yield return new WaitForSeconds(4.0f);
+            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
+
         }
 
-        if (_tempNpcCount == 0)
-        {
-            Debug.Log("_tempNpcCount : " + _tempNpcCount);
-            _uIMgrCS.SetTurnWaitButton(true);
-        }
+        yield return null;
+        Debug.Log("턴 종료됨");
+        UIMgr._sNpeTurnEnd = false;
     }
 
-    public void sttingNPC(string name, int tileMap, eNpcType whoNpc)
+    public void sttingNPC(int tileMap, eNpcType whoNpc)
     {
         for (int i = 0; i < _npcList.Length; i++)
         {
-            if (_npcList[i].name == name)
+            if (_npcList[i].GetComponent<PlayerInfoCS>()._eNpcType == whoNpc)
             {
                 _npcList[i].GetComponent<PlayerInfoCS>()._isAlive = true;
-                _npcList[i].GetComponent<PlayerInfoCS>()._eNpcType = whoNpc;
                 _npcList[i].GetComponent<PlayerInfoCS>().setTileValeu(tileMap);
             }
+        }
+    }
+
+    public void HamAI()
+    {
+        int tempCurrTile = _HamIcon.GetComponent<PlayerInfoCS>()._currTile;
+
+        if (_HamIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount > 0 &&
+            !_HamIcon.GetComponent<PlayerInfoCS>()._isAlive)
+        {
+            _HamIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount--;
+            _HamIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
+            _tempNpcCount--;
+        }
+
+        // 전민원이 삼성동일 경우 루트 설정
+        if (tempCurrTile == 5)
+        {
+            _HamRootBox._currRootValue = 0;
+
+            int tempRandom = Random.Range(1, 4);
+            if (tempRandom == 1) // A
+            {
+                _HamRootBox._currRoot = _HamMoveRoot.eRootType.A;
+                _HamRootBox._currList = _HamRootBox._jeonMoveTileListA;
+                _HamRootBox._nextRootTile = _HamRootBox._jeonMoveTileListA[_HamRootBox._currRootValue];
+            }
+            else if (tempRandom == 2) // B
+            {
+                _HamRootBox._currRoot = _HamMoveRoot.eRootType.B;
+                _HamRootBox._currList = _HamRootBox._jeonMoveTileListB;
+                _HamRootBox._nextRootTile = _HamRootBox._jeonMoveTileListB[_HamRootBox._currRootValue];
+            }
+            else if (tempRandom == 3) // C
+            {
+                _HamRootBox._currRoot = _HamMoveRoot.eRootType.C;
+                _HamRootBox._currList = _HamRootBox._jeonMoveTileListC;
+                _HamRootBox._nextRootTile = _HamRootBox._jeonMoveTileListC[_HamRootBox._currRootValue];
+            }
+        }
+
+        if (_playerIcon.GetComponent<PlayerInfoCS>()._currTile != _HamIcon.GetComponent<PlayerInfoCS>()._currTile)
+        {
+            if (_HamRootBox._currList.Length != _HamRootBox._currRootValue) _HamRootBox._currRootValue++;
+            else
+            {
+                _tempNpcCount--;
+                return;
+            }
+
+            _HamRootBox._nextRootTile = tempCurrTile = _HamRootBox._currList[_HamRootBox._currRootValue];
+            _HamIcon.GetComponent<PlayerInfoCS>()._tempCurrTile = _HamRootBox._nextRootTile;
+
+            _HamIcon.GetComponent<PlayerInfoCS>().npcMoveSys(_HamRootBox._nextRootTile);
+
+            _HamIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
+            _tempNpcCount--;
+            return;
+        }
+    }
+
+    public void YoungAI()
+    {
+        int tempCurrTile = _YoungIcon.GetComponent<PlayerInfoCS>()._currTile;
+
+        if (_YoungIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount > 0 && !_YoungIcon.GetComponent<PlayerInfoCS>()._isAlive)
+        {
+            _YoungIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount--;
+            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
+            _tempNpcCount--;
+        }
+
+        if (_playerIcon.GetComponent<PlayerInfoCS>()._currTile != _YoungIcon.GetComponent<PlayerInfoCS>()._currTile)
+        {
+            if (_YoungRootBox._YoungMoveTileList.Length == _YoungRootBox._currRootValue) _YoungRootBox._currRootValue = 0;
+
+            _YoungRootBox._nextRootTile = tempCurrTile = _YoungRootBox._YoungMoveTileList[_YoungRootBox._currRootValue];
+            _YoungIcon.GetComponent<PlayerInfoCS>()._tempCurrTile = _YoungRootBox._nextRootTile;
+
+            _YoungIcon.GetComponent<PlayerInfoCS>().npcMoveSys(_YoungRootBox._nextRootTile);
+
+            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
+            _tempNpcCount--;
+
+            if (_YoungRootBox._YoungMoveTileList.Length != _YoungRootBox._currRootValue) _YoungRootBox._currRootValue++;
+
+            return;
+        }
+        else
+        {
+            if (_playerIcon.GetComponent<PlayerInfoCS>()._clueTokenValue > 0) _playerIcon.GetComponent<PlayerInfoCS>()._clueTokenValue -= 1;
+
+            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
+            _tempNpcCount--;
+        }
+    }
+
+    public void JeonAI()
+    {
+        int tempCurrTile = _JeonIcon.GetComponent<PlayerInfoCS>()._currTile;
+
+        if (_JeonIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount > 0 &&
+            !_JeonIcon.GetComponent<PlayerInfoCS>()._isAlive)
+        {
+            _JeonIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount--;
+            _JeonIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
+            _tempNpcCount--;
+        }
+
+        // 전민원이 삼성동일 경우 루트 설정
+        if (tempCurrTile == 5 && _JeonRootBox._currRoot != _JeonMoveRoot.eRootType.A)
+        {
+            _JeonRootBox._currRoot = _JeonMoveRoot.eRootType.A;
+            _JeonRootBox._currList = _JeonRootBox._jeonMoveTileListA;
+            _JeonRootBox._currRootValue = 0;
+            _JeonRootBox._nextRootTile = _JeonRootBox._jeonMoveTileListA[_JeonRootBox._currRootValue];
+
+        }
+        else if (tempCurrTile == 12 && _JeonRootBox._currRoot != _JeonMoveRoot.eRootType.B)
+        {
+            _JeonRootBox._currRoot = _JeonMoveRoot.eRootType.B;
+            _JeonRootBox._currList = _JeonRootBox._jeonMoveTileListB;
+            _JeonRootBox._currRootValue = 0;
+            _JeonRootBox._nextRootTile = _JeonRootBox._jeonMoveTileListB[_JeonRootBox._currRootValue];
+        }
+        else if (Random.Range(1.0f, 100.0f) <= _JeonRootBox._rootChangeValue &&
+            tempCurrTile == 7 && _JeonRootBox._currRoot != _JeonMoveRoot.eRootType.C)
+        {
+            _JeonRootBox._currRoot = _JeonMoveRoot.eRootType.C;
+            _JeonRootBox._currList = _JeonRootBox._jeonMoveTileListC;
+            _JeonRootBox._currRootValue = 0;
+            _JeonRootBox._nextRootTile = _JeonRootBox._jeonMoveTileListC[_JeonRootBox._currRootValue];
+        }
+        else if (Random.Range(1.0f, 100.0f) <= _JeonRootBox._rootChangeValue &&
+            tempCurrTile == 11 && _JeonRootBox._currRoot != _JeonMoveRoot.eRootType.D)
+        {
+            _JeonRootBox._currRoot = _JeonMoveRoot.eRootType.D;
+            _JeonRootBox._currList = _JeonRootBox._jeonMoveTileListD;
+            _JeonRootBox._currRootValue = 0;
+            _JeonRootBox._nextRootTile = _JeonRootBox._jeonMoveTileListD[_JeonRootBox._currRootValue];
+        }
+
+
+
+        if (_playerIcon.GetComponent<PlayerInfoCS>()._currTile != _JeonIcon.GetComponent<PlayerInfoCS>()._currTile)
+        {
+            if (_JeonRootBox._currList.Length != _JeonRootBox._currRootValue) _JeonRootBox._currRootValue++;
+            else
+            {
+                _tempNpcCount--;
+                return;
+            }
+
+            _JeonRootBox._nextRootTile = tempCurrTile = _JeonRootBox._currList[_JeonRootBox._currRootValue];
+            _JeonIcon.GetComponent<PlayerInfoCS>()._tempCurrTile = _JeonRootBox._nextRootTile;
+
+            _JeonIcon.GetComponent<PlayerInfoCS>().npcMoveSys(_JeonRootBox._nextRootTile);
+
+            _JeonIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
+            _tempNpcCount--;
+            return;
         }
     }
 
@@ -126,6 +372,7 @@ public class NpcSysMgr : MonoBehaviour {
                 _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
                 _tempNpcCount--;
 
+                Debug.Log("장소 이동");
                 return;
             }
         }
