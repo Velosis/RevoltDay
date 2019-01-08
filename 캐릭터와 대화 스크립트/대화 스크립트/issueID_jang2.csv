@@ -1,13 +1,13 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-gang02,Zhang01,0,¹Ì½ºÅÍ Àå,City,"¿©, °­¿øÁø °æÀ§.",null,04.Gonne,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,°­¿øÁø,null,º¼ ÀÏÀÌ¶óµµ?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,¹Ì½ºÅÍ Àå,null,°­¿øÁø °æÀ§¿¡°Ô Èï¹ÌÁøÁøÇÑ ÀÌ¾ß±â¸¦ ÇÏ³ª ÇØ º¼±î ÇØ.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,¹Ì½ºÅÍ Àå,null,µé¾îº¸½Ç°Ç°¡?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,°­¿øÁø,null,»ç°Ç ÇØ°á¿¡ µµ¿òÀÌ µÇ´Â ÀÏÀÌ¶ó¸é ¾ğÁ¦µç È¯¿µÀÔ´Ï´Ù.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,¹Ì½ºÅÍ Àå,null,±×·¯´Ï±î.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,¹Ì½ºÅÍ Àå,null,³ª¶û °í½ºÅéÇÏÁö ¾ÊÀ»·¡?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,°­¿øÁø,null,»ç¾çÇÏ°Ú½À´Ï´Ù.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,¹Ì½ºÅÍ Àå,null,ÂÌ¸®³ªºÁ?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,¹Ì½ºÅÍ Àå,null,"¾î, Àá±ñ. ¾îµğ°¡!",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,¹Ì½ºÅÍ Àå,null,³» ¸»Àº ´Ù µè°í °¡¾ßÁö!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang01,0,¹Ì½ºÅÍ Àå,null,ÀÌ ³ÃÁ¤ÇÑ ¾ç¹İ°°ÀºÀÌ¶ó°í.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang02,Zhang01,0,ë¯¸ìŠ¤í„° ì¥,City,"ì—¬, ê°•ì›ì§„ ê²½ìœ„.",null,04.Gonne,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ê°•ì›ì§„,null,ë³¼ ì¼ì´ë¼ë„?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ë¯¸ìŠ¤í„° ì¥,null,ê°•ì›ì§„ ê²½ìœ„ì—ê²Œ í¥ë¯¸ì§„ì§„í•œ ì´ì•¼ê¸°ë¥¼ í•˜ë‚˜ í•´ ë³¼ê¹Œ í•´.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ë¯¸ìŠ¤í„° ì¥,null,ë“¤ì–´ë³´ì‹¤ê±´ê°€?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ê°•ì›ì§„,null,ì‚¬ê±´ í•´ê²°ì— ë„ì›€ì´ ë˜ëŠ” ì¼ì´ë¼ë©´ ì–¸ì œë“  í™˜ì˜ì…ë‹ˆë‹¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ë¯¸ìŠ¤í„° ì¥,null,ê·¸ëŸ¬ë‹ˆê¹Œ.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ë¯¸ìŠ¤í„° ì¥,null,ë‚˜ë‘ ê³ ìŠ¤í†±í•˜ì§€ ì•Šì„ë˜?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ê°•ì›ì§„,null,ì‚¬ì–‘í•˜ê² ìŠµë‹ˆë‹¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ë¯¸ìŠ¤í„° ì¥,null,ì«„ë¦¬ë‚˜ë´?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ë¯¸ìŠ¤í„° ì¥,null,"ì–´, ì ê¹. ì–´ë””ê°€!",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ë¯¸ìŠ¤í„° ì¥,null,ë‚´ ë§ì€ ë‹¤ ë“£ê³  ê°€ì•¼ì§€!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang01,0,ë¯¸ìŠ¤í„° ì¥,null,ì´ ëƒ‰ì •í•œ ì–‘ë°˜ê°™ì€ì´ë¼ê³ .,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

@@ -1,10 +1,10 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-gang01,Wish01,0,°­¿øÁø,City,¼ö°íÇÏ½Ê´Ï´Ù.,null,03.Blues_Infusion,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,0,°­¼Ò¿ø,null,¸»Åõ´Â ÀüÇô ±×·¸Áö ¾ÊÀºµ¥.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,0,°­¿øÁø,null,¼ö°íÇÏ½Ê½Ã¿À.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,0,°­¼Ò¿ø,null,°íÀÛ ÀÌ ¸» ÇÏ·Á°í ¸» °Ç°Å¿¡¿ä?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,0,°­¼Ò¿ø,null,"¹¹¾ß, ±ÍÂú°Ô ±¸´Â°Ç °æÀ§³ª ½ÃÀ§´ë³ª ¶È°°³×.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Wish01,0,°­¼Ò¿ø,null,¿¹~Ãæ¼º Ãæ¼º.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang01,Wish01,0,ê°•ì›ì§„,City,ìˆ˜ê³ í•˜ì‹­ë‹ˆë‹¤.,null,03.Blues_Infusion,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Wish01,0,ê°•ì†Œì›,null,ë§íˆ¬ëŠ” ì „í˜€ ê·¸ë ‡ì§€ ì•Šì€ë°.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Wish01,0,ê°•ì›ì§„,null,ìˆ˜ê³ í•˜ì‹­ì‹œì˜¤.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Wish01,0,ê°•ì†Œì›,null,ê³ ì‘ ì´ ë§ í•˜ë ¤ê³  ë§ ê±´ê±°ì—ìš”?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Wish01,0,ê°•ì†Œì›,null,"ë­ì•¼, ê·€ì°®ê²Œ êµ¬ëŠ”ê±´ ê²½ìœ„ë‚˜ ì‹œìœ„ëŒ€ë‚˜ ë˜‘ê°™ë„¤.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Wish01,0,ê°•ì†Œì›,null,ì˜ˆ~ì¶©ì„± ì¶©ì„±.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,

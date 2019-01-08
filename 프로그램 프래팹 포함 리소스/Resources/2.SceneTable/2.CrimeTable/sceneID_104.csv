@@ -1,18 +1,18 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,016.Royal,null,null,07.Ladybug,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,Àç¹ÌÀÖ³×¿ä. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,Àý ¹Ì³¢·Î Àú·± Àå³­ÁúÀ» Ä¡´Â »ç¶÷Àº ÅÂ¾î³ª¼­ Ã³À½ º¸´Â °Í°°¾Æ¿ä. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,±èºñ¼­´Ô? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,1,±èºñ¼­,null,"¿¹, ´ëÇ¥´Ô. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,¹Ú¿ìÁÖ¾¾´Â Æò»ç¿øÀ¸·Î ¾Ë°íÀÖ´ä´Ï´Ù. ±×·¸ÁÒ? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,1,±èºñ¼­,null,"¿¹, ´ëÇ¥´Ô. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,"ºÎ½º·³ÀÌ »ý°Üµµ ÁÁÀ¸´Ï, »ç¶÷µéÀ» ÃÖ´ëÇÑ ¸¹ÀÌ ¸ð¾ÆÁÖ½Ã¸é °í¸¿°Ú¾î¿ä. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,¾ð·ÐÀº ¿À±âÀÚ°¡ ÀÖÀ¸´Ï °ÆÁ¤ÇÏÁö ¾ÊÀ¸¼Åµµ µÈ´ä´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,¹Ú¿ìÁÖ »ç¿øÀ». ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,Á¦ ¾ÕÀ¸·Î ²ø°í¿À¼¼¿ä. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,Áö±ÝÂëÀÌ¸é À¯Ã»Àåµµ Àý ¸ð¸£¼è·Î ÀÏ°üÇÏ·Á µé°Ì´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,À¯Ã»Àå¿¡°Ô Á¶±×¸¶ÇÑ ¼±¹° ÇÏ³ª ÁØºñÇØÁÖ¼¼¿ä. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,"µý »ý°¢À» Ç°À¸¸é ¸¹ÀÌ ¾ÈÅ¸±î¿öÇÑ´Ù´Â °É, °£Á¢ÀûÀ¸·Î ¸»¾¸µå·ÁÁÖ°í½Í³×¿ä. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,2,ÇÔÁ¤ÀÓ,null,¾Æ½Ã°ÚÁÒ? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam02,Kim01,1,±èºñ¼­,null,"¿¹, ´ëÇ¥´Ô. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ìž¬ë¯¸ìžˆë„¤ìš”. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ì ˆ ë¯¸ë¼ë¡œ ì €ëŸ° ìž¥ë‚œì§ˆì„ ì¹˜ëŠ” ì‚¬ëžŒì€ íƒœì–´ë‚˜ì„œ ì²˜ìŒ ë³´ëŠ” ê²ƒê°™ì•„ìš”. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ê¹€ë¹„ì„œë‹˜? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,1,ê¹€ë¹„ì„œ,null,"ì˜ˆ, ëŒ€í‘œë‹˜. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ë°•ìš°ì£¼ì”¨ëŠ” í‰ì‚¬ì›ìœ¼ë¡œ ì•Œê³ ìžˆë‹µë‹ˆë‹¤. ê·¸ë ‡ì£ ? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,1,ê¹€ë¹„ì„œ,null,"ì˜ˆ, ëŒ€í‘œë‹˜. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,"ë¶€ìŠ¤ëŸ¼ì´ ìƒê²¨ë„ ì¢‹ìœ¼ë‹ˆ, ì‚¬ëžŒë“¤ì„ ìµœëŒ€í•œ ë§Žì´ ëª¨ì•„ì£¼ì‹œë©´ ê³ ë§™ê² ì–´ìš”. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ì–¸ë¡ ì€ ì˜¤ê¸°ìžê°€ ìžˆìœ¼ë‹ˆ ê±±ì •í•˜ì§€ ì•Šìœ¼ì…”ë„ ëœë‹µë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ë°•ìš°ì£¼ ì‚¬ì›ì„. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ì œ ì•žìœ¼ë¡œ ëŒê³ ì˜¤ì„¸ìš”. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ì§€ê¸ˆì¯¤ì´ë©´ ìœ ì²­ìž¥ë„ ì ˆ ëª¨ë¥´ì‡ ë¡œ ì¼ê´€í•˜ë ¤ ë“¤ê²ë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ìœ ì²­ìž¥ì—ê²Œ ì¡°ê·¸ë§ˆí•œ ì„ ë¬¼ í•˜ë‚˜ ì¤€ë¹„í•´ì£¼ì„¸ìš”. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,"ë”´ ìƒê°ì„ í’ˆìœ¼ë©´ ë§Žì´ ì•ˆíƒ€ê¹Œì›Œí•œë‹¤ëŠ” ê±¸, ê°„ì ‘ì ìœ¼ë¡œ ë§ì”€ë“œë ¤ì£¼ê³ ì‹¶ë„¤ìš”. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,2,í•¨ì •ìž„,null,ì•„ì‹œê² ì£ ? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Kim01,1,ê¹€ë¹„ì„œ,null,"ì˜ˆ, ëŒ€í‘œë‹˜. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

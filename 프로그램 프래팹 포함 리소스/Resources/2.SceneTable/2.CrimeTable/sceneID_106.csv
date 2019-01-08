@@ -1,17 +1,17 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,02.Biggie,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,005.theworld,null,null,02.Biggie,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,23.Gunshot2,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,29.revolt2,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,31.dwon,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,31.dwon,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,°æºñ,null,´ç½Åµé ¹¹¾ß! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,ê²½ë¹„,null,ë‹¹ì‹ ë“¤ ë­ì•¼! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,23.Gunshot2,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,31.dwon,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-mapia,null,0,±«ÇÑ,null,¹Ú¿ìÁÖ ¾îµø¾î! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Park01,mapia,2,¹Ú¿ìÁÖ,null,»óÈ²ÀÌ À§ÇèÇÏ´Ù°í ´À²¼³ªº¸³×¿ä. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Park01,mapia,2,¹Ú¿ìÁÖ,null,ÀÌ·± ºñµµ´öÀûÀÎ ¹æ½ÄÀ» »ç¿ëÇÏ´Ù´Ï. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Park01,mapia,1,±«ÇÑ,null,¼ø¼øÈ÷ µû¶ó¿Í. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Park01,mapia,2,¹Ú¿ìÁÖ,null,"Á¦°¡ ÀâÇô°¡¸é, ¿©·ĞÀº ´õ À§ÇèÇØÁö°ÚÁÒ. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Park01,mapia,1,±«ÇÑ,null,ÀÌ¹Ì ¾ğ·ĞµéÀº ´Ù ÀÔÆ²¾î¸·°í ½¬½¬ÇÏ°í ÀÖ¾î. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Park01,mapia,1,±«ÇÑ,null,³×°¡ Á×¾îµµ ¼¼»ó »ç¶÷µéÀº ³×°¡ Á×¾ú´ÂÁöµµ ¸ğ¸¦°É? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Park01,mapia,2,¹Ú¿ìÁÖ,null,"±×·³, Àúµµ ´çÇÏ°í ÀÖÀ» ¼ö ¸¸Àº ¾ø°Ú³×¿ä. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+mapia,null,0,ê´´í•œ,null,ë°•ìš°ì£¼ ì–´ë”¨ì–´! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park01,mapia,2,ë°•ìš°ì£¼,null,ìƒí™©ì´ ìœ„í—˜í•˜ë‹¤ê³  ëŠê¼ˆë‚˜ë³´ë„¤ìš”. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park01,mapia,2,ë°•ìš°ì£¼,null,ì´ëŸ° ë¹„ë„ë•ì ì¸ ë°©ì‹ì„ ì‚¬ìš©í•˜ë‹¤ë‹ˆ. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park01,mapia,1,ê´´í•œ,null,ìˆœìˆœíˆ ë”°ë¼ì™€. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park01,mapia,2,ë°•ìš°ì£¼,null,"ì œê°€ ì¡í˜€ê°€ë©´, ì—¬ë¡ ì€ ë” ìœ„í—˜í•´ì§€ê² ì£ . ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park01,mapia,1,ê´´í•œ,null,ì´ë¯¸ ì–¸ë¡ ë“¤ì€ ë‹¤ ì…í‹€ì–´ë§‰ê³  ì‰¬ì‰¬í•˜ê³  ìˆì–´. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park01,mapia,1,ê´´í•œ,null,ë„¤ê°€ ì£½ì–´ë„ ì„¸ìƒ ì‚¬ëŒë“¤ì€ ë„¤ê°€ ì£½ì—ˆëŠ”ì§€ë„ ëª¨ë¥¼ê±¸? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park01,mapia,2,ë°•ìš°ì£¼,null,"ê·¸ëŸ¼, ì €ë„ ë‹¹í•˜ê³  ìˆì„ ìˆ˜ ë§Œì€ ì—†ê² ë„¤ìš”. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
