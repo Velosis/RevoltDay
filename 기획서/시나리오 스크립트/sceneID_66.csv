@@ -1,0 +1,22 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,036.UnderOffice,null,null,07.Ladybug,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,"자, 다들 모이셨답니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,시간을 너무 끌은 거 같지 않습니까들. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,유구현이가 함정임 손을 들어버렸네? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,이걸 어째. 테러 사건도 그냥 묻어버렸다잖어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,null,0,미스터 장,null,유구현이 그 건방진 놈이. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,더 이상 시간 끌기 쬐까 뭐시기 하죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+revoltman,null,0,장사장,null,진짜로 죽일 셈인가? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,null,0,미스터 장,null,난 선을 넘는 행위는 절대로 용납 못해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,null,0,미스터 장,null,내 손 들때는 언제고 지 살려고 유구현이랑 손을 잡아. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,null,0,미스터 장,null,언제고 족치려고는 했는데..,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,null,0,미스터 장,null,기회는 지금 뿐이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,쉿. 조용히. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,21.phonebell,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,"여, 함대표. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,내일 모레 일원동에서 회동한 번 가집시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,40.calldwon,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,오늘 회의는 여기까지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,들어가들 봅시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE

@@ -1,0 +1,16 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,016.Royal,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,21.phonebell,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,2,함정임,null,유청장님? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,2,함정임,null,일이 많이 안 좋게 흘러가고 있네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,2,함정임,null,정말이지 마음이 아파요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,2,함정임,null,청장님. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,2,함정임,null,이 일이 터지면. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,2,함정임,null,청장님도 저도 무사하지 못한답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,2,함정임,null,제가 무너지면 청장님도 무너지는 거에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,1,유구현,null,함대표 본인이 깡패가 아니라고 하지 않았나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,2,함정임,null,"제가, 기분이 많이 언잖답니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,2,함정임,null,청장님이 잘 일을 해결해주셨으면 해요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,1,유구현,null,편히 있어도 괜찮아. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,Yu02,1,유구현,null,내 쪽에서 조취를 취해놨으니. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
