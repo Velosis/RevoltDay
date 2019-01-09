@@ -1,0 +1,4 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,008.CityCiber,null,null,null,0,1.1,2,0,FALSE,FALSE,FALSE,FALSE
+Park01,null,0,박우주,null,방해꾼이 있나보네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park01,null,0,박우주,null,스토커는 딱 질색인데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
