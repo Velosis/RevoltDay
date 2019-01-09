@@ -13,6 +13,10 @@ public class SceneMgr : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
+    private void Start()
+    {
+    }
+
     public void SelectSave(int value)
     {
         _currFile = _saveFiles[value];
@@ -20,6 +24,8 @@ public class SceneMgr : MonoBehaviour {
 
     public void StartInGame()
     {
-        SceneManager.LoadScene("1.MainGame");
+        LodingMgrCS.LoadScene("1.MainGame");
+
+        //SceneManager.LoadScene("1.MainGame");
     }
 }

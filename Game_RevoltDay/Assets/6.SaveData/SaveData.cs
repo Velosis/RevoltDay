@@ -10,6 +10,22 @@ public class npcSaveData
     public bool _isTurn;
 }
 
+[System.Serializable]
+public class tileMapDate
+{
+    public int _tileIndex = 0;
+    public float _SafetyValue;
+
+    public bool _isSafetyEff;
+    public bool _isBlockade;
+    public bool _isIssueIcon;
+
+    public bool _isShop;
+    public bool _isSpShop;
+    public bool _isIssue;
+    public bool _isCrime;
+}
+
 
 namespace SaveDateNamespace
 {
@@ -17,6 +33,9 @@ namespace SaveDateNamespace
     public class SaveData : ScriptableObject
     {
         public bool isSaveData;
+
+        // 맵 타일 저장
+        public tileMapDate[] _tileMapList;
 
         // 스토리 진행 관련
         public int _currEventID;

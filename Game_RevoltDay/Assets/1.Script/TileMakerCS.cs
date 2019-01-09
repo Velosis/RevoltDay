@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class TileMakerCS : MonoBehaviour {
-
+    public GameObject _gameMgr;
     private UIMgr uIMgrCS;
 
     public List<string> _cityName;
     private Text _cityText;
 
     public GameObject _tileImage;
-    private List<GameObject> _tileMapList = new List<GameObject>();
+    public List<GameObject> _tileMapList = new List<GameObject>();
     private int _tileMapSizeX = 7;
     private int _tileMapSizeY = 5;
 
@@ -53,10 +53,31 @@ public class TileMakerCS : MonoBehaviour {
                 UIMgr._isSafetyUI += _tileMapList[arrIndex].GetComponent<TileMapDataCS>().isSafetyUI;
                 UIMgr._tileTurnUpdate += _tileMapList[arrIndex].GetComponent<TileMapDataCS>().tileTrunUpdate;
                 arrIndex++;
-
             }
         }
+    }
 
+    private void Start()
+    {
+        if (_gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData) saveLead();
+    }
+
+    public void saveLead()
+    {
+        Debug.Log("불러오기");
+        for (int i = 0; i < _tileMapList.Count; i++)
+        {
+            _tileMapList[i].GetComponent<TileMapDataCS>()._isBlockade = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isBlockade;
+            _tileMapList[i].GetComponent<TileMapDataCS>()._isIssueIcon = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isIssueIcon;
+            _tileMapList[i].GetComponent<TileMapDataCS>()._isSafetyEff = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isSafetyEff;
+            _tileMapList[i].GetComponent<TileMapDataCS>()._isShop = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isShop;
+            _tileMapList[i].GetComponent<TileMapDataCS>()._isSpShop = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isSpShop;
+            _tileMapList[i].GetComponent<TileMapDataCS>()._SafetyValue = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._SafetyValue;
+            _tileMapList[i].GetComponent<TileMapDataCS>()._tileIndex = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._tileIndex;
+            _tileMapList[i].GetComponent<TileMapDataCS>()._isIssue = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isIssue;
+            _tileMapList[i].GetComponent<TileMapDataCS>()._isCrime = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isCrime;
+            _tileMapList[i].GetComponent<TileMapDataCS>().saveSetting();
+        }
     }
 
     public int getTileVlaue(float x, float y)

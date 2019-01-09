@@ -81,6 +81,17 @@ public class EventSysCS : MonoBehaviour {
     {
         if (_currEventID == 0) _currEventID = _eventSysDatesList[_currEventID]._currEventID_Index;
 
+        for (int i = 0; i < _eventSysDatesList.Count; i++)
+        {
+            if (_eventSysDatesList[i]._eventID_Index == _currEventID)
+            {
+                _currEventID = i;
+
+                break;
+            }
+        }
+
+
         if (_eventSysDatesList[_currEventID]._playType_Index == "gameStart")
         {
             eventStart();
@@ -105,6 +116,7 @@ public class EventSysCS : MonoBehaviour {
                 return;
             }
 
+            _playerInfoCS._clueTokenValue -= _eventSysDatesList[_currEventID]._clueToken_Index;
             eventStart();
         }
 
@@ -122,20 +134,75 @@ public class EventSysCS : MonoBehaviour {
 
     public void eventStart()
     {
+
         if (_eventSysDatesList[_currEventID]._selectIcon_Index != "null") tileSetting();
         else if (_eventSysDatesList[_currEventID]._talkScene_Index != "null") talkEventStart();
         else if (_eventSysDatesList[_currEventID]._duel_Index != 0) duelEventStart();
         else if (_eventSysDatesList[_currEventID]._reasoning_Index!= "null") reasoningEventStart(_eventSysDatesList[_currEventID]._reasoning_Index);
 
         _currEventID = _eventSysDatesList[_currEventID]._nextEventID_Index;
+
     }
 
     public void tileSetting()
     {
+        eNpcType tempName = eNpcType.normalEnemy;
         for (int i = 0; i < _iconList.Length; i++)
         {
+            if (_eventSysDatesList[_currEventID]._selectIcon_Index != "PlayerIcon")
+            {
+                switch (_eventSysDatesList[_currEventID]._selectIcon_Index)
+                {
+                    case "Hamicon":
+                        tempName = eNpcType.Hamicon;
+                        break;
+                    case "Jeonicon":
+                        tempName = eNpcType.Jeonicon;
+                        break;
+                    case "Wishicon":
+                        tempName = eNpcType.Wishicon;
+                        break;
+                    case "Youngicon":
+                        tempName = eNpcType.Youngicon;
+                        break;
+                    default:
+                        Debug.Log("tileSetting() : 잘못된 아이콘 정보 입니다.");
+                        break;
+                }
+                _npcSysMgr.sttingNPC(_eventSysDatesList[_currEventID]._settingTile_Index, tempName);
+                return;
+            }
+
+            if (_eventSysDatesList[_currEventID]._selectIcon_Index != "PlayerIcon" &&
+                _eventSysDatesList[_currEventID]._settingTile_Index == 444)
+            {
+
+                switch (_eventSysDatesList[_currEventID]._selectIcon_Index)
+                {
+                    case "Hamicon":
+                        tempName = eNpcType.Hamicon;
+                        break;
+                    case "Jeonicon":
+                        tempName = eNpcType.Jeonicon;
+                        break;
+                    case "Wishicon":
+                        tempName = eNpcType.Wishicon;
+                        break;
+                    case "Youngicon":
+                        tempName = eNpcType.Youngicon;
+                        break;
+                    default:
+                        Debug.Log("tileSetting() : 잘못된 아이콘 정보 입니다.");
+                        break;
+                }
+                _npcSysMgr.DieNpc(tempName);
+                return;
+            }
+
             if (_iconList[i].name == _eventSysDatesList[_currEventID]._selectIcon_Index)
             {
+
+
                 _iconList[i].GetComponent<PlayerInfoCS>().setTileValeu(_eventSysDatesList[_currEventID]._settingTile_Index);
                 return;
             }

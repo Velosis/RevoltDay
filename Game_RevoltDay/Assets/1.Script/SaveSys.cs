@@ -8,6 +8,7 @@ public class SaveSys : MonoBehaviour {
     public PlayerInfoCS _playerInfoCS;
     public EventSysCS _eventSysCS;
     public NpcSysMgr _npcSysMgrCS;
+    public TileMakerCS _tileMakerCS;
 
     public bool _isDeleteSave;
 
@@ -30,6 +31,20 @@ public class SaveSys : MonoBehaviour {
 
     public void saveSys()
     {
+        // 맵 타일 저장
+        for (int i = 0; i < _tileMakerCS.TileMapList.Count; i++)
+        {
+            _saveFile._tileMapList[i]._isBlockade = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isBlockade;
+            _saveFile._tileMapList[i]._isIssueIcon = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isIssueIcon;
+            _saveFile._tileMapList[i]._isSafetyEff = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isSafetyEff;
+            _saveFile._tileMapList[i]._isShop = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isShop;
+            _saveFile._tileMapList[i]._isSpShop = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isSpShop;
+            _saveFile._tileMapList[i]._SafetyValue = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._SafetyValue;
+            _saveFile._tileMapList[i]._tileIndex = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._tileIndex;
+            _saveFile._tileMapList[i]._isIssue = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isIssue;
+            _saveFile._tileMapList[i]._isCrime = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.activeSelf;
+        }
+
         // 최초 저장 여부
         _saveFile.isSaveData = true;
 

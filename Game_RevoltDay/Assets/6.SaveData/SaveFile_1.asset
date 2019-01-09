@@ -11,20 +11,133 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345ced7bea3198544ae4771e31a0d6b8, type: 3}
   m_Name: SaveFile_1
   m_EditorClassIdentifier: 
-  isSaveData: 0
-  _currEventID: 0
-  _clueTokenValue: 0
-  _isAlive: 0
+  isSaveData: 1
+  _tileMapList:
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 1
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 1
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 2
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 3
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 4
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 5
+    _SafetyValue: 0.6
+    _isSafetyEff: 1
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 6
+    _SafetyValue: 0.2
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 7
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 1
+    _isIssue: 0
+  - _tileIndex: 8
+    _SafetyValue: 0.6
+    _isSafetyEff: 1
+    _isBlockade: 0
+    _isIssueIcon: 1
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 1
+  - _tileIndex: 9
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 10
+    _SafetyValue: 0
+    _isSafetyEff: 1
+    _isBlockade: 1
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 11
+    _SafetyValue: 0.2
+    _isSafetyEff: 1
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 12
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 1
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  - _tileIndex: 13
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+  _currEventID: 20
+  _clueTokenValue: 1
+  _isAlive: 1
   _isTurn: 0
   _daleyTurnCount: 0
-  _reasoningValue: 0
-  _currTile: 0
-  _tempCurrTile: 0
-  _currActPoint: 0
-  _currTrunPoint: 0
-  _currHP: 0
-  _MaxHP: 0
-  _atkPoint: 0
+  _reasoningValue: 3
+  _currTile: 7
+  _tempCurrTile: 9
+  _currActPoint: 100
+  _currTrunPoint: 2
+  _currHP: 100
+  _MaxHP: 100
+  _atkPoint: 20
   _WishIcon:
     _currTile: 0
     _isAlive: 0
@@ -35,27 +148,27 @@ MonoBehaviour:
     _isTurn: 0
   _HamSaveData:
     _currRoot: 0
-    _rootChangeValue: 0
+    _rootChangeValue: 33
     _nextRootTile: 0
     _currRootValue: 0
     _currList: 
-    _jeonMoveTileListA: 
-    _jeonMoveTileListB: 
-    _jeonMoveTileListC: 
+    _jeonMoveTileListA: 03000000010000000200000005000000
+    _jeonMoveTileListB: 030000000700000005000000
+    _jeonMoveTileListC: 07000000090000000700000005000000
   _JeonIcon:
     _currTile: 0
     _isAlive: 0
     _isTurn: 0
   _JeonSaveData:
     _currRoot: 0
-    _rootChangeValue: 0
+    _rootChangeValue: 50
     _nextRootTile: 0
     _currRootValue: 0
     _currList: 
-    _jeonMoveTileListA: 
-    _jeonMoveTileListB: 
-    _jeonMoveTileListC: 
-    _jeonMoveTileListD: 
+    _jeonMoveTileListA: 05000000010000000000000002000000060000000a0000000b0000000c000000
+    _jeonMoveTileListB: 0c0000000a00000007000000080000000400000000000000030000000100000005000000
+    _jeonMoveTileListC: 0700000000000000020000000000000004000000090000000b0000000d00000005000000
+    _jeonMoveTileListD: 0b0000000800000004000000000000000100000002000000080000000b0000000c000000
   _YoungIcon:
     _currTile: 0
     _isAlive: 0
@@ -63,4 +176,4 @@ MonoBehaviour:
   _YoungSaveData:
     _nextRootTile: 0
     _currRootValue: 0
-    _YoungMoveTileList: 
+    _YoungMoveTileList: 0700000008000000090000000a0000000b0000000c0000000d0000000c0000000b0000000a00000009000000080000000700000006000000050000000400000006000000

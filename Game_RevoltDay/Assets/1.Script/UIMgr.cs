@@ -31,6 +31,8 @@ public class eventDate
 public class UIMgr : MonoBehaviour {
     static public bool _sNpeTurnEnd = false;
 
+    public ScreenEffMgrCS _screenEffMgrCS;
+
     private GameObject _search_buttonUi;
     private GameObject _Item_buttonUi;
     private GameObject _safety_buttonUi;
@@ -154,6 +156,7 @@ public class UIMgr : MonoBehaviour {
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(false);
         _DuelMgr.SetActive(true);
+        _screenEffMgrCS.startEff();
     }
 
     public void EndDuel()
@@ -161,29 +164,39 @@ public class UIMgr : MonoBehaviour {
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(false);
         _DuelMgr.SetActive(false);
+        _screenEffMgrCS.startEff();
+
     }
 
     public void StartTalk()
     {
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(true);
+        _screenEffMgrCS.startEff();
+
     }
 
     public void EndTalk()
     {
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(false);
+        _screenEffMgrCS.startEff();
+
     }
 
     public void StartReasoning()
     {
         _TalkMgr.SetActive(false);
         _ReasoningMgr.SetActive(true);
+        _screenEffMgrCS.startEff();
+
     }
 
     public void EndReasoning()
     {
         _ReasoningMgr.SetActive(false);
+        _screenEffMgrCS.startEff();
+
     }
 
     public void tileTurnUpdate()

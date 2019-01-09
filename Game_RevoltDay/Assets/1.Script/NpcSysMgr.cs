@@ -129,6 +129,7 @@ public class NpcSysMgr : MonoBehaviour {
             _HamIcon.GetComponent<PlayerInfoCS>()._isTurn = tempData._saveFile._HamIcon._isTurn;
             _HamIcon.GetComponent<PlayerInfoCS>()._currTile = tempData._saveFile._HamIcon._currTile;
             _HamRootBox = tempData._saveFile._HamSaveData;
+            _HamIcon.GetComponent<PlayerInfoCS>().setTileValeu(_HamIcon.GetComponent<PlayerInfoCS>()._currTile);
         }
 
         if (tempData._saveFile._JeonIcon._isAlive)
@@ -136,12 +137,16 @@ public class NpcSysMgr : MonoBehaviour {
             _JeonIcon.GetComponent<PlayerInfoCS>()._isTurn = tempData._saveFile._JeonIcon._isTurn;
             _JeonIcon.GetComponent<PlayerInfoCS>()._currTile = tempData._saveFile._JeonIcon._currTile;
             _JeonRootBox = tempData._saveFile._JeonSaveData;
+            _JeonIcon.GetComponent<PlayerInfoCS>().setTileValeu(_JeonIcon.GetComponent<PlayerInfoCS>()._currTile);
+
         }
 
         if (tempData._saveFile._WishIcon._isAlive)
         {
             _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = tempData._saveFile._WishIcon._isTurn;
             _WishIcon.GetComponent<PlayerInfoCS>()._currTile = tempData._saveFile._WishIcon._currTile;
+            _WishIcon.GetComponent<PlayerInfoCS>().setTileValeu(_WishIcon.GetComponent<PlayerInfoCS>()._currTile);
+
         }
 
         if (tempData._saveFile._YoungIcon._isAlive)
@@ -149,6 +154,8 @@ public class NpcSysMgr : MonoBehaviour {
             _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = tempData._saveFile._YoungIcon._isTurn;
             _YoungIcon.GetComponent<PlayerInfoCS>()._currTile = tempData._saveFile._YoungIcon._currTile;
             _YoungRootBox = tempData._saveFile._YoungSaveData;
+            _YoungIcon.GetComponent<PlayerInfoCS>().setTileValeu(_YoungIcon.GetComponent<PlayerInfoCS>()._currTile);
+
         }
     }
 
@@ -219,6 +226,35 @@ public class NpcSysMgr : MonoBehaviour {
 
         }
         yield return null;
+    }
+
+    public void DieNpc(eNpcType whoNpc)
+    {
+        switch (whoNpc)
+        {
+            case eNpcType.Hamicon:
+                _HamIcon.GetComponent<PlayerInfoCS>()._isAlive = false;
+                _HamIcon.transform.position = Vector2.zero;
+                _HamIcon.GetComponent<PlayerInfoCS>()._currTile = -1;
+                break;
+            case eNpcType.Jeonicon:
+                _JeonIcon.GetComponent<PlayerInfoCS>()._isAlive = false;
+                _JeonIcon.transform.position = Vector2.zero;
+                _JeonIcon.GetComponent<PlayerInfoCS>()._currTile = -1;
+                break;
+            case eNpcType.Wishicon:
+                _WishIcon.GetComponent<PlayerInfoCS>()._isAlive = false;
+                _WishIcon.transform.position = Vector2.zero;
+                _WishIcon.GetComponent<PlayerInfoCS>()._currTile = -1;
+                break;
+            case eNpcType.Youngicon:
+                _YoungIcon.GetComponent<PlayerInfoCS>()._isAlive = false;
+                _YoungIcon.transform.position = Vector2.zero;
+                _YoungIcon.GetComponent<PlayerInfoCS>()._currTile = -1;
+                break;
+            default:
+                break;
+        }
     }
 
     public void sttingNPC(int tileMap, eNpcType whoNpc)

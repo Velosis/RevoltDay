@@ -102,10 +102,6 @@ public class PlayerInfoCS : MonoBehaviour {
 
         }
 
-        Debug.Log(_gameMgr.GetComponent<SaveSys>()._saveFile.name);
-        Debug.Log(_gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData);
-
-
         if (eNpcType.gangicon == _eNpcType && 
             _gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData) saveLead();
     }
