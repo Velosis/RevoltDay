@@ -1,24 +1,24 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,"그래서, 함대표는 내가 그 원인이라 생각하신답니까? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,그럴리가요. 전 미스터 장을 믿는답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,당장에 내부 문건을 해킹한 스미스라는 분도 계시고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,"미스터 장이 그런 사람이 아니라는 걸 누구보다 잘 알고 있는 게, 바로 저 함정임이랍니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,확 기분상하게쓰리. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,난 또 함대표가 날 못믿는 줄 알았네? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,마음이 아프네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,미스터 장을 향한 제 마음을 그리도 몰라주시다니요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,난 이래서 함정임 대표가 무서워. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,거짓말을 하면 말입니다. 티가 나기 마련이에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,근데 말입니다. 함대표는 구라를 쳐도 하는 내내 표정 하나 안 바뀌거든. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,괜히 성공한 인물이 아니야? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,미스터 장? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,그 말은 조금 듣기가 거북하군요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,전 미스터 장에게 거짓말 따위는 하지 않는답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,"아, 어련 하시겠어. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,"미스터 장도, 이 일이 밝혀지지 않도록 힘 좀 보태주길 간절히 바라고 있답니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,"아아, 그럼 그럼, 도와 줘야지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,이래 봬도 경한 기업 주주 중 한명인데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,미스터 장,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,036.UnderOffice,null,null,08.Night_Theme,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam01,2,미스터 장,null,"그래서, 함대표는 내가 그 원인이라 생각하신답니까? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam01,1,함정임,null,그럴리가요. 전 미스터 장을 믿는답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam01,1,함정임,null,당장에 내부 문건을 해킹한 스미스라는 분도 계시고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam01,1,함정임,null,"미스터 장이 그런 사람이 아니라는 걸 누구보다 잘 알고 있는 게, 바로 저 함정임이랍니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam01,2,미스터 장,null,확 기분상하게쓰리. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam01,2,미스터 장,null,난 또 함대표가 날 못믿는 줄 알았네? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,1,함정임,null,마음이 아프네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,1,함정임,null,미스터 장을 향한 제 마음을 그리도 몰라주시다니요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,2,미스터 장,null,난 이래서 함정임 대표가 무서워. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,2,미스터 장,null,거짓말을 하면 말입니다. 티가 나기 마련이에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,2,미스터 장,null,근데 말입니다. 함대표는 구라를 쳐도 하는 내내 표정 하나 안 바뀌거든. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,2,미스터 장,null,괜히 성공한 인물이 아니야? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,1,함정임,null,미스터 장? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,1,함정임,null,그 말은 조금 듣기가 거북하군요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,1,함정임,null,전 미스터 장에게 거짓말 따위는 하지 않는답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam01,2,미스터 장,null,"아, 어련 하시겠어. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam01,1,함정임,null,"미스터 장도, 이 일이 밝혀지지 않도록 힘 좀 보태주길 간절히 바라고 있답니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam01,2,미스터 장,null,"아아, 그럼 그럼, 도와 줘야지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam01,2,미스터 장,null,이래 봬도 경한 기업 주주 중 한명인데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,1,함정임,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,2,미스터 장,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

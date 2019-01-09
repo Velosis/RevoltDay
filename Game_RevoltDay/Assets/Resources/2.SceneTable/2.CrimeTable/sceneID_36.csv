@@ -1,27 +1,27 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,오셨군요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,수사에 협조해주셔서 감사합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,"이하 신변의 보호를 약속드리며, 수사 진행에 도움이 될 시 당국에서 포상을 할 예정입니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,하핫. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,말 하시는 게 꼭 로봇같네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,"경일 기업이 연구하려던 거, 그리고 박대표님이 만들고 계시던거, 그게 뭔 줄 알아요? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,글쎄. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,바이오칩이 될 수 있는 모체 정도인 건 알겠는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,인공지능 사회 생활 도우미 'Q-RAX'. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,이름 한 번 거창하죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,"스스로 사고할 수 있는 로봇, 정도라고 보면 되겠네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,아쉽게도 돌아가신 박대표님이 죽기 직전에 완성본 두대를 모두 소각하신 걸로 기억하지만요.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,그게 그대로 있었더라면…아마 대한민국은 IT 1인자가 되지 않았을까 싶네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,"물론, 성공했다면 함정임 그 양반이 그 명성을 독차지했겠죠? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,그게 바이오칩과의 어떤 연관성을 지닌 겁니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,중추신경계를 조절할 수 있는…그런 거? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,결국에 Q-RAX보다 못한 결과물이 나왔지만요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,글쎄……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,생각보다 좋은 단서는 아닌 것 같지만서도. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,"수사에 협조해주신 부분, 다시 한 번 감사드립니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,연구원,null,예! 좋은 하루 되십시오! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,이렇게 사건 하나 못 건지는 형사를 엘리트라고 하는 이유를 알다가도 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
+null,null,0,,032.Dr.Park,null,null,08.Night_Theme,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,suitman,1,연구원,null,오셨군요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,suitman,2,강원진,null,수사에 협조해주셔서 감사합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,suitman,2,강원진,null,"이하 신변의 보호를 약속드리며, 수사 진행에 도움이 될 시 당국에서 포상을 할 예정입니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,suitman,1,연구원,null,하핫. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,suitman,1,연구원,null,말 하시는 게 꼭 로봇같네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,suitman,2,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,suitman,1,연구원,null,"경일 기업이 연구하려던 거, 그리고 박대표님이 만들고 계시던거, 그게 뭔 줄 알아요? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,suitman,2,이지은,null,글쎄. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,suitman,2,이지은,null,바이오칩이 될 수 있는 모체 정도인 건 알겠는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,suitman,1,연구원,null,인공지능 사회 생활 도우미 'Q-RAX'. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,suitman,1,연구원,null,이름 한 번 거창하죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,suitman,1,연구원,null,"스스로 사고할 수 있는 로봇, 정도라고 보면 되겠네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,suitman,1,연구원,null,아쉽게도 돌아가신 박대표님이 죽기 직전에 완성본 두대를 모두 소각하신 걸로 기억하지만요.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,suitman,1,연구원,null,그게 그대로 있었더라면…아마 대한민국은 IT 1인자가 되지 않았을까 싶네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,suitman,1,연구원,null,"물론, 성공했다면 함정임 그 양반이 그 명성을 독차지했겠죠? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,2,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,2,강원진,null,그게 바이오칩과의 어떤 연관성을 지닌 겁니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,연구원,null,중추신경계를 조절할 수 있는…그런 거? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,연구원,null,결국에 Q-RAX보다 못한 결과물이 나왔지만요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,suitman,2,이지은,null,글쎄……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,suitman,2,이지은,null,생각보다 좋은 단서는 아닌 것 같지만서도. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,suitman,2,강원진,null,"수사에 협조해주신 부분, 다시 한 번 감사드립니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,suitman,1,연구원,null,예! 좋은 하루 되십시오! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,null,0,이지은,null,이렇게 사건 하나 못 건지는 형사를 엘리트라고 하는 이유를 알다가도 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE

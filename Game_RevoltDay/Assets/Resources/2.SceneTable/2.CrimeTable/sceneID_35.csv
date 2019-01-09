@@ -1,6 +1,6 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,이번 에는 뭐라도 건져 보는 게 어떨지 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,원진씨랑 내가 건진 게 너무 없다는 생각이 안드실까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,곧 찾아낼 겁니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,이번에는 뭐라도 건져 보는 게 어떨지 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,원진씨랑 내가 건진 게 너무 없다는 생각이 안드실까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,곧 찾아낼 겁니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE

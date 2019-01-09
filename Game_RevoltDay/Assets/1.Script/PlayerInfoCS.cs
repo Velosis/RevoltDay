@@ -15,6 +15,8 @@ public enum eNpcType
 }
 
 public class PlayerInfoCS : MonoBehaviour {
+    private GameObject _gameMgr;
+
     public enum ePlayerState
     {
         MoveNon,
@@ -46,6 +48,7 @@ public class PlayerInfoCS : MonoBehaviour {
     public bool _isAlive = false;
     public bool _isTurn = false;
     public int _daleyTurnCount = 0;
+    public int _reasoningValue = 3;
 
     public int _currTile = 0;
     public int _tempCurrTile = 0;
@@ -65,6 +68,8 @@ public class PlayerInfoCS : MonoBehaviour {
 
     private void Awake()
     {
+        _gameMgr = GameObject.Find("GameMgr");
+
         if (eNpcType.gangicon == _eNpcType)
         {
             _clueTokenValue += 3;
@@ -85,9 +90,6 @@ public class PlayerInfoCS : MonoBehaviour {
         _moveHandImg.SetActive(false);
 
         _currTrunPoint = 0;
-    }
-
-    void Start() {
 
         if (GameObject.Find("MapTileMgr"))
         {
@@ -99,6 +101,36 @@ public class PlayerInfoCS : MonoBehaviour {
             }
 
         }
+
+        Debug.Log(_gameMgr.GetComponent<SaveSys>()._saveFile.name);
+        Debug.Log(_gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData);
+
+
+        if (eNpcType.gangicon == _eNpcType && 
+            _gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData) saveLead();
+    }
+
+    public void saveLead()
+    {
+        Debug.Log(_gameMgr.GetComponent<SaveSys>().name + "  플레이어 데이터 호출");
+        SaveSys TextSave = _gameMgr.GetComponent<SaveSys>();
+        _clueTokenValue = TextSave._saveFile._clueTokenValue;
+        _isAlive = TextSave._saveFile._isAlive;
+        _isTurn = TextSave._saveFile._isTurn;
+        _daleyTurnCount = TextSave._saveFile._daleyTurnCount;
+        _reasoningValue = TextSave._saveFile._reasoningValue;
+
+        _currTile = TextSave._saveFile._currTile;
+        setTileValeu(_currTile);
+
+        _tempCurrTile = TextSave._saveFile._tempCurrTile;
+        _currActPoint = TextSave._saveFile._currActPoint;
+        _currTrunPoint = TextSave._saveFile._currTrunPoint;
+    }
+
+    void Start() {
+
+
     }
 
     private void Update()
@@ -253,14 +285,14 @@ public class PlayerInfoCS : MonoBehaviour {
                     if (_playerInfoCS._currTile == _currTile)
                     {
                         _uIMgrCS.StartDuel();
-                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType);
+                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0);
                     }
                     break;
                 case eNpcType.Jeonicon:
                     if (_playerInfoCS._currTile == _currTile)
                     {
                         _uIMgrCS.StartDuel();
-                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType);
+                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0);
                     }
                     break;
                 case eNpcType.Parkicon:

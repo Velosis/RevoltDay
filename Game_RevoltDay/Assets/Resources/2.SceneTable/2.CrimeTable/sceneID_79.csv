@@ -1,23 +1,13 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,경찰,null,나타났습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,연행해요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,어째서. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,이지은 경위님. 이게 무슨 짓입니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,조사해봤자 무의미해요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,"아니, 조사하면 원진씨만 더 위험해 질 거야. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,이런 걸 함정 수사라고 하거든. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,가까이 오는 분은 전부 제압합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,경철,null,덮쳐! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,035.CityMild,null,null,02.Biggie,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+Lee03,police,1,경찰,null,나타났습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,police,2,이지은,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,police,2,이지은,null,연행해요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,2,강원진,null,어째서. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,2,강원진,null,이지은 경위님. 이게 무슨 짓입니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,1,이지은,null,조사해봤자 무의미해요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,1,이지은,null,"아니, 조사하면 원진씨만 더 위험해 질 거야. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,1,이지은,null,이런 걸 함정 수사라고 하거든. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,null,0,강원진,null,가까이 오는 분은 전부 제압합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,경찰,null,덮쳐! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,

@@ -1,17 +1,17 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,시위대,null,대장. 우리가 이길 수 있을까요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,우린 어떻게든 승리를 쟁취해야 되지 않겠수? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,여론이 우릴 등져도. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,우린 우리 길을 걸으면 되지 않수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,오소영이. 이 비겁한……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,009.revoltDay,null,null,30.revolt3,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon01,revoltman,1,시위대,null,대장. 우리가 이길 수 있을까요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon01,revoltman,2,전민원,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon01,null,0,전민원,null,우린 어떻게든 승리를 쟁취해야 되지 않겠수? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon01,null,0,전민원,null,여론이 우릴 등져도. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon01,null,0,전민원,null,우린 우리 길을 걸으면 되지 않수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon03,null,0,전민원,null,오소영이. 이 비겁한……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,21.phonebell,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,모르는 번호군. 누구요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,스미스,null,스미스라고 하면 알아들을까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,네 번째 기록. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon01,null,0,전민원,null,모르는 번호군. 누구요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Smith01,null,0,스미스,null,스미스라고 하면 알아들을까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
+null,null,0,,001.Black,네 번째 기록. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,사건은 더욱 심화되어 간다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,나는 갈피를 잡지 못하고 있다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,유구현 청장과 함정임의 관계를 폭로하는 것. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -24,5 +24,5 @@ null,null,0,,null,나는 스스로 사고하는 존재가 되기로 다짐했다
 null,null,0,,null,사건의 진실을 밝혀낸다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,오로지 이러한 목표 하나만 가진 채. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,나는 다시금 팬대를 굴렸다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null, -기록4. 선의라는 것은 추상적인 일이었고. -,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,기록4. 선의라는 것은 추상적인 일이었고.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

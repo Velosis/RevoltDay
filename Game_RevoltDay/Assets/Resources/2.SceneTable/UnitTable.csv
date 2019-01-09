@@ -1,23 +1,23 @@
-Index	grade	type	cgImg	NameKR	NameEN	HP	Fight	FightdiceMin	FightdiceMax	Infightper	Outfightper	Grapplingper	Infightplus	Outfightplus	Grapplingplus
-101	0	player	gang01	°­¿øÁø	Kangwonjin	20	3	1	7	4	4	0	0	0	0
-102	0	player	Park01	¹Ú¿ìÁÖ	Parkwuju	20	3	1	7	4	4	0	0	0	0
-1001	1	enemy	mapia	ÃÊ¹ü	first offender	5	0	1	4	100	0	0	0	0	0
-1002	1	enemy	mapia	Àâ¹ü	petty criminal	6	0	1	4	99	1	0	0	0	0
-1003	1	enemy	mapia	¹ÙÀÌÄ¨ ÀÌ»óÁõ»óÀÚ	biochip zombie	8	2	1	4	90	5	5	1	0	0
-1004	1	enemy	mapia	Á¶Á÷ Æø·Â¹è	gangster	10	3	1	4	80	15	5	0	1	0
-1005	2	enemy	mapia	¾ç¾ÆÄ¡	bully	10	1	1	4	70	15	15	1	0	0
-1006	2	enemy	mapia	Æø·Â ½ÃÀ§´ë	violence protesters	10	3	1	4	10	80	10	0	2	0
-1007	2	enemy	mapia	°æÇÑ±â¾÷ °æÈ£ÆÀ	kyunhan`sescort	10	2	1	4	10	10	80	0	0	1
-1008	3	enemy	mapia	¹ÙÀÌ¿ÀÄ¨ °ú´Ù Áõ»óÀÚ	biochip bully	12	2	1	4	15	70	15	0	1	0
-1009	3	enemy	mapia	¹ÙÀÌ¿ÀÄ¨ ¾ÇÇÑ	biochip gangster	15	3	1	4	10	10	80	1	1	1
-1010	3	enemy	mapia	Àü¹Î¿ø	Geonminwon	20	3	1	7	0	70	30	0	2	0
-1011	3	enemy	mapia	ÇÔÁ¤ÀÓ ºÎÇÏ	Hanjeongim`s servent	15	1	1	7	50	50	0	0	0	0
-1012			mapia	Áß³â³²¼º											
-1013				Àü¹Î¿ø											
-1014				½ÃÀ§´ë¿ø											
-1015				¹Ì½ºÅÍ ÀåÀÇ °æÈ£¿ø											
-1016				¼ö¼­µ¿ Å×·¯¹ü											
-1017				ÀÇ¹®ÀÇ °æÈ£¿ø											
-1018				Çü»ç											
-1019				Çü»ç											
-1020				±«ÇÑ											
+ï»¿Index,grade,type,cgImg,NameKR,NameEN,HP,Fight,FightdiceMin,FightdiceMax,Infightper,Outfightper,Grapplingper,Infightplus,Outfightplus,Grapplingplus
+101,0,player,gang01,ê°•ì›ì§„,Kangwonjin,20,3,1,7,4,4,0,0,0,0
+102,0,player,Park01,ë°•ìš°ì£¼,Parkwuju,20,3,1,7,4,4,0,0,0,0
+1001,1,enemy,mapia,ì´ˆë²”,first offender,5,0,1,4,100,0,0,0,0,0
+1002,1,enemy,mapia,ì¡ë²”,petty criminal,6,0,1,4,99,1,0,0,0,0
+1003,1,enemy,mapia,ë°”ì´ì¹© ì´ìƒì¦ìƒì,biochip zombie,8,2,1,4,90,5,5,1,0,0
+1004,1,enemy,mapia,ì¡°ì§ í­ë ¥ë°°,gangster,10,3,1,4,80,15,5,0,1,0
+1005,2,enemy,mapia,ì–‘ì•„ì¹˜,bully,10,1,1,4,70,15,15,1,0,0
+1006,2,enemy,mapia,í­ë ¥ ì‹œìœ„ëŒ€,violence protesters,10,3,1,4,10,80,10,0,2,0
+1007,2,enemy,mapia,ê²½í•œê¸°ì—… ê²½í˜¸íŒ€,kyunhan`sescort,10,2,1,4,10,10,80,0,0,1
+1008,3,enemy,mapia,ë°”ì´ì˜¤ì¹© ê³¼ë‹¤ ì¦ìƒì,biochip bully,12,2,1,4,15,70,15,0,1,0
+1009,3,enemy,mapia,ë°”ì´ì˜¤ì¹© ì•…í•œ,biochip gangster,15,3,1,4,10,10,80,1,1,1
+1010,3,enemy,Jeon02,ì „ë¯¼ì›,Geonminwon,20,3,1,7,0,70,30,0,2,0
+1011,3,enemy,mapia,í•¨ì •ì„ ë¶€í•˜,Hanjeongim`s servent,15,1,1,7,50,50,0,0,0,0
+1012,3,enemy,mapia,ì¤‘ë…„ë‚¨ì„±,Old men,5,0,1,4,90,10,0,0,0,0
+1013,3,enemy,Jeon02,ì „ë¯¼ì›,Geonminwon,20,3,1,4,0,70,30,0,2,0
+1014,3,enemy,revoltman,ì‹œìœ„ëŒ€ì›,protesters,8,1,1,4,10,80,10,0,2,0
+1015,3,enemy,mapia,ë¯¸ìŠ¤í„° ì¥ì˜ ê²½í˜¸ì›,Mr.Jang`s escort,15,0,1,4,10,10,80,0,0,1
+1016,3,enemy,mapia,ìˆ˜ì„œë™ í…ŒëŸ¬ë²”,biochip gangster,8,2,1,4,10,10,80,1,1,1
+1017,3,enemy,mapia,ì˜ë¬¸ì˜ ê²½í˜¸ì›,escort,10,2,1,4,10,10,80,0,0,1
+1018,3,enemy,police,í˜•ì‚¬,Detecter1,10,3,1,7,20,80,0,0,1,0
+1019,3,enemy,police,í˜•ì‚¬,Detecter2,10,3,1,7,20,80,0,0,1,0
+1020,3,enemy,mapia,ê´´í•œ,gangster,10,3,1,7,10,90,0,0,2,0

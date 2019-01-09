@@ -77,7 +77,7 @@ public class DuelSysCS : MonoBehaviour {
     private bool _isFlashStart;
 
     private string _playerName;
-    private Text _playerNameText;
+    public Text _playerNameText;
     private string _playerImgName;
     private GameObject _playerHpText;
     private GameObject _playerAtkText;
@@ -94,6 +94,8 @@ public class DuelSysCS : MonoBehaviour {
     private int _enemyMaxHP;
     private int _enemyAtk;
     float[] _enemyAtkTypeList = new float[3];
+
+    public bool _isDuelEnd = false;
 
     private RectTransform _L_ChrCenterPos;
     private RectTransform _R_ChrCenterPos;
@@ -150,7 +152,6 @@ public class DuelSysCS : MonoBehaviour {
         _BgmMgr = GameObject.Find("BgmMgr").GetComponent<AudioSource>();
 
         _playerChrImg = GameObject.Find("L_ChrImg");
-        _playerNameText = _playerChrImg.transform.GetChild(0).GetComponent<Text>();
 
         _enemyChrImg = GameObject.Find("R_ChrImg");
         _enemyNameText = _enemyChrImg.transform.GetChild(0).GetComponent<Text>();
@@ -209,11 +210,12 @@ public class DuelSysCS : MonoBehaviour {
         _isPlayerTypeWin = _isEnemyTypeWin = false;
         _playerType = 0;
 
-        readUnitTable();
+        _isDuelEnd = false;
     }
 
     private void Start()
     {
+
         AudioClip _currBgm = null;
         ResourceMgrCS._BgmBox.TryGetValue(_currBgmName, out _currBgm);
         
@@ -262,8 +264,10 @@ public class DuelSysCS : MonoBehaviour {
         }
     }
 
-    public void DuelStartSys(eNpcType enemyNpc)
+    public void DuelStartSys(eNpcType enemyNpc, int indexValue)
     {
+        _isDuelEnd = true;
+
         int tempHP = 0;
         int tempAtk = 0;
 
@@ -295,17 +299,28 @@ public class DuelSysCS : MonoBehaviour {
             if (_playerName == _unitTableList[i]._nameStr)
             {
                 _playerImgName = _unitTableList[i]._cgImg;
-                Debug.Log(_playerImgName + " 찾음");
             }
 
             if (enemyNpc == eNpcType.normalEnemy)
             {
-                while (tempCheck)
+                if (_unitTableList[i]._index == indexValue)
+                {
+                    _enemyImgName = _unitTableList[i]._cgImg;
+                    _enemyName = _unitTableList[i]._nameStr;
+                    tempHP = _unitTableList[i]._maxCurrHp;
+                    tempAtk = _unitTableList[tempCheckValue]._fight;
+                    tempInfight = _unitTableList[i]._infightper;
+                    tempOutfight = _unitTableList[i]._outfightper;
+                    tempGrappling = _unitTableList[i]._grapplingper;
+                    break;
+                }
+
+                while (tempCheck && indexValue == 0)
                 {
                     tempCheckValue = Random.Range(0, _unitTableList.Count);
                     tempName = _unitTableList[tempCheckValue]._nameStr;
 
-                    if (tempName == "전민원" || tempName == "함정임 부하") tempCheck = true;
+                    if (tempName == "전민원" || tempName == "함정임 부하" || tempName == "박우주") tempCheck = true;
                     else
                     {
                         _enemyImgName = _unitTableList[tempCheckValue]._cgImg;
@@ -363,6 +378,7 @@ public class DuelSysCS : MonoBehaviour {
 
         _playerNameText.text = _playerName;
         ResourceMgrCS._imgBox.TryGetValue(_playerImgName, out tempImg);
+        Debug.Log(tempImg.name);
         _playerChrImg.GetComponent<Image>().sprite = tempImg.GetComponent<Image>().sprite;
         _playerChrImg.GetComponent<RectTransform>().sizeDelta = tempImg.GetComponent<RectTransform>().sizeDelta / 2.0f;
 
@@ -381,8 +397,6 @@ public class DuelSysCS : MonoBehaviour {
 
     public void DuelStateSet(eDuelState state)
     {
-        StopAllCoroutines(); // 코루틴 예외 처리
-
         // 예외처리
         _isNextState = _isBackState = _isFlashStart = _isHitEff = false;
         _currTimer = 0.0f;
@@ -411,7 +425,7 @@ public class DuelSysCS : MonoBehaviour {
                 StartCoroutine(BattleEnd());
                 break;
             case eDuelState.battleReward:
-                StartCoroutine(RewardSys());
+                RewardSys();
                 break;
             default:
                 Debug.Log("DuelStateSet : 선택된 전투 상태가 없습니다.");
@@ -808,15 +822,21 @@ public class DuelSysCS : MonoBehaviour {
         yield return null;
     }
 
-    public IEnumerator RewardSys()
+    public void RewardSys()
     {
+        _isDuelEnd = false;
         if (_playerHP <= 0) Debug.Log("게임 오버");
         else if (_enemyCurrHP <= 0)
         {
-            if (_enemyName == "전민원" || _enemyName == "함정임 부하") StartCoroutine(_npcSysMgrCS.NpcAct());
-        }
 
+            if (_enemyName == "전민원" || _enemyName == "함정임 부하")
+            {
+                Debug.Log("결투 NpcAct 실행");
+                _npcSysMgrCS.NpcActPlay();
+            }
+        }
         _uIMgrCS.EndDuel();
-        yield return null;
+
+        return;
     }
 }

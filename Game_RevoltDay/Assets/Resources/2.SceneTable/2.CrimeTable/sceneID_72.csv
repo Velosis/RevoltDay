@@ -1,20 +1,20 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,이 사람은 왜 늘상 늦는걸까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,"정말이지, 매번 똑같은 모습이라는 건 본인이 알까 몰라. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,008.CityCiber,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+Lee03,null,0,이지은,null,이 사람은 왜 늘상 늦는걸까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,null,0,이지은,null,"정말이지, 매번 똑같은 모습이라는 건 본인이 알까 몰라. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,null,0,이지은,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,도곡동을 이렇게 걸어보기는 처음입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,사건때문에 분주했거든요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,박우주,null,나름 형사에 대한 로망이 있었는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,박우주,null,"그, 있잖아요. 드라마에서 나오는 형사들처럼. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,박우주,null,근데 또 진짜 형사들의 세계는 다른가보네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,2,강원진,null,도곡동을 이렇게 걸어보기는 처음입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,2,강원진,null,사건때문에 분주했거든요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,1,박우주,null,나름 형사에 대한 로망이 있었는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,1,박우주,null,"그, 있잖아요. 드라마에서 나오는 형사들처럼. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,1,박우주,null,근데 또 진짜 형사들의 세계는 다른가보네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,방해꾼이 있네? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,곤란한데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,나만의 트로피 수집을 방해하는 훼방꾼이라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,null,0,이지은,null,방해꾼이 있네? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,null,0,이지은,null,곤란한데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,null,0,이지은,null,나만의 트로피 수집을 방해하는 훼방꾼이라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,001.Black,null,null,12.DesertBuilding,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,각종 의문들. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,그리고 미스터 장의 죽음. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
