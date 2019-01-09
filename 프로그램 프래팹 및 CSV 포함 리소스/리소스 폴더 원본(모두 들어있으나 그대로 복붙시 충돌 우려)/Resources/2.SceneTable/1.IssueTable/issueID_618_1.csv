@@ -1,0 +1,8 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,"경위님, 경위님! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,강원진,null,…말씀하십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,순찰 로봇들 있잖습니까.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,"부품이 도난당하는 사건이 좀, 자주 발생하잖아요. 그쵸? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,어떻게든 혼자 수사해보려고 했는데. 이게 좀 무서워서요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,강원진,null,"…예, 알았습니다. 제가 도와드리겠습니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
