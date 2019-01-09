@@ -1,63 +1,55 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,이지은,City,시위현장이네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,"자리를 뜨던가, 그대로 있던가. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,원진씨 마음대로 해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,경찰공무원은……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,안 궁금해. 시위대 근처에 있다가 휘말리지 않을까 그게 더 궁금해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,009.revoltDay,시위현장이네. ,null,02.Biggie,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,"자리를 뜨던가, 그대로 있던가. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,원진씨 마음대로 해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,경찰공무원은……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,안 궁금해. 시위대 근처에 있다가 휘말리지 않을까 그게 더 궁금해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,댁들은 왜 온거요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,신기하네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,막걸리에 밥말아드실것 같이 생긴 분이랑 친구분이셨어? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,그런 당신은 윗 사람 보고도 거수경례 하나 안 하는 경찰이셨지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,아무렴 상관은 없지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,"아 예, 충성. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,아무렴 상관 없다는 말은 들었는지 몰라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon01,null,2,전민원,null,댁들은 왜 온거요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon01,Wish01,1,강소원,null,신기하네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon01,Wish01,1,강소원,null,막걸리에 밥말아드실것 같이 생긴 분이랑 친구분이셨어? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Wish01,2,이지은,null,그런 당신은 윗 사람 보고도 거수경례 하나 안 하는 경찰이셨지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Wish01,2,이지은,null,아무렴 상관은 없지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Wish01,1,강소원,null,"아 예, 충성. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Wish01,2,이지은,null,아무렴 상관 없다는 말은 들었는지 몰라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,"자, 아저씨들, 아줌마들. 퇴근시간이에요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,여기 이렇게 죽치고 앉아서 시위하시면 안 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,해산 안 하시면 깨스 나가 깨스. 내가 결정한 건 아니야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,공권력이라는 게 언제부터 댁네들 자리지키려고 생긴 건지 모르겠수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,우리는 해산할 생각 없수다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,"댁내 양반들 손에서 최루탄이 뿌려진다면, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,그때는 정말 각오해야할거요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,일 꼬이게 하지 맙시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,퇴근해야 돼요. 그만 좀 냅둬요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,원진씨는 뭘 그리 생각하고 있을까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,난리나기 전에 피하는 게 좋겠다는 생각은 안 할까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,이지은 경위님의 이기적인 생각은 현 상황에서 좋지 않은 판단이라 생각됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,원진씨는 왜 이런 상황에만 감정적인 사람인지 알까몰라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,"자, 아저씨들, 아줌마들. 퇴근시간이에요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,여기 이렇게 죽치고 앉아서 시위하시면 안 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,해산 안 하시면 깨스 나가 깨스. 내가 결정한 건 아니야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,Wish01,2,전민원,null,공권력이라는 게 언제부터 댁네들 자리지키려고 생긴 건지 모르겠수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,Wish01,2,전민원,null,우리는 해산할 생각 없수다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,Wish01,2,전민원,null,"댁내 양반들 손에서 최루탄이 뿌려진다면, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,Wish01,2,전민원,null,그때는 정말 각오해야할거요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,Wish01,1,강소원,null,일 꼬이게 하지 맙시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,Wish01,1,강소원,null,퇴근해야 돼요. 그만 좀 냅둬요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,1,이지은,null,원진씨는 뭘 그리 생각하고 있을까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,1,이지은,null,난리나기 전에 피하는 게 좋겠다는 생각은 안 할까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,2,강원진,null,이지은 경위님의 이기적인 생각은 현 상황에서 좋지 않은 판단이라 생각됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,1,이지은,null,원진씨는 왜 이런 상황에만 감정적인 사람인지 알까몰라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,"여러분, 셋도 아니고 둘 세라네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,둘 셀 때 동안 해산 안 하시면 많이 아파요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,엄연한 불법 시위에요. 해산하세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,겁먹지 마시오! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,저 년놈들이 한 발이라도 쏴 재끼면. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,그때는 우리도 나서는 거요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,둘. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,"여러분, 셋도 아니고 둘 세라네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,둘 셀 때 동안 해산 안 하시면 많이 아파요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,엄연한 불법 시위에요. 해산하세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,Wish01,2,전민원,null,겁먹지 마시오! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,Wish01,2,전민원,null,저 년놈들이 한 발이라도 쏴 재끼면. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,Wish01,2,전민원,null,그때는 우리도 나서는 거요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,둘. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,이지은 경위님. 막아야 합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,나서시려면 혼자 나서시든가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,2,강원진,null,이지은 경위님. 막아야 합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,1,이지은,null,나서시려면 혼자 나서시든가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,하나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,하나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,왜 이렇게 귀찮게 부는지 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,왜 이렇게 귀찮게 부는지 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,최루탄들 장착해요. 뭐해. ,01.gunready,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,최루탄들 장착해요. 뭐해. ,01.gunready,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,각자 때릴 거 있으면 뭐 하나라도 주우쇼. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,우리 중 눈먼이라도 생기거든 절대 가만 있지 마시우. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,각자 때릴 거 있으면 뭐 하나라도 주우쇼. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,우리 중 눈먼이라도 생기거든 절대 가만 있지 마시우. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,뭐해요. 발사 안하고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,뭐해요. 발사 안하고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,14.granade,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,13.revolt,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,"저기요, 원진씨? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,나만 두고 달려나가면 어쩌라는 건지 몰라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
+Lee01,null,0,이지은,null,"저기요, 원진씨? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,null,0,이지은,null,나만 두고 달려나가면 어쩌라는 건지 몰라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

@@ -1,11 +1,11 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,021.policeOffice,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang03,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,형사1,null,꼴통새끼 또 저러네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,형사2,null,주둥아리 잘못 놀리다 큰일 난다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,형사3,null,저 또라이새끼 뒤를 받치는 인간이 누구냐. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,형사4,null,그 대-단하신. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,형사2,null,저 또라이새끼 뒤를 받치는 인간이 누구냐. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,형사2,null,그 대-단하신. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,형사1,null,입다물어. 그러다 뭔 꼴 나려고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,빼곡한 글씨들. 한 치의 흐트림 없는 정확한 글씨체. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -29,4 +29,3 @@ null,null,0,,null,"메모장을 넘기고, 마지막 페이지에 도달할때 �
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,주머니에 손을 넣는다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,"다 구겨진 담배곽을 쥐어 꺼내고는, 자리에서 일어났다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,

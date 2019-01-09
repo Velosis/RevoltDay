@@ -1,22 +1,21 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,잘 보시우. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,자기들 배나 부르자고 불량품을 판매한 경한을 보시우! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,바이오칩 탓에 사람들은 서로를 폭행하고! 죽이고! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,이런 개판이 났는데 책임 하나 안 질 수 있단 말이우? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,1분 남았수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,1분안에 자백하면 죄목 몇 개는 눈감아 주겠수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,009.revoltDay,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,잘 보시우. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,자기들 배나 부르자고 불량품을 판매한 경한을 보시우! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,바이오칩 탓에 사람들은 서로를 폭행하고! 죽이고! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,이런 개판이 났는데 책임 하나 안 질 수 있단 말이우? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,1분 남았수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,1분안에 자백하면 죄목 몇 개는 눈감아 주겠수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,정말 모르쇠로 일관하겠다 이말이군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,좋수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,정말 모르쇠로 일관하겠다 이말이군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,좋수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,밝히겠수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,밝히겠수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,21.phonebell,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,전민원,null,여보시우. 누군데 이 상황에 전화를 거는거유?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,01.gunready,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,이런 멍청한! 김씨! 지금 상황에 전화 거...!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,001.Black,null,01.gunready,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,12.gun-x,null,0,2.1,0,0,FALSE,TRUE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,4.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,CG06,null,null,null,0,4.1,0,0,FALSE,TRUE,FALSE,FALSE
 null,null,0,,null,찰나에 벌여진 일이었다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
 null,null,0,,null,화면에서조차도 잡지 못한 총알이 전민원의 스마트폰과 두개골을 꿰뚫고 지나갔다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
 null,null,0,,null,피가 뿜어져나왔다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
@@ -24,8 +23,8 @@ null,null,0,,null,이윽고 카메라는 꺼졌다. ,null,null,0,0.1,0,0,FALSE,T
 null,null,0,,null,요란한 소리와 함께. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
 null,null,0,,null,사람들의 수다소리가 들려오고. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
 null,null,0,,null,방송은 광고로 전환되었다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,TRUE,FALSE,FALSE
-null,null,0,전민원,null,이렇게 될 줄 알았어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,09.St_Francis,0,2.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,전민원,CG07,이렇게 될 줄 알았어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,전민원,null,일이 이렇게 될 거라는 걸 잘 알고 있었는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,전민원,null,후회가 되는 건 어쩔 수가 없나봐. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,전민원,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

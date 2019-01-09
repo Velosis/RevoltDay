@@ -18,7 +18,6 @@ public enum eSearchSelectType
 {
     Non,
     Duel,
-    Reasoning
 }
 
 public class eventDate
@@ -44,6 +43,7 @@ public class UIMgr : MonoBehaviour {
     public GameObject _SearchMgr;
     public GameObject _TalkMgr;
     public GameObject _DuelMgr;
+    public GameObject _ReasoningMgr;
 
     private bool _isSafety;
     public delegate void SafetyUiView(bool isUI);
@@ -68,6 +68,7 @@ public class UIMgr : MonoBehaviour {
     private void Awake()
     {
         IssueTableRead();
+        _DuelMgr.GetComponent<DuelSysCS>().readUnitTable();
 
         _loadingImg.SetActive(false);
         _isSafety = true;
@@ -89,6 +90,7 @@ public class UIMgr : MonoBehaviour {
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(false);
         _DuelMgr.SetActive(false);
+        _ReasoningMgr.SetActive(false);
 
         for (int i = 0; i < _SearchSelectList.Length; i++)
         {
@@ -144,8 +146,7 @@ public class UIMgr : MonoBehaviour {
         _sNpeTurnEnd = true;
         _playerInfoCS.PlayerTileXZ();
         StopAllCoroutines();
-        _npcSysMgr._npcActIEnumerator = StartCoroutine(_npcSysMgr.NpcAct());
-       
+        StartCoroutine(_npcSysMgr.NpcAct());
     }
 
     public void StartDuel()
@@ -172,6 +173,17 @@ public class UIMgr : MonoBehaviour {
     {
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(false);
+    }
+
+    public void StartReasoning()
+    {
+        _TalkMgr.SetActive(false);
+        _ReasoningMgr.SetActive(true);
+    }
+
+    public void EndReasoning()
+    {
+        _ReasoningMgr.SetActive(false);
     }
 
     public void tileTurnUpdate()
@@ -265,12 +277,12 @@ public class UIMgr : MonoBehaviour {
             tempTypeText.text = "-결투-";
             tempSprite.sprite = _SearchSpriteList[0];
         }
-        else if (tempEvent._eventType_Index == 2)
-        {
-            _SearchSelectList[value].GetComponent<SearchSelectData>()._currSelectType = eSearchSelectType.Reasoning;
-            tempTypeText.text = "-추리-";
-            tempSprite.sprite = _SearchSpriteList[1];
-        }
+        //else if (tempEvent._eventType_Index == 2)
+        //{
+        //    _SearchSelectList[value].GetComponent<SearchSelectData>()._currSelectType = eSearchSelectType.Reasoning;
+        //    tempTypeText.text = "-추리-";
+        //    tempSprite.sprite = _SearchSpriteList[1];
+        //}
         _SearchSelectList[value].GetComponent<SearchSelectData>()._sceneID = tempEvent._sceneID_Index;
         tempNameText.text = tempRandStr;
     }

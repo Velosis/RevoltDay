@@ -1,23 +1,7 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,경호원,null,당신 뭐야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,이지은,null,경찰증을 보여준다 해도 태세 전환 한 번 안 일어날 관상이네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,경호원,null,여기가 어디라고 함부로 들어오는 건 지 모르겠지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,경호원,null,여길 찾아낸 이상 곱게 나가진 못하겠지? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,물서서십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
+null,null,0,,036.UnderOffice,null,null,02.Biggie,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+Lee01,mapia,1,경호원,null,당신들 뭐야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,mapia,2,이지은,null,경찰증을 보여준다 해도 태세 전환 한 번 안 일어날 관상이네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,mapia,1,경호원,null,여기가 어디라고 함부로 들어오는 건 지 모르겠지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,mapia,1,경호원,null,여길 찾아낸 이상 곱게 나가진 못하겠지? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,mapia,2,강원진,null,물서서십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

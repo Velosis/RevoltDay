@@ -1,33 +1,31 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,001.Black,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,33.movie,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,…홀로그램? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,"이 영상이 보인다면, 아마 난 이 세상에 없을 거라고 생각한단다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,"프로토타입 아담과, 널 만들었을 때. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,나는 네가 아담보다 더 뛰어난 사고를 할 수 있다는 점에 감탄했단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,내 연구의 성공이 이루어졌다는 첫 신호탄이었으니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,나는 네가 로봇이 아닌 진짜 인간처럼 살았으면 한단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,네가 로봇이라는 걸 인지하지 못했으면 한단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,일반 사람들 처럼 살면서 행복했으면 좋겠단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,이 세상에는 나쁜 사람들이 많단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,"하지만, 나는 네가 이 세상을 살면서 그런 것들에 휘둘리지 않고 너만의 행복한 삶을 사는 게 꿈이라는 걸 알아줬으면 하는구나. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,아담이라는 아이가 있단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,사실 그 아이는 내 기대치만은 못한 아이였지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,null,0,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,2,강원진,null,…홀로그램? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,"이 영상이 보인다면, 아마 난 이 세상에 없을 거라고 생각한단다. ",null,01.A_Quiet_Thought,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,"프로토타입 아담과, 널 만들었을 때. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,나는 네가 아담보다 더 뛰어난 사고를 할 수 있다는 점에 감탄했단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,내 연구의 성공이 이루어졌다는 첫 신호탄이었으니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,나는 네가 로봇이 아닌 진짜 인간처럼 살았으면 한단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,네가 로봇이라는 걸 인지하지 못했으면 한단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,일반 사람들 처럼 살면서 행복했으면 좋겠단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,이 세상에는 나쁜 사람들이 많단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,"하지만, 나는 네가 이 세상을 살면서 그런 것들에 휘둘리지 않고 너만의 행복한 삶을 사는 게 꿈이라는 걸 알아줬으면 하는구나. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,아담이라는 아이가 있단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,사실 그 아이는 내 기대치만은 못한 아이였지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,난 그 아이와 네가 프로그래밍이 아닌 정말 인간과 같은 감정으로 서로 교류했으면 하는 마음이 있었단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,말이 너무 길진 않았나 걱정되는구나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,당부하고싶단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,Dr. 박,null,꼭 사람이 되거라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,27.phock,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,박우주씨. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,박우주씨를 찾아야 해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,난 그 아이와 네가 프로그래밍이 아닌 정말 인간과 같은 감정으로 서로 교류했으면 하는 마음이 있었단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,말이 너무 길진 않았나 걱정되는구나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,애기야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,당부하고싶단다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,suitman,1,Dr. 박,null,꼭 사람이 되거라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,27.phock,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,null,0,강원진,null,박우주씨. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,null,0,강원진,null,박우주씨를 찾아야 해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
