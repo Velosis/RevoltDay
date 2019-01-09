@@ -1,0 +1,21 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,경위님! 지금 당장 나서셔야합니다!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,거리에서 묻지마 살인사건이 일어나고 있다구요!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,police,2,강원진,null,어디입니까.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,mapia,1,살인범,null,오지마! 오지마!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,mapia,2,강원진,null,가만히 계십시오.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,

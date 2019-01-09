@@ -11,4 +11,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345ced7bea3198544ae4771e31a0d6b8, type: 3}
   m_Name: SaveFile
   m_EditorClassIdentifier: 
-  tempInt: 110
+  isSaveData: 0
+  _currEventID: 7
+  _clueTokenValue: 3
+  _isAlive: 1
+  _isTurn: 0
+  _daleyTurnCount: 0
+  _reasoningValue: 3
+  _currTile: 1
+  _tempCurrTile: 0
+  _currActPoint: 10
+  _currTrunPoint: 1
+  _currHP: 100
+  _MaxHP: 100
+  _atkPoint: 20
+  _HamIcon:
+    _currTile: 1
+    _isAlive: 1
+    _isTurn: 0
+  _JeonIcon:
+    _currTile: 1
+    _isAlive: 1
+    _isTurn: 0
+  _ParkIcon:
+    _currTile: 0
+    _isAlive: 0
+    _isTurn: 0
+  _WishIcon:
+    _currTile: 5
+    _isAlive: 1
+    _isTurn: 0
+  _YoungIcon:
+    _currTile: 0
+    _isAlive: 0
+    _isTurn: 0

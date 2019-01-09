@@ -59,14 +59,11 @@ public class _HamMoveRoot
 }
 
 public class NpcSysMgr : MonoBehaviour {
-    public Coroutine _npcActIEnumerator = null;
-
-
+    public GameObject _gameMgr;
     public UIMgr _uIMgrCS;
 
     public GameObject[] _npcList;
     public List<GameObject> _tileMapList;
-    private int _tempNpcCount = 0;
 
     public GameObject _playerIcon;
     public GameObject _HamIcon;
@@ -110,58 +107,91 @@ public class NpcSysMgr : MonoBehaviour {
                     break;
             }
         }
+
+        if (_gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData) saveLead();
     }
 
-    private void Start()
+    public void saveLead()
     {
-        sttingNPC(5, eNpcType.Hamicon);
-        sttingNPC(5, eNpcType.Jeonicon);
-        sttingNPC(5, eNpcType.Wishicon);
-        sttingNPC(6, eNpcType.Youngicon);
+        SaveSys tempData = _gameMgr.GetComponent<SaveSys>();
+
+    }
+
+    //private void Start()
+    //{
+    //    sttingNPC(5, eNpcType.Hamicon);
+    //    sttingNPC(5, eNpcType.Jeonicon);
+    //    sttingNPC(5, eNpcType.Wishicon);
+    //    sttingNPC(6, eNpcType.Youngicon);
+    //}
+
+    public void npcTurnReset()
+    {
+        for (int i = 0; i < _npcList.Length; i++)
+        {
+            _npcList[i].GetComponent<PlayerInfoCS>()._isTurn = false;
+        }
+        Debug.Log("NPC 턴 초기화");
+    }
+
+    public void NpcActPlay()
+    {
+        StartCoroutine(NpcAct());
     }
 
     public IEnumerator NpcAct()
     {
-        _tempNpcCount = 0;
+        int TempTurnValue = 0;
         for (int i = 0; i < _npcList.Length; i++)
         {
-            if (_npcList[i].GetComponent<PlayerInfoCS>()._isAlive) _tempNpcCount++;
+            if (_npcList[i].GetComponent<PlayerInfoCS>()._isAlive &&
+                !_npcList[i].GetComponent<PlayerInfoCS>()._isTurn) TempTurnValue++;
         }
-        _tempNpcCount -= 1; // 플레이어 보정
-        Debug.Log("NpcAct 시작");
-
-        if (_JeonIcon.GetComponent<PlayerInfoCS>()._isAlive && !_JeonIcon.GetComponent<PlayerInfoCS>()._isTurn)
+        TempTurnValue--; // 플레이어 보정
+        if (!_uIMgrCS._DuelMgr.GetComponent<DuelSysCS>()._isDuelEnd &&
+            _JeonIcon.GetComponent<PlayerInfoCS>()._isAlive && !_JeonIcon.GetComponent<PlayerInfoCS>()._isTurn)
         {
             JeonAI();
 
             yield return new WaitForSeconds(4.0f);
-            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
+            TempTurnValue--;
         }
-        if (_WishIcon.GetComponent<PlayerInfoCS>()._isAlive && !_WishIcon.GetComponent<PlayerInfoCS>()._isTurn)
-        {
-            wishAI();
-            yield return new WaitForSeconds(4.0f);
-            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
 
-        }
-        if (_YoungIcon.GetComponent<PlayerInfoCS>()._isAlive && !_YoungIcon.GetComponent<PlayerInfoCS>()._isTurn)
-        {
-            YoungAI();
-            yield return new WaitForSeconds(4.0f);
-            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
-
-        }
-        if (_HamIcon.GetComponent<PlayerInfoCS>()._isAlive && !_HamIcon.GetComponent<PlayerInfoCS>()._isTurn)
+        if (!_uIMgrCS._DuelMgr.GetComponent<DuelSysCS>()._isDuelEnd &&
+            _HamIcon.GetComponent<PlayerInfoCS>()._isAlive && !_HamIcon.GetComponent<PlayerInfoCS>()._isTurn)
         {
             HamAI();
-            yield return new WaitForSeconds(4.0f);
-            if (_uIMgrCS._DuelMgr.activeSelf) yield return null;
 
+            yield return new WaitForSeconds(4.0f);
+            TempTurnValue--;
         }
 
+        if (!_uIMgrCS._DuelMgr.GetComponent<DuelSysCS>()._isDuelEnd &&
+            _WishIcon.GetComponent<PlayerInfoCS>()._isAlive && !_WishIcon.GetComponent<PlayerInfoCS>()._isTurn)
+        {
+            wishAI();
+
+            yield return new WaitForSeconds(4.0f);
+            TempTurnValue--;
+        }
+
+
+        if (!_uIMgrCS._DuelMgr.GetComponent<DuelSysCS>()._isDuelEnd &&
+            _YoungIcon.GetComponent<PlayerInfoCS>()._isAlive && !_YoungIcon.GetComponent<PlayerInfoCS>()._isTurn)
+        {
+            YoungAI();
+
+            yield return new WaitForSeconds(4.0f);
+            TempTurnValue--;
+        }
+
+        if (TempTurnValue == 0)
+        {
+            npcTurnReset();
+            UIMgr._sNpeTurnEnd = false;
+
+        }
         yield return null;
-        Debug.Log("턴 종료됨");
-        UIMgr._sNpeTurnEnd = false;
     }
 
     public void sttingNPC(int tileMap, eNpcType whoNpc)
@@ -184,8 +214,7 @@ public class NpcSysMgr : MonoBehaviour {
             !_HamIcon.GetComponent<PlayerInfoCS>()._isAlive)
         {
             _HamIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount--;
-            _HamIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _HamIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
         }
 
         // 전민원이 삼성동일 경우 루트 설정
@@ -219,7 +248,6 @@ public class NpcSysMgr : MonoBehaviour {
             if (_HamRootBox._currList.Length != _HamRootBox._currRootValue) _HamRootBox._currRootValue++;
             else
             {
-                _tempNpcCount--;
                 return;
             }
 
@@ -228,8 +256,7 @@ public class NpcSysMgr : MonoBehaviour {
 
             _HamIcon.GetComponent<PlayerInfoCS>().npcMoveSys(_HamRootBox._nextRootTile);
 
-            _HamIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _HamIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
             return;
         }
     }
@@ -241,8 +268,7 @@ public class NpcSysMgr : MonoBehaviour {
         if (_YoungIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount > 0 && !_YoungIcon.GetComponent<PlayerInfoCS>()._isAlive)
         {
             _YoungIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount--;
-            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
         }
 
         if (_playerIcon.GetComponent<PlayerInfoCS>()._currTile != _YoungIcon.GetComponent<PlayerInfoCS>()._currTile)
@@ -254,8 +280,7 @@ public class NpcSysMgr : MonoBehaviour {
 
             _YoungIcon.GetComponent<PlayerInfoCS>().npcMoveSys(_YoungRootBox._nextRootTile);
 
-            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
 
             if (_YoungRootBox._YoungMoveTileList.Length != _YoungRootBox._currRootValue) _YoungRootBox._currRootValue++;
 
@@ -265,8 +290,7 @@ public class NpcSysMgr : MonoBehaviour {
         {
             if (_playerIcon.GetComponent<PlayerInfoCS>()._clueTokenValue > 0) _playerIcon.GetComponent<PlayerInfoCS>()._clueTokenValue -= 1;
 
-            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
         }
     }
 
@@ -278,8 +302,7 @@ public class NpcSysMgr : MonoBehaviour {
             !_JeonIcon.GetComponent<PlayerInfoCS>()._isAlive)
         {
             _JeonIcon.GetComponent<PlayerInfoCS>()._daleyTurnCount--;
-            _JeonIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _JeonIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
         }
 
         // 전민원이 삼성동일 경우 루트 설정
@@ -322,7 +345,6 @@ public class NpcSysMgr : MonoBehaviour {
             if (_JeonRootBox._currList.Length != _JeonRootBox._currRootValue) _JeonRootBox._currRootValue++;
             else
             {
-                _tempNpcCount--;
                 return;
             }
 
@@ -331,8 +353,7 @@ public class NpcSysMgr : MonoBehaviour {
 
             _JeonIcon.GetComponent<PlayerInfoCS>().npcMoveSys(_JeonRootBox._nextRootTile);
 
-            _JeonIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _JeonIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
             return;
         }
     }
@@ -343,43 +364,38 @@ public class NpcSysMgr : MonoBehaviour {
         if (Random.Range(1.0f, 100.0f) < 20.0f && _tileMapList[tempCurrTile].GetComponent<TileMapDataCS>()._isBlockade)
         {
             _tileMapList[tempCurrTile].GetComponent<TileMapDataCS>().setBlockade(false);
-            _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
             return;
         }
         else if (Random.Range(1.0f, 100.0f) < 10.0f && _tileMapList[tempCurrTile].GetComponent<TileMapDataCS>()._SafetyValue >= (1.0f / 5.0f) * 3.0f)
         {
             _tileMapList[tempCurrTile].GetComponent<TileMapDataCS>().setSafetyBer(-5.0f);
-            _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
 
             return;
         }else if (_tileMapList[tempCurrTile].GetComponent<TileMapDataCS>()._isBlockade ||
             _tileMapList[tempCurrTile].GetComponent<TileMapDataCS>()._SafetyValue >= (1.0f / 5.0f) * 3.0f)
         {
-            _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-            _tempNpcCount--;
+            _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
 
             return;
         }
 
+
         for (int i = 0; i < _tileMapList.Count; i++) // 치안 게이지가 3이상인 곳이 있는지 탐색
         {
-            if(_tileMapList[i].GetComponent<TileMapDataCS>()._isBlockade ||
+
+            if (_tileMapList[i].GetComponent<TileMapDataCS>()._isBlockade ||
                 _tileMapList[i].GetComponent<TileMapDataCS>()._SafetyValue >= (1.0f / 5.0f) * 3.0f)
             {
                 _WishIcon.GetComponent<PlayerInfoCS>().npcMoveSys(i);
-                _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-                _tempNpcCount--;
+                _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
 
-                Debug.Log("장소 이동");
                 return;
             }
         }
 
-        _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = false;
-        _tempNpcCount--;
-
+        _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
         return;
     }
 }
