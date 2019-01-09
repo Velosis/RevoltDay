@@ -67,8 +67,6 @@ public class UIMgr : MonoBehaviour {
 
     private void Awake()
     {
-        Debug.Log("저장 내가 더빠름");
-
         IssueTableRead();
         _DuelMgr.GetComponent<DuelSysCS>().readUnitTable();
 

@@ -102,12 +102,17 @@ public class PlayerInfoCS : MonoBehaviour {
 
         }
 
+        Debug.Log(_gameMgr.GetComponent<SaveSys>()._saveFile.name);
+        Debug.Log(_gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData);
+
+
         if (eNpcType.gangicon == _eNpcType && 
             _gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData) saveLead();
     }
 
     public void saveLead()
     {
+        Debug.Log(_gameMgr.GetComponent<SaveSys>().name + "  플레이어 데이터 호출");
         SaveSys TextSave = _gameMgr.GetComponent<SaveSys>();
         _clueTokenValue = TextSave._saveFile._clueTokenValue;
         _isAlive = TextSave._saveFile._isAlive;

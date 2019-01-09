@@ -16,7 +16,6 @@ public class _JeonMoveRoot
     public eRootType _currRoot = eRootType.Non;
     public float _rootChangeValue;
 
-
     public int _nextRootTile;
     public int _currRootValue = 0;
 
@@ -108,22 +107,50 @@ public class NpcSysMgr : MonoBehaviour {
             }
         }
 
+    }
+
+    private void Start()
+    {
+        
+        //sttingNPC(5, eNpcType.Hamicon);
+        //sttingNPC(5, eNpcType.Jeonicon);
+        //sttingNPC(5, eNpcType.Wishicon);
+        //sttingNPC(6, eNpcType.Youngicon);
+        
+
         if (_gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData) saveLead();
     }
 
     public void saveLead()
     {
         SaveSys tempData = _gameMgr.GetComponent<SaveSys>();
+        if (tempData._saveFile._HamIcon._isAlive)
+        {
+            _HamIcon.GetComponent<PlayerInfoCS>()._isTurn = tempData._saveFile._HamIcon._isTurn;
+            _HamIcon.GetComponent<PlayerInfoCS>()._currTile = tempData._saveFile._HamIcon._currTile;
+            _HamRootBox = tempData._saveFile._HamSaveData;
+        }
 
+        if (tempData._saveFile._JeonIcon._isAlive)
+        {
+            _JeonIcon.GetComponent<PlayerInfoCS>()._isTurn = tempData._saveFile._JeonIcon._isTurn;
+            _JeonIcon.GetComponent<PlayerInfoCS>()._currTile = tempData._saveFile._JeonIcon._currTile;
+            _JeonRootBox = tempData._saveFile._JeonSaveData;
+        }
+
+        if (tempData._saveFile._WishIcon._isAlive)
+        {
+            _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = tempData._saveFile._WishIcon._isTurn;
+            _WishIcon.GetComponent<PlayerInfoCS>()._currTile = tempData._saveFile._WishIcon._currTile;
+        }
+
+        if (tempData._saveFile._YoungIcon._isAlive)
+        {
+            _YoungIcon.GetComponent<PlayerInfoCS>()._isTurn = tempData._saveFile._YoungIcon._isTurn;
+            _YoungIcon.GetComponent<PlayerInfoCS>()._currTile = tempData._saveFile._YoungIcon._currTile;
+            _YoungRootBox = tempData._saveFile._YoungSaveData;
+        }
     }
-
-    //private void Start()
-    //{
-    //    sttingNPC(5, eNpcType.Hamicon);
-    //    sttingNPC(5, eNpcType.Jeonicon);
-    //    sttingNPC(5, eNpcType.Wishicon);
-    //    sttingNPC(6, eNpcType.Youngicon);
-    //}
 
     public void npcTurnReset()
     {

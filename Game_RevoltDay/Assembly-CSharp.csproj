@@ -69,6 +69,7 @@
     <Compile Include="Assets\1.Script\ReasoningSysCS.cs" />
     <Compile Include="Assets\1.Script\ResourceMgrCS.cs" />
     <Compile Include="Assets\1.Script\SaveSys.cs" />
+    <Compile Include="Assets\1.Script\SceneMgr.cs" />
     <Compile Include="Assets\1.Script\SearchSelectData.cs" />
     <Compile Include="Assets\1.Script\TalkCS\FadeEffCS.cs" />
     <Compile Include="Assets\1.Script\TalkCS\FlashEffCS.cs" />

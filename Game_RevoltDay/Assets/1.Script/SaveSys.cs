@@ -17,8 +17,7 @@ public class SaveSys : MonoBehaviour {
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        Debug.Log("_saveFile._currEventID : " + _saveFile._currEventID);
-
+        _saveFile = GameObject.Find("TileUI").GetComponent<SceneMgr>()._currFile;
     }
 
     private void Update()
@@ -31,6 +30,9 @@ public class SaveSys : MonoBehaviour {
 
     public void saveSys()
     {
+        // 최초 저장 여부
+        _saveFile.isSaveData = true;
+
         // 스토리 진행 관련
         _saveFile._currEventID = _eventSysCS._currEventID;
 
@@ -58,24 +60,27 @@ public class SaveSys : MonoBehaviour {
                 _saveFile._HamIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
                 _saveFile._HamIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
                 _saveFile._HamIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
+                _saveFile._HamSaveData = _npcSysMgrCS._HamRootBox;
             }
             else if (_npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._eNpcType == eNpcType.Jeonicon)
             {
                 _saveFile._JeonIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
                 _saveFile._JeonIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
                 _saveFile._JeonIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
-            }
-            else if (_npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._eNpcType == eNpcType.Parkicon)
-            {
-                _saveFile._ParkIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
-                _saveFile._ParkIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
-                _saveFile._ParkIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
+                _saveFile._JeonSaveData = _npcSysMgrCS._JeonRootBox;
             }
             else if (_npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._eNpcType == eNpcType.Wishicon)
             {
                 _saveFile._WishIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
                 _saveFile._WishIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
                 _saveFile._WishIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
+            }
+            else if (_npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._eNpcType == eNpcType.Youngicon)
+            {
+                _saveFile._YoungIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
+                _saveFile._YoungIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
+                _saveFile._YoungIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
+                _saveFile._YoungSaveData = _npcSysMgrCS._YoungRootBox;
             }
         }
         

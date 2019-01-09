@@ -37,11 +37,17 @@ namespace SaveDateNamespace
         public int _MaxHP;
         public int _atkPoint;
 
-        public npcSaveData _HamIcon;
-        public npcSaveData _JeonIcon;
-        public npcSaveData _ParkIcon;
         public npcSaveData _WishIcon;
+
+        public npcSaveData _HamIcon;
+        public _HamMoveRoot _HamSaveData;
+
+        public npcSaveData _JeonIcon;
+        public _JeonMoveRoot _JeonSaveData;
+
         public npcSaveData _YoungIcon;
+        public _YoungIconMoveRoot _YoungSaveData;
+
     }
 }
 
