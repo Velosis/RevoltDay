@@ -1,0 +1,21 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,City,nul,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,경위님. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,가정폭력 사건으로 아내가 숨진 사건에 대한 수사요청이 들어왔습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,박정우,null,"정황상 남편인데, 계속해서 부인하고 있다네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,2,강원진,null,직접 취조해보겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,nul,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,강원진,null,"잠시, 수사에 협조해주셔야겠습니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,

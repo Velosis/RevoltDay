@@ -1,0 +1,19 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,035.CityMild,null,null,01.A_Quiet_Thought,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,2,강원진,null,박우주씨! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,1,박우주,null,형사님? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,2,강원진,null,솔직하게 말씀해주십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,2,강원진,null,이 모든 상황. 박우주씨의 소행입니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,1,박우주,null,난 당신과 동류니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,1,박우주,null,함정임을 무너뜨려야 할 이유가 있어요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,1,박우주,null,당신도 동조해주면 좋겠어요. 원진씨. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,2,강원진,null,이런 방법은 옳지 않습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,2,강원진,null,보다 더 나은 방법이 있을 거예요! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,1,박우주,null,아니. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,1,박우주,null,함정임은 가장 추악한 죽음을 받아들여야해요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,1,박우주,null,방해하지마요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,2,강원진,null,박우주씨! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
