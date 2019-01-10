@@ -1,21 +1,21 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,청장님! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,유구현,null,"수배된 주제에 여기까지 오다니, 간이 크군. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,한 번만 기회를 주십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,청장님의 비위를 거스르는 짓을 하지 않겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,전 로봇입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,절 쓸만한 가치는 충분히 있습니다! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,유구현,null,너 같은 깡통을 어떻게 이용하라는 건지 모르겠군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,유구현,null,불량품은 쓸 가치가 없는 게 당연한 거 아닌가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,경한기업으로 들어설 수 있게 해주십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,"제가, 박우주를 깨끗하게 처내고, 함정임까지 엮어 청장님께 그 어떠한 피해도 입지 않도록 해보겠습니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,유구현,null,실패하면 끔찍한 꼴을 당하게 될텐데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,유구현,null,자신있나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,자신있습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,유구현,null,좋아. 한 번의 기회를 주지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,유구현,null,"하지만, 실패해서 돌아온다면 그때는 답 없어.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,명심하겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,유구현,null,좋아. 지금 당장 가. 현장에는 말 해 둘테니. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,유구현,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,022.masterOffice,null,null,07.Ladybug,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,강원진,null,청장님! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,1,유구현,null,"수배된 주제에 여기까지 오다니, 간이 크군. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,강원진,null,한 번만 기회를 주십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,강원진,null,청장님의 비위를 거스르는 짓을 하지 않겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,강원진,null,전 로봇입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,강원진,null,절 쓸만한 가치는 충분히 있습니다! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,1,유구현,null,너 같은 깡통을 어떻게 이용하라는 건지 모르겠군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,1,유구현,null,불량품은 쓸 가치가 없는 게 당연한 거 아닌가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,강원진,null,경한기업으로 들어설 수 있게 해주십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,강원진,null,"제가, 박우주를 깨끗하게 처내고, 함정임까지 엮어 청장님께 그 어떠한 피해도 입지 않도록 해보겠습니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,1,유구현,null,실패하면 끔찍한 꼴을 당하게 될텐데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,1,유구현,null,자신있나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,강원진,null,자신있습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,1,유구현,null,좋아. 한 번의 기회를 주지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,1,유구현,null,"하지만, 실패해서 돌아온다면 그때는 답 없어.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,2,강원진,null,명심하겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Yu01,1,유구현,null,좋아. 지금 당장 가. 현장에는 말 해 둘테니. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE

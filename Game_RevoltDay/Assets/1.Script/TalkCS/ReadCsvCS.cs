@@ -31,7 +31,7 @@ public class ReadCsvCS : MonoBehaviour {
 
         switch (_tableType)
         {
-            case eTableType.normal: // 긴급 이슈
+            case eTableType.normal: // 일반 이슈
                 tempResList = Resources.LoadAll("2.SceneTable/1.IssueTable");
                 tempGO = tempResList[Random.Range(0, tempResList.Length)] as TextAsset;
                 date = CSVReader.Read("2.SceneTable/1.IssueTable/" + tempGO.name);

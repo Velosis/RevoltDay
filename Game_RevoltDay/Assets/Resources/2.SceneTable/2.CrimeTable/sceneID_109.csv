@@ -1,22 +1,22 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,null,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,CG09,null,null,10.They_Might_Not,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,피 한방울 안 흘렸다라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,제가 간과한 모양이네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,"설마하니, 이 물건도 기계일줄이야. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,김비서님? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,김비서,null,"예, 대표님. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,톱을 가져와주세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,"직접 분해해서, 바이오칩 사건에 심은 프로그래밍을 해독해야죠?",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,김비서,null,"네, 대표님. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,2,함정임,null,김비서님? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,1,김비서,null,"예, 대표님. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,2,함정임,null,톱을 가져와주세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,2,함정임,null,"직접 분해해서, 바이오칩 사건에 심은 프로그래밍을 해독해야죠?",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,1,김비서,null,"네, 대표님. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,우리 박우주씨는 저를 너무 만만하게 보신 것 같답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,제 취급이 어째 매일같이 나빠지고 있네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,마음이 아프답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,"오, 가져오셨나요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,박대표님이 얼마나 대단한 연구결과물을 만드셨는지 보고싶네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,함정임,CG10,박대표님이 얼마나 대단한 연구결과물을 만드셨는지 보고싶네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,"분해해보면, 우리도 이런 걸 만들 수 있겠죠? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,안 그렇나요. 김비서님? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -37,22 +37,24 @@ null,null,0,함정임,null,이걸로 머리를 두동강내서 머리 속에 박
 null,null,0,함정임,null,사건은 깨끗하게 해결되는 거겠죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,너무 시간을 끌었네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,"이제, 소각시간이랍니다. 박우주씨. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,016.Royal,null,17.gunshoot,null,1,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,32.Attack2,null,1,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,29.revolt2,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,37.camera,null,0,2.1,0,0,FALSE,FALSE,FALSE,TRUE
 null,null,0,,null,null,37.camera,null,0,2.1,0,0,FALSE,FALSE,FALSE,TRUE
-null,null,0,강원진,null,당신을 사기 및 배임 및 횡령 및 살인미수 현행범으로 긴급 체포하겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,누구 맘대로 이러는 걸까요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,유구현 청장이 그새 못버티고 절 배신한 건 아닐까 걱정되네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,마음이 아프답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,당신은 끝났어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,뒤를 봐. 수많은 플래시가 당신을 찍어대고 있어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,한 여성을 상대로 톱을 든 살인마가 된 샘이지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,"머리를, 잘 쓰신 것 같네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,역시 로봇이라 그런 걸까요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,그 점에 대해서는 칭찬해주고싶답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,"하지만, 제가 나가면 강원진 경위님과 유청장님은 무사하지 못 할 거예요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,전 어떻게든 빠져나갈 수 있거든요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,법으로 승부해보시면 되겠지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강원진,null,연행하십시오. ,10.run3,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,함정임,null,절대 무사하지 못할거랍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,"2,1",0,2,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,2,강원진,null,당신을 사기 및 배임 및 횡령 및 살인미수 현행범으로 긴급 체포하겠습니다. ,null,11.True_Art_Real_Affection,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,1,함정임,null,누구 맘대로 이러는 걸까요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,1,함정임,null,유구현 청장이 그새 못버티고 절 배신한 건 아닐까 걱정되네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,1,함정임,null,마음이 아프답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,2,강원진,null,당신은 끝났어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,2,강원진,null,뒤를 봐. 수많은 카메라가 당신을 찍어대고 있어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,2,강원진,null,한 여성을 상대로 톱을 든 살인마가 된 샘이지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,1,함정임,null,"머리를, 잘 쓰신 것 같네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,1,함정임,null,역시 로봇이라 그런 걸까요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,1,함정임,null,그 점에 대해서는 칭찬해주고싶답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,1,함정임,null,"하지만, 제가 나가면 강원진 경위님과 유청장님은 무사하지 못 할 거예요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,1,함정임,null,전 어떻게든 빠져나갈 수 있거든요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,2,강원진,null,법으로 승부해보시면 되겠지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,2,강원진,null,연행하십시오. ,10.run3,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam02,1,함정임,null,절대 무사하지 못할거랍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE

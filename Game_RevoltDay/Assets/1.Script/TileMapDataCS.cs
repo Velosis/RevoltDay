@@ -7,15 +7,15 @@ public class TileMapDataCS : MonoBehaviour {
     private UIMgr _uIMgrCS;
     private List<GameObject> _tileMapList;
 
-    public int _tileIndex = 0;
 
     public GameObject _playerData;
     private GameObject _TileBG;
     public GameObject _IssueImgGO;
     public GameObject _CrimeImgGO;
     public GameObject _SafetyImgGO;
-    public float _SafetyValue;
     public GameObject _SafetyEffImgGO;
+    public int _tileIndex = 0;
+    public float _SafetyValue;
 
     public bool _isSafetyEff;
     public bool _isBlockade;
@@ -24,6 +24,8 @@ public class TileMapDataCS : MonoBehaviour {
     public bool _isShop;
     public bool _isSpShop;
 
+    public bool _isIssue;
+    public bool _isCrime;
     private void Awake()
     {
         _uIMgrCS = GameObject.Find("UIMgr").GetComponent<UIMgr>();
@@ -45,6 +47,15 @@ public class TileMapDataCS : MonoBehaviour {
         _SafetyEffImgGO.SetActive(false);
         _IssueImgGO.SetActive(false);
         _CrimeImgGO.SetActive(false);
+
+        _isIssue = false;
+    }
+
+    public void saveSetting()
+    {
+        _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value = _SafetyValue;
+        isIssue(_isIssue);
+        if (_isSafetyEff) StartCoroutine(safetyEff());
     }
 
     public void tileTrunUpdate()
@@ -62,7 +73,9 @@ public class TileMapDataCS : MonoBehaviour {
     {
         _playerData.GetComponent<PlayerInfoCS>()._currTrunPoint = 0;
         _uIMgrCS._isIssueEvent = true;
+        _isIssue = true;
         isIssue(true);
+        if (_isCrime) _CrimeImgGO.SetActive(true);
     }
 
     public void setBlockade(bool isBlock)
@@ -72,6 +85,7 @@ public class TileMapDataCS : MonoBehaviour {
         else transform.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f);
 
         _uIMgrCS._isIssueEvent = false;
+        _isIssue = false;
         isIssue(false);
 
         if (_isBlockade) _SafetyValue = 0.0f;

@@ -130,8 +130,10 @@ public class TalkIndexCS : MonoBehaviour {
 
     public IEnumerator ShowText(List<string> fullText)
     {
+        Debug.ClearDeveloperConsole();
         for (int s = 0; s < _textIndex.Count; s++)
         {
+            Debug.Log(s + "번째 스크립트 읽음");
             _talkNameBox.text = _talkName[s];
             falsgSys(s);
             ShadowSys(s);
@@ -158,8 +160,9 @@ public class TalkIndexCS : MonoBehaviour {
             #region
             for (int i = 0; i < fullText[s].Length; i++) // for를 통해 한글자씩 출력
             {
-                if (_TalkSkip) { s = _textIndex.Count - 1; }
-                if (_TalkCut) { i = fullText[s].Length - 1; }
+                if (_TalkSkip) { s = _textIndex.Count - 1; break; }
+                if (_TalkCut) { i = fullText[s].Length - 1; break; }
+
                 _currText = fullText[s].Substring(0, i + 1); // 글자 길이 늘려서 출력해주기
                 _textBox.text = _currText; // 현재 스크립트가 속한 텍스트에 출력(고려)
                 yield return _textDaleyWait; // 코루틴을 통해 딜레이 작동
@@ -173,8 +176,11 @@ public class TalkIndexCS : MonoBehaviour {
             else yield return _nextTextDaleyWait;
         }
 
-        if (_eSearchSelectType == eSearchSelectType.Duel) _uIMgrCS.StartDuel();
-        else if (_eSearchSelectType == eSearchSelectType.Reasoning) _uIMgrCS.StartDuel();
+        if (_eSearchSelectType == eSearchSelectType.Duel)
+        {
+            _uIMgrCS.StartDuel();
+            _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, 0);
+        }
         else if (_eSearchSelectType == eSearchSelectType.Non) _uIMgrCS.EndTalk();
         
     }

@@ -1,23 +1,23 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,(보고서) ,19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,(같은 팀에 배치된 강원진 형사에 대한 면담.) ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,001.Black,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,이지은,null,(보고서) ,19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,이지은,null,(같은 팀에 배치된 강원진 형사에 대한 면담.) ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,(심리적으로 불안해 보임. 그는 마치 무언가에 대해 매우 깊게 빠진 듯함.),19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,이지은,null,(심리적으로 불안해 보임. 그는 마치 무언가에 대해 매우 깊게 빠진 듯함.),19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,(사건 조사에 강박적으로 열정적임. 되려 본인의 건강이나 정신적인 부분에 대한 고려가 부족함. ) ,19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,이지은,null,(사건 조사에 강박적으로 열정적임. 되려 본인의 건강이나 정신적인 부분에 대한 고려가 부족함. ) ,19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,(대인교류가 거의 없음. 필요한 말 이외에는 잘 하지 않음. 사건과 관련된 상황 외에는 대화가 일절 없는 경우가 다수.) ,19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,이지은,null,(대인교류가 거의 없음. 필요한 말 이외에는 잘 하지 않음. 사건과 관련된 상황 외에는 대화가 일절 없는 경우가 다수.) ,19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,(결론 : 상담을 통하여 팀웍을 증진시킬 수 있도록 하겠음.) ,19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,이지은,null,(결론 : 상담을 통하여 팀웍을 증진시킬 수 있도록 하겠음.) ,19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,"(이하, 보고 마침.) ",19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,아이들 면담일지도 아니고……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,이지은,null,"(이하, 보고 마침.) ",19.typing,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,null,0,이지은,null,아이들 면담일지도 아니고……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,이지은,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,"…아니지, 생각을 바꾸면 편하잖아. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,null,0,이지은,null,"…아니지, 생각을 바꾸면 편하잖아. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,날 위한 트로피. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,null,0,이지은,null,날 위한 트로피. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,4.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,검게 채워진 파일 속 첫 장을 장식할 첫 번째 기록. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,삼성동 경한기업 앞에서 벌여지는 바이오칩 반대 시위는 나날이 거세져만 간다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

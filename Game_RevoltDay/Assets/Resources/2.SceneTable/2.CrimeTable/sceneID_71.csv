@@ -1,28 +1,28 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,City,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,"아, 형사님 오셨어요? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,연락보다 일찍오셨네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,번거롭게 해서 죄송합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,아니에요. 힘든 사람은 도와야죠. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,013.CityBlue,null,null,06.I_ll_Remember_You,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,1,박우주,null,"아, 형사님 오셨어요? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,1,박우주,null,연락보다 일찍오셨네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,2,강원진,null,번거롭게 해서 죄송합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,1,박우주,null,아니에요. 힘든 사람은 도와야죠. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,박우주씨. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,말씀하세요. 형사님. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,만약에. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,본인이 인간이 아니라는 걸 알게 된다면. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,그떈 어떤 기분이실 것 같나요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,푸훕. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,그게 무슨 엉뚱한 상상이에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,진지합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,2,강원진,null,박우주씨. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,1,박우주,null,말씀하세요. 형사님. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Park01,2,강원진,null,만약에. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Park01,2,강원진,null,본인이 인간이 아니라는 걸 알게 된다면. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Park01,2,강원진,null,그땐 어떤 기분이실 것 같나요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Park01,1,박우주,null,푸훕. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park01,1,박우주,null,그게 무슨 엉뚱한 상상이에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park01,2,강원진,null,진지합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,어……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,혼란스럽겠죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,왜요? 자기가 인간이 아닐까봐? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,실례라는 거 압니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,"조금만 더, 지속적으로 저와 마주해줄 수 있겠습니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,어려운 일도 아니니. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,필요하시다면 불러주세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park01,1,박우주,null,어……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park01,1,박우주,null,혼란스럽겠죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park01,1,박우주,null,왜요? 자기가 인간이 아닐까봐? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park01,2,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,2,강원진,null,실례라는 거 압니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,2,강원진,null,"조금만 더, 지속적으로 저와 마주해줄 수 있겠습니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,1,박우주,null,어려운 일도 아니니. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park01,1,박우주,null,필요하시다면 불러주세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,모든 건 예견된 일이니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Park03,null,0,박우주,null,모든 건 예견된 일이니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
