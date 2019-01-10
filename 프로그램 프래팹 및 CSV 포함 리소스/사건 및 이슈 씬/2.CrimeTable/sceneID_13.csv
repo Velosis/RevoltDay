@@ -19,7 +19,7 @@ Zhang01,Haam01,1,함정임,null,오해가 있으신 것 같습니다. 미스터 
 Zhang01,Haam01,1,함정임,null,전 확실하지 않은 승부에는 돈을 걸지 않아요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,1,함정임,null,"즉, 사행성 오락같은 건 하지 않는다, 정도로 보면 되겠네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang02,Haam01,2,Mr.장,null,"거 인생, 참 재미없게 사시네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang02,Haam01,2,Mr.장,null,"한탕 하고 탕진하고, 그리고 또 떼돈 버는 게 우리들 인생 아니겠습니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam01,2,Mr.장,null,"한 탕 하고 탕진하고, 그리고 또 떼돈 버는 게 우리들 인생 아니겠습니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang02,Haam02,1,함정임,null,그런 걸 보고 실패한 삶이라고들 하지요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang03,Haam02,2,Mr.장,null,주댕이를 놀려도 꼭 그리 놀리네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,2,Mr.장,null,함대표.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -28,7 +28,7 @@ Zhang04,Haam01,1,함정임,null,이번에도 오해가 있으신 것 같습니�
 Zhang04,Haam01,1,함정임,null,"제가 부유해진 건 제 능력이지, 미스터 장의 지원 덕이 아니랍니다.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam01,1,함정임,null,"물론, 여기서 돈을 불린 건 미스터 장도 한 몫 했지요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam01,1,함정임,null,이 점에 대해서는 부정할 생각이 없답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang02,Haam01,2,Mr.장,null,하여간 분위기 깨는 데에는 도가 튼 인간이란말이지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam01,2,Mr.장,null,하여간 분위기 깨는 데에는 도가 튼 인간이란 말이지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,2,Mr.장,null,"뭐, 놀음은 이쯤하고 볼 일부터 봅시다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,2,Mr.장,null,함대표 부탁대로 주위 자잘하고 큰 기업들 싹다 사고팔고 이 지랄 저지랄 개지랄 다 떨어서 매입은 했습디다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,2,Mr.장,null,근데 말입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -52,10 +52,10 @@ Zhang04,Haam02,1,함정임,null,"말을 함부로 하시면, 그게 좀... 안 �
 Zhang04,Haam02,1,함정임,null,사람 일이라는 게 모르는 거 아닌가요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,1,함정임,null,혹시라도 미스터 장에게 해가 되는 일이 끼쳐질까 조금 두려워서. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,1,함정임,null,저는 미스터 장과는 오래도록 좋은 친구 관계를 유지하고 싶습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang04,Haam02,1,함정임,null,"그만큼, 나는 미스터 장에게 깊은 애증을 가지고 있어요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang04,Haam02,1,함정임,null,부탁드려도 괜찮겠지요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,1,함정임,null,"그만큼, 나는 미스터 장에게 깊은 애정을 가지고 있어요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,1,함정임,null,부탁 드려도 괜찮겠지요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,2,Mr.장,null,애정전선이라는 게 혼자 힘으로는 안 되는 법 아니겠습니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang04,Haam02,2,Mr.장,null,서로서로 아껴주고 조심 좀 합시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,2,Mr.장,null,서로 서로 아껴주고 조심 좀 합시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang02,Haam02,2,Mr.장,null,"당연히, 나도 함대표랑은 같은 마음이니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam02,1,함정임,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam02,2,Mr.장,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

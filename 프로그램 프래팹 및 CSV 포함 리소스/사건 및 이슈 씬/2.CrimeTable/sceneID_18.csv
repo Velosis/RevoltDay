@@ -6,11 +6,11 @@ Yu01,null,0,유구현,null,일에 대한 진척이 어느 정도인지 궁금하
 Yu01,null,0,유구현,null,점진적인 발전이라도 있나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,Yu01,2,이지은,null,"조사의 초점은 바이오칩 부작용 사용자들을 중점적으로 두고 진행중입니다, 정도. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,Yu01,2,이지은,null,기타 사항은 굳이 제 얘기가 없어도 될 거라고 봐요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Yu01,2,강원진,null,바이오칩에 대한 부작용 사실여부를 확보 후 경한기업에 대한 압수수색 영장을 목표로 작전을 수행중입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,2,강원진,null,바이오칩에 대한 부작용 사실여부를 확보 후 경한기업에 대한 압수수색 영장을 목표로 작전을 수행 중 입니다.. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,"그래서, 결과는. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,2,강원진,null,없습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,그렇군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Yu02,1,유구현,null,당연한 결과이기도하지. 결국 자네들에게 부탁한 목숨줄은 결국 함정임이니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu02,1,유구현,null,당연한 결과이기도하지. 결국 자네들에게 부탁한 목숨 줄은 결국 함정임이니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu02,1,유구현,null,거목 하나 무너뜨리는 데 걸리는 시간이 아깝다고 생각하진 않아. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu02,2,강원진,null,최대한 빠른 시일 내에 사건의 실마리를 잡겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Yu02,null,0,유구현,null,조바심 낼 필요는 없어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -30,7 +30,7 @@ Lee03,Yu01,2,이지은,null,혼자 할 말 다하고 돌아가라고 하는 게 
 Lee03,Yu01,1,유구현,null,이경위. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,왜 그리 발끈하시는 지 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,혼잣말을 했을 뿐인데. 혹시 찔리시는 게 있나봐. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Yu01,2,강원진,null,저희가 관여할 수 있는 조사범위는 어디까지인지 질문드리고 싶습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,2,강원진,null,저희가 관여할 수 있는 조사범위는 어디까지인지 질문 드리고 싶습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,강남서 쪽이 많이 분주하더군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,"겸사겸사, 삼성동에 경한기업이 있으니, 강남구를 중점적으로 조사하면 더 손쉽게 일을 마무리 지을 수 있겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,Yu01,2,이지은,null,"결국 강남서가 일을 못한다, 이거네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

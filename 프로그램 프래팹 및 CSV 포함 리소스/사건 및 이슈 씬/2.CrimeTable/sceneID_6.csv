@@ -7,7 +7,7 @@ Yu01,null,0,유구현,null,멀뚱히들 있을 건가? ,null,null,0,0.1,0,0,FALS
 Yu01,null,0,유구현,null,서로에 대한 예의는 아닐텐데. ,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,글쎄요. 그다지 썩 좋은 기분만은 아니네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,"어디, 이지은 경위 얘기부터 들어보지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,Yu01,2,이지은,null,전화 한통에 보직이 바뀌는 건 역시 청장 아니면 할 수 없나봐? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,2,이지은,null,전화 한 통에 보직이 바뀌는 건 역시 청장 아니면 할 수 없나봐? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,그런 점에서 기분이 상했다는 건 이해해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,하지만 자신의 자리와 걸맞지 않는 행실은 조금 안타깝군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,이경위도 그렇게 생각하지 않나? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -28,40 +28,40 @@ Lee03,Yu01,1,유구현,null,이지은 경위. ,null,null,0,0.1,0,0,FALSE,FALSE,F
 Lee03,Yu01,1,유구현,null,행실을 조심하라 했을텐데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,null,0,이지은,null,"그렇다면야, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,null,0,이지은,null,서울지방경찰청 소속 이지은 경위입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,null,0,이지은,null,행정소속이었는데…높으신 분께서 저 보고 현장을 뛰라네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,null,0,이지은,null,행정 소속이었는데…높으신 분께서 저 보고 현장을 뛰라네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,null,0,이지은,null,아마도 같이 근무하라는 거겠죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Yu01,null,0,유구현,null,말한 그대로야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Yu01,null,0,유구현,null,강원진 경위는 오늘부로 서울지방경찰청 특수수사부에 배치. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,강원진 경위는 오늘부로 서울지방경찰청 특수 수사부에 배치. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Yu01,null,0,유구현,null,이지은 경위와 단 둘이서 경한 기업을 상대로 내사에 착수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Yu01,null,0,유구현,null,"이하, 추가지시 사항은 구두로, 혹은 메일로 요청. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Yu01,null,0,유구현,null,이에 반대사항들 있나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,"이하, 추가 지시 사항은 구두로, 혹은 메일로 요청. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,이에 반대 사항들 있나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,내근직을 현장직으로 바꾼데에 이의가 있다면? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,자네의 말은 가뿐히 기각하지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,Yu01,1,유구현,null,"애당초 나라를 위해 헌신하는 경찰이 자신의 안위를 위해 일을 마다한다면, 직권남용도 서슴치 않고 싶군. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,1,유구현,null,"애당초 나라를 위해 헌신하는 경찰이 자신의 안위를 위해 일을 마다 한다면, 직권남용도 서슴치 않고 싶군. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,"경찰이 협박을 한다면, 글쎄…썩 보기 좋은 모습은 아닐텐데 말이죠. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,Yu01,1,유구현,null,이 자리 쯤 되면 말 한마디 가지고도 골방 보내기 쉬운 게 세상 이치지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,Yu01,1,유구현,null,이지은 경위는 금일 내로 사표를 작성해서 관련부서에 제출해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,1,유구현,null,이 자리 쯤 되면 말 한 마디 가지고도 골방 보내기 쉬운 게 세상 이치지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,1,유구현,null,이지은 경위는 금일 내로 사표를 작성해서 관련 부서에 제출해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Yu01,null,0,유구현,null,비협조적인 우군은 적대적인 적군보다 위협적인 부분이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Yu01,null,0,유구현,null,이 이야기는 끝난 걸로 하지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Yu01,null,0,유구현,null,강원진 경위는 곧장 이 일에 착수하고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,강원진 경위는 곧 장 이 일에 착수하고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,다시금 적막이 흘렀다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,유구현 청장은 찻잔에 든 커피를 한모금 마시고는 깊게 한숨을 내쉬었다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,유구현 청장은 찻 잔에 든 커피를 한 모금 마시고는 깊게 한숨을 내쉬었다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,차가운 기류가 방 안 가득 메여왔다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,이지은이라 불리운 여성은 이 길고 긴 침묵 속에서 자신이 좋지 않은 선택을 했으리라는 생각에 조심스레 유구현 청장의 눈빛을 흘깃 응시하였다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,한 모금도 마시지 않은 자신의 찻잔을 나긋이 굴리며 나와 유구현 청장의 눈을 차례대로 주시한다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,Yu01,2,이지은,null,한때 협상가로 일 좀 하셨던 분이긴 한가봐? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,2,이지은,null,한 때 협상가로 일 좀 하셨던 분이긴 한가봐? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,짤리는 것 보다 현장에서 일 하는 게 낫겠지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,"그렇다면, 이 일을 완수하고난 다음은? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,그에 합당한 보상은 있는 거겠죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,Yu01,1,유구현,null,승낙한걸로 알아들어도 되겠나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,1,유구현,null,승락한걸로 알아들어도 되겠나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,Yu01,2,이지은,null,"그 전에, 제가 더 빠르게 위로 치고 들어갈 기회만 주신다면. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,Yu01,1,유구현,null,그 점에 대해서는 기꺼이 응해주지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,null,0,강원진,null,사건에 대한 자세한 부가설명이 필요합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,강원진,null,사건에 대한 자세한 부가 설명이 필요합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee01,1,이지은,null,조용히 있다가 이럴 때는 말을 하네? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Lee01,2,강원진,null,저 스스로가 연관 되지 않은 일에 개입하는 건 피차 좋지 않은 결과를 도출해낼 수 있다고 생각됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,저 스스로가 연관 되지 않은 일에 개입하는 건 피차 좋지 않은 결과를 도출 해낼 수 있다고 생각됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee01,1,이지은,null,어련하시겠어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 Yu01,null,0,유구현,null,자네 둘이 치고 들어가는 곳은 경한기업이지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -76,15 +76,15 @@ null,null,0,,null,"그렇다면, 이번 일은 외부적으로 알려서는 안 
 null,null,0,,null,경위직의 경찰 두 명을 부른 것으로 보았을 때 추가인력이 붙을 경우는 충분하다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,하지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,2,강원진,null,차후 추가 인력이 지원되는지 질문드리고 싶습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Yu01,1,유구현,null,부관 하나는 붙여줄 수 있겠지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Yu01,1,유구현,null,직접적인 사건해결에는 배제하도록 해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,1,유구현,null,"뭐, 저 구석에 앉은 부관 하나는 붙여줄 수 있겠지만. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,1,유구현,null,직접적인 사건 해결에는 배제하도록 해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,외부로 세어나가기 쉬운 일이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,이 일은 자네 둘이서 해결해야하네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,"경한기업 내사, 그리고 그에 관련된 사건 조사. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,"강원진 경위 같은 경우는 형사 이전에 협상팀 소속이었으니, 이 점을 잘 활용하면 되겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,이런 일에 저같은 인력이 낭비될 경우는? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,신경전에 머리 하나 더 있다고 나쁠 건 없지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,Yu01,1,유구현,null,"경찰대를 수석졸업할 정도의 명석한 두뇌라면, 제법 가치있을거고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,1,유구현,null,"경찰대를 수석 졸업할 정도의 명석한 두뇌라면, 제법 가치있을거고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,강경위 같은 경우는 내 측근으로 둘 만큼 엘리트적인 인물이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,"뭐, 여기서 더 필요한 게 있나? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,null,0,이지은,null,그렇다면야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -93,4 +93,12 @@ gang01,Yu01,2,강원진,null,청장님. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,F
 gang01,Yu01,1,유구현,null,이의가 있는 건가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,2,강원진,null,…아닙니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,"좋아, 바로 일에 착수하지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,"아, 소개를 잊을 뻔 했군.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,이쪽은 박정우 경장이야.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,자네들을 보조할 사람이지.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,"강남서에서 사건을 해결하는 데에 보조적인 역할만 할테니, 이 점은 유념해 두고.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+police,Lee03,2,박정우,null,서울지방경찰청 소속 박정우 경장입니다. 잘부탁드립니다!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,police,0,이지은,null,음…너무 얼빵해보이는데.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,"자, 시작하지.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,자네들에게 많은 기대를 걸었다는 걸 알아줬으면 좋겠군.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE
