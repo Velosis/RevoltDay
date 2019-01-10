@@ -1,5 +1,0 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,032.Dr.Park,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang02,Lee01,2,강원진,null,"여기가, 컴퍼니 장이라는 곳인 걸까요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Lee01,1,이지은,null,"글쎄. 이렇게 다 망해가는 곳이라면, 미스터 장이라는 사람이 불쌍해지려 하는데. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
