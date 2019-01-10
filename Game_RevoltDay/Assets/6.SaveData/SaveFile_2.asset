@@ -12,6 +12,133 @@ MonoBehaviour:
   m_Name: SaveFile_2
   m_EditorClassIdentifier: 
   isSaveData: 0
+  _tileMapList:
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
   _currEventID: 0
   _clueTokenValue: 0
   _isAlive: 0
@@ -25,23 +152,42 @@ MonoBehaviour:
   _currHP: 0
   _MaxHP: 0
   _atkPoint: 0
-  _HamIcon:
-    _currTile: 0
-    _isAlive: 0
-    _isTurn: 0
-  _JeonIcon:
-    _currTile: 0
-    _isAlive: 0
-    _isTurn: 0
-  _ParkIcon:
-    _currTile: 0
-    _isAlive: 0
-    _isTurn: 0
   _WishIcon:
     _currTile: 0
     _isAlive: 0
     _isTurn: 0
+  _HamIcon:
+    _currTile: 0
+    _isAlive: 0
+    _isTurn: 0
+  _HamSaveData:
+    _currRoot: 0
+    _rootChangeValue: 0
+    _nextRootTile: 0
+    _currRootValue: 0
+    _currList: 
+    _jeonMoveTileListA: 
+    _jeonMoveTileListB: 
+    _jeonMoveTileListC: 
+  _JeonIcon:
+    _currTile: 0
+    _isAlive: 0
+    _isTurn: 0
+  _JeonSaveData:
+    _currRoot: 0
+    _rootChangeValue: 0
+    _nextRootTile: 0
+    _currRootValue: 0
+    _currList: 
+    _jeonMoveTileListA: 
+    _jeonMoveTileListB: 
+    _jeonMoveTileListC: 
+    _jeonMoveTileListD: 
   _YoungIcon:
     _currTile: 0
     _isAlive: 0
     _isTurn: 0
+  _YoungSaveData:
+    _nextRootTile: 0
+    _currRootValue: 0
+    _YoungMoveTileList: 

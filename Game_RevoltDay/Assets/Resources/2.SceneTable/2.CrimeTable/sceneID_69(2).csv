@@ -7,14 +7,14 @@ null,null,0,마스터 장,null,"사, 살려줘!",null,07.Ladybug,0,0.1,0,0,FALSE
 null,null,0,미스터 장,CG04,"이봐, 당신들 나한테 왜 이래? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,장사장,null,난 자네의 그 잔인함이 무서웠어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,장사장,null,"이제 그만 미스터 장, 자네에게서 벗어나고싶네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,TRUE,FALSE
-null,null,0,,null,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,TRUE,FALSE
 null,null,0,미스터 장,null,"제발, 부탁이야. 살려줘!",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,곽이사,null,"이 지경이 된 건 모두 미스터 장, 자네 탓이라는 걸 알아주게. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,TRUE,FALSE
-null,null,0,,null,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,TRUE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,32.Attack2,null,0,1.1,0,0,FALSE,FALSE,TRUE,FALSE
 null,null,0,미스터 장,null,어억! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,미스터 장,null,…뭐 하는 거야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -64,11 +64,6 @@ null,null,0,미스터 장,null,"함대표, 함대표! ",null,null,0,0.1,0,0,FALS
 null,null,0,미스터 장,null,한 번만 기회를 줘! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,미스터 장,null,제발 한 번 만! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,미스터 장,null,날 버리지 마! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,32.Attack2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
-null,null,0,,null,null,32.Attack2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
-null,null,0,,null,null,32.Attack2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
-null,null,0,,null,null,32.Attack2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
-null,null,0,,null,null,32.Attack2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
 null,null,0,,null,null,32.Attack2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
 null,null,0,,null,null,32.Attack2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE
 null,null,0,,null,null,32.Attack2,null,0,2.1,0,0,FALSE,FALSE,TRUE,FALSE

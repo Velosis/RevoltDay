@@ -1,7 +1,7 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 gang02,Jeon02,1,전민원,009.revoltDay,왜 우릴 막는 거요! ,null,11.True_Art_Real_Affection,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Jeon02,1,전민원,null,댁도 결국 한패라는 말 아니겠수? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Jeon02,2,강원진,null,유혈적인 방법으로는 해결할 수 없다 판단 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Jeon02,2,강원진,null,유혈적인 방법으로는 해결할 수 없다 판단됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Jeon02,1,전민원,null,비키시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Jeon02,1,전민원,null,당장 꺼지지 않으면 그 잘나신 머리통을 두짝 내버릴테니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Jeon02,2,강원진,null,안 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
