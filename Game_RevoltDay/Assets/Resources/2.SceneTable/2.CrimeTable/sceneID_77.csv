@@ -4,7 +4,7 @@ gang01,daegiup,1,경영가,null,절 부르셨다는데. ,null,null,0,0.1,0,0,FAL
 gang01,daegiup,2,강원진,null,경일기업의 이사진이셨다고 들었습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,daegiup,1,경영자,null,옛 이야기일 뿐입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,daegiup,1,경영자,null,"근데, 그건 왜……? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang03,daegiup,2,강원진,null,Q-RAX'에 대해 질문드리려합니다.. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,daegiup,2,강원진,null,Q-RAX'에 대해 질문드리려합니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang03,daegiup,1,경영자,null,"뭐, 말씀해 보세요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang03,daegiup,2,강원진,null,폐기되지 않은 Q-RAX가 있습니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang03,daegiup,1,경영자,null,네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

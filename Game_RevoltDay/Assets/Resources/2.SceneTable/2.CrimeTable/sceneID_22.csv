@@ -2,17 +2,17 @@
 null,null,0,,010.BlackTrade,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,null,0,이지은,null,괜한 곳에 있는 게 아니라는 건 확실하기도 싶고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,suitman,1,주인장,null,"뭐, 좋은 거 찾고 있나보네? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,suitman,2,강원진,null,서울지방경찰청에서 나왔습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,suitman,1,주인장,null,본론부터 말 하면 얘기가 빨라질 겁니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,suitman,2,강원진,null,최근 폭력적 성향을 띄는 사람 다수가 무기를 여기서 무기를 매입한 것으로 확인되었습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,suitman,2,이지은,null,본론부터 말하라잖아. 그냥 간단히 말하면 되는거 아닌가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,suitman,2,이지은,null,"그 사람들의 데이터를 갖고 있는지, 안 갖고 있는지 그걸 확인하려는거, 라고 하면 알아듣겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,suitman,1,주인장,null,"딱 봐도 바이오칩 연관 돼서 수사하는 거 같은데, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,suitman,1,주인장,null,"글쎄. 그런 걸로 의심되는 사람도 많이 오긴 오는데, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee01,suitman,1,주인장,null,"애당초 여기는 저 물건너 나라 사람들이나 건달들이 오고가는 곳이지, 그런 일반인은 거의 소수에 불과합디다. ",null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
-Lee01,suitman,1,주인장,null,그런 건수 찾으려면 번지수를 잘못 짚으셨네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,suitman,2,강원진,null,실례라는 인식이 강하나 그에 무릅쓰고 질문을 드립니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee01,suitman,2,이지은,null,쓸만한 거 있으면 사갈 수도 있고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee01,suitman,1,주인장,null,"그렇다면야, 편히 물어보시면 되는 일이고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee01,suitman,1,주인장,null,다른 말 하기 없기입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,1,주인장,null,"뭐, 좋은 거 찾고 있나보네? ",null,03.Blues_Infusion,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,2,강원진,null,서울지방경찰청에서 나왔습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,1,주인장,null,본론부터 말 하면 얘기가 빨라질 겁니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,2,강원진,null,최근 폭력적 성향을 띄는 사람 다수가 무기를 여기서 무기를 매입한 것으로 확인되었습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,shop,2,이지은,null,본론부터 말하라잖아. 그냥 간단히 말하면 되는거 아닌가. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,shop,2,이지은,null,"그 사람들의 데이터를 갖고 있는지, 안 갖고 있는지 그걸 확인하려는거, 라고 하면 알아듣겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,shop,1,주인장,null,"딱 봐도 바이오칩 연관 돼서 수사하는 거 같은데, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,shop,1,주인장,null,"글쎄. 그런 걸로 의심되는 사람도 많이 오긴 오는데, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,shop,1,주인장,null,"애당초 여기는 저 물건너 나라 사람들이나 건달들이 오고가는 곳이지, 그런 일반인은 거의 소수에 불과합디다. ",null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+Lee01,shop,1,주인장,null,그런 건수 찾으려면 번지수를 잘못 짚으셨네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,2,강원진,null,실례라는 인식이 강하나 그에 무릅쓰고 질문을 드립니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,shop,2,이지은,null,쓸만한 거 있으면 사갈 수도 있고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,shop,1,주인장,null,"그렇다면야, 편히 물어보시면 되는 일이고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,shop,1,주인장,null,다른 말 하기 없기입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

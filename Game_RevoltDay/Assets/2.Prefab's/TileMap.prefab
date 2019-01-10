@@ -60,7 +60,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1161724105806076
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +95,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1513085217427766
 GameObject:
   m_ObjectHideFlags: 1
@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1642582177356922
 GameObject:
   m_ObjectHideFlags: 1
@@ -222,15 +222,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c30b39d22233a84c82d898b31cffed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tileIndex: 13
   _playerData: {fileID: 0}
   _IssueImgGO: {fileID: 1127066077424742}
   _CrimeImgGO: {fileID: 1580697966015254}
   _SafetyImgGO: {fileID: 1147599090207816}
   _SafetyEffImgGO: {fileID: 1219793261389040}
+  _tileIndex: 13
+  _SafetyValue: 0
   _isSafetyEff: 0
   _isBlockade: 0
   _isIssueIcon: 0
+  _isShop: 0
+  _isSpShop: 0
+  _isIssue: 0
+  _isCrime: 0
 --- !u!114 &114198213684693316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -283,7 +288,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b11885c99927248a3b672b99a6e838c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dacf591196d492a4898de71fa3f5d806, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -405,14 +410,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
+  m_Color: {r: 0, g: 0.8235294, b: 0.6862745, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: dacf591196d492a4898de71fa3f5d806, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -459,14 +464,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.29578686, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 29c015137e4974586a5e5ac823501657, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -704,7 +709,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
