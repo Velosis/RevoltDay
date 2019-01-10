@@ -1,14 +1,14 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-gang01,suitman,1,주인장,010.BlackTrade,"거 봐, 아무 것도 아니라니까요. ",null,03.Blues_Infusion,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,suitman,2,강원진,null,………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee01,suitman,2,이지은,null,………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,1,주인장,010.BlackTrade,"거 봐, 아무 것도 아니라니까요. ",null,03.Blues_Infusion,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,2,강원진,null,………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,shop,2,이지은,null,………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 suitman,null,0,주인장,null,"물건 하나 사 가시고, 뭐 맘에 들면 또 오는 거고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 suitman,null,0,주인장,null,"대신, 산 다음에 나중에 와서 맘 바껴 판 다는 말만은 안 되는 겁니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 suitman,null,0,주인장,null,"언제든 환영이니, 또 오시길! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Lee01,2,강원진,null,사건에 대해 더 진행하는 게 좋다고 생각하십니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Lee01,1,이지은,null,내 의사를 묻기는 처음인 거 같네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Lee01,1,이지은,null,"쉬든지, 말든지 알 바는 아니라는 거 같긴 하지만. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Lee01,1,이지은,null,"이왕 조사 나온거, 실마리 찾을때 까지 가 보는 것도 좋겠고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,2,강원진,null,사건에 대해 더 진행하는 게 좋다고 생각하십니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,1,이지은,null,내 의사를 묻기는 처음인 거 같네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,1,이지은,null,"쉬든지, 말든지 알 바는 아니라는 거 같긴 하지만. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,shop,1,이지은,null,"이왕 조사 나온거, 실마리 찾을 때 까지 가 보는 것도 좋겠고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE

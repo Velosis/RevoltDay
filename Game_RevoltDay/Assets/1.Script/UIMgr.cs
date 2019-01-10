@@ -11,7 +11,6 @@ public enum eUiName
     SafetyButton,
     WaitButton,
     ShopButton,
-    TalkButton
 }
 
 public enum eSearchSelectType
@@ -38,7 +37,6 @@ public class UIMgr : MonoBehaviour {
     private GameObject _safety_buttonUi;
     private GameObject _wait_buttonUi;
     private GameObject _shop_buttonUi;
-    private GameObject _talk_buttonUi;
     public GameObject _loadingImg;
     public string _loadingText;
 
@@ -79,14 +77,12 @@ public class UIMgr : MonoBehaviour {
         _safety_buttonUi = GameObject.Find("SafetyButton");
         _wait_buttonUi = GameObject.Find("WaitButton");
         _shop_buttonUi = GameObject.Find("ShopButton");
-        _talk_buttonUi = GameObject.Find("TalkButton");
 
         _playerInfoCS = GameObject.Find("PlayerIcon").GetComponent<PlayerInfoCS>();
         _tileMapList = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>().TileMapList;
         _npcSysMgr = GameObject.Find("NpcMgr").GetComponent<NpcSysMgr>();
 
         _shop_buttonUi.SetActive(false);
-        _talk_buttonUi.SetActive(false);
         _isIssueEvent = false;
 
         _SearchMgr.SetActive(false);
@@ -309,7 +305,6 @@ public class UIMgr : MonoBehaviour {
             _safety_buttonUi.SetActive(isOn);
             _wait_buttonUi.SetActive(isOn);
             _shop_buttonUi.SetActive(isOn);
-            _talk_buttonUi.SetActive(isOn);
             return;
         }
 
@@ -329,9 +324,6 @@ public class UIMgr : MonoBehaviour {
                 break;
             case eUiName.ShopButton:
                 _shop_buttonUi.SetActive(isOn);
-                break;
-            case eUiName.TalkButton:
-                _talk_buttonUi.SetActive(isOn);
                 break;
             default:
                 break;
