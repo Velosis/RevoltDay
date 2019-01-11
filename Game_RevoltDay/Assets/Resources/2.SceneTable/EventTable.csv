@@ -38,7 +38,7 @@
 36,null,0,0,36,291,PlayerIcon,1,null,0,null
 291,null,0,0,291,292,Jeonicon,5,null,0,null
 292,null,0,0,292,37,Wishicon,5,null,0,null
-37,tile,0,7,37,38,null,1,sceneID_29,0,null
+37,tile,0,7,37,38,null,0,sceneID_29,0,null
 38,null,0,0,38,39,null,0,sceneID_30,0,null
 39,null,0,0,39,40,null,0,sceneID_31,0,null
 40,null,0,0,40,41,null,0,sceneID_32,0,null

@@ -1,22 +1,12 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,박정우,null,"그, 강원진 경위님?",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,강원진,null,또 무슨 일입니까?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,박정우,null,한 일당이 홀로그램 컴퓨터를 죄다 사재기하고 있습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,박정우,null,경제적 대 혼란이 올 수도 있다구요!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,강원진,null,직접 가겠습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,"그, 강원진 경위님?",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,2,강원진,null,또 무슨 일입니까?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,한 일당이 홀로그램 컴퓨터를 죄다 사재기하고 있습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,경제적 대 혼란이 올 수도 있다구요!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,2,강원진,null,직접 가겠습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,3,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,1.1,0,2,FALSE,FALSE,FALSE,FALSE
 gang01,suitman,0,강원진,null,경찰입니다. 수사에 협조해주시죠.,null,null,0,1.1,0,2,FALSE,FALSE,FALSE,FALSE
 gang01,suitman,0,범인,null,누가 또 꼰질렀나보네.,null,null,0,1.1,0,2,FALSE,FALSE,FALSE,FALSE
 gang01,suitman,0,범인,null,"거, 경찰아저씨. 입 좀 다무셔야겠습니다.",null,null,0,1.1,0,2,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,

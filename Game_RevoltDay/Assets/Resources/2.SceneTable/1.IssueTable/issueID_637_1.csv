@@ -1,23 +1,10 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,박정우,null,경위님! 경위님!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,박정우,null,"지금 도로위에서 폭주족들이 설쳐대고, 난리도 아닙니다!",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,강원진,null,…폭주족까지 제 선에서 해결해야 되는 겁니까?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,박정우,null,오토바이에 치어 죽고 싶지는 않습니다!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,2,강원진,null,…알겠습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,경위님! 경위님!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,"지금 도로위에서 폭주족들이 설쳐대고, 난리도 아닙니다!",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,2,강원진,null,…폭주족까지 제 선에서 해결해야 되는 겁니까?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,오토바이에 치어 죽고 싶지는 않습니다!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,2,강원진,null,…알겠습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,mapia,2,강원진,null,"전원, 저랑 협조해주셔야겠습니다.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,mapia,1,폭주족,null,어딜 짭새새끼가 나대?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,

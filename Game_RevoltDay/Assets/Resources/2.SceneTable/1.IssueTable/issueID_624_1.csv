@@ -1,10 +1,10 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,박정우,null,지금 난리가 났습니다! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,박정우,null,"노숙자들끼리 치고 박고, 난리도 아닙니다! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang03,police,2,강원진,null,혼자 해결하실 생각은 없으신겁니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang03,police,1,박정우,null,너무 위험하지 않습니까! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gnag02,police,2,강원진,null,"……아, 예. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,지금 난리가 났습니다! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,"노숙자들끼리 치고 박고, 난리도 아닙니다! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,helper,2,강원진,null,혼자 해결하실 생각은 없으신겁니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,helper,1,박정우,null,너무 위험하지 않습니까! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gnag02,helper,2,강원진,null,"……아, 예. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,mapia,0,강원진,null,경찰입니다. 즉시 행동을 중단하시고 협조해주십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,mapia,0,노숙자,null,"저 놈 저거, 입 좀 다물게 해 봐라! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

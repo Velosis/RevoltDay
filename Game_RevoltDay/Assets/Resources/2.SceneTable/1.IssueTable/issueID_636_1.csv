@@ -1,23 +1,12 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,박정우,null,경위님! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,강원진,null,또 무슨 일입니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,박정우,null,신세대 바이오칩이 발표된 거 아십니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,박정우,null,"근데, 성능면에서 좀 문제가 있다네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,박정우,null,"갑자기 실신한다던가, 하는데 이 쪽에서 덮고 있다고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,0,강원진,null,수사해보겠습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,경위님! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,2,강원진,null,또 무슨 일입니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,신세대 바이오칩이 발표된 거 아십니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,박정우,null,"근데, 성능면에서 좀 문제가 있다네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,2,박정우,null,"갑자기 실신한다던가, 하는데 이 쪽에서 덮고 있다고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,강원진,null,수사해보겠습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,null,0,강원진,null,경찰입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,mapia,0,제조업자,null,수사에 협조해주셔야겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,mapia,0,제조업자,null,우린 아무 잘못한 게 없다니까요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
