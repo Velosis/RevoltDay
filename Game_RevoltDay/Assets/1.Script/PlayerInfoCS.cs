@@ -72,7 +72,7 @@ public class PlayerInfoCS : MonoBehaviour {
 
         if (eNpcType.gangicon == _eNpcType)
         {
-            _clueTokenValue += 3;
+            _clueTokenValue += 0;
             _isAlive = true;
         }
 
@@ -124,11 +124,6 @@ public class PlayerInfoCS : MonoBehaviour {
         _currTrunPoint = TextSave._saveFile._currTrunPoint;
     }
 
-    void Start() {
-
-
-    }
-
     private void Update()
     {
         if (_eNpcType != eNpcType.gangicon) return;
@@ -156,6 +151,8 @@ public class PlayerInfoCS : MonoBehaviour {
         _uIMgrCS.isUiOnOff(eUiName.SearchButton, true);
         _uIMgrCS.isUiOnOff(eUiName.ItemButton, true);
         _uIMgrCS.isUiOnOff(eUiName.WaitButton, true);
+        _uIMgrCS.isUiOnOff(eUiName.SafetyButton, true);
+
 
         if (_tileMapDataCS._isBlockade)
         {
@@ -165,6 +162,22 @@ public class PlayerInfoCS : MonoBehaviour {
             _uIMgrCS.isUiOnOff(eUiName.ShopButton, true);
             return;
         }
+    }
+
+    public void PlayerMoveNot(bool isTrye)
+    {
+        if (isTrye)
+        {
+            _currMoveState = ePlayerState.MoveReady;
+            _nextTileMark.SetActive(false);
+
+        }
+        else
+        {
+            _currMoveState = ePlayerState.MoveNon;
+            _nextTileMark.SetActive(false);
+        }
+
     }
 
     public void PlayerMoveSys()

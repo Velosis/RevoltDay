@@ -26,6 +26,13 @@ public class ReasoningMgrCS : MonoBehaviour {
         _stateValueText = _reasoningUIGO.transform.GetChild(1).gameObject.transform.GetChild(0).GetComponent<Text>();
     }
 
+    private void OnEnable()
+    {
+        _checkPopupUI.SetActive(false);
+        _missionPopupUI.SetActive(false);
+        _trueCheckPopUI.SetActive(false);
+    }
+
     public void settingScene(string sceneName)
     {
         _allTrue = false;

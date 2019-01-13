@@ -12,13 +12,13 @@ public class SaveSys : MonoBehaviour {
 
     public bool _isDeleteSave;
 
-    // 플레이어 정보
 
+    public bool _TEST_BOOL;
 
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        _saveFile = GameObject.Find("TileUI").GetComponent<SceneMgr>()._currFile;
+        if (!_TEST_BOOL) _saveFile = GameObject.Find("TileUI").GetComponent<SceneMgr>()._currFile;
     }
 
     private void Update()
