@@ -64,7 +64,6 @@ public class TileMapDataCS : MonoBehaviour {
 
         if (!_isBlockade && !_uIMgrCS._isIssueEvent && Random.Range(0, 100) <= 20 && _playerData.GetComponent<PlayerInfoCS>()._currTrunPoint >= 3)
         {
-            Debug.Log("_isBlockade : " + _isBlockade.ToString());
             _tileMapList[Random.Range(0, _tileMapList.Count)].GetComponent<TileMapDataCS>().setIssueEvent();
         }
     }
@@ -75,6 +74,8 @@ public class TileMapDataCS : MonoBehaviour {
         _uIMgrCS._isIssueEvent = true;
         _isIssue = true;
         isIssue(true);
+        _IssueImgGO.GetComponent<Canvas>().overrideSorting = true;
+
         if (_isCrime) _CrimeImgGO.SetActive(true);
     }
 

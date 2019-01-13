@@ -121,6 +121,8 @@ public class TalkIndexCS : MonoBehaviour {
 
     public void startTalk()
     {
+        if (_Bgm.isPlaying) _Bgm.Stop();
+        if (_Se.isPlaying) _Se.Stop();
         _textBox.text = "";
         _TalkSkip = false;
         _TalkCut = false;
@@ -176,13 +178,17 @@ public class TalkIndexCS : MonoBehaviour {
             else yield return _nextTextDaleyWait;
         }
 
+        if (_Bgm.isPlaying) _Bgm.Stop();
+        if (_Se.isPlaying) _Se.Stop();
+
         if (_eSearchSelectType == eSearchSelectType.Duel)
         {
             _uIMgrCS.StartDuel();
             _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, 0);
         }
         else if (_eSearchSelectType == eSearchSelectType.Non) _uIMgrCS.EndTalk();
-        
+
+
     }
 
     public void ShadowSys(int talkValue)

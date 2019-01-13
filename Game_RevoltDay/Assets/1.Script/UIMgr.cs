@@ -31,6 +31,8 @@ public class UIMgr : MonoBehaviour {
     static public bool _sNpeTurnEnd = false;
 
     public ScreenEffMgrCS _screenEffMgrCS;
+    public EventSysCS _eventSysCS;
+
 
     private GameObject _search_buttonUi;
     private GameObject _Item_buttonUi;
@@ -69,6 +71,7 @@ public class UIMgr : MonoBehaviour {
     {
         IssueTableRead();
         _DuelMgr.GetComponent<DuelSysCS>().readUnitTable();
+        _eventSysCS = GameObject.Find("GameMgr").GetComponent<EventSysCS>();
 
         _loadingImg.SetActive(false);
         _isSafety = true;
@@ -149,6 +152,7 @@ public class UIMgr : MonoBehaviour {
 
     public void StartDuel()
     {
+        _playerInfoCS.PlayerMoveNot(false);
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(false);
         _DuelMgr.SetActive(true);
@@ -157,6 +161,7 @@ public class UIMgr : MonoBehaviour {
 
     public void EndDuel()
     {
+        _playerInfoCS.PlayerMoveNot(true);
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(false);
         _DuelMgr.SetActive(false);
@@ -166,6 +171,8 @@ public class UIMgr : MonoBehaviour {
 
     public void StartTalk()
     {
+        _playerInfoCS.PlayerMoveNot(false);
+
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(true);
         _screenEffMgrCS.startEff();
@@ -174,6 +181,8 @@ public class UIMgr : MonoBehaviour {
 
     public void EndTalk()
     {
+        _playerInfoCS.PlayerMoveNot(true);
+
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(false);
         _screenEffMgrCS.startEff();
@@ -182,6 +191,8 @@ public class UIMgr : MonoBehaviour {
 
     public void StartReasoning()
     {
+        _playerInfoCS.PlayerMoveNot(false);
+
         _TalkMgr.SetActive(false);
         _ReasoningMgr.SetActive(true);
         _screenEffMgrCS.startEff();
@@ -190,6 +201,8 @@ public class UIMgr : MonoBehaviour {
 
     public void EndReasoning()
     {
+        _playerInfoCS.PlayerMoveNot(true);
+
         _ReasoningMgr.SetActive(false);
         _screenEffMgrCS.startEff();
 
@@ -197,6 +210,7 @@ public class UIMgr : MonoBehaviour {
 
     public void tileTurnUpdate()
     {
+        _eventSysCS.CrimeCheck();
         _tileTurnUpdate();
 
         if (_isIssueEvent) _isIssueEvent = false;

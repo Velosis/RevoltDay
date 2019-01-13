@@ -165,7 +165,6 @@ public class NpcSysMgr : MonoBehaviour {
         {
             _npcList[i].GetComponent<PlayerInfoCS>()._isTurn = false;
         }
-        Debug.Log("NPC 턴 초기화");
     }
 
     public void NpcActPlay()
@@ -175,6 +174,7 @@ public class NpcSysMgr : MonoBehaviour {
 
     public IEnumerator NpcAct()
     {
+        _playerIcon.GetComponent<PlayerInfoCS>().PlayerMoveNot(false);
         int TempTurnValue = 0;
         for (int i = 0; i < _npcList.Length; i++)
         {
@@ -223,6 +223,7 @@ public class NpcSysMgr : MonoBehaviour {
         {
             npcTurnReset();
             UIMgr._sNpeTurnEnd = false;
+            _playerIcon.GetComponent<PlayerInfoCS>().PlayerMoveNot(true);
 
         }
         yield return null;

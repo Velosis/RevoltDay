@@ -32,7 +32,6 @@ public class EventSysCS : MonoBehaviour {
 
     private NpcSysMgr _npcSysMgr;
 
-
     public bool _isStop;
     private void Awake()
     {
@@ -75,6 +74,8 @@ public class EventSysCS : MonoBehaviour {
             !_uIMgrCS._DuelMgr.activeSelf &&
             !_uIMgrCS._SearchMgr.activeSelf &&
             !_uIMgrCS._ReasoningMgr.activeSelf) eventSys();
+
+
     }
 
     public void eventSys()
@@ -90,7 +91,6 @@ public class EventSysCS : MonoBehaviour {
                 break;
             }
         }
-
 
         if (_eventSysDatesList[_currEventID]._playType_Index == "gameStart")
         {
@@ -125,7 +125,18 @@ public class EventSysCS : MonoBehaviour {
             _tileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(false);
         }
 
-        if (_eventSysDatesList[_currEventID]._eventTile_Index != 0 &&
+        //if (_eventSysDatesList[_currEventID]._eventTile_Index != 0 &&
+        //    !_tileMapList[_eventSysDatesList[_currEventID]._eventTile_Index].GetComponent<TileMapDataCS>()._CrimeImgGO.activeSelf)
+        //{
+        //    Debug.Log("이녀석이 범인이다");
+        //    _tileMapList[_eventSysDatesList[_currEventID]._eventTile_Index].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(true);
+        //}
+
+    }
+
+    public void CrimeCheck()
+    {
+        if ((_playerInfoCS._clueTokenValue >= _eventSysDatesList[_currEventID]._clueToken_Index) && _eventSysDatesList[_currEventID]._eventTile_Index != 0 &&
             !_tileMapList[_eventSysDatesList[_currEventID]._eventTile_Index].GetComponent<TileMapDataCS>()._CrimeImgGO.activeSelf)
         {
             _tileMapList[_eventSysDatesList[_currEventID]._eventTile_Index].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(true);
@@ -134,7 +145,6 @@ public class EventSysCS : MonoBehaviour {
 
     public void eventStart()
     {
-
         if (_eventSysDatesList[_currEventID]._selectIcon_Index != "null") tileSetting();
         else if (_eventSysDatesList[_currEventID]._talkScene_Index != "null") talkEventStart();
         else if (_eventSysDatesList[_currEventID]._duel_Index != 0) duelEventStart();
