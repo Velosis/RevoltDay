@@ -184,7 +184,7 @@ public class TalkIndexCS : MonoBehaviour {
         if (_eSearchSelectType == eSearchSelectType.Duel)
         {
             _uIMgrCS.StartDuel();
-            _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, 0);
+            _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, 0, false);
         }
         else if (_eSearchSelectType == eSearchSelectType.Non) _uIMgrCS.EndTalk();
 
@@ -343,14 +343,13 @@ public class TalkIndexCS : MonoBehaviour {
         if (_RedFlashIndex[talkValue])
         {
             _flash_Eff.SetActive(true);
+            Debug.Log("상태 확인 : " + _flash_Eff.activeSelf);
             StartCoroutine(_flashEffCS.RedFlashIn(1.0f));
-            _flash_Eff.SetActive(false);
         }
         if (_WhiteFlashIndex[talkValue])
         {
             _flash_Eff.SetActive(true);
             StartCoroutine(_flashEffCS.WhiteFlashIn(1.0f));
-            _flash_Eff.SetActive(false);
         }
     }
 }

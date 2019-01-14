@@ -294,14 +294,14 @@ public class PlayerInfoCS : MonoBehaviour {
                     if (_playerInfoCS._currTile == _currTile)
                     {
                         _uIMgrCS.StartDuel();
-                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0);
+                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0, true);
                     }
                     break;
                 case eNpcType.Jeonicon:
                     if (_playerInfoCS._currTile == _currTile)
                     {
                         _uIMgrCS.StartDuel();
-                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0);
+                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0, true);
                     }
                     break;
                 case eNpcType.Parkicon:

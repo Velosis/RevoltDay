@@ -147,4 +147,9 @@ public class TileMapDataCS : MonoBehaviour {
         _SafetyValue = _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value;
         if (_SafetyValue >= 1.0f) setBlockade(true);
     }
+
+    private void OnDisable()
+    {
+        _IssueImgGO.GetComponent<Canvas>().overrideSorting = false;
+    }
 }

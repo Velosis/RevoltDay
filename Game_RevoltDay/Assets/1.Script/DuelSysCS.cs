@@ -96,6 +96,7 @@ public class DuelSysCS : MonoBehaviour {
     float[] _enemyAtkTypeList = new float[3];
 
     public bool _isDuelEnd = false;
+    public bool _isCrime = false;
 
     private RectTransform _L_ChrCenterPos;
     private RectTransform _R_ChrCenterPos;
@@ -110,6 +111,7 @@ public class DuelSysCS : MonoBehaviour {
     private GameObject _diceFighterStartScreen;
     private GameObject _battleButton;
     private GameObject _runButton;
+    private GameObject _ActPointText;
 
     private GameObject _L_ChrType;
     private GameObject _R_ChrType;
@@ -163,6 +165,7 @@ public class DuelSysCS : MonoBehaviour {
 
         _battleButton = GameObject.Find("BattleButton");
         _runButton = GameObject.Find("RunButton");
+        _ActPointText = GameObject.Find("ActPointText");
 
         _L_ChrCenterPos = GameObject.Find("L_ChrCenter").GetComponent<RectTransform>();
         _R_ChrCenterPos = GameObject.Find("R_ChrCenter").GetComponent<RectTransform>();
@@ -264,8 +267,16 @@ public class DuelSysCS : MonoBehaviour {
         }
     }
 
-    public void DuelStartSys(eNpcType enemyNpc, int indexValue)
+    public void DuelStartSys(eNpcType enemyNpc, int indexValue, bool _isCrime)
     {
+        Debug.Log(_ActPointText.name);
+        _ActPointText.SetActive(false);
+        _runButton.transform.GetChild(0).GetComponent<Text>().color = new Color(1, 1, 1, 1);
+
+        if (_isCrime || _playerInfoCS._clueTokenValue <= 0)
+            _runButton.transform.GetChild(0).GetComponent<Text>().color = new Color(0.5f, 0.5f, 0.5f, 1);
+        if (_playerInfoCS._clueTokenValue <= 0) _ActPointText.SetActive(true);
+
         _isDuelEnd = true;
 
         int tempHP = 0;
@@ -318,9 +329,9 @@ public class DuelSysCS : MonoBehaviour {
                 while (tempCheck && indexValue == 0)
                 {
                     tempCheckValue = Random.Range(0, _unitTableList.Count);
-                    tempName = _unitTableList[tempCheckValue]._nameStr;
+                    tempName = _unitTableList[tempCheckValue]._type;
 
-                    if (tempName == "전민원" || tempName == "함정임 부하" || tempName == "박우주") tempCheck = true;
+                    if (tempName != "enemy") tempCheck = true;
                     else
                     {
                         _enemyImgName = _unitTableList[tempCheckValue]._cgImg;
@@ -334,7 +345,6 @@ public class DuelSysCS : MonoBehaviour {
                         tempCheck = false;
                         break;
                     }
-
                 }
             }
             else if (enemyNpc == eNpcType.Jeonicon && _unitTableList[i]._nameStr == "전민원")
@@ -838,5 +848,13 @@ public class DuelSysCS : MonoBehaviour {
         _uIMgrCS.EndDuel();
 
         return;
+    }
+
+    public void RunSys()
+    {
+        if (_isCrime || _playerInfoCS._clueTokenValue <= 0) return;
+
+        if (_playerInfoCS._clueTokenValue > 0) _playerInfoCS._clueTokenValue--;
+        _uIMgrCS.EndDuel();
     }
 }

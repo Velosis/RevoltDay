@@ -19,6 +19,7 @@ public class SearchSelectData : MonoBehaviour {
     {
         _uIMgrCS._TalkMgr.SetActive(true);
         ReadCsvCS tempReadCsvCS = _uIMgrCS._TalkMgr.transform.GetChild(1).gameObject.transform.GetChild(0).GetComponent<ReadCsvCS>();
+        tempReadCsvCS._crimeSceneName = _sceneID;
         tempReadCsvCS._tableType = _currTableType;
         tempReadCsvCS._eSearchSelectType = _currSelectType;
         tempReadCsvCS.startDateLoad();

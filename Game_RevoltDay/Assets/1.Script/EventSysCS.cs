@@ -233,7 +233,7 @@ public class EventSysCS : MonoBehaviour {
     {
         Debug.Log("결투 이벤트 시작");
         _uIMgrCS.StartDuel();
-        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, _eventSysDatesList[_currEventID]._duel_Index);
+        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, _eventSysDatesList[_currEventID]._duel_Index, true);
     }
 
     public void reasoningEventStart(string reasoningName)

@@ -166,7 +166,6 @@ public class UIMgr : MonoBehaviour {
         _TalkMgr.SetActive(false);
         _DuelMgr.SetActive(false);
         _screenEffMgrCS.startEff();
-
     }
 
     public void StartTalk()
@@ -176,7 +175,6 @@ public class UIMgr : MonoBehaviour {
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(true);
         _screenEffMgrCS.startEff();
-
     }
 
     public void EndTalk()
@@ -186,7 +184,6 @@ public class UIMgr : MonoBehaviour {
         _SearchMgr.SetActive(false);
         _TalkMgr.SetActive(false);
         _screenEffMgrCS.startEff();
-
     }
 
     public void StartReasoning()
@@ -196,7 +193,6 @@ public class UIMgr : MonoBehaviour {
         _TalkMgr.SetActive(false);
         _ReasoningMgr.SetActive(true);
         _screenEffMgrCS.startEff();
-
     }
 
     public void EndReasoning()
@@ -205,7 +201,6 @@ public class UIMgr : MonoBehaviour {
 
         _ReasoningMgr.SetActive(false);
         _screenEffMgrCS.startEff();
-
     }
 
     public void tileTurnUpdate()
@@ -222,12 +217,10 @@ public class UIMgr : MonoBehaviour {
         else _isSafetyUI(false);
 
         _isSafety = !_isSafety;
-
     }
 
     public void SearchUiSys()
     {
-
         StartCoroutine(loadingEff());
 
         int tempPlayerCurrTile = _playerInfoCS._currTile;
@@ -300,13 +293,10 @@ public class UIMgr : MonoBehaviour {
             tempTypeText.text = "-결투-";
             tempSprite.sprite = _SearchSpriteList[0];
         }
-        //else if (tempEvent._eventType_Index == 2)
-        //{
-        //    _SearchSelectList[value].GetComponent<SearchSelectData>()._currSelectType = eSearchSelectType.Reasoning;
-        //    tempTypeText.text = "-추리-";
-        //    tempSprite.sprite = _SearchSpriteList[1];
-        //}
+
+        Debug.Log("인덱스 : " + tempEvent._sceneID_Index);
         _SearchSelectList[value].GetComponent<SearchSelectData>()._sceneID = tempEvent._sceneID_Index;
+        
         tempNameText.text = tempRandStr;
     }
 
