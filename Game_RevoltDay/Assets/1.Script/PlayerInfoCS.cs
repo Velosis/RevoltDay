@@ -44,6 +44,7 @@ public class PlayerInfoCS : MonoBehaviour {
     public int _tileFirstXZ;
 
     // 현재 정보
+    public int _currMoney = 5;
     public int _clueTokenValue = 0;
     public bool _isAlive = false;
     public bool _isTurn = false;
