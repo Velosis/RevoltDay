@@ -17,6 +17,9 @@ public class ItemDataCS : MonoBehaviour {
 
         if (_isSelect)
         {
+            if (_currItemData._Nomalprice > _shopMgrCS._playerInfoCS._currMoney) return;
+
+            _shopMgrCS.SetBuyItem(_currItemData);
             _shopMgrCS.BuyPopupSys(true);
             return;
         }

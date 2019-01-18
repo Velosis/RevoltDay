@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public struct sTemp
+{
+    public string _playerName;
+    public int _hpPoint;
+}
+
 public enum eNpcType
 {
     gangicon,
@@ -44,6 +50,7 @@ public class PlayerInfoCS : MonoBehaviour {
     public int _tileFirstXZ;
 
     // 현재 정보
+    public List<ItemData> _BoxItemList;
     public int _currMoney = 5;
     public int _clueTokenValue = 0;
     public bool _isAlive = false;
@@ -75,6 +82,13 @@ public class PlayerInfoCS : MonoBehaviour {
         {
             _clueTokenValue += 0;
             _isAlive = true;
+
+            _BoxItemList = new List<ItemData>();
+            //for (int i = 0; i < 17; i++)
+            //{
+            //    ItemData temp = new ItemData();
+            //    _BoxItemList.Add(temp);
+            //}
         }
 
         _currHP = _MaxHP; // 체력 정립
