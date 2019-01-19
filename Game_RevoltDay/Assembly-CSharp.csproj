@@ -76,6 +76,7 @@
     <Compile Include="Assets\1.Script\ScreenEffMgrCS.cs" />
     <Compile Include="Assets\1.Script\SearchSelectData.cs" />
     <Compile Include="Assets\1.Script\ShopMgr.cs" />
+    <Compile Include="Assets\1.Script\StateMgrCS.cs" />
     <Compile Include="Assets\1.Script\TalkCS\FadeEffCS.cs" />
     <Compile Include="Assets\1.Script\TalkCS\FlashEffCS.cs" />
     <Compile Include="Assets\1.Script\TalkCS\ReadCsvCS.cs" />

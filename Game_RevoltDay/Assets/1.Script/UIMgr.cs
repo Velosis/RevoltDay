@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public enum eUiName
 {
     all,
@@ -33,7 +35,6 @@ public class UIMgr : MonoBehaviour {
     public ScreenEffMgrCS _screenEffMgrCS;
     public EventSysCS _eventSysCS;
 
-
     private GameObject _search_buttonUi;
     private GameObject _Item_buttonUi;
     private GameObject _safety_buttonUi;
@@ -46,6 +47,14 @@ public class UIMgr : MonoBehaviour {
     public GameObject _TalkMgr;
     public GameObject _DuelMgr;
     public GameObject _ReasoningMgr;
+
+    public GameObject _ShopMgr;
+
+    public GameObject _StateMgr;
+    private GameObject _StateTabButtonGO;
+    private GameObject _EquipTabButtonGO;
+    private GameObject _ItemTabButtonGO;
+    private GameObject _CardTabButtonGO;
 
     private bool _isSafety;
     public delegate void SafetyUiView(bool isUI);
@@ -84,6 +93,8 @@ public class UIMgr : MonoBehaviour {
         _playerInfoCS = GameObject.Find("PlayerIcon").GetComponent<PlayerInfoCS>();
         _tileMapList = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>().TileMapList;
         _npcSysMgr = GameObject.Find("NpcMgr").GetComponent<NpcSysMgr>();
+        
+        _StateMgr.SetActive(false);
 
         _shop_buttonUi.SetActive(false);
         _isIssueEvent = false;
@@ -138,6 +149,26 @@ public class UIMgr : MonoBehaviour {
             else if ((string)date[i]["type_Index"] == "일반") _normalTableList.Add((string)date[i]["IssueName_Index"], tempEventDate);
             else if ((string)date[i]["type_Index"] == "봉쇄") _blockadeTableList.Add((string)date[i]["IssueName_Index"], tempEventDate);
         }
+    }
+
+    public void StartShop()
+    {
+        _ShopMgr.SetActive(true);
+    }
+
+    public void EndShop()
+    {
+        _ShopMgr.SetActive(false);
+    }
+
+    public void StartStateUI()
+    {
+        _StateMgr.SetActive(true);
+    }
+
+    public void EndStateUI()
+    {
+        _StateMgr.SetActive(false);
     }
 
     public void TurnEndSys()

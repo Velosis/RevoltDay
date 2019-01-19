@@ -19,21 +19,21 @@ public class ItemData
     public string _NameKR = "";
     public string _NameEN = "";
     public eItemType _Type = eItemType.Non;
-    public string _image;
-    public int _Bundle;
-    public int _Restore;
-    public int _Fight;
-    public int _Dectective;
-    public int _Move;
-    public bool _Nomalstore;
-    public int _Nomalprice;
-    public bool _Specstore;
-    public int _Specprice;
-    public bool _Sell;
-    public int _Sellprice;
-    public int _Endure;
-    public int _Chance;
-    public string _Text;
+    public string _image = "";
+    public int _Bundle = 0;
+    public int _Restore = 0;
+    public int _Fight = 0;
+    public int _Dectective = 0;
+    public int _Move = 0;
+    public bool _Nomalstore = false;
+    public int _Nomalprice = 0;
+    public bool _Specstore = false;
+    public int _Specprice = 0;
+    public bool _Sell = false;
+    public int _Sellprice = 0;
+    public int _Endure = 0;
+    public int _Chance = 0;
+    public string _Text = "";
 }
 
 public class ShopMgr : MonoBehaviour {
@@ -52,6 +52,8 @@ public class ShopMgr : MonoBehaviour {
 
     public GameObject _itemBotttomInfo;
     public GameObject _itemBox;
+
+    public ItemData _currSelectItem;
 
     public delegate void ItemSelet(bool _is);
     public static event ItemSelet _isItemSelet;
@@ -131,8 +133,14 @@ public class ShopMgr : MonoBehaviour {
     }
 
     public void BuyPopupSys(bool _is) { _BuyPopup.SetActive(_is); }
+    public void SetBuyItem(ItemData _itemData)
+    {
+        _currSelectItem = _itemData;
+    }
+
     public void BuyMsgPopup(bool _is)
     {
+        _playerInfoCS._BoxItemList.Add(_currSelectItem);
         _BuyPopup.SetActive(_is);
         StartCoroutine(MsgEff());
     }
