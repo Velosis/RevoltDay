@@ -1,0 +1,4 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,001.Black,데모버전은 여기까지입니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,이후의 플레이는 플레이스토어에서 동일 제목을 검색하시면 다운로드하실 수 있습니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,플레이해 주셔서 감사합니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
