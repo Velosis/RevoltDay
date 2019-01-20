@@ -221,6 +221,7 @@ public class NpcSysMgr : MonoBehaviour {
 
         if (TempTurnValue == 0)
         {
+            _playerIcon.GetComponent<PlayerInfoCS>()._currUseAid = new AidData();
             npcTurnReset();
             UIMgr._sNpeTurnEnd = false;
             _playerIcon.GetComponent<PlayerInfoCS>().PlayerMoveNot(true);

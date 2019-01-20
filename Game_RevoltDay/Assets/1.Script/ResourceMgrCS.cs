@@ -9,6 +9,7 @@ public class ResourceMgrCS : MonoBehaviour {
     static public Dictionary<string, GameObject> _CGImg = new Dictionary<string, GameObject>();
     static public Dictionary<string, AudioClip> _SoundBox = new Dictionary<string, AudioClip>();
     static public Dictionary<string, AudioClip> _BgmBox = new Dictionary<string, AudioClip>();
+    static public Dictionary<string, Sprite> _IconImg = new Dictionary<string, Sprite>();
 
     private void Awake()
     {
@@ -18,14 +19,6 @@ public class ResourceMgrCS : MonoBehaviour {
         {
             GameObject tempGO = tempResList[i] as GameObject;
             _imgBox.Add(tempGO.name, tempGO);
-        }
-
-        tempResList = null;
-        tempResList = Resources.LoadAll("5.CGImg");
-        for (int i = 0; i < tempResList.Length; i++)
-        {
-            GameObject tempGO = tempResList[i] as GameObject;
-            _CGImg.Add(tempGO.name, tempGO);
         }
 
         tempResList = null;
@@ -44,6 +37,22 @@ public class ResourceMgrCS : MonoBehaviour {
             _BgmBox.Add(tempGO.name, tempGO);
         }
 
+        tempResList = null;
+        tempResList = Resources.LoadAll("5.CGImg");
+        for (int i = 0; i < tempResList.Length; i++)
+        {
+            GameObject tempGO = tempResList[i] as GameObject;
+            _CGImg.Add(tempGO.name, tempGO);
+        }
+
+        tempResList = null;
+        tempResList = Resources.LoadAll<Sprite>("6.IconImg");
+        for (int i = 0; i < tempResList.Length; i++)
+        {
+            Sprite tempGO = tempResList[i] as Sprite;
+            _IconImg.Add(tempGO.name, tempGO);
+        }
+        Debug.Log("불러오기 종료");
 
     }
 }

@@ -1,0 +1,16 @@
+﻿Codex,NameKR,NameEN,Type,Image,Bundle,Fight,Skill,Dectective,Move,Nomalstore,Nomalprice,Specstore,Specprice,Sell,Sellprice,Text,Skilltext
+201,손목 보호대,wristguards,격투,inFight1,3,2,Infight,0,0,FALSE,0,TRUE,2,TRUE,0,간편하게 착용하는 보호대,인파이트로 상성 승리 시 상성 주사위 값에 2만큼 추가한다
+202,몽둥이,club,격투,outFight1,3,2,Outfight,0,0,FALSE,0,TRUE,2,TRUE,0,흔한 싸움 도구,아웃파이트로 상성 승리 시 상성 주사위 값에 2만큼 추가한다
+203,핑거 테이프,fingertape,격투,grap1,3,2,Grappling,0,0,FALSE,0,TRUE,2,TRUE,0,손가락 골절을 예방 해주는 도구,그래플링로 상성 승리 시 상성 주사위 값에 2만큼 추가한다
+204,붕대,bandage,격투,armor1,3,-1,Defence,0,0,FALSE,0,TRUE,2,TRUE,0,상처를 봉합하기도 하지만 피해를 막아 줄 수도 있다.,피격 당했을 때 피해 1을 감소 시킨다.
+205,너클,knuckle,격투,inFight2,3,3,Infight,0,0,FALSE,0,TRUE,6,TRUE,1,손가락에 끼워서 사용하는 무기. 생각보다 치명적이다.,인파이트로 상성 승리 시 상성 주사위 값에 3만큼 추가한다
+206,목검,woodensword,격투,outFight2,3,3,Outfight,0,0,FALSE,0,TRUE,6,TRUE,1,연습용이라지만 상대방을 제압하긴 충분하다.,아웃파이트로 상성 승리 시 상성 주사위 값에 3만큼 추가한다
+207,가죽 장갑,leathergloves,격투,grap2,3,3,Grappling,0,0,FALSE,0,TRUE,6,TRUE,1,질긴 가죽 소재로 만들어져서 잡기 편하다,그래플링으로 상성 승리 시 상성 주사위 값에 3만큼 추가한다
+208,각반,greave,격투,armor2,3,-2,Defence,0,0,FALSE,0,TRUE,6,TRUE,1,다리를 격하게 사용할 때 다리를 보호해준다.,피격 당했을 때 피해 2을 감소 시킨다.
+209,전기충격기,stungun ,격투,inFight3,3,4,Infight,0,0,FALSE,0,TRUE,12,TRUE,2,성인 남성도 단번헤 제압할 만큼 성능이 뛰어나다.,인파이트로 상성 승리 시 상성 주사위 값에 4만큼 추가한다
+210,진압봉,tonfa,격투,outFight3,3,4,Outfight,0,0,FALSE,0,TRUE,12,TRUE,2,전경들이 본격적으로 시위대와 대치할 때 쓰는 무기,아웃파이트로 상성 승리 시 상성 주사위 값에 4만큼 추가한다
+211,팔꿈치 보호대,elbowguards,격투,grap3,3,4,Grappling,0,0,FALSE,0,TRUE,12,TRUE,2,상대와 함께 쓰러져도 팔꿈치를 보호해주는 보호대,그래플링으로 상성 승리 시 상성 주사위 값에 4만큼 추가한다
+212,방검복,stab vest,격투,armor3,3,-3,Defence,0,0,FALSE,0,TRUE,12,TRUE,2,가볍지만 칼도 막을 수 있는 전신 보호구,피격 당했을 때 피해 3을 감소 시킨다.
+213,확대경,magnifier,추리,Detect1,3,0,null,1,0,FALSE,0,TRUE,2,TRUE,0,이전 시대 많은 탐정들이 애용한 수사의 기초적 도구,null
+214,지문감식기,fingerprintscanner,추리,Detect2,3,0,null,2,0,FALSE,0,TRUE,8,TRUE,2,구시대 보다 훨씬 발전된 형태,null
+215,성분분석기,componentanalyzer,추리,Detect3,3,0,null,4,0,FALSE,0,TRUE,15,TRUE,3,현장에서도 과학적 정밀 수사를 가능하게 만드는 키트,null

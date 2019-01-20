@@ -49,8 +49,18 @@ public class PlayerInfoCS : MonoBehaviour {
     private Vector2 _tilePos = Vector2.zero;
     public int _tileFirstXZ;
 
+
+    public int _maxMoney = 9999;
     // 현재 정보
     public List<ItemData> _BoxItemList;
+    public List<EquipData> _BoxEquipList;
+    public List<AidData> _BoxAidList;
+
+    public List<ItemData> _currUseItemList;
+    public EquipData _currUseEquipF;
+    public EquipData _currUseEquipD;
+    public AidData _currUseAid;
+
     public int _currMoney = 5;
     public int _clueTokenValue = 0;
     public bool _isAlive = false;
@@ -84,11 +94,13 @@ public class PlayerInfoCS : MonoBehaviour {
             _isAlive = true;
 
             _BoxItemList = new List<ItemData>();
-            //for (int i = 0; i < 17; i++)
-            //{
-            //    ItemData temp = new ItemData();
-            //    _BoxItemList.Add(temp);
-            //}
+            _BoxEquipList = new List<EquipData>();
+            _BoxAidList = new List<AidData>();
+
+            _currUseItemList = new List<ItemData>();
+            _currUseEquipF = new EquipData();
+            _currUseEquipD = new EquipData();
+            _currUseAid = new AidData();
         }
 
         _currHP = _MaxHP; // 체력 정립
@@ -167,7 +179,6 @@ public class PlayerInfoCS : MonoBehaviour {
         _uIMgrCS.isUiOnOff(eUiName.ItemButton, true);
         _uIMgrCS.isUiOnOff(eUiName.WaitButton, true);
         _uIMgrCS.isUiOnOff(eUiName.SafetyButton, true);
-
 
         if (_tileMapDataCS._isBlockade)
         {
@@ -337,6 +348,26 @@ public class PlayerInfoCS : MonoBehaviour {
             }
         }
 
+    }
+
+    public void setMoney(int value)
+    {
+        _currMoney += value;
+        if (_currMoney >= _maxMoney) _currMoney = _maxMoney;
+    }
+
+    public void setHpPoint(int value)
+    {
+        _currHP += value;
+        if (_currHP > _MaxHP)
+        {
+            _currHP = _MaxHP;
+        }
+    }
+
+    public void UseItem(int arrIdex)
+    {
+        _BoxItemList.RemoveAt(arrIdex);
     }
 
     public void isDie(bool isAlive)

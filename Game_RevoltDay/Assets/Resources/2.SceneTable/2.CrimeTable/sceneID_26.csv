@@ -16,13 +16,27 @@ null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 Wish01,null,0,강소원,null,"자, 아저씨들, 아줌마들. 퇴근시간이에요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Wish01,null,0,강소원,null,여기 이렇게 죽치고 앉아서 시위하시면 안 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Wish01,null,0,강소원,null,해산 안 하시면 깨스 나가 깨스. 내가 결정한 건 아니야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Jeon02,Wish01,2,전민원,null,공권력이라는 게 언제부터 댁네들 자리지키려고 생긴 건지 모르겠수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Jeon02,Wish01,2,전민원,null,우리는 해산할 생각 없수다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Jeon02,Wish01,2,전민원,null,"댁내 양반들 손에서 최루탄이 뿌려진다면, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Jeon02,Wish01,2,전민원,null,그때는 정말 각오해야할거요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Jeon02,Wish01,1,강소원,null,일 꼬이게 하지 맙시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Jeon02,Wish01,1,강소원,null,퇴근해야 돼요. 그만 좀 냅둬요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang03,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,CG14,공권력이라는 게 언제부터 댁네들 자리지키려고 생긴 건지 모르겠수. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,우리는 해산할 생각 없수다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,"댁내 양반들 손에서 최루탄이 뿌려진다면, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,그때는 정말 각오해야할거요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,강소원,null,일 꼬이게 하지 맙시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,강소원,null,퇴근해야 돼요. 그만 좀 냅둬요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,간단하지않수!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,바이오칩 판매를 중단하시우!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,그리고 나서 이 대책없는 상황을 해결하시우!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,바이오칩을 이식 받은 사람들이 하나같이 이상해지고 있수!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,적어도 그런 노력따윈 해야하는 거 아니우?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,"왜, 권력은, 재계는, 당신들은 그토록 사리사욕만 채우냐는 말이우!",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,강소원,null,네~네. 잘 들었으니까 해산하세요.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,말 했다시피 해산할 생각 없수.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,"정 해산시키고 싶거든, 함정임 그 놈 자식을 이리로 끌고 오시우!",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,강소원,null,"뭐야, 어쩌라는 거야 대체. 난 그냥 말단이라고.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,그렇다면 그냥 물러서시우.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,전민원,null,우릴 방해한다면 당신들도 무사하진 않을거외다!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,강소원,null,"그냥 술집가서 전구워다 막걸리나 잡수시지, 이런 걸 왜하는 거야 대체.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,강소원,null,그러면 나도 어쩔 수 없어요.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,null,0,강원진,009.revoltDay,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang03,Lee01,1,이지은,null,원진씨는 뭘 그리 생각하고 있을까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang03,Lee01,1,이지은,null,난리나기 전에 피하는 게 좋겠다는 생각은 안 할까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang03,Lee01,2,강원진,null,이지은 경위님의 이기적인 생각은 현 상황에서 좋지 않은 판단이라 생각됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

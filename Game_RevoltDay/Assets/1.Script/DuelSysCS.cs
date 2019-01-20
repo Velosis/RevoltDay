@@ -7,7 +7,10 @@ public enum eDuelType
 {
     S_InFighter = 0,
     R_OutFighter = 1,
-    P_Grappler = 2
+    P_Grappler = 2,
+    D_Defence = 3,
+    R_Reasoning = 4
+
 }
 
 public enum eDuelState

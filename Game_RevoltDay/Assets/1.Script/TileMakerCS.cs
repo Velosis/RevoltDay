@@ -25,7 +25,6 @@ public class TileMakerCS : MonoBehaviour {
 
     private void Awake()
     {
-        Debug.Log("타일맵 생성");
         uIMgrCS = GameObject.Find("UIMgr").GetComponent<UIMgr>();
 
         int arrIndex = 0;
