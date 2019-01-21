@@ -272,6 +272,7 @@ public class StateMgrCS : MonoBehaviour {
 
             if (TempBox.GetComponent<ItemDataCS>()._currEquipData._isSet) TempBox.transform.GetChild(3).gameObject.SetActive(true);
             else TempBox.transform.GetChild(3).gameObject.SetActive(false);
+
             TempBox.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = TempBox.GetComponent<ItemDataCS>()._currEquipData._sprite;
             TempBox.transform.GetChild(2).gameObject.GetComponent<Text>().text = TempBox.GetComponent<ItemDataCS>()._currEquipData._NameKR;
             //기본 우측 정렬

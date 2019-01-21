@@ -325,7 +325,6 @@ public class UIMgr : MonoBehaviour {
             tempSprite.sprite = _SearchSpriteList[0];
         }
 
-        Debug.Log("인덱스 : " + tempEvent._sceneID_Index);
         _SearchSelectList[value].GetComponent<SearchSelectData>()._sceneID = tempEvent._sceneID_Index;
         
         tempNameText.text = tempRandStr;

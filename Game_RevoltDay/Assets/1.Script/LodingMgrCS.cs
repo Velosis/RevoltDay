@@ -47,7 +47,6 @@ public class LodingMgrCS : MonoBehaviour {
             }
             else
             {
-                Debug.Log("너니?");
                 progressBar.fillAmount = Mathf.Lerp(progressBar.fillAmount, op.progress, timer);
                 if (progressBar.fillAmount >= op.progress)
                 {

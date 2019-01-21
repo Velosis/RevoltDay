@@ -52,6 +52,54 @@ public class ItemData
     public string _Text = "";
 }
 
+//public struct ItemData
+//{
+//    public int _Codex;
+//    public string _NameKR;
+//    public string _NameEN;
+//    public eItemType _Type;
+//    public string _image;
+//    public Sprite _sprite;
+//    public int _Bundle;
+//    public int _Restore;
+//    public int _Fight;
+//    public int _Dectective;
+//    public int _Move;
+//    public bool _Nomalstore;
+//    public int _Nomalprice;
+//    public bool _Specstore;
+//    public int _Specprice;
+//    public bool _Sell;
+//    public int _Sellprice;
+//    public int _Endure;
+//    public int _Chance;
+//    public string _Text;
+
+//    private ItemData(int Codex, string NameKR, string NameEN, eItemType _eItemType, string _img, Sprite _sprite, int bundle, int restore, int fight, int dectective, int move, bool nomalstore, int nomalprice, bool specstore, int specprice, bool sell, int sellpri)
+//    {
+//        int _Codex = Codex;
+//        string _NameKR = NameKR;
+//        string _NameEN = "";
+//        eItemType _Type = eItemType.Non;
+//        string _image = "";
+//        Sprite _sprite = null;
+//        int _Bundle = 0;
+//        int _Restore = 0;
+//        int _Fight = 0;
+//        int _Dectective = 0;
+//        int _Move = 0;
+//        bool _Nomalstore = false;
+//        int _Nomalprice = 0;
+//        bool _Specstore = false;
+//        int _Specprice = 0;
+//        bool _Sell = false;
+//        int _Sellprice = 0;
+//        int _Endure = 0;
+//        int _Chance = 0;
+//        string _Text = "";
+//    };
+//}
+
 [System.Serializable]
 public class EquipData
 {
@@ -130,6 +178,8 @@ public class ShopMgr : MonoBehaviour {
 
     public bool _isShopSP = false;
 
+    public bool _TestGetItem = false;
+
     public delegate void ItemSelet(bool _is);
     public static event ItemSelet _isItemSelet;
 
@@ -138,6 +188,7 @@ public class ShopMgr : MonoBehaviour {
         _isItemSelet(_is);
     }
 
+    // 아이템 정보 불러오기
     public void ReadCSV()
     {
         List<Dictionary<string, object>> date;
@@ -180,10 +231,10 @@ public class ShopMgr : MonoBehaviour {
                     TempItemData._DuelType = eDuelType.S_InFighter;
                     break;
                 case "Outfight":
-                    TempItemData._DuelType = eDuelType.S_InFighter;
+                    TempItemData._DuelType = eDuelType.R_OutFighter;
                     break;
                 case "Grappling":
-                    TempItemData._DuelType = eDuelType.S_InFighter;
+                    TempItemData._DuelType = eDuelType.P_Grappler;
                     break;
                 case "Defence":
                     TempItemData._DuelType = eDuelType.D_Defence;
@@ -214,7 +265,7 @@ public class ShopMgr : MonoBehaviour {
             TempItemData._skillText = (string)date[i]["Skilltext"];
 
             _EquipDatas.Add(TempItemData);
-            _playerInfoCS._BoxEquipList.Add(TempItemData);
+            if (_TestGetItem) _playerInfoCS._BoxEquipList.Add(TempItemData);
         }
         Debug.Log("장비 테이블 로드");
         #endregion
@@ -275,7 +326,7 @@ public class ShopMgr : MonoBehaviour {
             TempItemData._Text = (string)date[i]["Text"];
 
             _itemDatas.Add(TempItemData);
-            _playerInfoCS._BoxItemList.Add(TempItemData);
+            if (_TestGetItem) _playerInfoCS._BoxItemList.Add(TempItemData);
         }
         Debug.Log("아이템 테이블 로드");
 
@@ -329,8 +380,7 @@ public class ShopMgr : MonoBehaviour {
             TempItemData._isGet = false;
 
             _AidDatas.Add(TempItemData);
-            _playerInfoCS._BoxAidList.Add(TempItemData);
-
+            if (_TestGetItem) _playerInfoCS._BoxAidList.Add(TempItemData);
         }
         Debug.Log("조력자 테이블 로드");
         // 테스트용 코드
@@ -364,10 +414,64 @@ public class ShopMgr : MonoBehaviour {
     public void SetBuyItem(ItemData _itemData) { _currSelectEquip = null; _currSelectItem = _itemData; }
     public void SetBuyEquip(EquipData _EquipData) { _currSelectItem = null; _currSelectEquip = _EquipData; }
 
+    // 아이템 생성
+    public ItemData SettingItemData(ItemData _itemData)
+    {
+        ItemData TempItemData = new ItemData();
+        TempItemData._Bundle = _itemData._Bundle;
+        TempItemData._Chance = _itemData._Chance;
+        TempItemData._Codex = _itemData._Codex;
+        TempItemData._Dectective = _itemData._Dectective;
+        TempItemData._Endure = _itemData._Endure;
+        TempItemData._Fight = _itemData._Fight;
+        TempItemData._image = _itemData._image;
+        TempItemData._Move = _itemData._Move;
+        TempItemData._NameEN = _itemData._NameEN;
+        TempItemData._NameKR = _itemData._NameKR;
+        TempItemData._Nomalprice = _itemData._Nomalprice;
+        TempItemData._Nomalstore = _itemData._Nomalstore;
+        TempItemData._Restore = _itemData._Restore;
+        TempItemData._Sell = _itemData._Sell;
+        TempItemData._Sellprice = _itemData._Sellprice;
+        TempItemData._Specprice = _itemData._Specprice;
+        TempItemData._Specstore = _itemData._Specstore;
+        TempItemData._sprite= _itemData._sprite;
+        TempItemData._Text = _itemData._Text;
+        TempItemData._Type = _itemData._Type;
+
+        return TempItemData;
+    }
+    public EquipData SettingEquipData(EquipData _equipData)
+    {
+        EquipData TempEquipData = new EquipData();
+        TempEquipData._Bundle = _equipData._Bundle;
+        TempEquipData._Codex = _equipData._Codex;
+        TempEquipData._Dectective = _equipData._Dectective;
+        TempEquipData._DuelType = _equipData._DuelType;
+        TempEquipData._Fight = _equipData._Fight;
+        TempEquipData._image = _equipData._image;
+        TempEquipData._isSet = _equipData._isSet;
+        TempEquipData._Move = _equipData._Move;
+        TempEquipData._NameEN = _equipData._NameEN;
+        TempEquipData._NameKR = _equipData._NameKR;
+        TempEquipData._Nomalprice = _equipData._Nomalprice;
+        TempEquipData._Nomalstore = _equipData._Nomalstore;
+        TempEquipData._Sell = _equipData._Sell;
+        TempEquipData._Sellprice = _equipData._Sellprice;
+        TempEquipData._skillText = _equipData._skillText;
+        TempEquipData._Specprice = _equipData._Specprice;
+        TempEquipData._Specstore = _equipData._Specstore;
+        TempEquipData._sprite = _equipData._sprite;
+        TempEquipData._Text = _equipData._Text;
+        TempEquipData._Type = _equipData._Type;
+
+        return TempEquipData;
+    }
+
     public void BuyMsgPopup(bool _is)
     {
-        if (_currSelectItem == null) _playerInfoCS._BoxEquipList.Add(_currSelectEquip);
-        else _playerInfoCS._BoxItemList.Add(_currSelectItem);
+        if (_currSelectItem == null) _playerInfoCS._BoxEquipList.Add(SettingEquipData(_currSelectEquip));
+        else _playerInfoCS._BoxItemList.Add(SettingItemData(_currSelectItem));
 
         _BuyPopup.SetActive(_is);
         StartCoroutine(MsgEff());
@@ -554,7 +658,6 @@ public class ShopMgr : MonoBehaviour {
 
     public void EquipBottomSetting(EquipData dateInfo)
     {
-        Debug.Log(dateInfo._sprite.name);
         _itemBotttomInfo.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dateInfo._sprite;
         _itemBotttomInfo.transform.GetChild(3).gameObject.GetComponent<Text>().text = dateInfo._NameKR;
         _itemBotttomInfo.transform.GetChild(4).gameObject.GetComponent<Text>().text = dateInfo._Text;

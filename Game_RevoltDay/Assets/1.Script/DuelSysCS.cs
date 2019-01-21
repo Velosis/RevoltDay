@@ -86,6 +86,8 @@ public class DuelSysCS : MonoBehaviour {
     private GameObject _playerAtkText;
     private int _playerHP;
     private int _playerAtk;
+    private int _playerDiceValueMin;
+    private int _playerDiceValueMax;
 
     private eNpcType _eEnemyType;
     private string _enemyName;
@@ -96,6 +98,8 @@ public class DuelSysCS : MonoBehaviour {
     private int _enemyCurrHP;
     private int _enemyMaxHP;
     private int _enemyAtk;
+    private int _enemyDiceValueMin;
+    private int _enemyDiceValueMax;
     float[] _enemyAtkTypeList = new float[3];
 
     public bool _isDuelEnd = false;
@@ -151,8 +155,16 @@ public class DuelSysCS : MonoBehaviour {
 
     public List<UnitTable> _unitTableList = new List<UnitTable>();
 
+    public Sprite[] _GangSp;
+    public Sprite[] _ParkSP;
+    public Sprite[] _enemySP;
+
+    public GameObject _ScreenHitEffGO;
+
     private void Awake()
     {
+        _ScreenHitEffGO.SetActive(true);
+
         _seMgr = GameObject.Find("SoundMgr").GetComponent<AudioSource>();
         _BgmMgr = GameObject.Find("BgmMgr").GetComponent<AudioSource>();
 
@@ -219,12 +231,11 @@ public class DuelSysCS : MonoBehaviour {
         _isDuelEnd = false;
     }
 
-    private void Start()
+    private void OnEnable()
     {
-
         AudioClip _currBgm = null;
         ResourceMgrCS._BgmBox.TryGetValue(_currBgmName, out _currBgm);
-        
+
         _BgmMgr.clip = _currBgm;
         _BgmMgr.loop = true;
         _BgmMgr.volume = 1.0f;
@@ -272,7 +283,6 @@ public class DuelSysCS : MonoBehaviour {
 
     public void DuelStartSys(eNpcType enemyNpc, int indexValue, bool _isCrime)
     {
-        Debug.Log(_ActPointText.name);
         _ActPointText.SetActive(false);
         _runButton.transform.GetChild(0).GetComponent<Text>().color = new Color(1, 1, 1, 1);
 
@@ -307,6 +317,7 @@ public class DuelSysCS : MonoBehaviour {
         
         _playerHP = _playerInfoCS._currHP;
         _playerAtk = _playerInfoCS._atkPoint;
+        
 
         for (int i = 0; i < _unitTableList.Count; i++)
         {
@@ -326,6 +337,8 @@ public class DuelSysCS : MonoBehaviour {
                     tempInfight = _unitTableList[i]._infightper;
                     tempOutfight = _unitTableList[i]._outfightper;
                     tempGrappling = _unitTableList[i]._grapplingper;
+                    _enemyDiceValueMin = _unitTableList[i]._fightDiceMin;
+                    _enemyDiceValueMax = _unitTableList[i]._fightDiceMax;
                     break;
                 }
 
@@ -344,7 +357,8 @@ public class DuelSysCS : MonoBehaviour {
                         tempInfight = _unitTableList[tempCheckValue]._infightper;
                         tempOutfight = _unitTableList[tempCheckValue]._outfightper;
                         tempGrappling = _unitTableList[tempCheckValue]._grapplingper;
-
+                        _enemyDiceValueMin = _unitTableList[i]._fightDiceMin;
+                        _enemyDiceValueMax = _unitTableList[i]._fightDiceMax;
                         tempCheck = false;
                         break;
                     }
@@ -359,6 +373,8 @@ public class DuelSysCS : MonoBehaviour {
                 tempInfight = _unitTableList[i]._infightper;
                 tempOutfight = _unitTableList[i]._outfightper;
                 tempGrappling = _unitTableList[i]._grapplingper;
+                _enemyDiceValueMin = _unitTableList[i]._fightDiceMin;
+                _enemyDiceValueMax = _unitTableList[i]._fightDiceMax;
                 break;
             }
             else if (enemyNpc == eNpcType.Hamicon && _unitTableList[i]._nameStr == "함정임 부하")
@@ -370,6 +386,8 @@ public class DuelSysCS : MonoBehaviour {
                 tempInfight = _unitTableList[i]._infightper;
                 tempOutfight = _unitTableList[i]._outfightper;
                 tempGrappling = _unitTableList[i]._grapplingper;
+                _enemyDiceValueMin = _unitTableList[i]._fightDiceMin;
+                _enemyDiceValueMax = _unitTableList[i]._fightDiceMax;
                 break;
             }
         }
@@ -391,16 +409,16 @@ public class DuelSysCS : MonoBehaviour {
 
         _playerNameText.text = _playerName;
         ResourceMgrCS._imgBox.TryGetValue(_playerImgName, out tempImg);
-        Debug.Log(tempImg.name);
         _playerChrImg.GetComponent<Image>().sprite = tempImg.GetComponent<Image>().sprite;
         _playerChrImg.GetComponent<RectTransform>().sizeDelta = tempImg.GetComponent<RectTransform>().sizeDelta / 2.0f;
 
         _playerHpText.GetComponent<Text>().text = "체력 : " + _playerHP.ToString() + " / " + _playerInfoCS._MaxHP.ToString();
         _playerAtkText.GetComponent<Text>().text = "공격력 : " + _playerAtk.ToString();
 
-        ResourceMgrCS._imgBox.TryGetValue(_enemyImgName, out tempImg);
+       ResourceMgrCS._imgBox.TryGetValue(_enemyImgName, out tempImg);
         _enemyChrImg.GetComponent<Image>().sprite = tempImg.GetComponent<Image>().sprite;
         _enemyNameText.text = _enemyName;
+
 
         _enemyChrImg.GetComponent<Image>().sprite = tempImg.GetComponent<Image>().sprite;
         _enemyChrImg.GetComponent<RectTransform>().sizeDelta = tempImg.GetComponent<RectTransform>().sizeDelta / 2.0f;
@@ -473,10 +491,49 @@ public class DuelSysCS : MonoBehaviour {
         }
     }
 
+    public void SetItemOptionImg()
+    {
+        _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.SetActive(false);
+        _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(1).gameObject.transform.GetChild(1).gameObject.SetActive(false);
+        _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject.SetActive(false);
+
+        if (_enemyType == eDuelType.S_InFighter) _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(1).gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        else if (_enemyType == eDuelType.R_OutFighter) _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        else if (_enemyType == eDuelType.P_Grappler) _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.SetActive(true);
+
+
+
+        _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = Color.white;
+        _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(1).gameObject.GetComponent<Image>().color = Color.white;
+        _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(2).gameObject.GetComponent<Image>().color = Color.white;
+
+        if (_playerInfoCS._currUseEquipF._Codex != 0)
+        {
+            switch (_playerInfoCS._currUseEquipF._DuelType)
+            {
+                case eDuelType.S_InFighter:
+                    _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().color = Color.red;
+
+                    break;
+                case eDuelType.R_OutFighter:
+                    _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(1).gameObject.GetComponent<Image>().color = Color.red;
+
+                    break;
+                case eDuelType.P_Grappler:
+                    _diceFighterStartScreen.transform.GetChild(1).gameObject.transform.GetChild(2).gameObject.GetComponent<Image>().color = Color.red;
+
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
     public IEnumerator DiceFighterStart()
     {
         _diceFighterStartScreen.SetActive(true); // UI 켜주기
 
+        SetItemOptionImg();
         while (true)
         {
             if (_isNextState)
@@ -539,6 +596,10 @@ public class DuelSysCS : MonoBehaviour {
 
     public IEnumerator DiceDrop()
     {
+        _playerDiceText.GetComponent<Text>().color = Color.white;
+        _enemyDiceText.GetComponent<Text>().color = Color.white;
+        _bounsDiceText.GetComponent<Text>().color = Color.white;
+
         _L_ChrType.SetActive(true);
         _R_ChrType.SetActive(true);
 
@@ -609,6 +670,30 @@ public class DuelSysCS : MonoBehaviour {
             }
         }
 
+        if (_isPlayerTypeWin && _playerInfoCS._currUseEquipF._Codex != 0 && _playerInfoCS._currUseEquipF._Fight > 0)
+        {
+            int tempValue = _playerInfoCS._currUseEquipF._Fight;
+            _currTimer = 0.0f;
+            yield return new WaitForSeconds(1.0f);
+            while (_currTimer <= 1.0f)
+            {
+                if (tempValue != 0)
+                {
+                    _bounsDice += 1;
+                    tempValue -= 1;
+                    _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
+                    _bounsDiceText.GetComponent<Text>().color = Color.green;
+                    StartCoroutine(DiceEff(_bounsDiceText, 0.4f));
+                }
+                else
+                {
+                    _currTimer = 2.0f;
+                }
+                _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
+                yield return new WaitForSeconds(1.0f);
+            }
+        }
+
         _diceDropImg.SetActive(true);
         _diceDropImg.GetComponent<Image>().color = new Color(1, 1, 1, 0);
 
@@ -620,61 +705,134 @@ public class DuelSysCS : MonoBehaviour {
         }
 
         _currTimer = 0.0f;
+        StartCoroutine(DiceEff(_playerDiceText,3.0f));
+        StartCoroutine(DiceEff(_enemyDiceText,3.0f));
+
         while (_currTimer <= 1.0f)
         {
             _currTimer += Time.deltaTime / 3.0f;
 
             _playerDice = Random.Range(1, 6 + 1);
-            _enemyDice = Random.Range(1, 6 + 1);
+            _enemyDice = Random.Range(_enemyDiceValueMin, _enemyDiceValueMax);
 
             _playerDiceText.GetComponent<Text>().text = _playerDice.ToString();
             _enemyDiceText.GetComponent<Text>().text = _enemyDice.ToString();
+
             yield return new WaitForSeconds(Time.deltaTime / 3.0f);
         }
 
         DuelStateSet(eDuelState.DiceFirst);
     }
 
+    public IEnumerator DiceEff(GameObject _gameObject, float _time)
+    {
+        Vector3 tempVector3 = new Vector3();
+        tempVector3 = _gameObject.GetComponent<RectTransform>().localPosition;
+
+        float TempTime = 0.0f;
+        while (TempTime < _time)
+        {
+            TempTime += Time.deltaTime;
+            _gameObject.GetComponent<RectTransform>().localPosition = tempVector3;
+            _gameObject.GetComponent<RectTransform>().Translate(0, (Random.Range(-15.0f, + 15.0f)), 0);
+            yield return null;
+        }
+
+        _gameObject.GetComponent<RectTransform>().localPosition = tempVector3;
+        yield break;
+    }
+
     public IEnumerator DiceFirst()
     {
         if (_isEnemyTypeWin || _isPlayerTypeWin) // 무승부 일 경우 계산 생략
         {
-
-
-
-
             _currTimer = 0.0f;
-            while (_currTimer <= 1.0f)
+            yield return new WaitForSeconds(1.0f);
+            if (_isPlayerTypeWin) // 플레이어가 속성 싸움에서 이겼다면
             {
-                if (_isPlayerTypeWin) // 플레이어가 속성 싸움에서 이겼다면
+                while (_currTimer <= 1.0f)
                 {
                     if (_bounsDice > 0 && _enemyDice != 0)
                     {
                         _bounsDice -= 1;
                         _enemyDice -= 1;
                         _enemyDiceText.GetComponent<Text>().text = _enemyDice.ToString();
+                        _enemyDiceText.GetComponent<Text>().color = Color.red;
+                        StartCoroutine(DiceEff(_enemyDiceText, 0.5f));
                     }
                     else
                     {
                         _currTimer = 2.0f;
                     }
+                    _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
+                    yield return new WaitForSeconds(0.5f);
                 }
-                else if (_isEnemyTypeWin) // 플레이어가 속성 싸움에서 졌다면
+            }
+            else if (_isEnemyTypeWin) // 플레이어가 속성 싸움에서 졌다면
+            {
+                while (_currTimer <= 1.0f)
                 {
                     if (_bounsDice > 0 && _playerDice != 0)
                     {
                         _bounsDice -= 1;
                         _playerDice -= 1;
                         _playerDiceText.GetComponent<Text>().text = _playerDice.ToString();
+                        _playerDiceText.GetComponent<Text>().color = Color.red;
+                        StartCoroutine(DiceEff(_playerDiceText, 0.5f));
                     }
                     else
                     {
                         _currTimer = 2.0f;
                     }
+                    _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
+                    yield return new WaitForSeconds(0.5f);
                 }
+            }
 
-                _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
-                yield return new WaitForSeconds(1.0f);
+            if (_bounsDice != 0)
+            {
+                _currTimer = 0.0f;
+                yield return new WaitForSeconds(0.5f);
+                if (_isPlayerTypeWin) // 플레이어가 속성 싸움에서 이겼다면
+                {
+                    while (_currTimer <= 1.0f)
+                    {
+                        if (_bounsDice > 0)
+                        {
+                            _bounsDice -= 1;
+                            _playerDice += 1;
+                            _playerDiceText.GetComponent<Text>().text = _playerDice.ToString();
+                            _playerDiceText.GetComponent<Text>().color = Color.green;
+                            StartCoroutine(DiceEff(_playerDiceText, 0.5f));
+                        }
+                        else
+                        {
+                            _currTimer = 2.0f;
+                        }
+                        _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
+                        yield return new WaitForSeconds(0.5f);
+                    }
+                }
+                else if (_isEnemyTypeWin) // 플레이어가 속성 싸움에서 졌다면
+                {
+                    while (_currTimer <= 1.0f)
+                    {
+                        if (_bounsDice > 0)
+                        {
+                            _bounsDice -= 1;
+                            _enemyDice += 1;
+                            _enemyDiceText.GetComponent<Text>().text = _enemyDice.ToString();
+                            _enemyDiceText.GetComponent<Text>().color = Color.green;
+                            StartCoroutine(DiceEff(_enemyDiceText, 0.5f));
+                        }
+                        else
+                        {
+                            _currTimer = 2.0f;
+                        }
+                        _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
+                        yield return new WaitForSeconds(0.5f);
+                    }
+                }
             }
         }
 
@@ -687,19 +845,21 @@ public class DuelSysCS : MonoBehaviour {
         if (_playerAtk + _playerDice != 0)
         {
             _enemyCurrHP -= _playerAtk + _playerDice;
+            if (_enemyCurrHP < 0) _enemyCurrHP = 0;
             SetDuelText();
             StartCoroutine(ChrImgHitEff(false));
-            Debug.Log("플레이어 공격");
         }
 
         yield return new WaitForSeconds(2.0f);
 
         if (_enemyAtk + _enemyDice != 0)
         {
-            _playerHP -= _enemyAtk + _enemyDice;
+            int tempDef = _playerInfoCS._currUseEquipF._Fight < 0 ? _playerInfoCS._currUseEquipF._Fight : 0;
+            _playerHP -= (_enemyAtk + tempDef) + _enemyDice;
+            if (_playerHP < 0) _playerHP = 0;
+            else if (_playerHP > _playerInfoCS._MaxHP) _playerHP = _playerInfoCS._MaxHP;
             SetDuelText();
             StartCoroutine(ChrImgHitEff(true));
-            Debug.Log("상대 공격");
         }
 
         yield return new WaitForSeconds(2.0f);
@@ -755,6 +915,69 @@ public class DuelSysCS : MonoBehaviour {
 
         RectTransform tempRtTf = _screenHitShow.GetComponent<RectTransform>();
         RectTransform tempTextPos = _screenHitText.GetComponent<RectTransform>();
+        Image tempPImg = _screenHitShow.transform.GetChild(0).gameObject.GetComponent<Image>();
+        Image tempEImg = _screenHitShow.transform.GetChild(1).gameObject.GetComponent<Image>();
+
+        _screenHitShow.transform.GetChild(0).gameObject.SetActive(false);
+        _screenHitShow.transform.GetChild(1).gameObject.SetActive(false);
+
+        switch (_playerInfoCS._eNpcType)
+        {
+            case eNpcType.gangicon:
+                switch (_playerType)
+                {
+                    case eDuelType.S_InFighter:
+                        tempPImg.sprite = _GangSp[1];
+                        break;
+                    case eDuelType.R_OutFighter:
+                        tempPImg.sprite = _GangSp[2];
+                        break;
+                    case eDuelType.P_Grappler:
+                        tempPImg.sprite = _GangSp[0];
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case eNpcType.Parkicon:
+                switch (_playerType)
+                {
+                    case eDuelType.S_InFighter:
+                        tempPImg.sprite = _ParkSP[1];
+                        break;
+                    case eDuelType.R_OutFighter:
+                        tempPImg.sprite = _ParkSP[2];
+
+                        break;
+                    case eDuelType.P_Grappler:
+                        tempPImg.sprite = _ParkSP[0];
+
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            default:
+                break;
+        }
+
+        switch (_enemyType)
+        {
+            case eDuelType.S_InFighter:
+                tempEImg.sprite = _enemySP[1];
+
+                break;
+            case eDuelType.R_OutFighter:
+                tempEImg.sprite = _enemySP[2];
+
+                break;
+            case eDuelType.P_Grappler:
+                tempEImg.sprite = _enemySP[0];
+
+                break;
+            default:
+                break;
+        }
 
         tempRtTf.localPosition = new Vector2(0, 0);
         tempTextPos.localPosition = new Vector2(0, 0);
@@ -767,6 +990,9 @@ public class DuelSysCS : MonoBehaviour {
 
         if (isWho)
         {
+            _screenHitShow.transform.GetChild(0).gameObject.SetActive(false);
+
+            _screenHitShow.transform.GetChild(1).gameObject.SetActive(true);
             _orginChrImgPos = _playerChrImg.transform.position;
             tempImg = _playerChrImg;
             tempRtTf.localPosition = new Vector2(tempRtTf.localPosition.x + tempRtTf.sizeDelta.x, 0);
@@ -791,6 +1017,9 @@ public class DuelSysCS : MonoBehaviour {
         }
         else
         {
+            _screenHitShow.transform.GetChild(1).gameObject.SetActive(false);
+
+            _screenHitShow.transform.GetChild(0).gameObject.SetActive(true);
             _orginChrImgPos = _enemyChrImg.transform.position;
             tempImg = _enemyChrImg;
             tempRtTf.localPosition = new Vector2(tempRtTf.localPosition.x - tempRtTf.sizeDelta.x, 0);
@@ -841,7 +1070,6 @@ public class DuelSysCS : MonoBehaviour {
         if (_playerHP <= 0) Debug.Log("게임 오버");
         else if (_enemyCurrHP <= 0)
         {
-
             if (_enemyName == "전민원" || _enemyName == "함정임 부하")
             {
                 Debug.Log("결투 NpcAct 실행");
