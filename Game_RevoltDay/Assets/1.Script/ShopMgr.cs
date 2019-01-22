@@ -361,7 +361,6 @@ public class ShopMgr : MonoBehaviour {
             Sprite temp = null;
             ResourceMgrCS._IconImg.TryGetValue(TempItemData._image, out temp);
             TempItemData._sprite = temp;
-
             TempItemData._imageTile = (string)date[i]["Image_Tile"];
             ResourceMgrCS._IconImg.TryGetValue(TempItemData._imageTile, out temp);
             TempItemData._spriteTile = temp;
@@ -417,6 +416,7 @@ public class ShopMgr : MonoBehaviour {
     // 아이템 생성
     public ItemData SettingItemData(ItemData _itemData)
     {
+        Debug.Log("아이템 생성 시도");
         ItemData TempItemData = new ItemData();
         TempItemData._Bundle = _itemData._Bundle;
         TempItemData._Chance = _itemData._Chance;
@@ -466,6 +466,33 @@ public class ShopMgr : MonoBehaviour {
         TempEquipData._Type = _equipData._Type;
 
         return TempEquipData;
+    }
+    public AidData SettingAidData(AidData _AidData)
+    {
+        AidData TempAidData = new AidData();
+        TempAidData._Codex = _AidData._Codex;
+        TempAidData._NameKR = _AidData._NameKR;
+        TempAidData._NameEN = _AidData._NameEN;
+        TempAidData._Type = _AidData._Type;
+        TempAidData._image = _AidData._image;
+        TempAidData._imageTile = _AidData._imageTile;
+        TempAidData._sprite = _AidData._sprite;
+        TempAidData._spriteTile = _AidData._spriteTile;
+        TempAidData._Token = _AidData._Token;
+        TempAidData._Restore = _AidData._Restore;
+        TempAidData._Money = _AidData._Money;
+        TempAidData._Fight = _AidData._Fight;
+        TempAidData._Dectective = _AidData._Dectective;
+        TempAidData._Move = _AidData._Move;
+        TempAidData._Contract = _AidData._Contract;
+        TempAidData._Payment = _AidData._Payment;
+        TempAidData._Endure = _AidData._Endure;
+        TempAidData._CoolTime = _AidData._CoolTime;
+        TempAidData._currCoolTime = _AidData._currCoolTime;
+        TempAidData._Text = _AidData._Text;
+        TempAidData._isGet = _AidData._isGet;
+
+        return TempAidData;
     }
 
     public void BuyMsgPopup(bool _is)

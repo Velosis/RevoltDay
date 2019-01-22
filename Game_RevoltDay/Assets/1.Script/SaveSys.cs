@@ -10,6 +10,8 @@ public class SaveSys : MonoBehaviour {
     public NpcSysMgr _npcSysMgrCS;
     public TileMakerCS _tileMakerCS;
 
+    //public ShopMgr _shopMgrCS;
+
     public bool _isDeleteSave;
 
 
@@ -17,6 +19,8 @@ public class SaveSys : MonoBehaviour {
 
     private void Awake()
     {
+        //_shopMgrCS.ReadCSV()
+
         DontDestroyOnLoad(gameObject);
         if (!_TEST_BOOL) _saveFile = GameObject.Find("TileUI").GetComponent<SceneMgr>()._currFile;
     }

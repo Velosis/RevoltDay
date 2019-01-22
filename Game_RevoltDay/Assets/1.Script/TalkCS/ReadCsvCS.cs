@@ -7,7 +7,8 @@ public enum eTableType
     normal,
     Blockade,
     Issue,
-    Crime
+    Crime,
+    Non
 }
 
 public class ReadCsvCS : MonoBehaviour {
@@ -80,6 +81,6 @@ public class ReadCsvCS : MonoBehaviour {
             else this.GetComponent<TalkIndexCS>()._WhiteFlashIndex.Add(false);
         }
 
-        this.GetComponent<TalkIndexCS>().startTalk();
+        this.GetComponent<TalkIndexCS>().startTalk(_tableType);
     }
 }

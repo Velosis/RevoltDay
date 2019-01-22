@@ -434,7 +434,7 @@ public class NpcSysMgr : MonoBehaviour {
         }
         else if (Random.Range(1.0f, 100.0f) < 10.0f && _tileMapList[tempCurrTile].GetComponent<TileMapDataCS>()._SafetyValue >= (1.0f / 5.0f) * 3.0f)
         {
-            _tileMapList[tempCurrTile].GetComponent<TileMapDataCS>().setSafetyBer(-5.0f);
+            _tileMapList[tempCurrTile].GetComponent<TileMapDataCS>().setSafetyBer(0.0f);
             _WishIcon.GetComponent<PlayerInfoCS>()._isTurn = true;
 
             return;

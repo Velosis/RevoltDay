@@ -68,6 +68,7 @@ public class TalkIndexCS : MonoBehaviour {
     private FlashEffCS _flashEffCS;
     private UIMgr _uIMgrCS;
 
+    public eTableType currTableType;
     public eSearchSelectType _eSearchSelectType;
 
     private void Awake()
@@ -119,8 +120,10 @@ public class TalkIndexCS : MonoBehaviour {
         _textIndex.Clear();
     }
 
-    public void startTalk()
+    public void startTalk(eTableType _eTableType)
     {
+        currTableType = _eTableType;
+
         if (_Bgm.isPlaying) _Bgm.Stop();
         if (_Se.isPlaying) _Se.Stop();
         _textBox.text = "";
@@ -184,7 +187,7 @@ public class TalkIndexCS : MonoBehaviour {
         if (_eSearchSelectType == eSearchSelectType.Duel)
         {
             _uIMgrCS.StartDuel();
-            _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, 0, false);
+            _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, 0, false, currTableType);
         }
         else if (_eSearchSelectType == eSearchSelectType.Non) _uIMgrCS.EndTalk();
 

@@ -320,14 +320,14 @@ public class PlayerInfoCS : MonoBehaviour {
                     if (_playerInfoCS._currTile == _currTile)
                     {
                         _uIMgrCS.StartDuel();
-                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0, true);
+                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0, true, eTableType.Non);
                     }
                     break;
                 case eNpcType.Jeonicon:
                     if (_playerInfoCS._currTile == _currTile)
                     {
                         _uIMgrCS.StartDuel();
-                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0, true);
+                        _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(_eNpcType, 0, true, eTableType.Non);
                     }
                     break;
                 case eNpcType.Parkicon:
@@ -348,6 +348,11 @@ public class PlayerInfoCS : MonoBehaviour {
             }
         }
 
+    }
+
+    public void setClue(int value)
+    {
+        _clueTokenValue += value;
     }
 
     public void setMoney(int value)

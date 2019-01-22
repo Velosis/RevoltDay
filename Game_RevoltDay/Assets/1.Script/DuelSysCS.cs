@@ -53,9 +53,11 @@ public class UnitTable
 }
 
 public class DuelSysCS : MonoBehaviour {
+    public eTableType _currTableType;
 
     public PlayerInfoCS _playerInfoCS;
     public NpcSysMgr _npcSysMgrCS;
+    public RewardMgrCS _rewardMgrCS;
 
     public GameObject _playerChrImg;
     public GameObject _enemyChrImg;
@@ -281,9 +283,11 @@ public class DuelSysCS : MonoBehaviour {
         }
     }
 
-    public void DuelStartSys(eNpcType enemyNpc, int indexValue, bool _isCrime)
+    public void DuelStartSys(eNpcType enemyNpc, int indexValue, bool _isCrime, eTableType _eTableType)
     {
         _ActPointText.SetActive(false);
+        _currTableType = _eTableType;
+        Debug.Log("_currTableType : " + _currTableType);
         _runButton.transform.GetChild(0).GetComponent<Text>().color = new Color(1, 1, 1, 1);
 
         if (_isCrime || _playerInfoCS._clueTokenValue <= 0)
@@ -1072,12 +1076,33 @@ public class DuelSysCS : MonoBehaviour {
         {
             if (_enemyName == "전민원" || _enemyName == "함정임 부하")
             {
-                Debug.Log("결투 NpcAct 실행");
                 _npcSysMgrCS.NpcActPlay();
+                _uIMgrCS.EndDuel();
+                return;
             }
-        }
-        _uIMgrCS.EndDuel();
 
+            _uIMgrCS.EndDuel();
+            Debug.Log("_currTableType : " + _currTableType);
+            switch (_currTableType)
+            {
+                case eTableType.normal:
+                    _rewardMgrCS.StartRewardSys(-1, _currTableType);
+                    break;
+                case eTableType.Blockade:
+                    _rewardMgrCS.StartRewardSys(_playerInfoCS._currTile, _currTableType);
+                    break;
+                case eTableType.Issue:
+                    _rewardMgrCS.StartRewardSys(_playerInfoCS._currTile, _currTableType);
+                    break;
+                case eTableType.Crime:
+                    _rewardMgrCS.StartRewardSys(-1, _currTableType);
+                    break;
+                default:
+                    Debug.Log("보상 없는 결투");
+                    break;
+            }
+            
+        }
         return;
     }
 
