@@ -69,7 +69,7 @@ public class EventSysCS : MonoBehaviour {
 
     private void Update()
     {
-        if (_isStop &&
+        if (!_isStop &&
             !_uIMgrCS._TalkMgr.activeSelf &&
             !_uIMgrCS._DuelMgr.activeSelf &&
             !_uIMgrCS._SearchMgr.activeSelf &&
@@ -124,14 +124,6 @@ public class EventSysCS : MonoBehaviour {
         {
             _tileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(false);
         }
-
-        //if (_eventSysDatesList[_currEventID]._eventTile_Index != 0 &&
-        //    !_tileMapList[_eventSysDatesList[_currEventID]._eventTile_Index].GetComponent<TileMapDataCS>()._CrimeImgGO.activeSelf)
-        //{
-        //    Debug.Log("이녀석이 범인이다");
-        //    _tileMapList[_eventSysDatesList[_currEventID]._eventTile_Index].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(true);
-        //}
-
     }
 
     public void CrimeCheck()
@@ -242,6 +234,4 @@ public class EventSysCS : MonoBehaviour {
         _uIMgrCS.StartReasoning();
         _uIMgrCS._ReasoningMgr.GetComponent<ReasoningMgrCS>().settingScene(reasoningName);
     }
-
-
 }

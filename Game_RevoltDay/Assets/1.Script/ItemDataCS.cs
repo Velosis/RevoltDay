@@ -72,18 +72,7 @@ public class ItemDataCS : MonoBehaviour {
             _shopMgrCS.EquipBottomSetting(_currEquipData);
         }else if (_currAidData._Codex != 0)
         {
-            Debug.Log("조력자 선택됨");
-            //if (_isSelect)
-            //{
-            //    if (_currEquipData._Nomalprice > _shopMgrCS._playerInfoCS._currMoney) return;
-
-            //    _shopMgrCS.SetBuyEquip(_currEquipData);
-            //    _shopMgrCS.BuyPopupSys(true);
-            //    return;
-            //}
-
-            //_shopMgrCS.isItemSeletSys(false);
-            //_shopMgrCS.EquipBottomSetting(_currEquipData);
+            // 상점 전용 선택
         }
 
         _isSelect = true; 
@@ -117,14 +106,23 @@ public class ItemDataCS : MonoBehaviour {
             case eItemType.Non:
                 break;
             case eItemType.Healing:
-                _playerInfoCS.setHpPoint(+_currItemData._Restore);
+                if (!_playerInfoCS.setActUseItem(_currItemData)) return;
                 Destroy(gameObject);
                 _playerInfoCS.UseItem(_arrIdex);
                 _stateMgrCS.BoxItemListSetting(_stateMgrCS._currScreen);
                 break;
             case eItemType.Buff:
+                if (!_playerInfoCS.setActUseItem(_currItemData)) return;
+                Destroy(gameObject);
+                _playerInfoCS.UseItem(_arrIdex);
+                _stateMgrCS.BoxItemListSetting(_stateMgrCS._currScreen);
                 break;
             case eItemType.Move:
+                Debug.Log("하늘철 열차 사용");
+                //_playerInfoCS._currUseItemList.Add(ResourceMgrCS.SettingItemData(_currItemData));
+                //Destroy(gameObject);
+                //_playerInfoCS.UseItem(_arrIdex);
+                //_stateMgrCS.BoxItemListSetting(_stateMgrCS._currScreen);
                 break;
             default:
                 break;

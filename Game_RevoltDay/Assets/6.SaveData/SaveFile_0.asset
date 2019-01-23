@@ -12,6 +12,159 @@ MonoBehaviour:
   m_Name: SaveFile_0
   m_EditorClassIdentifier: 
   isSaveData: 1
+  _currItemDatasList:
+  - _Index: 231
+  - _Index: 232
+  - _Index: 233
+  - _Index: 234
+  - _Index: 235
+  - _Index: 236
+  - _Index: 237
+  - _Index: 231
+  - _Index: 232
+  - _Index: 233
+  - _Index: 234
+  - _Index: 235
+  - _Index: 236
+  - _Index: 237
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  _currEquipDatasList:
+  - _Index: 201
+  - _Index: 202
+  - _Index: 203
+  - _Index: 204
+  - _Index: 205
+  - _Index: 206
+  - _Index: 207
+  - _Index: 208
+  - _Index: 209
+  - _Index: 210
+  - _Index: 211
+  - _Index: 212
+  - _Index: 213
+  - _Index: 214
+  - _Index: 215
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  _currAidDatasList:
+  - _Index: 261
+  - _Index: 262
+  - _Index: 263
+  - _Index: 264
+  - _Index: 265
+  - _Index: 266
+  - _Index: 267
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
+  - _Index: 0
   _tileMapList:
   - _tileIndex: 0
     _SafetyValue: 0
@@ -139,19 +292,19 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  _currEventID: 9
-  _clueTokenValue: 1
+  _currEventID: 7
+  _clueTokenValue: 0
   _isAlive: 1
   _isTurn: 0
   _daleyTurnCount: 0
   _reasoningValue: 3
-  _currTile: 8
-  _tempCurrTile: 8
-  _currActPoint: 100
-  _currTrunPoint: 0
-  _currHP: 100
-  _MaxHP: 100
-  _atkPoint: 20
+  _currTile: 1
+  _tempCurrTile: 0
+  _currActPoint: 5
+  _currTrunPoint: 2
+  _currHP: 20
+  _MaxHP: 20
+  _atkPoint: 2
   _WishIcon:
     _currTile: 0
     _isAlive: 0

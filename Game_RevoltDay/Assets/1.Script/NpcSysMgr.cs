@@ -224,6 +224,7 @@ public class NpcSysMgr : MonoBehaviour {
             _playerIcon.GetComponent<PlayerInfoCS>()._currUseAid = new AidData();
             npcTurnReset();
             UIMgr._sNpeTurnEnd = false;
+            _playerIcon.GetComponent<PlayerInfoCS>().ResetUseItemList();
             _playerIcon.GetComponent<PlayerInfoCS>().PlayerMoveNot(true);
 
         }

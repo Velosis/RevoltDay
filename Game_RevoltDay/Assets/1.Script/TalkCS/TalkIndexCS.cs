@@ -190,8 +190,6 @@ public class TalkIndexCS : MonoBehaviour {
             _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, 0, false, currTableType);
         }
         else if (_eSearchSelectType == eSearchSelectType.Non) _uIMgrCS.EndTalk();
-
-
     }
 
     public void ShadowSys(int talkValue)

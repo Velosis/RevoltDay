@@ -49,56 +49,10 @@ public class ItemData
     public int _Sellprice = 0;
     public int _Endure = 0;
     public int _Chance = 0;
+    public int _TurnOtp = 0;
+    public int _currTurnOtp = 0;
     public string _Text = "";
 }
-
-//public struct ItemData
-//{
-//    public int _Codex;
-//    public string _NameKR;
-//    public string _NameEN;
-//    public eItemType _Type;
-//    public string _image;
-//    public Sprite _sprite;
-//    public int _Bundle;
-//    public int _Restore;
-//    public int _Fight;
-//    public int _Dectective;
-//    public int _Move;
-//    public bool _Nomalstore;
-//    public int _Nomalprice;
-//    public bool _Specstore;
-//    public int _Specprice;
-//    public bool _Sell;
-//    public int _Sellprice;
-//    public int _Endure;
-//    public int _Chance;
-//    public string _Text;
-
-//    private ItemData(int Codex, string NameKR, string NameEN, eItemType _eItemType, string _img, Sprite _sprite, int bundle, int restore, int fight, int dectective, int move, bool nomalstore, int nomalprice, bool specstore, int specprice, bool sell, int sellpri)
-//    {
-//        int _Codex = Codex;
-//        string _NameKR = NameKR;
-//        string _NameEN = "";
-//        eItemType _Type = eItemType.Non;
-//        string _image = "";
-//        Sprite _sprite = null;
-//        int _Bundle = 0;
-//        int _Restore = 0;
-//        int _Fight = 0;
-//        int _Dectective = 0;
-//        int _Move = 0;
-//        bool _Nomalstore = false;
-//        int _Nomalprice = 0;
-//        bool _Specstore = false;
-//        int _Specprice = 0;
-//        bool _Sell = false;
-//        int _Sellprice = 0;
-//        int _Endure = 0;
-//        int _Chance = 0;
-//        string _Text = "";
-//    };
-//}
 
 [System.Serializable]
 public class EquipData
@@ -155,6 +109,7 @@ public class AidData
 
 public class ShopMgr : MonoBehaviour {
     public PlayerInfoCS _playerInfoCS;
+    public SaveSys _gameMgr;
 
     public Sprite[] _chrImg;
     public List<ItemData> _itemDatas = new List<ItemData>();
@@ -323,6 +278,8 @@ public class ShopMgr : MonoBehaviour {
             TempItemData._Sellprice = (int)date[i]["Sellprice"];
             TempItemData._Endure = (int)date[i]["Endure"];
             TempItemData._Chance = (int)date[i]["chance"];
+            TempItemData._TurnOtp = (int)date[i]["turnOpt"];
+            TempItemData._currTurnOtp = TempItemData._TurnOtp;
             TempItemData._Text = (string)date[i]["Text"];
 
             _itemDatas.Add(TempItemData);
@@ -413,92 +370,10 @@ public class ShopMgr : MonoBehaviour {
     public void SetBuyItem(ItemData _itemData) { _currSelectEquip = null; _currSelectItem = _itemData; }
     public void SetBuyEquip(EquipData _EquipData) { _currSelectItem = null; _currSelectEquip = _EquipData; }
 
-    // 아이템 생성
-    public ItemData SettingItemData(ItemData _itemData)
-    {
-        Debug.Log("아이템 생성 시도");
-        ItemData TempItemData = new ItemData();
-        TempItemData._Bundle = _itemData._Bundle;
-        TempItemData._Chance = _itemData._Chance;
-        TempItemData._Codex = _itemData._Codex;
-        TempItemData._Dectective = _itemData._Dectective;
-        TempItemData._Endure = _itemData._Endure;
-        TempItemData._Fight = _itemData._Fight;
-        TempItemData._image = _itemData._image;
-        TempItemData._Move = _itemData._Move;
-        TempItemData._NameEN = _itemData._NameEN;
-        TempItemData._NameKR = _itemData._NameKR;
-        TempItemData._Nomalprice = _itemData._Nomalprice;
-        TempItemData._Nomalstore = _itemData._Nomalstore;
-        TempItemData._Restore = _itemData._Restore;
-        TempItemData._Sell = _itemData._Sell;
-        TempItemData._Sellprice = _itemData._Sellprice;
-        TempItemData._Specprice = _itemData._Specprice;
-        TempItemData._Specstore = _itemData._Specstore;
-        TempItemData._sprite= _itemData._sprite;
-        TempItemData._Text = _itemData._Text;
-        TempItemData._Type = _itemData._Type;
-
-        return TempItemData;
-    }
-    public EquipData SettingEquipData(EquipData _equipData)
-    {
-        EquipData TempEquipData = new EquipData();
-        TempEquipData._Bundle = _equipData._Bundle;
-        TempEquipData._Codex = _equipData._Codex;
-        TempEquipData._Dectective = _equipData._Dectective;
-        TempEquipData._DuelType = _equipData._DuelType;
-        TempEquipData._Fight = _equipData._Fight;
-        TempEquipData._image = _equipData._image;
-        TempEquipData._isSet = _equipData._isSet;
-        TempEquipData._Move = _equipData._Move;
-        TempEquipData._NameEN = _equipData._NameEN;
-        TempEquipData._NameKR = _equipData._NameKR;
-        TempEquipData._Nomalprice = _equipData._Nomalprice;
-        TempEquipData._Nomalstore = _equipData._Nomalstore;
-        TempEquipData._Sell = _equipData._Sell;
-        TempEquipData._Sellprice = _equipData._Sellprice;
-        TempEquipData._skillText = _equipData._skillText;
-        TempEquipData._Specprice = _equipData._Specprice;
-        TempEquipData._Specstore = _equipData._Specstore;
-        TempEquipData._sprite = _equipData._sprite;
-        TempEquipData._Text = _equipData._Text;
-        TempEquipData._Type = _equipData._Type;
-
-        return TempEquipData;
-    }
-    public AidData SettingAidData(AidData _AidData)
-    {
-        AidData TempAidData = new AidData();
-        TempAidData._Codex = _AidData._Codex;
-        TempAidData._NameKR = _AidData._NameKR;
-        TempAidData._NameEN = _AidData._NameEN;
-        TempAidData._Type = _AidData._Type;
-        TempAidData._image = _AidData._image;
-        TempAidData._imageTile = _AidData._imageTile;
-        TempAidData._sprite = _AidData._sprite;
-        TempAidData._spriteTile = _AidData._spriteTile;
-        TempAidData._Token = _AidData._Token;
-        TempAidData._Restore = _AidData._Restore;
-        TempAidData._Money = _AidData._Money;
-        TempAidData._Fight = _AidData._Fight;
-        TempAidData._Dectective = _AidData._Dectective;
-        TempAidData._Move = _AidData._Move;
-        TempAidData._Contract = _AidData._Contract;
-        TempAidData._Payment = _AidData._Payment;
-        TempAidData._Endure = _AidData._Endure;
-        TempAidData._CoolTime = _AidData._CoolTime;
-        TempAidData._currCoolTime = _AidData._currCoolTime;
-        TempAidData._Text = _AidData._Text;
-        TempAidData._isGet = _AidData._isGet;
-
-        return TempAidData;
-    }
-
     public void BuyMsgPopup(bool _is)
     {
-        if (_currSelectItem == null) _playerInfoCS._BoxEquipList.Add(SettingEquipData(_currSelectEquip));
-        else _playerInfoCS._BoxItemList.Add(SettingItemData(_currSelectItem));
+        if (_currSelectItem == null) _playerInfoCS._BoxEquipList.Add(ResourceMgrCS.SettingEquipData(_currSelectEquip));
+        else _playerInfoCS._BoxItemList.Add(ResourceMgrCS.SettingItemData(_currSelectItem));
 
         _BuyPopup.SetActive(_is);
         StartCoroutine(MsgEff());
@@ -576,7 +451,81 @@ public class ShopMgr : MonoBehaviour {
         SettingShopSP();
         //SettingShopNormal();
 
+        // 장비 로드
+        loadItemList();
+
         _itemBox.SetActive(false);
+    }
+
+
+    public void loadItemList()
+    {
+        SaveSys tempData = _gameMgr.GetComponent<SaveSys>();
+
+        // 아이템 로드
+        for (int i = 0; i < tempData._saveFile._currItemDatasList.Length; i++)
+        {
+            if (tempData._saveFile._currItemDatasList[i]._Index == 0) break;
+            for (int j = 0; j < _itemDatas.Count; j++)
+            {
+                if (tempData._saveFile._currItemDatasList[i]._Index == _itemDatas[j]._Codex)
+                {
+                    _playerInfoCS._BoxItemList.Add(ResourceMgrCS.SettingItemData(_itemDatas[j]));
+                    break;
+                }
+            }
+        }
+
+
+        // 장비 로드
+        for (int i = 0; i < tempData._saveFile._currEquipDatasList.Length; i++)
+        {
+            if (tempData._saveFile._currEquipDatasList[i]._Index == 0) break;
+            for (int j = 0; j < _EquipDatas.Count; j++)
+            {
+                if (tempData._saveFile._currEquipDatasList[i]._Index == _EquipDatas[j]._Codex)
+                {
+                    _playerInfoCS._BoxEquipList.Add(ResourceMgrCS.SettingEquipData(_EquipDatas[j]));
+                    break;
+                }
+            }
+        }
+
+
+        // 조력자 로드
+        for (int i = 0; i < tempData._saveFile._currAidDatasList.Length; i++)
+        {
+            if (tempData._saveFile._currAidDatasList[i]._Index == 0) break;
+            for (int j = 0; j < _AidDatas.Count; j++)
+            {
+                if (tempData._saveFile._currAidDatasList[i]._Index == _AidDatas[j]._Codex)
+                {
+                    _playerInfoCS._BoxAidList.Add(ResourceMgrCS.SettingAidData(_AidDatas[j]));
+                    break;
+                }
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (_TestGetItem)
+        {
+            _TestGetItem = false;
+
+            for (int i = 0; i < _itemDatas.Count; i++)
+            {
+                _playerInfoCS._BoxItemList.Add(ResourceMgrCS.SettingItemData(_itemDatas[i]));
+            }
+            for (int i = 0; i < _AidDatas.Count; i++)
+            {
+                _playerInfoCS._BoxAidList.Add(ResourceMgrCS.SettingAidData(_AidDatas[i]));
+            }
+            for (int i = 0; i < _EquipDatas.Count; i++)
+            {
+                _playerInfoCS._BoxEquipList.Add(ResourceMgrCS.SettingEquipData(_EquipDatas[i]));
+            }
+        }
     }
 
     public void SettingShopNormal()

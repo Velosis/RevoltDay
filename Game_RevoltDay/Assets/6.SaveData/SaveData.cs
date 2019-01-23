@@ -26,6 +26,19 @@ public class tileMapDate
     public bool _isCrime;
 }
 
+[System.Serializable]
+public class itemDataSave
+{
+    public int _Index;
+}
+
+[System.Serializable]
+public class aidData
+{
+    public int _Index;
+    public int _currTurn;
+    public bool _isSetting;
+}
 
 namespace SaveDateNamespace
 {
@@ -33,6 +46,11 @@ namespace SaveDateNamespace
     public class SaveData : ScriptableObject
     {
         public bool isSaveData;
+
+        // 아이템 저장
+        public itemDataSave[] _currItemDatasList;
+        public itemDataSave[] _currEquipDatasList;
+        public itemDataSave[] _currAidDatasList;
 
         // 맵 타일 저장
         public tileMapDate[] _tileMapList;

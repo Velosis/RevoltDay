@@ -26,6 +26,9 @@ public class TileMapDataCS : MonoBehaviour {
 
     public bool _isIssue;
     public bool _isCrime;
+
+    public bool _isSafetyCheck = false;
+
     private void Awake()
     {
         _uIMgrCS = GameObject.Find("UIMgr").GetComponent<UIMgr>();
@@ -60,9 +63,7 @@ public class TileMapDataCS : MonoBehaviour {
 
     public void tileTrunUpdate()
     {
-        if (_isIssueIcon && !_isBlockade) setSafetyBer(1);
-
-        
+        if (!_isSafetyCheck && _isIssueIcon && !_isBlockade) setSafetyBer(1);
 
         int RandTile = Random.Range(0, _tileMapList.Count);
         if (!_tileMapList[RandTile].GetComponent<TileMapDataCS>()._isBlockade &&
@@ -71,15 +72,10 @@ public class TileMapDataCS : MonoBehaviour {
             _tileMapList[RandTile].GetComponent<TileMapDataCS>()._playerData.GetComponent<PlayerInfoCS>()._currTrunPoint >= 3)
         {
             _tileMapList[RandTile].GetComponent<TileMapDataCS>().setIssueEvent();
+            _tileMapList[RandTile].GetComponent<TileMapDataCS>()._isSafetyCheck = true;
+            return;
         }
-
-        if (_SafetyValue == 0.0f) isIssue(false);
-        else
-        {
-            isIssue(true);
-            _IssueImgGO.GetComponent<Canvas>().overrideSorting = true;
-        }
-
+        _isSafetyCheck = false;
     }
 
     public void setIssueEvent()
@@ -87,9 +83,9 @@ public class TileMapDataCS : MonoBehaviour {
         _playerData.GetComponent<PlayerInfoCS>()._currTrunPoint = 0;
         _uIMgrCS._isIssueEvent = true;
         _isIssue = true;
-        setSafetyBer(1);
-        
-        
+        isIssue(_isIssue);
+
+        _IssueImgGO.GetComponent<Canvas>().overrideSorting = true;
 
         if (_isCrime) _CrimeImgGO.SetActive(true);
     }
@@ -102,9 +98,15 @@ public class TileMapDataCS : MonoBehaviour {
 
         _uIMgrCS._isIssueEvent = false;
         _isIssue = false;
+        isIssue(_isIssue);
+
         _SafetyValue = 0.0f;
         _IssueImgGO.SetActive(false);
-        if (!isBlock) _isSafetyEff = false;
+        if (!isBlock)
+        {
+            StopAllCoroutines();
+            _isSafetyEff = false;
+        }
     }
 
     private bool SafetyCheck()
@@ -153,19 +155,10 @@ public class TileMapDataCS : MonoBehaviour {
 
     public void setSafetyBer(float value)
     {
-        Debug.Log("22 작동 : " + value);
         if (value > 0) _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value += 0.2f * Mathf.Abs(value);
         else if (value < 0) _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value -= 0.2f * Mathf.Abs(value);
         else if (value == 0.0f) _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value = 0.0f;
 
-
-        //for (int i = 0; i < Mathf.Abs(value); i++)
-        //{
-        //    _SafetyValue = _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value;
-
-            //    if (value < 0 && _SafetyValue >= (1.0f / 5.0f)) _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value -= ((1.0f / 5.0f) * 1.0f);
-            //    else if (value > 0 && _SafetyValue < 1.0f) _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value += ((1.0f / 5.0f) * 1.0f);
-            //}
         _SafetyValue = _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value;
         if (_SafetyValue >= 1.0f) setBlockade(true);
         else if (_SafetyValue <= 0.0f) isIssue(false);

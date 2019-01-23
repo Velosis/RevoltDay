@@ -1,8 +1,8 @@
-﻿Codex,NameKR,NameEN,Type,Image,Bundle,Restore,Fight,Dectective,Move,Nomalstore,Nomalprice,Specstore,Specprice,Sell,Sellprice,Endure,chance,Text
-231,진통제,analgesic,회복,hpPotion1,3,4,0,0,0,TRUE,3,Fasle,0,TRUE,1,1,0,복용하면 빠르게 고통이 사라진다. 체력 5를 회복한다.
-232,치료제,potion,회복,hpPotion2,3,8,0,0,0,TRUE,6,Fasle,0,TRUE,2,1,0,발전된 의학 기술인해 상처를 매우 빠르게 회복할 수 있다. 체력 10을 회복 시켜준다.
-233,나노 체리,nanocherry,버프,cherry2,3,0,1,0,0,TRUE,3,Fasle,0,TRUE,1,1,0,체리맛 캡슐. 1턴동안 격투 1 올려준다.
-234,슈퍼 나노 체리,supernanocherry,버프,cherry3,3,0,2,0,0,TRUE,6,Fasle,0,TRUE,2,1,0,"고타우린 함량 체리맛 캡슐, 차세대 붉은 황소로 각광받는다. 1턴 동안 격투 2 올려준다."
-235,나노 민트,nanomint,버프,nanomint1,3,0,0,1,0,TRUE,3,Fasle,0,TRUE,1,1,0,"흡연자들도 담배 대신 씹을 정도로 박하향이 강한 캡슐, 1턴동안 추리 1 올려준다."
-236,1회용 고급 택시 티켓,taxiticket,버프,tiket1,3,0,0,0,3,TRUE,5,Fasle,0,TRUE,2,1,0,1일 택시 이용권. 1턴 동안 행동력이 3 증가한다.
-237,하늘철 탑승권,railticket,이동,tiket2,3,0,0,0,0,TRUE,3,Fasle,0,TRUE,1,0,1,한장 당 한번 쓸 수 있는 자기부상 열차 티켓.  어디든지 빠르게 갈 수 있다.
+﻿Codex,NameKR,NameEN,Type,Image,Bundle,Restore,Fight,Dectective,Move,Nomalstore,Nomalprice,Specstore,Specprice,Sell,Sellprice,Endure,chance,turnOpt,Text
+231,진통제,analgesic,회복,hpPotion1,3,4,0,0,0,TRUE,3,Fasle,0,TRUE,1,1,0,0,복용하면 빠르게 고통이 사라진다. 체력 5를 회복한다.
+232,치료제,potion,회복,hpPotion2,3,8,0,0,0,TRUE,6,Fasle,0,TRUE,2,1,0,0,발전된 의학 기술인해 상처를 매우 빠르게 회복할 수 있다. 체력 10을 회복 시켜준다.
+233,나노 체리,nanocherry,버프,cherry2,3,0,1,0,0,TRUE,3,Fasle,0,TRUE,1,1,0,1,체리맛 캡슐. 1턴동안 격투 1 올려준다.
+234,슈퍼 나노 체리,supernanocherry,버프,cherry3,3,0,2,0,0,TRUE,6,Fasle,0,TRUE,2,1,0,1,"고타우린 함량 체리맛 캡슐, 차세대 붉은 황소로 각광받는다. 1턴 동안 격투 2 올려준다."
+235,나노 민트,nanomint,버프,nanomint1,3,0,0,1,0,TRUE,3,Fasle,0,TRUE,1,1,0,1,"흡연자들도 담배 대신 씹을 정도로 박하향이 강한 캡슐, 1턴동안 추리 1 올려준다."
+236,1회용 고급 택시 티켓,taxiticket,버프,tiket1,3,0,0,0,3,TRUE,5,Fasle,0,TRUE,2,1,0,1,1일 택시 이용권. 1턴 동안 행동력이 3 증가한다.
+237,하늘철 탑승권,railticket,이동,tiket2,3,0,0,0,0,TRUE,3,Fasle,0,TRUE,1,0,1,0,한장 당 한번 쓸 수 있는 자기부상 열차 티켓.  어디든지 빠르게 갈 수 있다.

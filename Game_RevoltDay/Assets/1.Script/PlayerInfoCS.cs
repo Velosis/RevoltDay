@@ -52,14 +52,17 @@ public class PlayerInfoCS : MonoBehaviour {
 
     public int _maxMoney = 9999;
     // 현재 정보
-    public List<ItemData> _BoxItemList;
-    public List<EquipData> _BoxEquipList;
-    public List<AidData> _BoxAidList;
+    public List<ItemData> _BoxItemList = new List<ItemData>();
+    public List<EquipData> _BoxEquipList = new List<EquipData>();
+    public List<AidData> _BoxAidList = new List<AidData>();
 
-    public List<ItemData> _currUseItemList;
-    public EquipData _currUseEquipF;
-    public EquipData _currUseEquipD;
-    public AidData _currUseAid;
+    public List<ItemData> _currUseItemList = new List<ItemData>();
+    public EquipData _currUseEquipF = new EquipData();
+    public EquipData _currUseEquipD = new EquipData();
+    public AidData _currUseAid = new AidData();
+
+    public int _buffAtk = 0;
+    public int _buffDectective = 0;
 
     public int _currMoney = 5;
     public int _clueTokenValue = 0;
@@ -93,14 +96,6 @@ public class PlayerInfoCS : MonoBehaviour {
             _clueTokenValue += 0;
             _isAlive = true;
 
-            _BoxItemList = new List<ItemData>();
-            _BoxEquipList = new List<EquipData>();
-            _BoxAidList = new List<AidData>();
-
-            _currUseItemList = new List<ItemData>();
-            _currUseEquipF = new EquipData();
-            _currUseEquipD = new EquipData();
-            _currUseAid = new AidData();
         }
 
         _currHP = _MaxHP; // 체력 정립
@@ -158,6 +153,70 @@ public class PlayerInfoCS : MonoBehaviour {
         if (!_uIMgrCS._SearchMgr.activeSelf && Input.touchCount != 0 && !_moveHandImg.activeSelf &&
             Input.GetTouch(0).phase == TouchPhase.Began && _currMoveState != ePlayerState.MoveNon)
             PlayerMoveSys();
+    }
+
+    public void ResetUseItemList()
+    {
+        _currUseAid = new AidData();
+
+        for (int i = 0; i < _currUseItemList.Count; i++)
+        {
+            if (_currUseItemList[i]._currTurnOtp > 0) _currUseItemList[i]._currTurnOtp--;
+            if (_currUseItemList[i]._currTurnOtp <= 0) _currUseItemList.RemoveAt(i);
+        }
+        //_currUseItemList.Clear();
+        _buffAtk = 0;
+        _buffDectective = 0;
+    }
+
+    public bool setAidUse(AidData _aidData)
+    {
+        // 현재 사용중인 조력자가 없는 경우 실행
+        if (_currUseAid._Codex != 0) return false;
+
+        // 없는 경우 생으로 넣는다(주소는 1개)
+        _currUseAid = _aidData;
+
+        if (_currUseAid._Fight != 0) _buffAtk += _currUseAid._Fight;
+        else if (_currUseAid._Money != 0) setMoney(_currUseAid._Money);
+        else if (_currUseAid._Move != 0) _currActPoint += _currUseAid._Move;
+        else if (_currUseAid._Token != 0) _clueTokenValue += _currUseAid._Token;
+
+        return true;
+    }
+
+    public bool setActUseItem(ItemData _itemData)
+    {
+        // 이미 적용 중인게 있고 더 높을 경우를 체크
+        for (int i = 0; i < _currUseItemList.Count; i++)
+        {
+            if (_currUseItemList[i]._Fight > _itemData._Fight) return false;
+        }
+
+        _currUseItemList.Add(ResourceMgrCS.SettingItemData(_itemData));
+
+        if (_currUseItemList[_currUseItemList.Count - 1]._Fight != 0 &&
+            _currUseItemList[_currUseItemList.Count - 1]._TurnOtp != 0)
+        {
+            _buffAtk += _currUseItemList[_currUseItemList.Count - 1]._Fight;
+        }
+        else if (_currUseItemList[_currUseItemList.Count - 1]._Dectective != 0 &&
+            _currUseItemList[_currUseItemList.Count - 1]._TurnOtp != 0) 
+        {
+            _buffDectective += _currUseItemList[_currUseItemList.Count - 1]._Dectective;
+        }
+        else if (_currUseItemList[_currUseItemList.Count - 1]._Move != 0 &&
+            _currUseItemList[_currUseItemList.Count - 1]._TurnOtp != 0)
+        {
+            _currActPoint += _currUseItemList[_currUseItemList.Count - 1]._Move;
+        }
+        else if (_currUseItemList[_currUseItemList.Count - 1]._Restore != 0)
+        {
+            setHpPoint(_currUseItemList[_currUseItemList.Count - 1]._Restore);
+            _currUseItemList.RemoveAt(_currUseItemList.Count - 1);
+        }
+
+        return true;
     }
 
     public void setActPoint(int value)

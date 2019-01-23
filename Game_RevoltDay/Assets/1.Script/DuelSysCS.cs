@@ -321,7 +321,6 @@ public class DuelSysCS : MonoBehaviour {
         
         _playerHP = _playerInfoCS._currHP;
         _playerAtk = _playerInfoCS._atkPoint;
-        
 
         for (int i = 0; i < _unitTableList.Count; i++)
         {
@@ -418,6 +417,7 @@ public class DuelSysCS : MonoBehaviour {
 
         _playerHpText.GetComponent<Text>().text = "체력 : " + _playerHP.ToString() + " / " + _playerInfoCS._MaxHP.ToString();
         _playerAtkText.GetComponent<Text>().text = "공격력 : " + _playerAtk.ToString();
+        if (_playerInfoCS._buffAtk != 0) _playerAtkText.GetComponent<Text>().text += "(+" + _playerInfoCS._buffAtk + ")";
 
        ResourceMgrCS._imgBox.TryGetValue(_enemyImgName, out tempImg);
         _enemyChrImg.GetComponent<Image>().sprite = tempImg.GetComponent<Image>().sprite;
@@ -435,6 +435,8 @@ public class DuelSysCS : MonoBehaviour {
         // 예외처리
         _isNextState = _isBackState = _isFlashStart = _isHitEff = false;
         _currTimer = 0.0f;
+
+        StopAllCoroutines();
 
         switch (state)
         {
@@ -663,13 +665,13 @@ public class DuelSysCS : MonoBehaviour {
             }
 
             _currTimer = 0.0f;
+            StartCoroutine(DiceEff(_bounsDiceText, 0.5f));
             while (_currTimer <= 1.0f)
             {
                 _currTimer += Time.deltaTime / 2.0f;
 
                 _bounsDice = Random.Range(1, 6 + 1);
                 _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
-
                 yield return null;
             }
         }
@@ -687,7 +689,7 @@ public class DuelSysCS : MonoBehaviour {
                     tempValue -= 1;
                     _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
                     _bounsDiceText.GetComponent<Text>().color = Color.green;
-                    StartCoroutine(DiceEff(_bounsDiceText, 0.4f));
+                    StartCoroutine(DiceEff(_bounsDiceText, 0.5f));
                 }
                 else
                 {
@@ -733,12 +735,14 @@ public class DuelSysCS : MonoBehaviour {
         Vector3 tempVector3 = new Vector3();
         tempVector3 = _gameObject.GetComponent<RectTransform>().localPosition;
 
+        float TempValue = 15.0f;
         float TempTime = 0.0f;
         while (TempTime < _time)
         {
             TempTime += Time.deltaTime;
             _gameObject.GetComponent<RectTransform>().localPosition = tempVector3;
-            _gameObject.GetComponent<RectTransform>().Translate(0, (Random.Range(-15.0f, + 15.0f)), 0);
+            _gameObject.GetComponent<RectTransform>().Translate(0, (Random.Range(-TempValue, +TempValue)), 0);
+            TempValue -= (Time.deltaTime * 1.0f) / 15.0f;
             yield return null;
         }
 
@@ -848,7 +852,7 @@ public class DuelSysCS : MonoBehaviour {
     {
         if (_playerAtk + _playerDice != 0)
         {
-            _enemyCurrHP -= _playerAtk + _playerDice;
+            _enemyCurrHP -= _playerAtk + _playerDice + _playerInfoCS._buffAtk;
             if (_enemyCurrHP < 0) _enemyCurrHP = 0;
             SetDuelText();
             StartCoroutine(ChrImgHitEff(false));
@@ -873,7 +877,6 @@ public class DuelSysCS : MonoBehaviour {
     public IEnumerator BattleEnd()
     {
         _isPlayerTypeWin = _isEnemyTypeWin = false;
-
         yield return new WaitForSeconds(2.0f);
         if (_enemyCurrHP <= 0 || _playerHP <= 0) DuelStateSet(eDuelState.battleReward);
         else DuelStateSet(eDuelState.DuelStart);
@@ -1030,7 +1033,7 @@ public class DuelSysCS : MonoBehaviour {
             tempTextPos.localPosition = _enemyChrImg.GetComponent<RectTransform>().localPosition;
             _screenHitShow.SetActive(true);
             _screenHitText.SetActive(true);
-            _screenHitText.GetComponent<Text>().text = "-" + (_playerAtk + _playerDice).ToString();
+            _screenHitText.GetComponent<Text>().text = "-" + (_playerAtk + _playerDice + _playerInfoCS._buffAtk).ToString();
             while (_currTimer <= 0.5f)
             {
                 _currTimer += Time.deltaTime;
@@ -1082,7 +1085,6 @@ public class DuelSysCS : MonoBehaviour {
             }
 
             _uIMgrCS.EndDuel();
-            Debug.Log("_currTableType : " + _currTableType);
             switch (_currTableType)
             {
                 case eTableType.normal:

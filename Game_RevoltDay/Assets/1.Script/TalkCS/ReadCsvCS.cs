@@ -17,11 +17,6 @@ public class ReadCsvCS : MonoBehaviour {
     public eSearchSelectType _eSearchSelectType;
     public string _crimeSceneName;
 
-    //private void Start()
-    //{
-    //    startDateLoad();
-    //}
-
     public void startDateLoad()
     {
         this.GetComponent<TalkIndexCS>().deleteTalkDate();
@@ -29,6 +24,8 @@ public class ReadCsvCS : MonoBehaviour {
         object[] tempResList = null;
         TextAsset tempGO = null;
         List<Dictionary<string, object>> date = null;
+
+        Debug.Log("_tableType : " + _tableType);
 
         switch (_tableType)
         {

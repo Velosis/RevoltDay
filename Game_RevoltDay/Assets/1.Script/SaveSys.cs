@@ -14,7 +14,6 @@ public class SaveSys : MonoBehaviour {
 
     public bool _isDeleteSave;
 
-
     public bool _TEST_BOOL;
 
     private void Awake()
@@ -35,6 +34,25 @@ public class SaveSys : MonoBehaviour {
 
     public void saveSys()
     {
+        // 최초 저장 여부
+        _saveFile.isSaveData = true;
+
+        // 아이템 저장
+        for (int i = 0; i < _playerInfoCS._BoxItemList.Count; i++)
+        {
+            _saveFile._currItemDatasList[i]._Index = _playerInfoCS._BoxItemList[i]._Codex;
+        }
+        // 장비 저장
+        for (int i = 0; i < _playerInfoCS._BoxEquipList.Count; i++)
+        {
+            _saveFile._currEquipDatasList[i]._Index = _playerInfoCS._BoxEquipList[i]._Codex;
+        }
+        // 조력자 저장
+        for (int i = 0; i < _playerInfoCS._BoxAidList.Count; i++)
+        {
+            _saveFile._currAidDatasList[i]._Index = _playerInfoCS._BoxAidList[i]._Codex;
+        }
+
         // 맵 타일 저장
         for (int i = 0; i < _tileMakerCS.TileMapList.Count; i++)
         {
@@ -49,8 +67,7 @@ public class SaveSys : MonoBehaviour {
             _saveFile._tileMapList[i]._isCrime = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.activeSelf;
         }
 
-        // 최초 저장 여부
-        _saveFile.isSaveData = true;
+
 
         // 스토리 진행 관련
         _saveFile._currEventID = _eventSysCS._currEventID;

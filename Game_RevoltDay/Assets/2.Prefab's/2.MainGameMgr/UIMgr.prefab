@@ -3238,7 +3238,7 @@ MonoBehaviour:
     _currCoolTime: 0
     _Text: 
     _isGet: 0
-  _currMoney: 1000
+  _currMoney: 0
   _clueTokenValue: 0
   _isAlive: 0
   _isTurn: 0
@@ -3246,11 +3246,11 @@ MonoBehaviour:
   _reasoningValue: 3
   _currTile: 0
   _tempCurrTile: 0
-  _currActPoint: 100
+  _currActPoint: 5
   _currTrunPoint: 0
-  _currHP: 100
-  _MaxHP: 100
-  _atkPoint: 20
+  _currHP: 20
+  _MaxHP: 20
+  _atkPoint: 2
   _nextTileMark: {fileID: 1325392620875526}
   _moveHandImg: {fileID: 1957822970278092}
 --- !u!114 &114394066362687250
@@ -4047,6 +4047,7 @@ MonoBehaviour:
   _isSpShop: 0
   _isIssue: 0
   _isCrime: 0
+  _isSafetyCheck: 0
 --- !u!114 &114627351282347718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6269,7 +6270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 681.1, y: -79.17993}
+  m_AnchoredPosition: {x: 681.1001, y: -79.180176}
   m_SizeDelta: {x: 1362.2, y: 77.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224010746249779684
@@ -6819,7 +6820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -63.8, y: -64.69}
+  m_AnchoredPosition: {x: -63.799805, y: -64.68994}
   m_SizeDelta: {x: 48.4, y: 48.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224376662174343878
