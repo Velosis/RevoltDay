@@ -157,6 +157,12 @@ public class PlayerInfoCS : MonoBehaviour {
 
     public void ResetUseItemList()
     {
+        for (int i = 0; i < _BoxAidList.Count; i++)
+        {
+            if (_BoxAidList[i]._currCoolTime > 0) _BoxAidList[i]._currCoolTime--;
+        }
+
+        _currUseAid._isSet = false;
         _currUseAid = new AidData();
 
         for (int i = 0; i < _currUseItemList.Count; i++)
@@ -164,9 +170,13 @@ public class PlayerInfoCS : MonoBehaviour {
             if (_currUseItemList[i]._currTurnOtp > 0) _currUseItemList[i]._currTurnOtp--;
             if (_currUseItemList[i]._currTurnOtp <= 0) _currUseItemList.RemoveAt(i);
         }
-        //_currUseItemList.Clear();
+
+        
+
         _buffAtk = 0;
         _buffDectective = 0;
+
+
     }
 
     public bool setAidUse(AidData _aidData)
@@ -182,6 +192,8 @@ public class PlayerInfoCS : MonoBehaviour {
         else if (_currUseAid._Move != 0) _currActPoint += _currUseAid._Move;
         else if (_currUseAid._Token != 0) _clueTokenValue += _currUseAid._Token;
 
+        _currUseAid._currCoolTime = _currUseAid._CoolTime;
+        _currUseAid._isSet = true;
         return true;
     }
 

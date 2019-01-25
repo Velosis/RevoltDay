@@ -11,160 +11,511 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345ced7bea3198544ae4771e31a0d6b8, type: 3}
   m_Name: SaveFile_0
   m_EditorClassIdentifier: 
-  isSaveData: 1
+  isSaveData: 0
   _currItemDatasList:
-  - _Index: 231
-  - _Index: 232
-  - _Index: 233
-  - _Index: 234
-  - _Index: 235
-  - _Index: 236
-  - _Index: 237
-  - _Index: 231
-  - _Index: 232
-  - _Index: 233
-  - _Index: 234
-  - _Index: 235
-  - _Index: 236
-  - _Index: 237
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
   - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
   _currEquipDatasList:
-  - _Index: 201
-  - _Index: 202
-  - _Index: 203
-  - _Index: 204
-  - _Index: 205
-  - _Index: 206
-  - _Index: 207
-  - _Index: 208
-  - _Index: 209
-  - _Index: 210
-  - _Index: 211
-  - _Index: 212
-  - _Index: 213
-  - _Index: 214
-  - _Index: 215
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
   - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
   _currAidDatasList:
-  - _Index: 261
-  - _Index: 262
-  - _Index: 263
-  - _Index: 264
-  - _Index: 265
-  - _Index: 266
-  - _Index: 267
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
   - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  _useItemList:
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
   _tileMapList:
   - _tileIndex: 0
     _SafetyValue: 0
@@ -175,16 +526,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 1
-    _SafetyValue: 0
-    _isSafetyEff: 0
-    _isBlockade: 0
-    _isIssueIcon: 0
-    _isShop: 1
-    _isSpShop: 0
-    _isIssue: 0
-    _isCrime: 0
-  - _tileIndex: 2
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -193,7 +535,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 3
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -202,7 +544,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 4
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -211,7 +553,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 5
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -220,7 +562,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 6
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -229,16 +571,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 7
-    _SafetyValue: 0
-    _isSafetyEff: 0
-    _isBlockade: 0
-    _isIssueIcon: 0
-    _isShop: 0
-    _isSpShop: 1
-    _isIssue: 0
-    _isCrime: 0
-  - _tileIndex: 8
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -247,7 +580,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 9
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -256,7 +589,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 10
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -265,7 +598,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 11
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -274,7 +607,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 12
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -283,7 +616,7 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  - _tileIndex: 13
+  - _tileIndex: 0
     _SafetyValue: 0
     _isSafetyEff: 0
     _isBlockade: 0
@@ -292,19 +625,37 @@ MonoBehaviour:
     _isSpShop: 0
     _isIssue: 0
     _isCrime: 0
-  _currEventID: 7
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  - _tileIndex: 0
+    _SafetyValue: 0
+    _isSafetyEff: 0
+    _isBlockade: 0
+    _isIssueIcon: 0
+    _isShop: 0
+    _isSpShop: 0
+    _isIssue: 0
+    _isCrime: 0
+  _currEventID: 0
   _clueTokenValue: 0
-  _isAlive: 1
+  _isAlive: 0
   _isTurn: 0
   _daleyTurnCount: 0
-  _reasoningValue: 3
-  _currTile: 1
+  _reasoningValue: 0
+  _currTile: 0
   _tempCurrTile: 0
-  _currActPoint: 5
-  _currTrunPoint: 2
-  _currHP: 20
-  _MaxHP: 20
-  _atkPoint: 2
+  _currActPoint: 0
+  _currTrunPoint: 0
+  _currHP: 0
+  _MaxHP: 0
+  _atkPoint: 0
   _WishIcon:
     _currTile: 0
     _isAlive: 0
@@ -315,27 +666,27 @@ MonoBehaviour:
     _isTurn: 0
   _HamSaveData:
     _currRoot: 0
-    _rootChangeValue: 33
+    _rootChangeValue: 0
     _nextRootTile: 0
     _currRootValue: 0
     _currList: 
-    _jeonMoveTileListA: 03000000010000000200000005000000
-    _jeonMoveTileListB: 030000000700000005000000
-    _jeonMoveTileListC: 07000000090000000700000005000000
+    _jeonMoveTileListA: 
+    _jeonMoveTileListB: 
+    _jeonMoveTileListC: 
   _JeonIcon:
     _currTile: 0
     _isAlive: 0
     _isTurn: 0
   _JeonSaveData:
     _currRoot: 0
-    _rootChangeValue: 50
+    _rootChangeValue: 0
     _nextRootTile: 0
     _currRootValue: 0
     _currList: 
-    _jeonMoveTileListA: 05000000010000000000000002000000060000000a0000000b0000000c000000
-    _jeonMoveTileListB: 0c0000000a00000007000000080000000400000000000000030000000100000005000000
-    _jeonMoveTileListC: 0700000000000000020000000000000004000000090000000b0000000d00000005000000
-    _jeonMoveTileListD: 0b0000000800000004000000000000000100000002000000080000000b0000000c000000
+    _jeonMoveTileListA: 
+    _jeonMoveTileListB: 
+    _jeonMoveTileListC: 
+    _jeonMoveTileListD: 
   _YoungIcon:
     _currTile: 0
     _isAlive: 0
@@ -343,4 +694,4 @@ MonoBehaviour:
   _YoungSaveData:
     _nextRootTile: 0
     _currRootValue: 0
-    _YoungMoveTileList: 0700000008000000090000000a0000000b0000000c0000000d0000000c0000000b0000000a00000009000000080000000700000006000000050000000400000006000000
+    _YoungMoveTileList: 

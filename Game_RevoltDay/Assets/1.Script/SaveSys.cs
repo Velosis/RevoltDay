@@ -37,6 +37,13 @@ public class SaveSys : MonoBehaviour {
         // 최초 저장 여부
         _saveFile.isSaveData = true;
 
+        // 사용중인 아이템 저장
+        for (int i = 0; i < _playerInfoCS._currUseItemList.Count; i++)
+        {
+            _saveFile._useItemList[i]._Index = _playerInfoCS._currUseItemList[i]._Codex;
+            _saveFile._useItemList[i]._currTurn = _playerInfoCS._currUseItemList[i]._currTurnOtp;
+        }
+
         // 아이템 저장
         for (int i = 0; i < _playerInfoCS._BoxItemList.Count; i++)
         {
@@ -46,11 +53,15 @@ public class SaveSys : MonoBehaviour {
         for (int i = 0; i < _playerInfoCS._BoxEquipList.Count; i++)
         {
             _saveFile._currEquipDatasList[i]._Index = _playerInfoCS._BoxEquipList[i]._Codex;
+            _saveFile._currEquipDatasList[i]._setUse = _playerInfoCS._BoxEquipList[i]._isSet;
         }
         // 조력자 저장
         for (int i = 0; i < _playerInfoCS._BoxAidList.Count; i++)
         {
             _saveFile._currAidDatasList[i]._Index = _playerInfoCS._BoxAidList[i]._Codex;
+            _saveFile._currAidDatasList[i]._currTurn = _playerInfoCS._BoxAidList[i]._currCoolTime;
+            _saveFile._currAidDatasList[i]._isGet = _playerInfoCS._BoxAidList[i]._isGet;
+            _saveFile._currAidDatasList[i]._setUse = _playerInfoCS._BoxAidList[i]._isSet;
         }
 
         // 맵 타일 저장

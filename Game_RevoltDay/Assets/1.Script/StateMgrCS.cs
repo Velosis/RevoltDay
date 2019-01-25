@@ -86,7 +86,7 @@ public class StateMgrCS : MonoBehaviour {
         switch (_eAidType)
         {
             case eAidType.Non:
-                tempText.text = "이미 조력자에게 의뢰중입니다.";
+                tempText.text = "이미 의뢰중이거나, 대기중입니다.";
                 break;
 
             case eAidType.Buff:
@@ -118,6 +118,7 @@ public class StateMgrCS : MonoBehaviour {
             UseAidSys(false);
 
             if (!_playerInfoCS.setAidUse(_currSelectAid)) return;
+            AidScreenStting();
             StartCoroutine(NotUseAid(_currSelectAid._Type));
         }
     }
@@ -643,7 +644,7 @@ public class StateMgrCS : MonoBehaviour {
             _currSelectEquip = _playerInfoCS._BoxEquipList[0];
             GameObject TempScreen = _currScreen;
 
-            for (int i = 2; i < TempScreen.transform.childCount - 2; i++)
+            for (int i = 2; i < TempScreen.transform.childCount - 3; i++)
             {
                 TempScreen.transform.GetChild(i).gameObject.SetActive(true);
             }
@@ -730,7 +731,7 @@ public class StateMgrCS : MonoBehaviour {
         {
             _currSelectAid = _playerInfoCS._BoxAidList[0];
             GameObject TempScreen = _currScreen;
-            for (int i = 2; i < TempScreen.transform.childCount - 2; i++)
+            for (int i = 2; i < TempScreen.transform.childCount - 5; i++)
             {
                 TempScreen.transform.GetChild(i).gameObject.SetActive(true);
             }

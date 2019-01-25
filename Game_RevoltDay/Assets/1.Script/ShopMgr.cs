@@ -105,6 +105,7 @@ public class AidData
     public string _Text = "";
     public bool _isGet = false;
 
+    public bool _isSet = false;
 }
 
 public class ShopMgr : MonoBehaviour {

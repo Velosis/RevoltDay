@@ -13,7 +13,6 @@ public class ResourceMgrCS : MonoBehaviour {
 
 
     public GameObject _ShopMgrGO;
-    public GameObject _StateMgrGO;
 
     // 아이템 생성
     static public ItemData SettingItemData(ItemData _itemData)

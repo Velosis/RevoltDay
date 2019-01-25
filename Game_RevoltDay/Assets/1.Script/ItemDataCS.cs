@@ -15,7 +15,7 @@ public class ItemDataCS : MonoBehaviour {
     private Color _SelectState;
     private Color _NotSelectState;
 
-    public bool _isSelect;
+    public bool _isSelect = false;
 
     private void Awake()
     {
@@ -158,12 +158,12 @@ public class ItemDataCS : MonoBehaviour {
             return;
         }
 
-        // 장착 기능
-        if (_currAidData._isGet && _playerInfoCS._currUseAid._Codex == 0)
+        // 의뢰 기능
+        if (_currAidData._isGet && _playerInfoCS._currUseAid._Codex == 0 && _currAidData._currCoolTime == 0)
         {
             _stateMgrCS.UseAidSys(true);
             return;
-        }else if (_currAidData._isGet && _playerInfoCS._currUseAid._Codex != 0)
+        }else if (_currAidData._isGet && (_playerInfoCS._currUseAid._Codex != 0 || _currAidData._currCoolTime != 0)) // 이미 의뢰중이라면
         {
             StartCoroutine(_stateMgrCS.NotUseAid(eAidType.Non));
         }

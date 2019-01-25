@@ -287,7 +287,6 @@ public class DuelSysCS : MonoBehaviour {
     {
         _ActPointText.SetActive(false);
         _currTableType = _eTableType;
-        Debug.Log("_currTableType : " + _currTableType);
         _runButton.transform.GetChild(0).GetComponent<Text>().color = new Color(1, 1, 1, 1);
 
         if (_isCrime || _playerInfoCS._clueTokenValue <= 0)

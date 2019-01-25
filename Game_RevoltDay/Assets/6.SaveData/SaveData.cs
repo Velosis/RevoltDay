@@ -30,6 +30,7 @@ public class tileMapDate
 public class itemDataSave
 {
     public int _Index;
+    public int _currTurn;
 }
 
 [System.Serializable]
@@ -37,7 +38,15 @@ public class aidData
 {
     public int _Index;
     public int _currTurn;
-    public bool _isSetting;
+    public bool _isGet;
+    public bool _setUse;
+}
+
+[System.Serializable]
+public class equipData
+{
+    public int _Index;
+    public bool _setUse;
 }
 
 namespace SaveDateNamespace
@@ -49,8 +58,10 @@ namespace SaveDateNamespace
 
         // 아이템 저장
         public itemDataSave[] _currItemDatasList;
-        public itemDataSave[] _currEquipDatasList;
-        public itemDataSave[] _currAidDatasList;
+        public equipData[] _currEquipDatasList;
+        public aidData[] _currAidDatasList;
+
+        public itemDataSave[] _useItemList;
 
         // 맵 타일 저장
         public tileMapDate[] _tileMapList;
