@@ -56,6 +56,9 @@ namespace SaveDateNamespace
     {
         public bool isSaveData;
 
+        // 저장 시간
+        public string SaveDay;
+
         // 아이템 저장
         public itemDataSave[] _currItemDatasList;
         public equipData[] _currEquipDatasList;

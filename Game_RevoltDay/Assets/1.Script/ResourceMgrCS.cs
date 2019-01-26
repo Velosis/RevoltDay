@@ -106,7 +106,8 @@ public class ResourceMgrCS : MonoBehaviour {
         for (int i = 0; i < tempResList.Length; i++)
         {
             GameObject tempGO = tempResList[i] as GameObject;
-            _imgBox.Add(tempGO.name, tempGO);
+            if (!_imgBox.ContainsKey(tempGO.name)) _imgBox.Add(tempGO.name, tempGO);
+
         }
 
         tempResList = null;
@@ -114,7 +115,7 @@ public class ResourceMgrCS : MonoBehaviour {
         for (int i = 0; i < tempResList.Length; i++)
         {
             AudioClip tempGO = tempResList[i] as AudioClip;
-            _SoundBox.Add(tempGO.name, tempGO);
+            if (!_SoundBox.ContainsKey(tempGO.name)) _SoundBox.Add(tempGO.name, tempGO);
         }
 
         tempResList = null;
@@ -122,7 +123,7 @@ public class ResourceMgrCS : MonoBehaviour {
         for (int i = 0; i < tempResList.Length; i++)
         {
             AudioClip tempGO = tempResList[i] as AudioClip;
-            _BgmBox.Add(tempGO.name, tempGO);
+            if (!_BgmBox.ContainsKey(tempGO.name)) _BgmBox.Add(tempGO.name, tempGO);
         }
 
         tempResList = null;
@@ -130,7 +131,7 @@ public class ResourceMgrCS : MonoBehaviour {
         for (int i = 0; i < tempResList.Length; i++)
         {
             GameObject tempGO = tempResList[i] as GameObject;
-            _CGImg.Add(tempGO.name, tempGO);
+            if (!_CGImg.ContainsKey(tempGO.name)) _CGImg.Add(tempGO.name, tempGO);
         }
 
         tempResList = null;
@@ -138,7 +139,7 @@ public class ResourceMgrCS : MonoBehaviour {
         for (int i = 0; i < tempResList.Length; i++)
         {
             Sprite tempGO = tempResList[i] as Sprite;
-            _IconImg.Add(tempGO.name, tempGO);
+            if (!_IconImg.ContainsKey(tempGO.name)) _IconImg.Add(tempGO.name, tempGO);
         }
 
         _ShopMgrGO.SetActive(true);

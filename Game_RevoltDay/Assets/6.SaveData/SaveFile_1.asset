@@ -12,6 +12,511 @@ MonoBehaviour:
   m_Name: SaveFile_1
   m_EditorClassIdentifier: 
   isSaveData: 0
+  SaveDay: 
+  _currItemDatasList:
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  _currEquipDatasList:
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  - _Index: 0
+    _setUse: 0
+  _currAidDatasList:
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  - _Index: 0
+    _currTurn: 0
+    _isGet: 0
+    _setUse: 0
+  _useItemList:
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
+  - _Index: 0
+    _currTurn: 0
   _tileMapList:
   - _tileIndex: 0
     _SafetyValue: 0

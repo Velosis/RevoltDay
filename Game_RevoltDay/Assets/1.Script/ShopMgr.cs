@@ -11,14 +11,12 @@ public enum eItemType
     Buff,
     Move
 }
-
 public enum eEquipType
 {
     Non,
     Fight,
     Dectective
 }
-
 public enum eAidType
 {
     Non,
@@ -53,7 +51,6 @@ public class ItemData
     public int _currTurnOtp = 0;
     public string _Text = "";
 }
-
 [System.Serializable]
 public class EquipData
 {
@@ -79,7 +76,6 @@ public class EquipData
 
     public bool _isSet = false;
 }
-
 [System.Serializable]
 public class AidData
 {
@@ -430,6 +426,17 @@ public class ShopMgr : MonoBehaviour {
 
     public void ShopStart()
     {
+        _itemBox.SetActive(true);
+        for (int i = 0; i < _itemBoxs.Count; i++)
+        {
+            Destroy(_itemBoxs[i]);
+        }
+        _itemBoxs.Clear();
+
+        if (_playerInfoCS._currTile == 1) SettingShopSP();
+        else if (_playerInfoCS._currTile == 7) SettingShopNormal();
+        _itemBox.SetActive(false);
+
         buyTrueCheck();
     }
 
@@ -449,17 +456,14 @@ public class ShopMgr : MonoBehaviour {
     {
         ReadCSV();
         _scrollRect = _itemScroll.GetComponent<ScrollRect>();
-        SettingShopSP();
-        //SettingShopNormal();
 
         // 장비 로드
         loadItemList();
 
         _itemBox.SetActive(false);
     }
-
-
-    public void loadItemList()
+    
+    public void loadItemList() // 저장 데이터 불러오기
     {
         SaveSys tempData = _gameMgr.GetComponent<SaveSys>();
 
@@ -471,7 +475,25 @@ public class ShopMgr : MonoBehaviour {
             {
                 if (tempData._saveFile._currItemDatasList[i]._Index == _itemDatas[j]._Codex)
                 {
-                    _playerInfoCS._BoxItemList.Add(ResourceMgrCS.SettingItemData(_itemDatas[j]));
+                    ItemData TempItemData = ResourceMgrCS.SettingItemData(_itemDatas[j]);
+                    _playerInfoCS._BoxItemList.Add(TempItemData);
+                    break;
+                }
+            }
+        }
+
+        // 사용된 아이템 로드
+        for (int i = 0; i < tempData._saveFile._useItemList.Length; i++)
+        {
+            if (tempData._saveFile._useItemList[i]._Index == 0) break;
+            for (int j = 0; j < _itemDatas.Count; j++)
+            {
+                if (tempData._saveFile._useItemList[i]._Index == _itemDatas[j]._Codex)
+                {
+                    ItemData TempItemData = ResourceMgrCS.SettingItemData(_itemDatas[j]);
+                    TempItemData._currTurnOtp = tempData._saveFile._useItemList[i]._currTurn;
+
+                    _playerInfoCS._currUseItemList.Add(TempItemData);
                     break;
                 }
             }
@@ -486,7 +508,26 @@ public class ShopMgr : MonoBehaviour {
             {
                 if (tempData._saveFile._currEquipDatasList[i]._Index == _EquipDatas[j]._Codex)
                 {
-                    _playerInfoCS._BoxEquipList.Add(ResourceMgrCS.SettingEquipData(_EquipDatas[j]));
+                    EquipData TempEquipData = ResourceMgrCS.SettingEquipData(_EquipDatas[j]);
+                    TempEquipData._isSet = tempData._saveFile._currEquipDatasList[i]._setUse;
+                    if (TempEquipData._isSet)
+                    {
+                        switch (TempEquipData._Type)
+                        {
+                            case eEquipType.Non:
+                                break;
+                            case eEquipType.Fight:
+                                _playerInfoCS._currUseEquipF = TempEquipData;
+                                break;
+                            case eEquipType.Dectective:
+                                _playerInfoCS._currUseEquipD = TempEquipData;
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+
+                    _playerInfoCS._BoxEquipList.Add(TempEquipData);
                     break;
                 }
             }
@@ -501,7 +542,13 @@ public class ShopMgr : MonoBehaviour {
             {
                 if (tempData._saveFile._currAidDatasList[i]._Index == _AidDatas[j]._Codex)
                 {
-                    _playerInfoCS._BoxAidList.Add(ResourceMgrCS.SettingAidData(_AidDatas[j]));
+                    AidData TempAidData = ResourceMgrCS.SettingAidData(_AidDatas[j]);
+                    TempAidData._currCoolTime = tempData._saveFile._currAidDatasList[i]._currTurn;
+                    TempAidData._isGet = tempData._saveFile._currAidDatasList[i]._isGet;
+                    TempAidData._isSet = tempData._saveFile._currAidDatasList[i]._setUse;
+                    if (TempAidData._isSet) _playerInfoCS._currUseAid = TempAidData;
+
+                    _playerInfoCS._BoxAidList.Add(TempAidData);
                     break;
                 }
             }
@@ -560,24 +607,21 @@ public class ShopMgr : MonoBehaviour {
         // 아이템 셔플
         #region
         int[] TempRand = new int[4];
-        bool TempIs = true;
         for (int i = 0; i < 4; i++)
         {
             TempRand[i] = Random.Range(0, _EquipDatas.Count);
-            while (TempIs)
+            for (int j = 0; j < 4; j++)
             {
-                for (int j = 0; j < 4; j++)
-                {
-                    TempIs = false;
+                if (i == j) continue;
 
-                    if (TempRand[j] == TempRand[i])
-                    {
-                        TempRand[i] = Random.Range(0, _EquipDatas.Count);
-                        TempIs = true;
-                    }
+                if (TempRand[i] == TempRand[j])
+                {
+                    TempRand[i] = Random.Range(0, _EquipDatas.Count);
+                    j = 0;
                 }
             }
         }
+        Debug.Log(TempRand[0].ToString() + TempRand[1].ToString() + TempRand[2].ToString() + TempRand[3].ToString());
 
 
         #endregion
@@ -597,12 +641,6 @@ public class ShopMgr : MonoBehaviour {
         }
 
         SetContentSize(true);
-    }
-
-
-    private void Start()
-    {
-        ShopStart();
     }
 
     public GameObject itemOptionSet(ItemData dateInfo)

@@ -25,8 +25,6 @@ public class ReadCsvCS : MonoBehaviour {
         TextAsset tempGO = null;
         List<Dictionary<string, object>> date = null;
 
-        Debug.Log("_tableType : " + _tableType);
-
         switch (_tableType)
         {
             case eTableType.normal: // 일반 이슈

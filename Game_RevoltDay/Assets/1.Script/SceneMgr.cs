@@ -8,7 +8,9 @@ public class SceneMgr : MonoBehaviour {
     public SaveData[] _saveFiles;
     public SaveData _currFile;
 
-    private void Awake()
+    public bool _fristVideo = false;
+
+    private void OnEnable()
     {
         DontDestroyOnLoad(gameObject);
     }
@@ -20,6 +22,7 @@ public class SceneMgr : MonoBehaviour {
 
     public void StartInGame()
     {
+        _fristVideo = true;
         LodingMgrCS.LoadScene("1.MainGame");
         gameObject.GetComponent<Canvas>().enabled = false;
     }

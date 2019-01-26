@@ -8,14 +8,24 @@ public class IntroMgrCS : MonoBehaviour {
     public GameObject _TileUI;
     public bool _isPlay = false;
 
+    private void OnEnable()
+    {
+        if (!_TileUI.GetComponent<SceneMgr>()._fristVideo && !_isPlay && _videoIntro.GetComponent<VideoPlayer>().isPlaying) _isPlay = true;
+    }
+
     private void LateUpdate()
     {
-        if (!_isPlay && _videoIntro.GetComponent<VideoPlayer>().isPlaying) _isPlay = true;
+        Invoke("isVideoCheck", 0.1f);
+    }
+
+    public void isVideoCheck()
+    {
         if (_isPlay && !_videoIntro.GetComponent<VideoPlayer>().isPlaying) _TileUI.SetActive(true);
     }
 
     public void videoEnd()
     {
+        _TileUI.SetActive(true);
         _videoIntro.GetComponent<VideoPlayer>().Stop();
     }
 }

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 
 public enum eUiName
@@ -31,9 +32,12 @@ public class eventDate
 
 public class UIMgr : MonoBehaviour {
     static public bool _sNpeTurnEnd = false;
+    public GameObject _TileUIMgr;
 
     public ScreenEffMgrCS _screenEffMgrCS;
     public EventSysCS _eventSysCS;
+    public SaveSys _saveSysCS;
+    public GameObject _SaveOfLoadUIGO;
 
     private GameObject _search_buttonUi;
     private GameObject _Item_buttonUi;
@@ -49,6 +53,7 @@ public class UIMgr : MonoBehaviour {
     public GameObject _ReasoningMgr;
 
     public GameObject _ShopMgr;
+    public GameObject _OptionMgr;
 
     public GameObject _StateMgr;
     private GameObject _StateTabButtonGO;
@@ -78,9 +83,10 @@ public class UIMgr : MonoBehaviour {
 
     private void Awake()
     {
+        _TileUIMgr = GameObject.Find("TileUI");
+
         IssueTableRead();
         _DuelMgr.GetComponent<DuelSysCS>().readUnitTable();
-        _eventSysCS = GameObject.Find("GameMgr").GetComponent<EventSysCS>();
 
         _loadingImg.SetActive(false);
         _isSafety = true;
@@ -103,6 +109,7 @@ public class UIMgr : MonoBehaviour {
         _TalkMgr.SetActive(false);
         _DuelMgr.SetActive(false);
         _ReasoningMgr.SetActive(false);
+        _OptionMgr.SetActive(false);
 
         for (int i = 0; i < _SearchSelectList.Length; i++)
         {
@@ -124,7 +131,27 @@ public class UIMgr : MonoBehaviour {
             _loadingImg.transform.GetChild(1).GetComponent<Text>().text = _loadingText + "...";
             yield return new WaitForSeconds(0.2f);
         }
+        int tempPlayerCurrTile = _playerInfoCS._currTile;
+        _tileMapDataCS = _tileMapList[tempPlayerCurrTile].GetComponent<TileMapDataCS>();
+
+        for (int i = 0; i < 3; i++)
+        {
+            SearchUISetting(i, eTableType.normal);
+        }
+
+        if (_tileMapDataCS._isIssueIcon)
+        {
+            SearchUISetting(0, eTableType.Issue);
+        }
+        else if (_tileMapDataCS._isBlockade)
+        {
+            SearchUISetting(0, eTableType.Blockade);
+        }
+
         _loadingImg.SetActive(false);
+
+
+
         yield return null;
     }
 
@@ -151,9 +178,49 @@ public class UIMgr : MonoBehaviour {
         }
     }
 
+    public void ScenesChange(string _str)
+    {
+        SceneManager.LoadScene(_str);
+        Destroy(_TileUIMgr);
+    }
+
+    public void SettingSaveUi(GameObject _gameObject)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            _gameObject.transform.GetChild(3 + i).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = _saveSysCS._saveFileArr[i].SaveDay;
+        }
+    }
+
+    public void SaveOfLoadUiOnOff(GameObject _gameObject)
+    {
+        string tempStr = EventSystem.current.currentSelectedGameObject.name;
+        if (tempStr == "SaveButton") // 저장 버튼
+        {
+            SettingSaveUi(_SaveOfLoadUIGO);
+        }
+        else if (tempStr == "LoadButton") // 불러오기 버튼
+        {
+            SettingSaveUi(_SaveOfLoadUIGO);
+        }
+        _gameObject.SetActive(!_gameObject.activeSelf);
+    }
+
+    public void StartOption()
+    {
+        _OptionMgr.SetActive(true);
+    }
+
+    public void EndOption()
+    {
+        _OptionMgr.SetActive(false);
+
+    }
+
     public void StartShop()
     {
         _ShopMgr.SetActive(true);
+        _ShopMgr.GetComponent<ShopMgr>().ShopStart();
     }
 
     public void EndShop()
@@ -177,7 +244,6 @@ public class UIMgr : MonoBehaviour {
 
         _sNpeTurnEnd = true;
         _playerInfoCS.PlayerTileXZ();
-        StopAllCoroutines();
         StartCoroutine(_npcSysMgr.NpcAct());
     }
 
@@ -250,32 +316,14 @@ public class UIMgr : MonoBehaviour {
         _isSafety = !_isSafety;
     }
 
-    public void SearchUiSys()
-    {
-        StartCoroutine(loadingEff());
-
-        int tempPlayerCurrTile = _playerInfoCS._currTile;
-        _tileMapDataCS = _tileMapList[tempPlayerCurrTile].GetComponent<TileMapDataCS>();
-
-        for (int i = 0; i < 3; i++)
-        {
-            SearchUISetting(i, eTableType.normal);
-        }
-
-        if (_tileMapDataCS._isIssueIcon)
-        {
-            SearchUISetting(0, eTableType.Issue);
-        }else if (_tileMapDataCS._isBlockade)
-        {
-            SearchUISetting(0, eTableType.Blockade);
-        }
-    }
-
     public void isOnSearchMgr()
     {
-        if (!_SearchMgr.activeSelf) _playerInfoCS.setActPoint(1);
+        if (!_SearchMgr.activeSelf)
+        {
+            _playerInfoCS.setActPoint(1);
+            StartCoroutine(loadingEff());
+        }
 
-        SearchUiSys();
         _SearchMgr.SetActive(!_SearchMgr.activeSelf);
     }
 
@@ -325,7 +373,6 @@ public class UIMgr : MonoBehaviour {
             tempSprite.sprite = _SearchSpriteList[0];
         }
 
-        Debug.Log("_sceneID_Index : " + tempEvent._sceneID_Index);
         _SearchSelectList[value].GetComponent<SearchSelectData>()._sceneID = tempEvent._sceneID_Index;
         
         tempNameText.text = tempRandStr;

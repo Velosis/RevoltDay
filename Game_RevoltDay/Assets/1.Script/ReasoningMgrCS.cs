@@ -50,7 +50,6 @@ public class ReasoningMgrCS : MonoBehaviour {
         ReasoningSysCS tempSysCS = _currScene.GetComponent<ReasoningSysCS>();
         for (int i = 0; i < tempSysCS._clueList.Length; i++)
         {
-            Debug.Log(tempSysCS._clueList[i]._isTrue);
             if (tempSysCS._clueList[i]._isTrue) _trueCount++;
             else
             {

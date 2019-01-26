@@ -375,7 +375,7 @@ public class PlayerInfoCS : MonoBehaviour {
         _moveHandImg.SetActive(false);
 
         _currActPoint -= Mathf.Abs(tempTileXZ - _currTile);
-        //PlayerTileXZ();
+        if (_eNpcType == eNpcType.gangicon) PlayerTileXZ();
         _currActText.text = _currActPoint.ToString();
         _currTile = _tempCurrTile;
         _currMoveState = ePlayerState.MoveReady;
