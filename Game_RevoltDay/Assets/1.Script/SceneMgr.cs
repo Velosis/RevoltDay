@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using SaveDateNamespace;
+using System.IO;
+using LitJson;
 
 public class SceneMgr : MonoBehaviour {
-    public SaveData[] _saveFiles;
-    public SaveData _currFile;
+    public SaveData[] _currSaveDataList = new SaveData[4];
+    public int _SaveNumber = 0;
 
     public bool _fristVideo = false;
 
@@ -17,7 +18,7 @@ public class SceneMgr : MonoBehaviour {
 
     public void SelectSave(int value)
     {
-        _currFile = _saveFiles[value];
+        _SaveNumber = value;
     }
 
     public void StartInGame()
@@ -26,4 +27,16 @@ public class SceneMgr : MonoBehaviour {
         LodingMgrCS.LoadScene("1.MainGame");
         gameObject.GetComponent<Canvas>().enabled = false;
     }
+
+
+    public void SaveData(SaveData _saveData, int value)
+    {
+        _currSaveDataList[value] = _saveData;
+
+        JsonData infoJson = JsonMapper.ToJson(_currSaveDataList);
+
+        File.WriteAllText(Application.dataPath + "/6.SaveData/SaveData.json", infoJson.ToString());
+    }
+
+
 }

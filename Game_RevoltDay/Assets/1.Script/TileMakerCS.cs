@@ -71,7 +71,7 @@ public class TileMakerCS : MonoBehaviour {
             _tileMapList[i].GetComponent<TileMapDataCS>()._isSafetyEff = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isSafetyEff;
             _tileMapList[i].GetComponent<TileMapDataCS>()._isShop = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isShop;
             _tileMapList[i].GetComponent<TileMapDataCS>()._isSpShop = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isSpShop;
-            _tileMapList[i].GetComponent<TileMapDataCS>()._SafetyValue = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._SafetyValue;
+            _tileMapList[i].GetComponent<TileMapDataCS>()._SafetyValue = (float)_gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._SafetyValue;
             _tileMapList[i].GetComponent<TileMapDataCS>()._tileIndex = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._tileIndex;
             _tileMapList[i].GetComponent<TileMapDataCS>()._isIssue = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isIssue;
             _tileMapList[i].GetComponent<TileMapDataCS>()._isCrime = _gameMgr.GetComponent<SaveSys>()._saveFile._tileMapList[i]._isCrime;
