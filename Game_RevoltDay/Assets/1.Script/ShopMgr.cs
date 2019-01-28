@@ -468,7 +468,7 @@ public class ShopMgr : MonoBehaviour {
         SaveSys tempData = _gameMgr.GetComponent<SaveSys>();
 
         // 아이템 로드
-        for (int i = 0; i < tempData._saveFile._currItemDatasList.Count; i++)
+        for (int i = 0; i < tempData._saveFile._currItemDatasList.Length; i++)
         {
             if (tempData._saveFile._currItemDatasList[i]._Index == 0) break;
             for (int j = 0; j < _itemDatas.Count; j++)
@@ -483,7 +483,7 @@ public class ShopMgr : MonoBehaviour {
         }
 
         // 사용된 아이템 로드
-        for (int i = 0; i < tempData._saveFile._useItemList.Count; i++)
+        for (int i = 0; i < tempData._saveFile._useItemList.Length; i++)
         {
             if (tempData._saveFile._useItemList[i]._Index == 0) break;
             for (int j = 0; j < _itemDatas.Count; j++)
@@ -501,7 +501,7 @@ public class ShopMgr : MonoBehaviour {
 
 
         // 장비 로드
-        for (int i = 0; i < tempData._saveFile._currEquipDatasList.Count; i++)
+        for (int i = 0; i < tempData._saveFile._currEquipDatasList.Length; i++)
         {
             if (tempData._saveFile._currEquipDatasList[i]._Index == 0) break;
             for (int j = 0; j < _EquipDatas.Count; j++)
@@ -535,7 +535,7 @@ public class ShopMgr : MonoBehaviour {
 
 
         // 조력자 로드
-        for (int i = 0; i < tempData._saveFile._currAidDatasList.Count; i++)
+        for (int i = 0; i < tempData._saveFile._currAidDatasList.Length; i++)
         {
             if (tempData._saveFile._currAidDatasList[i]._Index == 0) break;
             for (int j = 0; j < _AidDatas.Count; j++)
