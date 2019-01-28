@@ -4,7 +4,7 @@ gang01,shop,2,강원진,null,………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,F
 Lee01,shop,2,이지은,null,………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 suitman,null,0,주인장,null,"물건 하나 사 가시고, 뭐 맘에 들면 또 오는 거고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 suitman,null,0,주인장,null,"대신, 산 다음에 나중에 와서 맘 바껴 판 다는 말만은 안 되는 겁니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-suitman,null,0,주인장,null,"언제든 환영이니, 또 오시길! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,null,0,주인장,null,쓸만한 물건들 많으니 언제든 찾아오시면 좋고.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,shop,2,강원진,null,사건에 대해 더 진행하는 게 좋다고 생각하십니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,shop,1,이지은,null,내 의사를 묻기는 처음인 거 같네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

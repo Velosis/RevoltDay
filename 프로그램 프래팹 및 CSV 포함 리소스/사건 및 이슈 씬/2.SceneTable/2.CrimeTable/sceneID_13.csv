@@ -2,62 +2,61 @@
 null,null,0,,036.UnderOffice,null,null,null,0,0.1,2,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,18.card,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,18.card,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,null,0,Mr. 장,null,붙어라! ,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,null,0,Mr. 장,null,쓸! ,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,null,0,Mr. 장,null,"그라제, 그라제. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,null,0,Mr. 장,null,아이고 쪼카에 자석이 붙었나. 딱 들라부리네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,붙어라! ,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,쓸! ,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,"그라제, 그라제. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,null,0,미스터 장,null,아이고 쪼카에 자석이 붙었나. 딱 들라부리네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 Haam02,null,0,함정임,null,……. ,null,13.SpeakWtihWaltzDance,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang03,Haam02,2,Mr.장,null,뭘 그리 멀뚱히 쳐다보고 있답니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang04,Haam02,2,Mr.장,null,함대표도 하고싶나봐? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam02,2,미스터 장,null,뭘 그리 멀뚱히 쳐다보고 있답니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,2,미스터 장,null,함대표도 하고싶나봐? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam01,1,함정임,null,전 그런 싸구려 오락 따윈 선호하지 않는 편이라서요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam01,1,함정임,null,"유감스럽지만, 다음 기회에 해보도록 하죠. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,Haam01,2,Mr.장,null,바카라는 취급하시나? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,Haam01,2,미스터 장,null,바카라는 취급하시나? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,1,함정임,null,아아아. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,1,함정임,null,오해가 있으신 것 같습니다. 미스터 장. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,1,함정임,null,전 확실하지 않은 승부에는 돈을 걸지 않아요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,1,함정임,null,"즉, 사행성 오락같은 건 하지 않는다, 정도로 보면 되겠네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang02,Haam01,2,Mr.장,null,"거 인생, 참 재미없게 사시네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang02,Haam01,2,Mr.장,null,"한 탕 하고 탕진하고, 그리고 또 떼돈 버는 게 우리들 인생 아니겠습니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam01,2,미스터 장,null,"거 인생, 참 재미없게 사시네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam01,2,미스터 장,null,"한 탕 하고 탕진하고, 그리고 또 떼돈 버는 게 우리들 인생 아니겠습니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang02,Haam02,1,함정임,null,그런 걸 보고 실패한 삶이라고들 하지요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang03,Haam02,2,Mr.장,null,주댕이를 놀려도 꼭 그리 놀리네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang04,Haam02,2,Mr.장,null,함대표.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang04,Haam02,2,Mr.장,null,"그 자리까지 오른거, 그거 다 내 덕인 거 그새 잊으셨어? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam02,2,미스터 장,null,주댕이를 놀려도 꼭 그리 놀리네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,2,미스터 장,null,함대표.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,2,미스터 장,null,"그 자리까지 오른거, 그거 다 내 덕인 거 그새 잊으셨어? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam01,1,함정임,null,이번에도 오해가 있으신 것 같습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam01,1,함정임,null,"제가 부유해진 건 제 능력이지, 미스터 장의 지원 덕이 아니랍니다.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam01,1,함정임,null,"물론, 여기서 돈을 불린 건 미스터 장도 한 몫 했지요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam01,1,함정임,null,이 점에 대해서는 부정할 생각이 없답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang02,Haam01,2,Mr.장,null,하여간 분위기 깨는 데에는 도가 튼 인간이란 말이지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,Haam01,2,Mr.장,null,"뭐, 놀음은 이쯤하고 볼 일부터 봅시다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,Haam01,2,Mr.장,null,함대표 부탁대로 주위 자잘하고 큰 기업들 싹다 사고팔고 이 지랄 저지랄 개지랄 다 떨어서 매입은 했습디다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,Haam01,2,Mr.장,null,근데 말입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,Haam01,2,Mr.장,null,"그 바이오칩 사건 때문에 경한 기업 주가가 뭐, 기왓장 무너지듯 와르르 무너지고 있네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,Haam01,2,Mr.장,null,이러면 곤란하지요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,Haam01,2,Mr.장,null,"안 그렇습니까, 함대표. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam01,2,미스터 장,null,하여간 분위기 깨는 데에는 도가 튼 인간이란 말이지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,Haam01,2,미스터 장,null,"뭐, 놀음은 이쯤하고 볼 일부터 봅시다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,Haam01,2,미스터 장,null,함대표 부탁대로 주위 자잘하고 큰 기업들 싹다 사고팔고 이 지랄 저지랄 개지랄 다 떨어서 매입은 했습디다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,Haam01,2,미스터 장,null,근데 말입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,Haam01,2,미스터 장,null,"그 바이오칩 사건 때문에 경한 기업 주가가 뭐, 기왓장 무너지듯 와르르 무너지고 있네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,Haam01,2,미스터 장,null,이러면 곤란하지요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,Haam01,2,미스터 장,null,"안 그렇습니까, 함대표. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,1,함정임,null,우리 쪽에서도 조사 중인 부분입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,1,함정임,null,곧 해결될 부분이니 미스터 장은 늘 그랬듯 두 발 뻗고 편히 주무시기만 하면 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam01,1,함정임,null,"뭐, 중간 중간 고스톱이나 치시면서 여가시간도 보내고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang02,Haam01,2,Mr.장,null,이쯤되면 제품 자체에 하자가 있는 거 아니요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam01,2,미스터 장,null,이쯤되면 제품 자체에 하자가 있는 거 아니요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang02,Haam01,1,함정임,null,"전혀 문제가 없어야 하는데, 문제가 있는 거라면, 작전세력쯤이 있다고 봐도 무방하겠네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang02,Haam03,1,함정임,null,IT산업이라는 게 부족하신 분들이 잘 못 손대면 꼭 이런 일이 일어나고는 하지요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang03,Haam03,2,Mr.장,null,"그, 함대표님. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang03,Haam01,2,Mr.장,null,"잘 알고 계시겠지만, 이번 사태 해결 못하면, 나랑 함대표와의 관계는 끝인 걸로 알아. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam03,2,미스터 장,null,"그, 함대표님. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam01,2,미스터 장,null,"잘 알고 계시겠지만, 이번 사태 해결 못하면, 나랑 함대표와의 관계는 끝인 걸로 알아. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang03,Haam01,1,함정임,null,그렇게 된다면 많이 안타깝게 되겠네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang03,Haam01,1,함정임,null,거듭 말씀드리지만 크게 걱정하실 일은 아닐 것 같습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang03,Haam01,1,함정임,null,"그리고, 미스터 장? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang03,Haam02,1,함정임,null,미스터 장께는 권유를 하나 해드리고 싶습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang03,Haam02,1,함정임,null,미스터 장께는 권유를 하나 해드리고 싶답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,1,함정임,null,"말을 함부로 하시면, 그게 좀... 안 좋게 되돌아올 수 있어요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,1,함정임,null,사람 일이라는 게 모르는 거 아닌가요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,1,함정임,null,혹시라도 미스터 장에게 해가 되는 일이 끼쳐질까 조금 두려워서. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,1,함정임,null,저는 미스터 장과는 오래도록 좋은 친구 관계를 유지하고 싶습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,1,함정임,null,"그만큼, 나는 미스터 장에게 깊은 애정을 가지고 있어요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang04,Haam02,1,함정임,null,부탁 드려도 괜찮겠지요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang04,Haam02,2,Mr.장,null,애정전선이라는 게 혼자 힘으로는 안 되는 법 아니겠습니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang04,Haam02,2,Mr.장,null,서로 서로 아껴주고 조심 좀 합시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang02,Haam02,2,Mr.장,null,"당연히, 나도 함대표랑은 같은 마음이니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,2,미스터 장,null,애정전선이라는 게 혼자 힘으로는 안 되는 법 아니겠습니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang04,Haam02,2,미스터 장,null,서로 서로 아껴주고 조심 좀 합시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang02,Haam02,2,미스터 장,null,"당연히, 나도 함대표랑은 같은 마음이니까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Zhang01,Haam02,1,함정임,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Zhang01,Haam02,2,Mr.장,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Zhang01,Haam02,2,미스터 장,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE

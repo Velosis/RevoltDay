@@ -1,0 +1,29 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,007.DarkSlumCity,null,null,null,0,0.1,2,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,2,강원진,null,범법행위입니다. ,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,2,강원진,null,이러한 방관행위는 경찰 공무원의 행위에 부합하지 않습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,1,이지은,null,괜한 짓 하다 나까지 피해보는 건 좀 그렇거든. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,형사씨에게 좀 공격적으로 말한 건 미안하고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"무슨 일을 하든, 서로 간의 피드백과 대화로 결정을 지어야지. ",null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,동의해요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,2,강원진,null,일정 부분은 동의하고 있습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,일이 좀 길어질 것 같은데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"좀 꺼려지긴 해도, 일단은 원진씨라 부를게요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,장기전에 내사착수인데 형사씨라 부르면 보기에 뭐하니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,본인도 꺼려지면 그냥 형사씨라고 부르고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee03,1,이지은,null,나도 그다지 형사씨를 친근하게 부르고 싶진 않거든. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,2,강원진,null,어느 쪽이든 상관 없습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,업무에 지장이 가지 않으면 이지은 경위님의 의사에 따릅니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee02,1,이지은,null,"그쪽도 이지은 경위라 부르시든, 편하게 이름을 부르시든. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee02,2,강원진,null,경위님이라 부르겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,"그러든지, 말든지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,댁 말대로 숨겨야 할 때 숨기는 건 조심 하시고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,그 부분에 대한 주의는 잘 새기겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,상황 분류에 따른 적절한 조치와 호칭을 칭하겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,아…예. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,문제시 되는 사항이 있습니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,예. 없습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,사무실로 돌아가기나 해요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE

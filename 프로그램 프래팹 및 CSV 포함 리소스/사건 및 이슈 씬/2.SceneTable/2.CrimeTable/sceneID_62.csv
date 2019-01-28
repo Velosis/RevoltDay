@@ -15,12 +15,12 @@ gang02,Zhang02,2,강원진,null,사람이 죽었습니다. ,null,null,0,0.1,0,0,
 gang02,Zhang03,1,미스터 장,null,내 알바는 아닙니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang04,1,미스터 장,null,같잖은 위선 떨지마. 역겨우니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,1,미스터 장,null,강원진 경위는 그냥 함정임만 잘 구슬려서 구속하면 되는 거야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang02,2,강원진,null,당신들 암투는 제 알 바 아닙니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,2,강원진,null,당신들의 암투는 제 알 바 아닙니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,2,강원진,null,"하지만, 당신 행동 때문에 무고한 경찰들과 시민이 죽었습니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,2,강원진,null,어떻게 책임 지실 겁니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang02,1,미스터 장,null,"책임은 개뿔 지랄을 해요, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,1,미스터 장,null,"책임은 개뿔 지랄을 해요,.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,1,미스터 장,null,유구현 청장 따까리주제에 온갖 착한 척 다하는 게 역겨워서 가만 보실 수가 없네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,2,강원진,null,미스터 장. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,2,강원진,null,오늘 일은 반드시 그에 합당한 벌을 받을 겁니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang04,1,미스터 장,null,"예, 예, 그러시겠지요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang04,1,미스터 장,null,볼일 다 봤음 나가보고. ,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang04,1,미스터 장,null,잡소리나 지껄이실 거면 어서 나가보십시오. 어서?,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

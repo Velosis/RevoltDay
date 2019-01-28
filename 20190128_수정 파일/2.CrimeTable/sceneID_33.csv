@@ -1,0 +1,33 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,016.Royal,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,그러니까……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,"시위대의 행동이 불법이다, 라는 걸 지속적으로 터트린다면? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,2,함정임,null,예. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,2,함정임,null,그렇게 되면 꽤나 히트거리 기사가 되겠죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,지금 여론이 시위대 쪽에 유리한 판세인 건 잘 아실거고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,"정말, 히트가 될 수 있겠어요? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,2,함정임,null,그럼요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,2,함정임,null,이건 어디까지나 진실입니다. 사실확인이 거쳐지지 않은 걸 사실인 것 마냥 시위하는 게 지금의 현실이랍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,2,함정임,null,"이걸 집중적으로 보도한다면, 오소영 기자님은 보다 더 나은 대우를 받고 살 수 있을 것 같네요?",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,오오……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,구미가 당기는데요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,2,함정임,null,오기자님과 같이 사회 초년생인 분들이야 말로 정의로움을 지켜 나가기 딱 좋지요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,2,함정임,null,부디 사실을 세상에 알려주세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,함정임 대표님만 믿고 가면 되는 거죠? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,"이거, 실패하면 재미 없을 거 같은데. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam03,Young01,2,함정임,null,"아뇨, 성공합니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam03,Young01,2,함정임,null,진실은 언제나 통하는 법이니까요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,호호…뻔뻔도 하시다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,Young01,1,오소영,null,"알았어요, 한 번 해 보죠. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam02,null,0,함정임,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
+null,null,0,,001.Black,두 번째 기록. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,나는 홀로그램 컴퓨터 앞에 앉아 시위대의 장면을 마주하였다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,시위대에 대한 여론의 악화는 가속화되어가고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,함정임을 두둔하는 여론은 나날이 거세져만 간다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,시위대의 행동이 옳다고 볼 수는 없다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"하지만, 그들이 진정으로 목소리를 내는 이유는 무엇일까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"복잡한 심경에 억눌려오는 통증을 뒤로 한 채, ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,나는 팬대를 굴렸다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,Stage2,null,null,null,0,4.1,0,0,FALSE,FALSE,FALSE,FALSE

@@ -55,7 +55,7 @@ null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,21.phonebell,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,1,함정임,null,김비서님. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,1,함정임,null,연락이 너무 늦으신 거 같습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,1,함정임,null,연락이 너무 늦으신 것 같습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,오……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,함정임,null,상당히 안타까운 일이네요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -89,9 +89,9 @@ null,null,0,Dr.박,null,자네가 내 뒤를 따라오기를. ,null,null,0,0.1,0
 null,null,0,Dr.박,null,그때 봅세. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,Dr.박,null,"자네의 죽음까지, 기필코 쫒아갈걸세. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,001.Black,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,17.gunshoot,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,032.Dr.Park,null,null,null,0,0.1,2,0,FALSE,FALSE,FALSE,FALSE
 Haam01,police,2,함정임,null,검사님? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Haam01,police,1,검사,null,"예, 대표님. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -106,7 +106,7 @@ Haam01,null,0,함정임,null,너무나도 마음이 아프네요. ,null,null,0,0
 Haam01,null,0,함정임,null,"함께 일한 동지가 이렇게 된 게, 너무나도 가슴이 아프답니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Haam01,null,0,함정임,null,우리 사회는 이걸 계기로 더 좋은 사회가 될 거에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Haam01,null,0,함정임,null,"안타깝지만, 그래도 어쩌겠어요. 그렇죠? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Haam01,null,0,함정임,null,오늘은 쉽게 잠에 들지 못할 거 같아요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Haam01,null,0,함정임,null,오늘은 쉽게 잠에 들지 못할 것 같아요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Haam01,null,0,함정임,null,"마음이, 너무 아파서, 지금 당장이라도 눈물이 흐를 거 같네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,07.door2,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -114,7 +114,7 @@ null,null,0,???,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
 null,null,0,,001.Black,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,"이야기의 시작은 2054년, 바이오칩 사건 발발. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"이야기의 시작은 2059년, 바이오칩 사건 발발. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,"함정임 대표의 주도 하에 경한기업의 IT제품, 바이오칩이 개발되었고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,인간의 뇌파를 조절해 보다 더 풍족한 삶을 누릴 수 있도록 개발된 이 바이오칩은 세간에 큰 화재를 불러 일으켰다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,"인간의 존엄성 훼손과 범죄 악용의 우려가 있었지만, 경한기업은 이를 끝까지 밀어붙였고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -127,7 +127,7 @@ null,null,0,,null,이는 결국 40조에 이르는 수익에 반발하듯 막대
 null,null,0,,null,경한기업의 3분기 손실 예상액 : 21조. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,각 종 시위와 늘어나는 강력 범죄들. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,결국 정부와 경찰 측은 치안 유지라는 명목하에 전투 경찰을 재건. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,결국 정부와 경찰 측은 치안 유지라는 명목하에 재건한 전투 경찰을 삼성동 경한기업 입구 쪽에 대량 배치. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,사태의 심각성은 분명했다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,이 이야기의 서론은 이정도. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

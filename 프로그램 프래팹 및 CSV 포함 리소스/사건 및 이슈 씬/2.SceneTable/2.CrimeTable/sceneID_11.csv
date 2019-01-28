@@ -35,7 +35,6 @@ gang01,Lee03,1,이지은,null,이쯤되면 말귀를 못 알아 듣는 게 아�
 gang01,Lee03,1,이지은,null,본인은 그런 생각이 안 드실까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee03,2,강원진,null,모두 이해하고 있습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee03,1,이지은,null,좀 심한 말 좀 쓸까요? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 Park02,null,0,???,null,아저씨! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,null,0,이지은,null,……? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,null,0,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -49,11 +48,11 @@ gang02,Park02,1,???,null,경찰이 왜 사람을 때려 눕히는 거죠? 무슨
 gang02,Park02,2,강원진,null,공무집행방해 및 상해치사 및 경찰 공무원 신변 보호법에 의거한 합법적 제압입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Park03,1,???,null,아……. ,null,06.I_ll_Remember_You,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Park03,1,???,null,죄송해요. 같은 동네 주민이에요. 요즘들어 평소랑 다른 모습들을 보이셔서……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Park03,1,???,null,"아, 여기 명함. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,1,???,null,저…여기.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Park03,2,이지은,null,명함을 줄 만큼 대단한 사람이기라도……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,Park03,2,이지은,null,하네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Park03,2,강원진,null,경한기업 연구원 박우주씨. 이 분은 법에 의거해 실형이 선고 될 확률이 높다 판단됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Park03,1,박우주,null,"어떻게, 안 될까요? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Park03,1,박우주,null,"그...어떻게, 안 될까요? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,Park03,2,이지은,null,"아까보니 경한기업을 싫어하는 것 같은데, 이건 무슨 모순인지 모르겠네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Park03,1,박우주,null,사정이 있어요. 제가 경한 기업에 입사한 것도 이해 해줄 만큼의 어떤 사정이. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Park03,1,박우주,null,"그보다, 아저씨는 생각하는 것 같은 그런 나쁜 사람이 아니에요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

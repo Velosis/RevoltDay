@@ -1,7 +1,7 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,037.court,null,null,08.Night_Theme,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
 suitman,Yu01,1,유구현,null,전면적으로 부인합니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-suitman,Yu01,1,유구현,null,전 청렴한 생활을 살아왔습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+suitman,Yu01,1,유구현,null,전 여지껏 청렴한 생활을 살아왔습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 suitman,Yu01,1,유구현,null,"뇌물수수는 억지에 불과하며, 이는 음모의 일부라고 생각합니다.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 suitman,Haam02,2,판사,null,피고 함정임도 같은 생각입니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 suitman,Haam02,1,함정임,null,유구현 청장님과는 그 어떠한 일면식도 없습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
