@@ -400,6 +400,10 @@ Prefab:
       propertyPath: _MaxHP
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1520679315521628, guid: f16c9dbfd01fe324ca8007691df55c34, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f16c9dbfd01fe324ca8007691df55c34, type: 2}
   m_IsPrefabAsset: 0

@@ -7,8 +7,9 @@ public class TalkIndexCS : MonoBehaviour {
     public string _sceneID; // 신 ID
 
     // 대화 옵션
-    private bool _TalkSkip;
-    private bool _TalkCut;
+    private bool _TalkSkip = false;
+    private bool _TalkCut = false;
+    private bool _AutoBut = false;
 
     // 각종 이펙트 정보
     public List<int> _ShakingEffIndex = new List<int>();
@@ -43,6 +44,8 @@ public class TalkIndexCS : MonoBehaviour {
     private GameObject CGImg;
     private GameObject L_chacterImg;
     private GameObject R_chacterImg;
+
+    private Text AutoButtonGO;
 
     // 출력되는 대화 정보
     public List<string> _talkName = new List<string>();
@@ -92,8 +95,12 @@ public class TalkIndexCS : MonoBehaviour {
         _textBox = GameObject.Find("TalkText").GetComponent<Text>();
         _talkNameBox = GameObject.Find("TalkName").GetComponent<Text>();
 
+        AutoButtonGO = GameObject.Find("AutoButtonText").GetComponent<Text>();
+
         _textDaleyWait = new WaitForSeconds(_textDaley);
         _nextTextDaleyWait = new WaitForSeconds(_nextTextDaley);
+
+        AutoTextSetting();
     }
 
     public void isSkipInput() { _TalkSkip = true; }
@@ -120,6 +127,14 @@ public class TalkIndexCS : MonoBehaviour {
         _textIndex.Clear();
     }
 
+    public void AutoTextSetting()
+    {
+        _AutoBut = !_AutoBut;
+
+        if (_AutoBut) AutoButtonGO.text = "Auto : Off";
+        else AutoButtonGO.text = "Auto : On";
+    }
+
     public void startTalk(eTableType _eTableType)
     {
         currTableType = _eTableType;
@@ -129,6 +144,7 @@ public class TalkIndexCS : MonoBehaviour {
         _textBox.text = "";
         _TalkSkip = false;
         _TalkCut = false;
+
         _fullText = _textIndex;
         StartCoroutine(ShowText(_fullText));
     }
@@ -161,24 +177,43 @@ public class TalkIndexCS : MonoBehaviour {
                 continue;
             }
 
+            _TalkSkip = false;
+            _TalkCut = false;
+
             // 문장 출력 코드
             #region
             for (int i = 0; i < fullText[s].Length; i++) // for를 통해 한글자씩 출력
             {
-                if (_TalkSkip) { s = _textIndex.Count - 1; break; }
-                if (_TalkCut) { i = fullText[s].Length - 1; break; }
+                if (_TalkSkip)
+                {
+                    s = _textIndex.Count - 1;
+                    _TalkSkip = false;
+
+                    break;
+                }
+
+                if (_TalkCut)
+                {
+                    i = fullText[s].Length - 1;
+                    _TalkCut = false;
+                }
 
                 _currText = fullText[s].Substring(0, i + 1); // 글자 길이 늘려서 출력해주기
                 _textBox.text = _currText; // 현재 스크립트가 속한 텍스트에 출력(고려)
                 yield return _textDaleyWait; // 코루틴을 통해 딜레이 작동
             }
+
+            _textBox.text += "▼";
             #endregion
 
-            _TalkSkip = false;
-            _TalkCut = false;
 
             if (_Wait[s] != 0) yield return new WaitForSeconds(_Wait[s]);
             else yield return _nextTextDaleyWait;
+
+            while (_AutoBut && !_TalkCut)
+            {
+                yield return null;
+            }
         }
 
         if (_Bgm.isPlaying) _Bgm.Stop();
@@ -219,9 +254,6 @@ public class TalkIndexCS : MonoBehaviour {
             L_chacterImg.GetComponent<Image>().color = new Color(0, 0, 0, 0);
         }
 
-        //L_chacterImg.GetComponent<RectTransform>().Translate(
-        //    L_chacterImg.GetComponent<RectTransform>().rect.width / 2.0f, L_chacterImg.GetComponent<RectTransform>().rect.height / 2.0f, 0);
-
         if (_R_imgIndex[talkValue] != "null")
         {
             R_chacterImg.GetComponent<Image>().color = new Color(R_chacterImg.GetComponent<Image>().color.r, R_chacterImg.GetComponent<Image>().color.g, R_chacterImg.GetComponent<Image>().color.b, 1);
@@ -233,9 +265,6 @@ public class TalkIndexCS : MonoBehaviour {
         {
             R_chacterImg.GetComponent<Image>().color = new Color(0, 0, 0, 0);
         }
-
-        //R_chacterImg.GetComponent<RectTransform>().Translate(
-        //    -R_chacterImg.GetComponent<RectTransform>().rect.width / 2.0f, R_chacterImg.GetComponent<RectTransform>().rect.height / 2.0f, 0);
     }
 
 
@@ -248,7 +277,6 @@ public class TalkIndexCS : MonoBehaviour {
 
         ResourceMgrCS._CGImg.TryGetValue(_CGimgIndex[talkValue], out tempImg);
         CGImg.GetComponent<Image>().sprite = tempImg.GetComponent<Image>().sprite;
-        //CGImg.GetComponent<RectTransform>().sizeDelta = tempImg.GetComponent<RectTransform>().sizeDelta;
     }
 
     public void soundPlay(int talkValue)

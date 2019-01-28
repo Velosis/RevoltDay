@@ -288,9 +288,9 @@ public class DuelSysCS : MonoBehaviour {
         _currTableType = _eTableType;
         _runButton.transform.GetChild(0).GetComponent<Text>().color = new Color(1, 1, 1, 1);
 
-        if (_isCrime || _playerInfoCS._clueTokenValue <= 0)
+        if (_isCrime || _playerInfoCS._currActPoint <= 0)
             _runButton.transform.GetChild(0).GetComponent<Text>().color = new Color(0.5f, 0.5f, 0.5f, 1);
-        if (_playerInfoCS._clueTokenValue <= 0) _ActPointText.SetActive(true);
+        if (_playerInfoCS._currActPoint <= 0) _ActPointText.SetActive(true);
 
         _isDuelEnd = true;
 
@@ -1110,9 +1110,9 @@ public class DuelSysCS : MonoBehaviour {
 
     public void RunSys()
     {
-        if (_isCrime || _playerInfoCS._clueTokenValue <= 0) return;
+        if (_isCrime || _playerInfoCS._currActPoint <= 0) return;
 
-        if (_playerInfoCS._clueTokenValue > 0) _playerInfoCS._clueTokenValue--;
+        if (_playerInfoCS._currActPoint > 0) _playerInfoCS._currActPoint--;
         _uIMgrCS.EndDuel();
     }
 }
