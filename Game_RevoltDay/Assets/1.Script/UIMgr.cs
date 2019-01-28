@@ -81,9 +81,15 @@ public class UIMgr : MonoBehaviour {
     public Dictionary<string, eventDate> _issueTableList = new Dictionary<string, eventDate>();
     public Dictionary<string, eventDate> _blockadeTableList = new Dictionary<string, eventDate>();
 
+    public int _SaveSelectValue = -1;
+
     private void Awake()
     {
-        _TileUIMgr = GameObject.Find("TileUI");
+        DontDestroyOnLoad(gameObject);
+
+        _SaveSelectValue = -1;
+
+        _TileUIMgr = GameObject.Find("DonTileUI");
 
         IssueTableRead();
         _DuelMgr.GetComponent<DuelSysCS>().readUnitTable();
@@ -181,15 +187,34 @@ public class UIMgr : MonoBehaviour {
     public void ScenesChange(string _str)
     {
         SceneManager.LoadScene(_str);
-        Destroy(_TileUIMgr);
+
+        if (_SaveSelectValue == -1)
+            Destroy(gameObject);
     }
 
     public void SettingSaveUi(GameObject _gameObject)
     {
         for (int i = 0; i < 4; i++)
         {
-            _gameObject.transform.GetChild(3 + i).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = _saveSysCS._saveFileArr[i].SaveDay;
+            if (_saveSysCS._saveFileArr[i].isSaveData) _gameObject.transform.GetChild(3 + i).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = _saveSysCS._saveFileArr[i].SaveDay;
+            else _gameObject.transform.GetChild(3 + i).gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().text = "저장 정보 없음";
         }
+    }
+
+    public void LoadSelectCheck(int value)
+    {
+        if (_OptionMgr.transform.GetChild(10).gameObject.transform.GetChild(2).gameObject.GetComponent<Text>().text != "불러오기 옵션") return;
+
+        _SaveSelectValue = value;
+        Destroy(_TileUIMgr);
+        ScenesChange("0.Tilte");
+    }
+
+    public void SaveSelectCheck(int value)
+    {
+        if (_OptionMgr.transform.GetChild(10).gameObject.transform.GetChild(2).gameObject.GetComponent<Text>().text != "저장 옵션") return;
+
+        _saveSysCS.saveSys(value);
     }
 
     public void SaveOfLoadUiOnOff(GameObject _gameObject)
@@ -197,10 +222,14 @@ public class UIMgr : MonoBehaviour {
         string tempStr = EventSystem.current.currentSelectedGameObject.name;
         if (tempStr == "SaveButton") // 저장 버튼
         {
+            _OptionMgr.transform.GetChild(10).gameObject.transform.GetChild(2).gameObject.GetComponent<Text>().text = "저장 옵션";
+
             SettingSaveUi(_SaveOfLoadUIGO);
         }
         else if (tempStr == "LoadButton") // 불러오기 버튼
         {
+            _OptionMgr.transform.GetChild(10).gameObject.transform.GetChild(2).gameObject.GetComponent<Text>().text = "불러오기 옵션";
+            _SaveSelectValue = -1;
             SettingSaveUi(_SaveOfLoadUIGO);
         }
         _gameObject.SetActive(!_gameObject.activeSelf);

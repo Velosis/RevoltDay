@@ -48,7 +48,7 @@ gang01,Haam01,1,함정임,null,유구현 청장이 그새 못버티고 절 배�
 gang01,Haam01,1,함정임,null,마음이 아프답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Haam01,2,강원진,null,당신은 끝났어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Haam01,2,강원진,null,뒤를 봐. 수많은 카메라가 당신을 찍어대고 있어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam01,2,강원진,null,한 여성을 상대로 톱을 든 살인마가 된 샘이지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Haam01,2,강원진,null,한 여성을 상대로 톱을 든 살인마가 된 셈이지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Haam01,1,함정임,null,"머리를, 잘 쓰신 것 같네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Haam01,1,함정임,null,역시 로봇이라 그런 걸까요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Haam01,1,함정임,null,그 점에 대해서는 칭찬해주고싶답니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -56,5 +56,5 @@ gang01,Haam01,1,함정임,null,"하지만, 제가 나가면 강원진 경위님�
 gang01,Haam01,1,함정임,null,전 어떻게든 빠져나갈 수 있거든요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Haam01,2,강원진,null,법으로 승부해보시면 되겠지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Haam01,2,강원진,null,연행하십시오. ,10.run3,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Haam02,1,함정임,null,절대 무사하지 못할거랍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE
+gang01,Haam02,1,함정임,null,강원진씨는 절대 무사하지 못할거랍니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,1.1,0,2,FALSE,FALSE,FALSE,FALSE

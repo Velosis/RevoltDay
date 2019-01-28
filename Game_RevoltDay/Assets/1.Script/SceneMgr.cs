@@ -14,6 +14,25 @@ public class SceneMgr : MonoBehaviour {
     private void OnEnable()
     {
         DontDestroyOnLoad(gameObject);
+        if (GameObject.Find("DonTileUI"))
+        {
+            Destroy(GameObject.Find("DonTileUI"));
+        }
+    }
+
+    private void Start()
+    {
+        if (GameObject.Find("GameOver") && GameObject.Find("GameOver").GetComponent<GameSysCS>()._SelectValue != -1)
+        {
+            SelectSave(GameObject.Find("GameOver").GetComponent<GameSysCS>()._SelectValue);
+            Destroy(GameObject.Find("GameOver"));
+            StartInGame();
+        }else if (GameObject.Find("UIMgr") && GameObject.Find("UIMgr").GetComponent<UIMgr>()._SaveSelectValue != -1)
+        {
+            SelectSave(GameObject.Find("UIMgr").GetComponent<UIMgr>()._SaveSelectValue);
+            Destroy(GameObject.Find("UIMgr"));
+            StartInGame();
+        }
     }
 
     public void SelectSave(int value)
@@ -26,6 +45,7 @@ public class SceneMgr : MonoBehaviour {
         _fristVideo = true;
         LodingMgrCS.LoadScene("1.MainGame");
         gameObject.GetComponent<Canvas>().enabled = false;
+        gameObject.name = "DonTileUI";
     }
 
 
