@@ -14,7 +14,7 @@ public class _JeonMoveRoot
         D
     }
     public eRootType _currRoot = eRootType.Non;
-    public float _rootChangeValue;
+    public double _rootChangeValue;
 
     public int _nextRootTile;
     public int _currRootValue = 0;
@@ -46,7 +46,7 @@ public class _HamMoveRoot
         C
     }
     public eRootType _currRoot = eRootType.Non;
-    public float _rootChangeValue;
+    public double _rootChangeValue;
 
     public int _nextRootTile;
     public int _currRootValue = 0;

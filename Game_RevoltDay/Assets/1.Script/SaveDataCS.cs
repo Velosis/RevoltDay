@@ -138,6 +138,7 @@ public class SaveDataCS : MonoBehaviour
             string jsonStr = File.ReadAllText(Application.dataPath + "/6.SaveData/SaveData.json");
             JsonData JsonSaveData = JsonMapper.ToObject(jsonStr);
 
+
             for (int i = 0; i < JsonSaveData.Count; i++)
             {
                 SaveData TempSaveData = new SaveData();
