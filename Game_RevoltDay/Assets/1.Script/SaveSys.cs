@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SaveDateNamespace;
 
 public class SaveSys : MonoBehaviour {
     public SaveData _saveFile;
-    public SaveData[] _saveFileArr = new SaveData[4];
+    public SaveData[] _saveFileArr;
     public PlayerInfoCS _playerInfoCS;
     public EventSysCS _eventSysCS;
     public NpcSysMgr _npcSysMgrCS;
     public TileMakerCS _tileMakerCS;
-
-    private SceneMgr _sceneMgrCS;
 
     public UIMgr _uIMgrCS;
 
@@ -20,11 +19,10 @@ public class SaveSys : MonoBehaviour {
 
     private void Awake()
     {
-        _sceneMgrCS = GameObject.Find("TileUI").GetComponent<SceneMgr>();
-        _saveFileArr = _sceneMgrCS._currSaveDataList;
-
-        if (!_TEST_BOOL)
-            _saveFile = _saveFileArr[_sceneMgrCS._SaveNumber];
+        for (int i = 0; i < _saveFileArr.Length; i++)
+        {
+            if (!_TEST_BOOL) _saveFile = GameObject.Find("TileUI").GetComponent<SceneMgr>()._currFile;
+        }
     }
 
 
@@ -39,129 +37,107 @@ public class SaveSys : MonoBehaviour {
 
     public void saveSys(int value)
     {
-        SaveData TempSaveData = new SaveData();
-
         // 최초 저장 여부
-        TempSaveData.isSaveData = true;
+        _saveFileArr[value].isSaveData = true;
+
         // 년도 저장
-        TempSaveData.SaveDay = System.DateTime.Now.ToString("yyyy. MM. dd");
-        TempSaveData.SaveDay += " / " + System.DateTime.Now.ToString("HH시 mm분");
+        _saveFileArr[value].SaveDay = System.DateTime.Now.ToString("yyyy. MM. dd");
+        _saveFileArr[value].SaveDay += " / " + System.DateTime.Now.ToString("HH시 mm분");
 
         // 사용중인 아이템 저장
         for (int i = 0; i < _playerInfoCS._currUseItemList.Count; i++)
         {
-            itemDataSave _itemData = new itemDataSave();
-
-            _itemData._Index = _playerInfoCS._currUseItemList[i]._Codex;
-            _itemData._currTurn = _playerInfoCS._currUseItemList[i]._currTurnOtp;
-
-            TempSaveData._useItemList.Add(_itemData);
+            _saveFileArr[value]._useItemList[i]._Index = _playerInfoCS._currUseItemList[i]._Codex;
+            _saveFileArr[value]._useItemList[i]._currTurn = _playerInfoCS._currUseItemList[i]._currTurnOtp;
         }
 
         // 아이템 저장
         for (int i = 0; i < _playerInfoCS._BoxItemList.Count; i++)
         {
-            itemDataSave _itemDataSave = new itemDataSave();
-
-            _itemDataSave._Index = _playerInfoCS._BoxItemList[i]._Codex;
-
-            TempSaveData._currItemDatasList.Add(_itemDataSave);
+            _saveFileArr[value]._currItemDatasList[i]._Index = _playerInfoCS._BoxItemList[i]._Codex;
         }
         // 장비 저장
         for (int i = 0; i < _playerInfoCS._BoxEquipList.Count; i++)
         {
-            equipData _equipData = new equipData();
-            _equipData._Index = _playerInfoCS._BoxEquipList[i]._Codex;
-            _equipData._setUse = _playerInfoCS._BoxEquipList[i]._isSet;
-
-            TempSaveData._currEquipDatasList.Add(_equipData);
+            _saveFileArr[value]._currEquipDatasList[i]._Index = _playerInfoCS._BoxEquipList[i]._Codex;
+            _saveFileArr[value]._currEquipDatasList[i]._setUse = _playerInfoCS._BoxEquipList[i]._isSet;
         }
         // 조력자 저장
         for (int i = 0; i < _playerInfoCS._BoxAidList.Count; i++)
         {
-            aidData _aidData = new aidData();
-
-            _aidData._Index = _playerInfoCS._BoxAidList[i]._Codex;
-            _aidData._currTurn = _playerInfoCS._BoxAidList[i]._currCoolTime;
-            _aidData._isGet = _playerInfoCS._BoxAidList[i]._isGet;
-            _aidData._setUse = _playerInfoCS._BoxAidList[i]._isSet;
-
-            TempSaveData._currAidDatasList.Add(_aidData);
+            _saveFileArr[value]._currAidDatasList[i]._Index = _playerInfoCS._BoxAidList[i]._Codex;
+            _saveFileArr[value]._currAidDatasList[i]._currTurn = _playerInfoCS._BoxAidList[i]._currCoolTime;
+            _saveFileArr[value]._currAidDatasList[i]._isGet = _playerInfoCS._BoxAidList[i]._isGet;
+            _saveFileArr[value]._currAidDatasList[i]._setUse = _playerInfoCS._BoxAidList[i]._isSet;
         }
 
         // 맵 타일 저장
         for (int i = 0; i < _tileMakerCS.TileMapList.Count; i++)
         {
-            tileMapDate TempTileMapDate = new tileMapDate();
-
-            TempTileMapDate._isBlockade = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isBlockade;
-            TempTileMapDate._isIssueIcon = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isIssueIcon;
-            TempTileMapDate._isSafetyEff = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isSafetyEff;
-            TempTileMapDate._isShop = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isShop;
-            TempTileMapDate._isSpShop = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isSpShop;
-            TempTileMapDate._SafetyValue = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._SafetyValue;
-            TempTileMapDate._tileIndex = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._tileIndex;
-            TempTileMapDate._isIssue = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isIssue;
-            TempTileMapDate._isCrime = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.activeSelf;
-
-            TempSaveData._tileMapList[i] = TempTileMapDate;
+            _saveFileArr[value]._tileMapList[i]._isBlockade = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isBlockade;
+            _saveFileArr[value]._tileMapList[i]._isIssueIcon = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isIssueIcon;
+            _saveFileArr[value]._tileMapList[i]._isSafetyEff = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isSafetyEff;
+            _saveFileArr[value]._tileMapList[i]._isShop = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isShop;
+            _saveFileArr[value]._tileMapList[i]._isSpShop = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isSpShop;
+            _saveFileArr[value]._tileMapList[i]._SafetyValue = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._SafetyValue;
+            _saveFileArr[value]._tileMapList[i]._tileIndex = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._tileIndex;
+            _saveFileArr[value]._tileMapList[i]._isIssue = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._isIssue;
+            _saveFileArr[value]._tileMapList[i]._isCrime = _tileMakerCS.TileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.activeSelf;
         }
+
+
+
+        // 스토리 진행 관련
+        _saveFileArr[value]._currEventID = _eventSysCS._currEventID;
+
+        // 플레이어 스테이터스
+        _saveFileArr[value]._clueTokenValue = _playerInfoCS._clueTokenValue;
+        _saveFileArr[value]._isAlive = _playerInfoCS._isAlive;
+        _saveFileArr[value]._isTurn = _playerInfoCS._isTurn;
+        _saveFileArr[value]._daleyTurnCount = _playerInfoCS._daleyTurnCount;
+        _saveFileArr[value]._reasoningValue = _playerInfoCS._reasoningValue;
+
+        _saveFileArr[value]._currTile = _playerInfoCS._currTile;
+        _saveFileArr[value]._tempCurrTile = _playerInfoCS._tempCurrTile;
+        _saveFileArr[value]._currActPoint = _playerInfoCS._currActPoint;
+        _saveFileArr[value]._currTrunPoint = _playerInfoCS._currTrunPoint;
+
+        _saveFileArr[value]._currHP = _playerInfoCS._currHP;
+        _saveFileArr[value]._MaxHP = _playerInfoCS._MaxHP;
+        _saveFileArr[value]._atkPoint = _playerInfoCS._atkPoint;
 
         // NPC 정보 저장
         for (int i = 0; i < _npcSysMgrCS._npcList.Length; i++)
         {
             if (_npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._eNpcType == eNpcType.Hamicon)
             {
-                TempSaveData._HamIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
-                TempSaveData._HamIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
-                TempSaveData._HamIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
-                TempSaveData._HamSaveData = _npcSysMgrCS._HamRootBox;
+                _saveFileArr[value]._HamIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
+                _saveFileArr[value]._HamIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
+                _saveFileArr[value]._HamIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
+                _saveFileArr[value]._HamSaveData = _npcSysMgrCS._HamRootBox;
             }
             else if (_npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._eNpcType == eNpcType.Jeonicon)
             {
-                TempSaveData._JeonIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
-                TempSaveData._JeonIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
-                TempSaveData._JeonIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
-                TempSaveData._JeonSaveData = _npcSysMgrCS._JeonRootBox;
+                _saveFileArr[value]._JeonIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
+                _saveFileArr[value]._JeonIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
+                _saveFileArr[value]._JeonIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
+                _saveFileArr[value]._JeonSaveData = _npcSysMgrCS._JeonRootBox;
             }
             else if (_npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._eNpcType == eNpcType.Wishicon)
             {
-                TempSaveData._WishIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
-                TempSaveData._WishIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
-                TempSaveData._WishIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
+                _saveFileArr[value]._WishIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
+                _saveFileArr[value]._WishIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
+                _saveFileArr[value]._WishIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
             }
             else if (_npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._eNpcType == eNpcType.Youngicon)
             {
-                TempSaveData._YoungIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
-                TempSaveData._YoungIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
-                TempSaveData._YoungIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
-                TempSaveData._YoungSaveData = _npcSysMgrCS._YoungRootBox;
+                _saveFileArr[value]._YoungIcon._isAlive = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isAlive;
+                _saveFileArr[value]._YoungIcon._isTurn = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._isTurn;
+                _saveFileArr[value]._YoungIcon._currTile = _npcSysMgrCS._npcList[i].GetComponent<PlayerInfoCS>()._currTile;
+                _saveFileArr[value]._YoungSaveData = _npcSysMgrCS._YoungRootBox;
             }
         }
 
-        // 기타
-        #region
-        // 스토리 진행 관련
-        TempSaveData._currEventID = _eventSysCS._currEventID;
-
-        // 플레이어 스테이터스
-        TempSaveData._clueTokenValue = _playerInfoCS._clueTokenValue;
-        TempSaveData._isAlive = _playerInfoCS._isAlive;
-        TempSaveData._isTurn = _playerInfoCS._isTurn;
-        TempSaveData._daleyTurnCount = _playerInfoCS._daleyTurnCount;
-        TempSaveData._reasoningValue = _playerInfoCS._reasoningValue;
-
-        TempSaveData._currTile = _playerInfoCS._currTile;
-        TempSaveData._tempCurrTile = _playerInfoCS._tempCurrTile;
-        TempSaveData._currActPoint = _playerInfoCS._currActPoint;
-        TempSaveData._currTrunPoint = _playerInfoCS._currTrunPoint;
-
-        TempSaveData._currHP = _playerInfoCS._currHP;
-        TempSaveData._MaxHP = _playerInfoCS._MaxHP;
-        TempSaveData._atkPoint = _playerInfoCS._atkPoint;
-        #endregion
-
-        _sceneMgrCS.SaveData(TempSaveData, value);
 
         _uIMgrCS.SettingSaveUi(_uIMgrCS._SaveOfLoadUIGO);
     }

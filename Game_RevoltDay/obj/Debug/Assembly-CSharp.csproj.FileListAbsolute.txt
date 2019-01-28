@@ -508,4 +508,3 @@ C:\Users\wjdwltn\Documents\GitHub\RevoltDay\Game_RevoltDay\obj\Debug\Assembly-CS
 C:\Users\wjdwltn\Documents\GitHub\RevoltDay\Game_RevoltDay\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\wjdwltn\Documents\GitHub\RevoltDay\Game_RevoltDay\obj\Debug\Assembly-CSharp.dll
 C:\Users\wjdwltn\Documents\GitHub\RevoltDay\Game_RevoltDay\obj\Debug\Assembly-CSharp.pdb
-C:\Users\wjdwltn\Documents\GitHub\RevoltDay\Game_RevoltDay\Temp\bin\Debug\LitJson.dll
