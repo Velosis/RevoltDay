@@ -31,14 +31,13 @@ public class ReadCsvCS : MonoBehaviour {
                 date = CSVReader.Read("2.SceneTable/1.IssueTable/" + _crimeSceneName);
                 break;
             case eTableType.Blockade: // 봉쇄 지역
-                tempResList = Resources.LoadAll("2.SceneTable/0.BlockadeTable");
-                tempGO = tempResList[Random.Range(0, tempResList.Length)] as TextAsset;
-                date = CSVReader.Read("2.SceneTable/0.BlockadeTable/" + tempGO.name);
+                //tempResList = Resources.LoadAll("2.SceneTable/0.BlockadeTable");
+                //tempGO = tempResList[Random.Range(0, tempResList.Length)] as TextAsset;
+                date = CSVReader.Read("2.SceneTable/1.IssueTable/" + _crimeSceneName);
                 break;
             case eTableType.Issue: // 긴급 이슈
-                tempResList = Resources.LoadAll("2.SceneTable/1.IssueTable");
-                tempGO = tempResList[Random.Range(0, tempResList.Length)] as TextAsset;
-                date = CSVReader.Read("2.SceneTable/1.IssueTable/" + tempGO.name);
+                //tempResList = Resources.LoadAll("2.SceneTable/1.IssueTable");
+                date = CSVReader.Read("2.SceneTable/1.IssueTable/" + _crimeSceneName);
                 break;
             case eTableType.Crime: // 메인
                 date = CSVReader.Read("2.SceneTable/2.CrimeTable/" + _crimeSceneName);

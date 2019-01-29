@@ -273,7 +273,7 @@ public class DuelSysCS : MonoBehaviour {
             tempUnitTable._fightDiceMax = (int)date[i]["FightdiceMax"];
             tempUnitTable._infightper = (int)date[i]["Infightper"];
             tempUnitTable._outfightper = (int)date[i]["Outfightper"];
-            tempUnitTable._infightper = (int)date[i]["Grapplingper"];
+            tempUnitTable._grapplingper = (int)date[i]["Grapplingper"];
             tempUnitTable._inFightPlus = (int)date[i]["Infightplus"];
             tempUnitTable._outFightPlus = (int)date[i]["Outfightplus"];
             tempUnitTable._grapplingPlus = (int)date[i]["Grapplingplus"];
@@ -339,6 +339,7 @@ public class DuelSysCS : MonoBehaviour {
                     tempGrappling = _unitTableList[i]._grapplingper;
                     _enemyDiceValueMin = _unitTableList[i]._fightDiceMin;
                     _enemyDiceValueMax = _unitTableList[i]._fightDiceMax;
+
                     break;
                 }
 
@@ -350,17 +351,23 @@ public class DuelSysCS : MonoBehaviour {
                     if (tempName != "enemy") tempCheck = true;
                     else
                     {
-                        _enemyImgName = _unitTableList[tempCheckValue]._cgImg;
-                        _enemyName = _unitTableList[tempCheckValue]._nameStr;
-                        tempHP = _unitTableList[tempCheckValue]._maxCurrHp;
-                        tempAtk = _unitTableList[tempCheckValue]._fight;
-                        tempInfight = _unitTableList[tempCheckValue]._infightper;
-                        tempOutfight = _unitTableList[tempCheckValue]._outfightper;
-                        tempGrappling = _unitTableList[tempCheckValue]._grapplingper;
-                        _enemyDiceValueMin = _unitTableList[i]._fightDiceMin;
-                        _enemyDiceValueMax = _unitTableList[i]._fightDiceMax;
-                        tempCheck = false;
-                        break;
+                        if ((_currTableType == eTableType.normal && _unitTableList[tempCheckValue]._grade == 1) ||
+                            (_currTableType == eTableType.Issue && _unitTableList[tempCheckValue]._grade == 2) ||
+                            (_currTableType == eTableType.Blockade && _unitTableList[tempCheckValue]._grade == 3))
+                        {
+                            _enemyImgName = _unitTableList[tempCheckValue]._cgImg;
+                            _enemyName = _unitTableList[tempCheckValue]._nameStr;
+                            tempHP = _unitTableList[tempCheckValue]._maxCurrHp;
+                            tempAtk = _unitTableList[tempCheckValue]._fight;
+                            tempInfight = _unitTableList[tempCheckValue]._infightper;
+                            tempOutfight = _unitTableList[tempCheckValue]._outfightper;
+                            tempGrappling = _unitTableList[tempCheckValue]._grapplingper;
+                            _enemyDiceValueMin = _unitTableList[tempCheckValue]._fightDiceMin;
+                            _enemyDiceValueMax = _unitTableList[tempCheckValue]._fightDiceMax;
+                            tempCheck = false;
+                            break;
+                        }
+                        Debug.Log("다시 검색");
                     }
                 }
             }
@@ -369,7 +376,7 @@ public class DuelSysCS : MonoBehaviour {
                 _enemyImgName = _unitTableList[i]._cgImg;
                 _enemyName = _unitTableList[i]._nameStr;
                 tempHP = _unitTableList[i]._maxCurrHp;
-                tempAtk = _unitTableList[tempCheckValue]._fight;
+                tempAtk = _unitTableList[i]._fight;
                 tempInfight = _unitTableList[i]._infightper;
                 tempOutfight = _unitTableList[i]._outfightper;
                 tempGrappling = _unitTableList[i]._grapplingper;
@@ -711,6 +718,11 @@ public class DuelSysCS : MonoBehaviour {
         StartCoroutine(DiceEff(_playerDiceText,3.0f));
         StartCoroutine(DiceEff(_enemyDiceText,3.0f));
 
+        Debug.Log("_enemyName : " + _enemyName);
+
+        Debug.Log("_enemyDiceValueMin : " + _enemyDiceValueMin);
+        Debug.Log("_enemyDiceValueMax : " + _enemyDiceValueMax);
+
         while (_currTimer <= 1.0f)
         {
             _currTimer += Time.deltaTime / 3.0f;
@@ -847,17 +859,17 @@ public class DuelSysCS : MonoBehaviour {
 
     public IEnumerator BattleDamge()
     {
-        if (_playerAtk + _playerDice != 0)
+        if (_playerAtk + _playerDice != 0 && _playerInfoCS._currHP > 0)
         {
             _enemyCurrHP -= _playerAtk + _playerDice + _playerInfoCS._buffAtk;
             if (_enemyCurrHP < 0) _enemyCurrHP = 0;
             SetDuelText();
             StartCoroutine(ChrImgHitEff(false));
+
+            yield return new WaitForSeconds(2.0f);
         }
 
-        yield return new WaitForSeconds(2.0f);
-
-        if (_enemyAtk + _enemyDice != 0)
+        if (_enemyAtk + _enemyDice != 0 && _enemyCurrHP > 0)
         {
             int tempDef = _playerInfoCS._currUseEquipF._Fight < 0 ? _playerInfoCS._currUseEquipF._Fight : 0;
             _playerInfoCS._currHP -= (_enemyAtk + tempDef) + _enemyDice;
@@ -865,9 +877,10 @@ public class DuelSysCS : MonoBehaviour {
             else if (_playerInfoCS._currHP > _playerInfoCS._MaxHP) _playerInfoCS._currHP = _playerInfoCS._MaxHP;
             SetDuelText();
             StartCoroutine(ChrImgHitEff(true));
+
+            yield return new WaitForSeconds(2.0f);
         }
 
-        yield return new WaitForSeconds(2.0f);
         DuelStateSet(eDuelState.BattleEnd);
     }
 

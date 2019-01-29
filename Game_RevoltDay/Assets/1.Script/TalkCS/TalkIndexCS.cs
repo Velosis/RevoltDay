@@ -184,13 +184,7 @@ public class TalkIndexCS : MonoBehaviour {
             #region
             for (int i = 0; i < fullText[s].Length; i++) // for를 통해 한글자씩 출력
             {
-                if (_TalkSkip)
-                {
-                    s = _textIndex.Count - 1;
-                    _TalkSkip = false;
-
-                    break;
-                }
+                if (_TalkSkip) break;
 
                 if (_TalkCut)
                 {
@@ -203,6 +197,12 @@ public class TalkIndexCS : MonoBehaviour {
                 yield return _textDaleyWait; // 코루틴을 통해 딜레이 작동
             }
 
+            if (_TalkSkip)
+            {
+                _TalkSkip = false;
+                break;
+            }
+
             _textBox.text += "▼";
             #endregion
 
@@ -212,9 +212,19 @@ public class TalkIndexCS : MonoBehaviour {
 
             while (_AutoBut && !_TalkCut)
             {
+                if (_TalkSkip) break;
+
                 yield return null;
             }
+
+            if (_TalkSkip)
+            {
+                _TalkSkip = false;
+                break;
+            }
         }
+
+
 
         if (_Bgm.isPlaying) _Bgm.Stop();
         if (_Se.isPlaying) _Se.Stop();
