@@ -2,7 +2,7 @@
 null,null,0,,023.daechidongOffice,null,null,05.Heaven_and_Hell_Part_2,0,0.1,2,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee01,1,이지은,null,원진씨. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee01,2,강원진,null,제 행동에 잘못된 점이 있다면 사과드립니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Lee01,2,강원진,null,"이지은 경위님의 불쾌함은 판단되지만, 어쩔 수 없는 행동이었음을 말씀드립니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,"이지은 경위님의 불쾌함은 판단되지만, 어쩔 수 없는 행동이었음을 말씀 드립니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,1,이지은,null,원진씨는 연애를 해 본 적이 있을까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,1,이지은,null,없을 것 같다는 생각이 드네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Lee02,2,강원진,null,예?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -16,7 +16,7 @@ gang01,Lee02,2,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FAL
 gang01,Lee02,2,강원진,null,하시고자 하는 말씀이 있다면 말씀해주십시오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,2,강원진,null,문제시 되는 상황이 있다면 수정하겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,1,이지은,null,아니. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Lee02,1,이지은,null,계속 그대로 행동하면 될 거 같은데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee02,1,이지은,null,계속 그대로 행동하면 될 것 같은데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,2,강원진,null,…………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,2,강원진,null,알겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
