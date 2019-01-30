@@ -1,11 +1,11 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,City,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-gang01,helper,1,¹ÚÁ¤¿ì,null,Å«ÀÏÀÔ´Ï´Ù!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,helper,2,°­¿øÁø,null,ÀÌ¹ø¿£ ¹¼´Ï±î?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,helper,1,¹ÚÁ¤¿ì,null,±ººÎ´ë ³»¿¡¼­ ÀüÅõ°ß ÇÑ ¸¶¸®°¡ Å»ÃâÇß´Ù´Âµ¥.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,helper,1,¹ÚÁ¤¿ì,null,±×°Ô ±â°è ÀüÅõ°ßÀÌ¶óÁö ¹¼´Ï±î!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,helper,1,¹ÚÁ¤¿ì,null,¹°·ÁÁ×À»±îºÁ °¡Áöµµ ¸øÇÏ°í ÀÌ·¯°í ÀÖ½À´Ï´Ù!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,helper,2,°­¿øÁø,null,´ëÃ¼ °æÂûÀº ¾î¶»°Ô µÇ½Å°Ì´Ï±î?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,ë°•ì •ìš°,null,í°ì¼ì…ë‹ˆë‹¤!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,2,ê°•ì›ì§„,null,ì´ë²ˆì—” ë­¡ë‹ˆê¹Œ?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,ë°•ì •ìš°,null,êµ°ë¶€ëŒ€ ë‚´ì—ì„œ ì „íˆ¬ê²¬ í•œ ë§ˆë¦¬ê°€ íƒˆì¶œí–ˆë‹¤ëŠ”ë°.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,ë°•ì •ìš°,null,ê·¸ê²Œ ê¸°ê³„ ì „íˆ¬ê²¬ì´ë¼ì§€ ë­¡ë‹ˆê¹Œ!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,1,ë°•ì •ìš°,null,ë¬¼ë ¤ì£½ì„ê¹Œë´ ê°€ì§€ë„ ëª»í•˜ê³  ì´ëŸ¬ê³  ìˆìŠµë‹ˆë‹¤!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,helper,2,ê°•ì›ì§„,null,ëŒ€ì²´ ê²½ì°°ì€ ì–´ë–»ê²Œ ë˜ì‹ ê²ë‹ˆê¹Œ?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,null,0,°­¿øÁø,null,¡¦¡¦.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,null,0,ÀüÅõ°ß,null,³¢À×¡¦¡¦.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,ê°•ì›ì§„,null,â€¦â€¦.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,ê°•ì›ì§„,null,ì „íˆ¬ê²¬ì´ ì•„ë‹ˆë¼ ì‚¬ëŒì´ ìˆëŠ” ê±´ ë¬´ìŠ¨ ê²½ìš°ì•¼.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
