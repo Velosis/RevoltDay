@@ -10,7 +10,18 @@ public class IntroMgrCS : MonoBehaviour {
 
     private void OnEnable()
     {
-        if (!_TileUI.GetComponent<SceneMgr>()._fristVideo && !_isPlay && _videoIntro.GetComponent<VideoPlayer>().isPlaying) _isPlay = true;
+        if (GameObject.Find("GameOver") || GameObject.Find("UIMgr") || GameObject.Find("DonTileUI"))
+        {
+            videoEnd();
+            return;
+        }
+
+        _videoIntro.GetComponent<VideoPlayer>().Play();
+        if (!_TileUI.GetComponent<SceneMgr>()._fristVideo && !_isPlay && _videoIntro.GetComponent<VideoPlayer>().isPlaying)
+        {
+            
+            _isPlay = true;
+        }
     }
 
     private void LateUpdate()

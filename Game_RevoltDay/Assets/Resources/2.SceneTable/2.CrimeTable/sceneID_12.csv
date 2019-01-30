@@ -18,7 +18,7 @@ gang01,Lee01,2,강원진,null,업무에 지장이 가지 않으면 이지은 경
 gang01,Lee02,1,이지은,null,"그쪽도 이지은 경위라 부르시든, 편하게 이름을 부르시든. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee02,2,강원진,null,경위님이라 부르겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee03,1,이지은,null,"그러든지, 말든지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Lee03,1,이지은,null,댁 말대로 숨겨야 할 때 드러내는 건 조심 하시고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee03,1,이지은,null,댁 말대로 숨겨야 할 때 숨기는 건 조심 하시고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee01,2,강원진,null,그 부분에 대한 주의는 잘 새기겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee01,2,강원진,null,상황 분류에 따른 적절한 조치와 호칭을 칭하겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Lee01,1,이지은,null,아…예. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

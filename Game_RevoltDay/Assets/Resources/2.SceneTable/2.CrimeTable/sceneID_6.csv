@@ -76,12 +76,12 @@ null,null,0,,null,"그렇다면, 이번 일은 외부적으로 알려서는 안 
 null,null,0,,null,경위직의 경찰 두 명을 부른 것으로 보았을 때 추가인력이 붙을 경우는 충분하다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,하지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,2,강원진,null,차후 추가 인력이 지원되는지 질문드리고 싶습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Yu01,1,유구현,null,"뭐, 저 구석에 앉은 부관 하나는 붙여줄 수 있겠지만. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,1,유구현,null,"뭐, 자잘한 일 처리하기에 좋은 녀석은 구해놨지만.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,직접적인 사건 해결에는 배제하도록 해. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,외부로 세어나가기 쉬운 일이야. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,이 일은 자네 둘이서 해결해야하네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,"경한기업 내사, 그리고 그에 관련된 사건 조사. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Yu01,1,유구현,null,"강원진 경위 같은 경우는 형사 이전에 협상팀 소속이었으니, 이 점을 잘 활용하면 되겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,1,유구현,null,"강원진 경위 같은 경우는 특공무술을 익히고 있으니, 이 점을 잘 활용하면 되겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,이런 일에 저같은 인력이 낭비될 경우는? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,신경전에 머리 하나 더 있다고 나쁠 건 없지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,"경찰대를 수석 졸업할 정도의 명석한 두뇌라면, 제법 가치있을거고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -99,6 +99,7 @@ Yu01,null,0,유구현,null,자네들을 보조할 사람이지.,null,null,0,0.1,
 Yu01,null,0,유구현,null,"강남서에서 사건을 해결하는 데에 보조적인 역할만 할테니, 이 점은 유념해 두고.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 helper,Lee03,2,박정우,null,서울지방경찰청 소속 박정우 경장입니다. 잘부탁드립니다!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,helper,2,이지은,null,음…너무 얼빵해보이는데.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Yu01,null,0,유구현,null,"자, 시작하지.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,helper,1,박정우,null,얼빵하지 않습니다아!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,잡설은 이쯤으로 해두고. 시작하지.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Yu01,null,0,유구현,null,자네들에게 많은 기대를 걸었다는 걸 알아줬으면 좋겠군.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE

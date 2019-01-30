@@ -29,7 +29,7 @@ Yu01,null,0,유구현,null,기타 궁금한 사항 있나. ,null,null,0,0.1,0,0,
 Lee03,Yu01,2,이지은,null,혼자 할 말 다하고 돌아가라고 하는 게 요즘 시대의 경찰청장 마인드인지는 잘 모르겠네.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,1,유구현,null,이경위. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Yu01,2,이지은,null,왜 그리 발끈하시는 지 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee03,Yu01,2,이지은,null,혼잣말을 했을 뿐인데. 혹시 찔리시는 게 있나봐. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,2,이지은,null,혼잣말을 했을 뿐인데. 혹시 뭐 찔리시는 거라도 있나봐?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,2,강원진,null,저희가 관여할 수 있는 조사범위는 어디까지인지 질문 드리고 싶습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,강남서 쪽이 많이 분주하더군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Yu01,1,유구현,null,"겸사겸사, 삼성동에 경한기업이 있으니, 강남구를 중점적으로 조사하면 더 손쉽게 일을 마무리 지을 수 있겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

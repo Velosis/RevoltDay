@@ -1,8 +1,8 @@
 ﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,024.GangnamPolice,null,null,03.Blues_Infusion,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,024.GangnamPolice,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,모 일본의 탐정은 이러한 행위를 했을 때 사건을 논리 정연하게 풀어 나갈 수 있다고 했지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,그가 했던 것 처럼. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,나도 담배에 불을 붙였다. ,24.cigar,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,나는 담배에 불을 붙였다.,24.cigar,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,깊게 연기를 삼키고 내뱉어서 나오는 뿌연 연기들이 찬 바람에 휘날려 허공을 배회한다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,이유는 모르겠다. ,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,"담배를 깊숙히 빨아 들일 때의 타격감도, 뱉고 나서의 상쾌함도. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -18,7 +18,7 @@ gang01,police,2,강원진,null,금시초문입니다. ,null,null,0,0.1,0,0,FALSE
 gang01,police,1,형사,null,"낮말은 쥐가 듣고 밤말은 새가 듣는다고, 혼자 모른척 뻐겨댄다고 아무도 모를 줄 아나? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,police,2,강원진,null,낮말은 새가 듣고 밤말은 쥐가 듣고 입니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,police,1,형사,null,그게 뭐가 중요하다는 거야? 의미만 통하면 되는 거잖아. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,police,1,형사,null,그게 뭐가 중요하다는 거야? 의미만 통하면 되는 거잖아. ,null,03.Blues_Infusion,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,police,2,강원진,null,제게 볼 일이 있으신겁니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,police,1,형사,null,"아뇨, 형씨한테 축하 드리려왔지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,police,1,형사,null,"거기 가서도 정신나간 인간마냥 메모장에 줄줄이 글만 써대지 마시고, 사회성 있게 행동 좀 해보시라고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -38,7 +38,7 @@ null,null,0,,null,그 기대를 깨버리듯 공기를 가르며 다가오는 �
 null,null,0,,null,이내 검은 자기 부상 자동차 한 대가 느릿한 속도로 주행하며 내 앞에 멈추어 선다. ,15.car,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,16.cardoor,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,daegiup,1,수행원,null,강원진 경위님 되십니까. ,null,05.Heaven_and_Hell_Part_2,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,daegiup,1,수행원,null,강원진 경위님 되십니까. ,null,08.Night_Theme,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,daegiup,2,강원진,null,개인적 용무가 아니라면 서에서 직접 말씀 부탁드립니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,daegiup,1,수행원,null,청장님께서 부르십니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,내게 찾아와 청장을 논하는 이들은 다음과 같다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -64,4 +64,4 @@ gang03,daegiup,2,강원진,null,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,F
 gang02,daegiup,1,수행원,null,날도 추운데 언제까지 이러고 있어야 하는 겁니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,daegiup,2,강원진,null,…알겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,"내가 그를 존경하는 것과, 그가 내게 행하는 부담스러운 행위들은 피차 다른 것들이라 생각된다. ",16.cardoor,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,"나는, 그가 나를 향해 배푸는 호의들이 불편하다. ",15.car,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,"나는, 나를 향해 배푸는 그의 호의들이 불편하다. ",15.car,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE

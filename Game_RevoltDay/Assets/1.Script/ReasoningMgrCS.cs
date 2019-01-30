@@ -86,8 +86,8 @@ public class ReasoningMgrCS : MonoBehaviour {
         else
         {
             _uIMgrCS.EndReasoning();
-            
             Debug.Log("해결 실패!");
+            _uIMgrCS.ScenesChange("3.GameOver");
         }
     }
 

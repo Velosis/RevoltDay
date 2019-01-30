@@ -18,7 +18,7 @@ gang01,Park03,1,박우주,null,그들은 우리처럼 선행이라는 데이터�
 gang01,Park03,1,박우주,null,되려 진짜 기계처럼 본능과 개인의 이익을 위해 살고있죠. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,CG08,null,null,09.St_Francis,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Park03,1,박우주,null,이제부터 진짜 시작이에요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang01,Park03,1,박우주,null,"과연 이 난장판에서, 인간들은 진짜 본연의 목적과 인간성에 부합하게 살아가고있는지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Park03,1,박우주,null,"과연 이 난장판에서, 인간들은 진짜 본연의 목적과 인간성에 부합하게 살아가고 있는지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Park03,1,박우주,null,그걸 보고싶었어요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Park03,1,박우주,null,함정임과 유구현은 갈라질거고.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang01,Park03,1,박우주,null,머지않아 바이오칩을 이식 받은 사람들은 함정임을 살해할 거고.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -50,6 +50,5 @@ null,null,0,박우주,null,학습할 수 있는 생명체죠. ,null,null,0,0.1,0
 null,null,0,박우주,null,"당신이 느끼는 감정은, 닥터 박이 창조한거예요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,박우주,null,"자, 이제 우리는 방관자의 입장이에요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,박우주,null,그리고 지금 이걸 보고 있는 당신도. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,박우주,null,"과연, 기계인 우리가 나을 까요. 인간인 당신이 나을까요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,박우주,null,"과연, 기계인 우리가 나을 까요. 인간인 그들이 나을까요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,001.Black,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

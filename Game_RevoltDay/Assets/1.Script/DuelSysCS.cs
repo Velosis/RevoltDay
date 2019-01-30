@@ -86,7 +86,6 @@ public class DuelSysCS : MonoBehaviour {
     private string _playerImgName;
     private GameObject _playerHpText;
     private GameObject _playerAtkText;
-    private int _playerHP;
     private int _playerAtk;
     private int _playerDiceValueMin;
     private int _playerDiceValueMax;
@@ -289,9 +288,9 @@ public class DuelSysCS : MonoBehaviour {
         _currTableType = _eTableType;
         _runButton.transform.GetChild(0).GetComponent<Text>().color = new Color(1, 1, 1, 1);
 
-        if (_isCrime || _playerInfoCS._clueTokenValue <= 0)
+        if (_isCrime || _playerInfoCS._currActPoint <= 0)
             _runButton.transform.GetChild(0).GetComponent<Text>().color = new Color(0.5f, 0.5f, 0.5f, 1);
-        if (_playerInfoCS._clueTokenValue <= 0) _ActPointText.SetActive(true);
+        if (_playerInfoCS._currActPoint <= 0) _ActPointText.SetActive(true);
 
         _isDuelEnd = true;
 
@@ -318,7 +317,6 @@ public class DuelSysCS : MonoBehaviour {
                 break;
         }
         
-        _playerHP = _playerInfoCS._currHP;
         _playerAtk = _playerInfoCS._atkPoint;
 
         for (int i = 0; i < _unitTableList.Count; i++)
@@ -414,7 +412,7 @@ public class DuelSysCS : MonoBehaviour {
         _playerChrImg.GetComponent<Image>().sprite = tempImg.GetComponent<Image>().sprite;
         _playerChrImg.GetComponent<RectTransform>().sizeDelta = tempImg.GetComponent<RectTransform>().sizeDelta / 2.0f;
 
-        _playerHpText.GetComponent<Text>().text = "체력 : " + _playerHP.ToString() + " / " + _playerInfoCS._MaxHP.ToString();
+        _playerHpText.GetComponent<Text>().text = "체력 : " + _playerInfoCS._currHP.ToString() + " / " + _playerInfoCS._MaxHP.ToString();
         _playerAtkText.GetComponent<Text>().text = "공격력 : " + _playerAtk.ToString();
         if (_playerInfoCS._buffAtk != 0) _playerAtkText.GetComponent<Text>().text += "(+" + _playerInfoCS._buffAtk + ")";
 
@@ -862,9 +860,9 @@ public class DuelSysCS : MonoBehaviour {
         if (_enemyAtk + _enemyDice != 0)
         {
             int tempDef = _playerInfoCS._currUseEquipF._Fight < 0 ? _playerInfoCS._currUseEquipF._Fight : 0;
-            _playerHP -= (_enemyAtk + tempDef) + _enemyDice;
-            if (_playerHP < 0) _playerHP = 0;
-            else if (_playerHP > _playerInfoCS._MaxHP) _playerHP = _playerInfoCS._MaxHP;
+            _playerInfoCS._currHP -= (_enemyAtk + tempDef) + _enemyDice;
+            if (_playerInfoCS._currHP < 0) _playerInfoCS._currHP = 0;
+            else if (_playerInfoCS._currHP > _playerInfoCS._MaxHP) _playerInfoCS._currHP = _playerInfoCS._MaxHP;
             SetDuelText();
             StartCoroutine(ChrImgHitEff(true));
         }
@@ -877,7 +875,7 @@ public class DuelSysCS : MonoBehaviour {
     {
         _isPlayerTypeWin = _isEnemyTypeWin = false;
         yield return new WaitForSeconds(2.0f);
-        if (_enemyCurrHP <= 0 || _playerHP <= 0) DuelStateSet(eDuelState.battleReward);
+        if (_enemyCurrHP <= 0 || _playerInfoCS._currHP <= 0) DuelStateSet(eDuelState.battleReward);
         else DuelStateSet(eDuelState.DuelStart);
     }
 
@@ -1073,7 +1071,10 @@ public class DuelSysCS : MonoBehaviour {
     public void RewardSys()
     {
         _isDuelEnd = false;
-        if (_playerHP <= 0) Debug.Log("게임 오버");
+        if (_playerInfoCS._currHP <= 0)
+        {
+            _uIMgrCS.ScenesChange("3.GameOver");
+        }
         else if (_enemyCurrHP <= 0)
         {
             if (_enemyName == "전민원" || _enemyName == "함정임 부하")
@@ -1109,9 +1110,9 @@ public class DuelSysCS : MonoBehaviour {
 
     public void RunSys()
     {
-        if (_isCrime || _playerInfoCS._clueTokenValue <= 0) return;
+        if (_isCrime || _playerInfoCS._currActPoint <= 0) return;
 
-        if (_playerInfoCS._clueTokenValue > 0) _playerInfoCS._clueTokenValue--;
+        if (_playerInfoCS._currActPoint > 0) _playerInfoCS._currActPoint--;
         _uIMgrCS.EndDuel();
     }
 }

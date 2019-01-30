@@ -2313,6 +2313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add98cc2593c81548b93cc3e98ee1e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _TileUIMgr: {fileID: 0}
   _screenEffMgrCS: {fileID: 0}
   _eventSysCS: {fileID: 0}
   _saveSysCS: {fileID: 0}

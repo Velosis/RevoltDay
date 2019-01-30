@@ -10,7 +10,7 @@ Jeon01,Wish01,1,강소원,null,신기하네. ,null,null,0,0.1,0,0,FALSE,FALSE,FA
 Jeon01,Wish01,1,강소원,null,막걸리에 밥말아드실것 같이 생긴 분이랑 친구분이셨어? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee02,Wish01,2,이지은,null,그런 당신은 윗 사람 보고도 거수경례 하나 안 하는 경찰이셨지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee02,Wish01,2,이지은,null,아무렴 상관은 없지만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Lee02,Wish01,1,강소원,null,"아 예, 충성. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee02,Wish02,1,강소원,null,"아 예, 충성. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,Wish01,2,이지은,null,아무렴 상관 없다는 말은 들었는지 몰라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 Wish01,null,0,강소원,null,"자, 아저씨들, 아줌마들. 퇴근시간이에요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -57,7 +57,7 @@ Wish01,null,0,강소원,null,하나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALS
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 Wish01,null,0,강소원,null,왜 이렇게 귀찮게 부는지 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
-Wish01,null,0,강소원,null,최루탄들 장착해요. 뭐해. ,01.gunready,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish02,null,0,강소원,null,최루탄들 장착해요. 뭐해. ,01.gunready,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 Jeon02,null,0,전민원,null,각자 때릴 거 있으면 뭐 하나라도 주우쇼. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Jeon02,null,0,전민원,null,우리 중 눈먼이라도 생기거든 절대 가만 있지 마시우. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -65,5 +65,6 @@ null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Wish01,null,0,강소원,null,뭐해요. 발사 안하고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,14.granade,null,0,3.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,13.revolt,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,강원진,null,막아야 합니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee01,null,0,이지은,null,"저기요, 원진씨? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Lee03,null,0,이지은,null,나만 두고 달려나가면 어쩌라는 건지 몰라. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

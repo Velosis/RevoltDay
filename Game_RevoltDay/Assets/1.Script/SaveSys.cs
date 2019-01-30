@@ -20,11 +20,15 @@ public class SaveSys : MonoBehaviour {
 
     private void Awake()
     {
-        _sceneMgrCS = GameObject.Find("TileUI").GetComponent<SceneMgr>();
-        _saveFileArr = _sceneMgrCS._currSaveDataList;
+
 
         if (!_TEST_BOOL)
+        {
+            _sceneMgrCS = GameObject.Find("DonTileUI").GetComponent<SceneMgr>();
+            _saveFileArr = _sceneMgrCS._currSaveDataList;
             _saveFile = _saveFileArr[_sceneMgrCS._SaveNumber];
+
+        }
     }
 
 

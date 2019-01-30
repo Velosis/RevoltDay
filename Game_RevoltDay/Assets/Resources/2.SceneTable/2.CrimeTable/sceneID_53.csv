@@ -26,8 +26,8 @@ gang02,Lee02,1,이지은,null,원진씨는 이 자료를 우리가 따로 공개
 gang02,Lee02,2,강원진,null,그게 더 좋은 판단이라 생각 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Lee02,1,이지은,null,원진씨의 생각이 얼마나 위험한건지는 알까 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Lee02,1,이지은,null,청장님을 상대하기엔 우리가 너무 작다는 생각은 안 하는 걸까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Lee02,1,이지은,null,"원진씨의 걱정은 알 거 같기도 한데, 청장님은 이걸로 함정임과 관계를 끊을 생각이라는 걸 모르는 걸까. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Lee02,2,강원진,null,이지은 경위님은 알고 있었던 겁니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"원진씨의 걱정은 알 거 같기도 한데, 청장님이 이걸로 함정임과 관계를 끊을 생각이라는 걸 모를리는 없을테고.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,2,강원진,null,"혹시, 이지은 경위님은 이전부터 알고 있었던 겁니까? ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Lee02,1,이지은,null,"글쎄, 난 할말이 없는 것 같네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Lee02,1,이지은,null,"난 청장님께 이 자료를 드릴테니, 원진씨는 원진씨 나름대로의 판단을 하는 게 좋지 않을지 모르겠네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,"난 청장님께 이 자료를 드릴테니, 원진씨는 원진씨 나름대로의 판단을 하는 게 좋지 않을까?",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
