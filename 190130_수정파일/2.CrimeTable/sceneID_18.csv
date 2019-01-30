@@ -1,0 +1,45 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,022.masterOffice,null,null,05.Heaven_and_Hell_Part_2,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,앉지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,34.sitdown,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,일에 대한 진척이 어느 정도인지 궁금하군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,점진적인 발전이라도 있나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Yu01,2,이지은,null,"조사의 초점은 바이오칩 부작용 사용자들을 중점적으로 두고 진행중입니다, 정도. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Yu01,2,이지은,null,기타 사항은 굳이 제 얘기가 없어도 될 거라고 봐요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,2,강원진,null,바이오칩에 대한 부작용 사실여부를 확보 후 경한기업에 대한 압수수색 영장을 목표로 작전을 수행 중 입니다.. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,1,유구현,null,"그래서, 결과는. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,2,강원진,null,없습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,1,유구현,null,그렇군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu02,1,유구현,null,당연한 결과이기도하지. 결국 자네들에게 부탁한 목숨 줄은 함정임이니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu02,1,유구현,null,거목 하나 무너뜨리는 데 걸리는 시간이 아깝다고 생각하진 않아. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu02,2,강원진,null,최대한 빠른 시일 내에 사건의 실마리를 잡겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu02,null,0,유구현,null,조바심 낼 필요는 없어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu02,null,0,유구현,null,"이경위, 강경위 같은 엘리트들을 썼다는 건 그만한 이유가 있다는 걸 알아줬으면 좋겠군.  ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu02,null,0,유구현,null,"우선, 자네들이 초점을 잡은 방향으로 나아 가. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu02,null,0,유구현,null,"바이오칩을 발단으로, 서울 각지에서 일어나는 폭력 사태에 대해서는 아는 바와 같이 대다수의 경찰, 전경들이 투입이 되고 있기는 하지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu02,null,0,유구현,null,"하지만, 그것만으로는 부족해. 자네들의 힘도 필요할 듯 싶어. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu02,null,0,유구현,null,중요한 사안에 좋지 않은 말로 들릴 지도 모르겠지만. ,null,null,0,4.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,우선은 바이오칩과 관련된 사안에 대해서 중점적으로 파고들어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,거기에 관련된 사건 사고에 접근하다보면 보다 빠르게 중점적인 실마리를 찾을 수 있겠지. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,"그렇게 해서 바이오칩에 대한, 경한기업에 대한 사실관계를 해결하면, 전체적으로 이 폭력사태에 대한 종지부가 나올 거고. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,"그렇게 된다면, 자네들은 국가에 큰 공을 기여한 셈이지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,"이상, 자네들에게 할 말은 이정도야. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Yu01,null,0,유구현,null,기타 궁금한 사항 있나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,2,이지은,null,혼자 할 말 다하고 돌아가라고 하는 게 요즘 시대의 경찰청장 마인드인지는 잘 모르겠네.  ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,1,유구현,null,이경위. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,2,이지은,null,왜 그리 발끈하시는 지 모르겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Yu01,2,이지은,null,혼잣말을 했을 뿐인데. 혹시 뭐 찔리시는 거라도 있나봐?,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,2,강원진,null,저희가 관여할 수 있는 조사범위는 어디까지인지 질문 드리고 싶습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,1,유구현,null,강남서 쪽이 많이 분주하더군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Yu01,1,유구현,null,"겸사겸사, 삼성동에 경한기업이 있으니, 강남구를 중점적으로 조사하면 더 손쉽게 일을 마무리 지을 수 있겠지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Yu01,2,이지은,null,"결국 강남서가 일을 못한다, 이거네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Yu01,1,유구현,null,타 경찰의 노고를 비하하는 발언은 삼가해줬으면 하는데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Yu01,1,유구현,null,이경위의 발언 하나가 얼마나 큰 파장을 일으킬 지 알아줬으면 좋겠군. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee01,Yu01,2,이지은,null,어련하시겠어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,null,0,강원진,null,……………. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,뭐하는 걸까. 가만히 앉아서 경청만 하고 계시네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,어서 핸들이나 잡는 게 좋지 않을까 싶은데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,2,강원진,null,알겠습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang01,Lee01,1,이지은,null,일단 강남으로 가요. 가서 뭐라도 해야할 듯 싶은데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,2,FALSE,FALSE,FALSE,FALSE
