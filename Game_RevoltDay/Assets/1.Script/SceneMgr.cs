@@ -8,8 +8,9 @@ using LitJson;
 public class SceneMgr : MonoBehaviour {
     public SaveData[] _currSaveDataList = new SaveData[4];
     public int _SaveNumber = 0;
-
     public bool _fristVideo = false;
+
+    public AudioClip _BgmSound;
 
     private void OnEnable()
     {
@@ -18,6 +19,9 @@ public class SceneMgr : MonoBehaviour {
         {
             Destroy(GameObject.Find("DonTileUI"));
         }
+
+        GetComponent<AudioSource>().clip = _BgmSound;
+        GetComponent<AudioSource>().Play();
     }
 
     private void Start()

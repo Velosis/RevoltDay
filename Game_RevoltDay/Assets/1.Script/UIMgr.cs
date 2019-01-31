@@ -46,6 +46,7 @@ public class UIMgr : MonoBehaviour {
     private GameObject _shop_buttonUi;
     public GameObject _loadingImg;
     public string _loadingText;
+    private GameObject _SmallState;
 
     public GameObject _SearchMgr;
     public GameObject _TalkMgr;
@@ -83,6 +84,8 @@ public class UIMgr : MonoBehaviour {
 
     public int _SaveSelectValue = -1;
 
+    public AudioClip _BgmSound;
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -90,6 +93,7 @@ public class UIMgr : MonoBehaviour {
         _SaveSelectValue = -1;
 
         _TileUIMgr = GameObject.Find("DonTileUI");
+        _SmallState = GameObject.Find("SmallState");
 
         IssueTableRead();
         _DuelMgr.GetComponent<DuelSysCS>().readUnitTable();
@@ -120,6 +124,53 @@ public class UIMgr : MonoBehaviour {
         for (int i = 0; i < _SearchSelectList.Length; i++)
         {
             _SearchSelectList[i].transform.GetChild(0).gameObject.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        SmallState();
+        BgmStartSys();
+    }
+
+    public void BgmStartSys()
+    {
+        if (!GetComponent<AudioSource>().isPlaying)
+        {
+            GetComponent<AudioSource>().clip = _BgmSound;
+            GetComponent<AudioSource>().Play();
+        }
+    }
+
+    public void SmallState()
+    {
+        _SmallState.transform.GetChild(2).GetComponent<Text>().text = "소지금 : " + _playerInfoCS._currMoney.ToString() + "원";
+        _SmallState.transform.GetChild(3).GetComponent<Text>().text = "단서 : " + _playerInfoCS._clueTokenValue.ToString() + "개";
+
+        _SmallState.transform.GetChild(5).GetComponent<Text>().text = "체력 : " + _playerInfoCS._currHP.ToString() + "/" + _playerInfoCS._MaxHP.ToString();
+        _SmallState.transform.GetChild(6).GetComponent<Text>().text = "행동력 : " + _playerInfoCS._currActPoint.ToString();
+        BuffSetting();
+    }
+
+    public void BuffSetting()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            _SmallState.transform.GetChild(7).gameObject.transform.GetChild(i).gameObject.SetActive(false);
+        }
+
+        for (int i = 0; i < _playerInfoCS._currUseItemList.Count + 1; i++)
+        {
+            if (_playerInfoCS._currUseItemList.Count != i)
+            {
+                _SmallState.transform.GetChild(7).gameObject.transform.GetChild(i).gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = _playerInfoCS._currUseItemList[i]._sprite;
+                _SmallState.transform.GetChild(7).gameObject.transform.GetChild(i).gameObject.SetActive(true);
+            }
+            else if (_playerInfoCS._currUseAid._Codex != 0)
+            {
+                _SmallState.transform.GetChild(7).gameObject.transform.GetChild(i).gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = _playerInfoCS._currUseAid._spriteTile;
+                _SmallState.transform.GetChild(7).gameObject.transform.GetChild(i).gameObject.SetActive(true);
+            }
         }
     }
 

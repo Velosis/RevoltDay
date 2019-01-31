@@ -8,8 +8,13 @@ public class GameSysCS : MonoBehaviour {
     public SaveData[] _currSaveDataList = new SaveData[4];
     public int _SelectValue = -1;
 
+    public AudioClip _BgmSound;
+
     private void Awake()
     {
+        GetComponent<AudioSource>().clip = _BgmSound;
+        GetComponent<AudioSource>().Play();
+
         DontDestroyOnLoad(gameObject);
         _SelectValue = -1;
         _currSaveDataList = GameObject.Find("DonTileUI").GetComponent<SceneMgr>()._currSaveDataList;
