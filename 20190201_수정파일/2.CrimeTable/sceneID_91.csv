@@ -1,0 +1,53 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,001.Black,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,LastCG,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,박우주,null,……..,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,박우주,null,음…이렇게 됐네.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,박우주,null,좋아.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,001.Black,null,null,null,0,3.1,2,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,애기야. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,너는 스스로를 사람이라 생각하느냐? ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,그는 나를 애기라고 칭하였다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,불과 얼마 지나지 않아 그는 자기 스스로가 아버지인 것마냥 행동하기 시작했다.,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,나는 그의 모습에서 의문을 품었다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,누구보다 자상하던 나의 창조주. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,그의 최후는 처참하였다. ,null,null,0,2.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,CG02,null,01.gunready,10.They_Might_Not,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,자네에게 경의를 표하네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,함정임,null,자네가 이겼어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,"온갖 나쁜 일을 일삼더니, 기어이 행해내는구만. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,함정임,null,박대표님. 남은 여생이라도 타인을 위해 사셔야지요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,모든 걸 잃었네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,"내 성과도, 내 명예도, 남을 위해 헌신한 내 삶도. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,그리고 가족도. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,함정임,null,"전 박대표님을 믿어요, 그러니까……. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,그 걸레문 입으로 내미는 말들이 내 심장을 좀먹고 있네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,이제 그만. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,…밑바닥 시궁창까지 내려가 기다리겠네. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,자네가 내 뒤를 따라오기를. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,그때 봅세. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,Dr.박,null,"자네의 죽음까지, 기필코 쫒아갈걸세. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,001.Black,null,null,null,0,2.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,null,17.gunshoot,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,0.1,2,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,알고리즘의 오류에 반응하듯 분노라는 감정을 학습하였다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,함정임. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,함정임. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,함정임. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,이후 그의 행적을 조사하던 나는. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,혐오감이라는 감정을 학습하였다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,돈으로 모든 것을 부리고 행하는 그. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,나는 도저히 그를 용납할 수 없다는 것은 사전에 프로그래밍 되어 있던 내 데이터였다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,해서. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,나는 경한기업에 입사하였고. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,함정임과 그를 도운 미스터 장에게 복수하기 위해. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,바이오칩에 약간의 장난을 부려보았다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,나는 최초로 성공형 모델로 안착된. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,인공지능 사회 생활 도우미 'Q-RAX'의 최초 완성본. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,null,Q-RAX ID.1 박우주이다. ,null,null,0,0.1,0,0,FALSE,TRUE,FALSE,FALSE
+null,null,0,,Stage5,null,null,null,0,4.1,0,0,FALSE,TRUE,FALSE,FALSE
