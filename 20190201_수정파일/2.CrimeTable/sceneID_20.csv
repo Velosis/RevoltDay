@@ -1,0 +1,21 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,034.Cityholl,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,2,강원진,null,"사건을 축약하면, 압구정 쪽에서 대량으로 비허가 무기가 유통되고 있다는 점. ",null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,2,강원진,null,이 점을 토대로 근처에 있는 불법무기매매 상가를 찾으면 되겠다고 판단 됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,1,이지은,null,나도 그 정도 머리는 되지 않을까 싶은데. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,1,이지은,null,왜 그러시나? 갑자기 뒤를 돌아보고. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,2,강원진,null,지속적인 발걸음 소리. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,2,강원진,null,미행이 붙었습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee01,2,강원진,null,사람은 하나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Lee02,1,이지은,null,감도 좋으시네. 발소리로 사람 몇 명 쫓아오는 지도 알 수 있고.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,25.Attack,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,42.pihada,null,1,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Jeon02,1,전민원,null,느닷없이 미안하게 됐수다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Jeon02,1,전민원,null,댁한테 알아야 할 게 많아서 말이오. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Jeon02,2,강원진,null,행인에게 무턱대고 몽둥이질 한다는 게 상식적으로 통용되는 행동은 아니라고 생각됩니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Lee03,Jeon02,2,이지은,null,"우리 잘못 건드리면, 좀 골치아플 텐데 괜찮을까 모르겠네. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,"한 번은 피했어도, 두 번 피하리라는 보장은 없지. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,자세한 설명은 나중에 하겠수다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon02,null,0,전민원,null,"일단, 같이 가줘야겠수. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
