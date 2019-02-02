@@ -90,9 +90,11 @@ public class StateMgrCS : MonoBehaviour {
                 break;
 
             case eAidType.Buff:
+                Debug.Log("작동");
                 tempText.text = _ItemStateText.text;
                 break;
             case eAidType.Now:
+                Debug.Log("작동");
                 tempText.text = _ItemStateText.text;
                 break;
             default:
@@ -118,8 +120,8 @@ public class StateMgrCS : MonoBehaviour {
             UseAidSys(false);
 
             if (!_playerInfoCS.setAidUse(_currSelectAid)) return;
-            AidScreenStting();
             StartCoroutine(NotUseAid(_currSelectAid._Type));
+            AidScreenStting();
         }
     }
     public void UseAidSys(bool _is)
@@ -274,15 +276,15 @@ public class StateMgrCS : MonoBehaviour {
             TempBox.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = TempBox.GetComponent<ItemDataCS>()._currEquipData._sprite;
             TempBox.transform.GetChild(2).gameObject.GetComponent<Text>().text = TempBox.GetComponent<ItemDataCS>()._currEquipData._NameKR;
             //기본 우측 정렬
-            TempBox.GetComponent<RectTransform>().position += Vector3.right * (TempBox.GetComponent<RectTransform>().rect.width / 2.0f + 20.0f);
-            TempBox.GetComponent<RectTransform>().position += Vector3.down * (TempBox.GetComponent<RectTransform>().rect.height / 2.0f + 10.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.right * (TempBox.GetComponent<RectTransform>().rect.width / 2.0f + 20.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.down * (TempBox.GetComponent<RectTransform>().rect.height / 2.0f + 10.0f);
 
             //크기에 따른 정렬
-            TempBox.GetComponent<RectTransform>().position += Vector3.right * ((TempBox.GetComponent<RectTransform>().rect.width * WidthCount));
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.right * ((TempBox.GetComponent<RectTransform>().rect.width * WidthCount));
 
-            TempBox.GetComponent<RectTransform>().position += Vector3.down * ((TempBox.GetComponent<RectTransform>().rect.height * HeightCount));
-            if (WidthCount != 0) TempBox.GetComponent<RectTransform>().position += Vector3.right * (WidthCount * 10.0f);
-            TempBox.GetComponent<RectTransform>().position += Vector3.down * (HeightCount * 10.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.down * ((TempBox.GetComponent<RectTransform>().rect.height * HeightCount));
+            if (WidthCount != 0) TempBox.GetComponent<RectTransform>().localPosition += Vector3.right * (WidthCount * 10.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.down * (HeightCount * 10.0f);
 
             WidthCount++;
             if (WidthCount >= 5)

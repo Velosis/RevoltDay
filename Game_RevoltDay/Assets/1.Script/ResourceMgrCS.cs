@@ -144,7 +144,7 @@ public class ResourceMgrCS : MonoBehaviour {
 
         _ShopMgrGO.SetActive(true);
         _ShopMgrGO.SetActive(false);
-        Debug.Log("불러오기 종료");
+        Debug.Log("리소스 불러오기 종료");
 
     }
 }

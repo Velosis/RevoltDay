@@ -48,6 +48,7 @@ public class SceneMgr : MonoBehaviour {
     {
         _fristVideo = true;
         LodingMgrCS.LoadScene("1.MainGame");
+        GetComponent<AudioSource>().Stop();
         gameObject.GetComponent<Canvas>().enabled = false;
         gameObject.name = "DonTileUI";
     }

@@ -116,9 +116,6 @@ public class TileMapDataCS : MonoBehaviour {
 
     private void Update()
     {
-        if (!_isShop && _tileIndex == 1) _isShop = true;
-        if (!_isSpShop && _tileIndex == 7) _isSpShop = true;
-
         if (!_isBlockade && !_isSafetyEff && SafetyCheck()) StartCoroutine(safetyEff());
     }
 
@@ -161,7 +158,12 @@ public class TileMapDataCS : MonoBehaviour {
 
         _SafetyValue = _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value;
         if (_SafetyValue >= 1.0f) setBlockade(true);
-        else if (_SafetyValue <= 0.0f) isIssue(false);
+        else if (_SafetyValue <= 0.0f)
+        {
+            _SafetyImgGO.SetActive(false);
+            _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value = 0.0f;
+            isIssue(false);
+        }
     }
 
     private void OnDisable()

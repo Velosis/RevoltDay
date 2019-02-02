@@ -369,9 +369,16 @@ public class ShopMgr : MonoBehaviour {
 
     public void BuyMsgPopup(bool _is)
     {
-        if (_currSelectItem == null) _playerInfoCS._BoxEquipList.Add(ResourceMgrCS.SettingEquipData(_currSelectEquip));
-        else _playerInfoCS._BoxItemList.Add(ResourceMgrCS.SettingItemData(_currSelectItem));
-
+        if (_currSelectItem == null)
+        {
+            _playerInfoCS._currMoney -= _currSelectEquip._Nomalprice;
+            _playerInfoCS._BoxEquipList.Add(ResourceMgrCS.SettingEquipData(_currSelectEquip));
+        }
+        else
+        {
+            _playerInfoCS._currMoney -= _currSelectItem._Nomalprice;
+            _playerInfoCS._BoxItemList.Add(ResourceMgrCS.SettingItemData(_currSelectItem));
+        }
         _BuyPopup.SetActive(_is);
         StartCoroutine(MsgEff());
     }
@@ -632,8 +639,8 @@ public class ShopMgr : MonoBehaviour {
             tempGO = EquipOptionSet(_EquipDatas[TempRand[i]]);
             if (i != 0)
             {
-                tempGO.GetComponent<RectTransform>().position -=
-                    Vector3.down * -(tempGO.GetComponent<RectTransform>().rect.height * i);
+                tempGO.GetComponent<RectTransform>().localPosition -=
+                    Vector3.down * -(tempGO.GetComponent<RectTransform>().rect.height - tempGO.GetComponent<RectTransform>().rect.height / 2.0f * i);
             }
 
             _isItemSelet += tempGO.GetComponent<ItemDataCS>().isSelect;

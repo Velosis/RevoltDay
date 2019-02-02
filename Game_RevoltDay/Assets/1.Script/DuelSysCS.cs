@@ -162,9 +162,13 @@ public class DuelSysCS : MonoBehaviour {
 
     public GameObject _ScreenHitEffGO;
 
+    private List<GameObject> _TileMapList;
+
     private void Awake()
     {
         _ScreenHitEffGO.SetActive(true);
+
+        _TileMapList = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>().TileMapList;
 
         _seMgr = GameObject.Find("SoundMgr").GetComponent<AudioSource>();
         _BgmMgr = GameObject.Find("BgmMgr").GetComponent<AudioSource>();
@@ -367,7 +371,6 @@ public class DuelSysCS : MonoBehaviour {
                             tempCheck = false;
                             break;
                         }
-                        Debug.Log("다시 검색");
                     }
                 }
             }
@@ -717,11 +720,6 @@ public class DuelSysCS : MonoBehaviour {
         _currTimer = 0.0f;
         StartCoroutine(DiceEff(_playerDiceText,3.0f));
         StartCoroutine(DiceEff(_enemyDiceText,3.0f));
-
-        Debug.Log("_enemyName : " + _enemyName);
-
-        Debug.Log("_enemyDiceValueMin : " + _enemyDiceValueMin);
-        Debug.Log("_enemyDiceValueMax : " + _enemyDiceValueMax);
 
         while (_currTimer <= 1.0f)
         {
@@ -1104,6 +1102,8 @@ public class DuelSysCS : MonoBehaviour {
                     _rewardMgrCS.StartRewardSys(-1, _currTableType);
                     break;
                 case eTableType.Blockade:
+                    _TileMapList[_playerInfoCS._currTile].GetComponent<TileMapDataCS>().setSafetyBer(-5.0f);
+                    Debug.Log("작동됨");
                     _rewardMgrCS.StartRewardSys(_playerInfoCS._currTile, _currTableType);
                     break;
                 case eTableType.Issue:

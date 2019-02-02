@@ -91,11 +91,11 @@ public class PlayerInfoCS : MonoBehaviour {
     {
         _gameMgr = GameObject.Find("GameMgr");
 
-        if (eNpcType.gangicon == _eNpcType)
+        if (eNpcType.gangicon == _eNpcType ||
+            eNpcType.Parkicon == _eNpcType)
         {
             _clueTokenValue += 0;
             _isAlive = true;
-
         }
 
         _currHP = _MaxHP; // 체력 정립
@@ -116,15 +116,17 @@ public class PlayerInfoCS : MonoBehaviour {
         if (GameObject.Find("MapTileMgr"))
         {
             _tileMapList = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>().TileMapList;
-            if (_eNpcType == eNpcType.gangicon)
+            if (_eNpcType == eNpcType.gangicon ||
+                eNpcType.Parkicon == _eNpcType)
             {
                 transform.GetComponent<RectTransform>().position = _tileMapList[_tileFirstXZ].GetComponent<RectTransform>().position;
-                _currTile = _tileFirstXZ;
+                _currTile = _tempCurrTile = _tileFirstXZ;
             }
 
         }
 
-        if (eNpcType.gangicon == _eNpcType && 
+
+        if ((eNpcType.gangicon == _eNpcType || eNpcType.Parkicon == _eNpcType) && 
             _gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData) saveLead();
     }
 
@@ -146,9 +148,16 @@ public class PlayerInfoCS : MonoBehaviour {
         _currTrunPoint = TextSave._saveFile._currTrunPoint;
     }
 
+    private void Start()
+    {
+        if (_eNpcType == eNpcType.gangicon || eNpcType.Parkicon == _eNpcType) PlayerTileXZ();
+
+    }
+
     private void Update()
     {
-        if (_eNpcType != eNpcType.gangicon) return;
+        if (_eNpcType != eNpcType.gangicon ||
+            eNpcType.Parkicon == _eNpcType) return;
 
         if (!_uIMgrCS._SearchMgr.activeSelf && Input.touchCount != 0 && !_moveHandImg.activeSelf &&
             Input.GetTouch(0).phase == TouchPhase.Began && _currMoveState != ePlayerState.MoveNon)
@@ -244,17 +253,14 @@ public class PlayerInfoCS : MonoBehaviour {
         _uIMgrCS.tileTurnUpdate();
 
         _uIMgrCS.isUiOnOff(eUiName.all, false);
-        _tileMapDataCS = _tileMapList[_currTile].GetComponent<TileMapDataCS>();
+        _tileMapDataCS = _tileMapList[_tempCurrTile].GetComponent<TileMapDataCS>();
 
         _uIMgrCS.isUiOnOff(eUiName.SearchButton, true);
         _uIMgrCS.isUiOnOff(eUiName.ItemButton, true);
         _uIMgrCS.isUiOnOff(eUiName.WaitButton, true);
         _uIMgrCS.isUiOnOff(eUiName.SafetyButton, true);
 
-        if (_tileMapDataCS._isBlockade)
-        {
-            return;
-        } else if (_tileMapDataCS._isShop || _tileMapDataCS._isSpShop)
+        if (_tileMapDataCS._isShop || _tileMapDataCS._isSpShop)
         {
             _uIMgrCS.isUiOnOff(eUiName.ShopButton, true);
             return;
@@ -279,6 +285,8 @@ public class PlayerInfoCS : MonoBehaviour {
 
     public void PlayerMoveSys()
     {
+        if (!_uIMgrCS.TileCheck()) return;
+
         // 터치를 사용한 움직임 구현
         switch (_currMoveState)
         {
@@ -288,16 +296,14 @@ public class PlayerInfoCS : MonoBehaviour {
                 tempTileXZ = _currTile;
                 _tempCurrTile = _tileMakerCS.getTileVlaue(TouchSysCS._touchPos.x, TouchSysCS._touchPos.y);
                 if ((tempTileXZ == _tempCurrTile && _tileMakerCS.getTileVlaue(TouchSysCS._touchPos.x, TouchSysCS._touchPos.y) != -1) ||
-                    (_tempCurrTile == -1) ||
-                    (Mathf.Abs(tempTileXZ - _tempCurrTile) > _currActPoint))
+                (_tempCurrTile == -1) || (_currActPoint <= 0))
                 {
                     _tempCurrTile = tempTileXZ;
                     return;
                 }
                 _nextTileMark.SetActive(true);
                 _nextTileMark.transform.position = _tileMapList[_tempCurrTile].transform.position;
-                _nextTileMark.transform.GetChild(0).GetComponent<Text>().text = "-" + (Mathf.Abs(tempTileXZ - _tempCurrTile));
-
+                _nextTileMark.transform.GetChild(0).GetComponent<Text>().text = "-1";
                 _currMoveState = ePlayerState.MoveSet;
                 break;
             case ePlayerState.MoveSet: // 이동할 타일이 선택된 상태
@@ -312,10 +318,10 @@ public class PlayerInfoCS : MonoBehaviour {
                 }
                 break;
             case ePlayerState.MoveHot: // 선택된 타일로 이동
+                setActPoint(1);
                 _nextTileMark.SetActive(false);
                 _endVec2Pos = _tileMapList[_tempCurrTile].transform.position;
                 StartCoroutine(mpvePlayerMove());
-                
                 break;
             default:
                 break;
@@ -375,7 +381,8 @@ public class PlayerInfoCS : MonoBehaviour {
         _moveHandImg.SetActive(false);
 
         _currActPoint -= Mathf.Abs(tempTileXZ - _currTile);
-        if (_eNpcType == eNpcType.gangicon) PlayerTileXZ();
+        if (_eNpcType == eNpcType.gangicon ||
+            _eNpcType == eNpcType.Parkicon) PlayerTileXZ();
         _currActText.text = _currActPoint.ToString();
         _currTile = _tempCurrTile;
         _currMoveState = ePlayerState.MoveReady;

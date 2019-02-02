@@ -121,6 +121,8 @@ public class UIMgr : MonoBehaviour {
         _ReasoningMgr.SetActive(false);
         _OptionMgr.SetActive(false);
 
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
         for (int i = 0; i < _SearchSelectList.Length; i++)
         {
             _SearchSelectList[i].transform.GetChild(0).gameObject.SetActive(false);
@@ -133,9 +135,19 @@ public class UIMgr : MonoBehaviour {
         BgmStartSys();
     }
 
+    public bool TileCheck()
+    {
+        return (_TalkMgr.activeSelf || _DuelMgr.activeSelf || _ReasoningMgr.activeSelf || _ShopMgr.activeSelf || _StateMgr.activeSelf || _OptionMgr.activeSelf);
+    }
+
     public void BgmStartSys()
     {
-        if (!GetComponent<AudioSource>().isPlaying)
+        if (_TalkMgr.activeSelf || _DuelMgr.activeSelf || _ReasoningMgr.activeSelf)
+        {
+            GetComponent<AudioSource>().Stop();
+            return;
+        }
+        else if (!GetComponent<AudioSource>().isPlaying)
         {
             GetComponent<AudioSource>().clip = _BgmSound;
             GetComponent<AudioSource>().Play();

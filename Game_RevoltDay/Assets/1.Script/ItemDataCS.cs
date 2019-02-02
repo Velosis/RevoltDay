@@ -54,6 +54,7 @@ public class ItemDataCS : MonoBehaviour {
                 return;
             }
 
+
             _shopMgrCS.isItemSeletSys(false);
             _shopMgrCS.itemBottomSetting(_currItemData);
         }

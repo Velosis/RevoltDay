@@ -54,6 +54,10 @@ public class TileMakerCS : MonoBehaviour {
                 arrIndex++;
             }
         }
+
+        _tileMapList[1].GetComponent<TileMapDataCS>()._isSpShop = true;
+        _tileMapList[7].GetComponent<TileMapDataCS>()._isShop = true;
+
     }
 
     private void Start()
