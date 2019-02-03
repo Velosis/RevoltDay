@@ -1,0 +1,8 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+null,null,0,,009.revoltDay,null,13.revolt,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
+Wish01,revoltman,1,시위대,null,함정임은! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,revoltman,1,시위대,null,자백하라! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,revoltman,2,강소원,null,해산하세요- 해산. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,revoltman,1,시위대,null,전경따위가 어딜 나불거려. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,revoltman,1,시위대,null,너도 한 패야! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
