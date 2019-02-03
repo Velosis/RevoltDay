@@ -6,7 +6,7 @@ gang01,helper,1,박정우,null,"경한기업측에서 조사를 해달라는데,
 gang01,helper,2,강원진,null,"…아, 예. 제가 가보겠습니다. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,3.1,0,3,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,1.1,2,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,null,32.Attack2,null,2,1.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,,null,null,32.Attack2,null,1,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,42.pihada,null,0,1.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,revoltman,1,시위대,null,경찰도 역시 경한이랑 한 패였구만! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,revoltman,1,시위대,null,"우리의 거사를 방해할 생각이거든, 썩 꺼져! ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
