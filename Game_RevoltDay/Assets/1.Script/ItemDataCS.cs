@@ -47,11 +47,22 @@ public class ItemDataCS : MonoBehaviour {
         {
             if (_isSelect)
             {
-                if (_currItemData._Nomalprice > _shopMgrCS._playerInfoCS._currMoney) return;
+                if (_shopMgrCS._isSell)
+                {
+                    _shopMgrCS.SetBuyItem(_currItemData);
+                    _shopMgrCS._BuyPopup.transform.GetChild(2).gameObject.GetComponent<Text>().text = "이 아이템을 정말 판매하시겠습니까?";
+                    _shopMgrCS.BuyPopupSys(true);
+                    return;
+                }
+                else
+                {
+                    if (_currItemData._Nomalprice > _shopMgrCS._playerInfoCS._currMoney) return;
 
-                _shopMgrCS.SetBuyItem(_currItemData);
-                _shopMgrCS.BuyPopupSys(true);
-                return;
+                    _shopMgrCS.SetBuyItem(_currItemData);
+                    _shopMgrCS._BuyPopup.transform.GetChild(2).gameObject.GetComponent<Text>().text = "이 아이템을 정말 구입하시겠습니까?";
+                    _shopMgrCS.BuyPopupSys(true);
+                    return;
+                }
             }
 
 
@@ -62,11 +73,23 @@ public class ItemDataCS : MonoBehaviour {
         {
             if (_isSelect)
             {
-                if (_currEquipData._Nomalprice > _shopMgrCS._playerInfoCS._currMoney) return;
+                if (_shopMgrCS._isSell)
+                {
+                    _shopMgrCS.SetBuyEquip(_currEquipData);
+                    _shopMgrCS._BuyPopup.transform.GetChild(2).gameObject.GetComponent<Text>().text = "이 아이템을 정말 판매하시겠습니까?";
+                    _shopMgrCS.BuyPopupSys(true);
+                    return;
+                }
+                else
+                {
+                    if (_currEquipData._Nomalprice > _shopMgrCS._playerInfoCS._currMoney) return;
 
-                _shopMgrCS.SetBuyEquip(_currEquipData);
-                _shopMgrCS.BuyPopupSys(true);
-                return;
+                    _shopMgrCS.SetBuyEquip(_currEquipData);
+                    _shopMgrCS._BuyPopup.transform.GetChild(2).gameObject.GetComponent<Text>().text = "이 아이템을 정말 구입하시겠습니까?";
+                    _shopMgrCS.BuyPopupSys(true);
+                    return;
+                }
+
             }
 
             _shopMgrCS.isItemSeletSys(false);
@@ -120,10 +143,11 @@ public class ItemDataCS : MonoBehaviour {
                 break;
             case eItemType.Move:
                 Debug.Log("하늘철 열차 사용");
-                //_playerInfoCS._currUseItemList.Add(ResourceMgrCS.SettingItemData(_currItemData));
-                //Destroy(gameObject);
-                //_playerInfoCS.UseItem(_arrIdex);
-                //_stateMgrCS.BoxItemListSetting(_stateMgrCS._currScreen);
+                if (!_playerInfoCS.setActUseItem(_currItemData)) return;
+                _playerInfoCS._skyItem = true;
+                Destroy(gameObject);
+                _playerInfoCS.UseItem(_arrIdex);
+                _stateMgrCS.BoxItemListSetting(_stateMgrCS._currScreen);
                 break;
             default:
                 break;

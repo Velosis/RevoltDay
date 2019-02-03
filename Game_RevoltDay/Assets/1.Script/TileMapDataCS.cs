@@ -29,10 +29,15 @@ public class TileMapDataCS : MonoBehaviour {
 
     public bool _isSafetyCheck = false;
 
+    public void setTileMaplist(List<GameObject> _gameObjects)
+    {
+        _tileMapList = _gameObjects;
+    }
+
     private void Awake()
     {
         _uIMgrCS = GameObject.Find("UIMgr").GetComponent<UIMgr>();
-        _tileMapList = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>().TileMapList;
+        //_tileMapList = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>().TileMapList;
 
         _isSafetyEff = false;
         _isBlockade = false;
@@ -63,6 +68,7 @@ public class TileMapDataCS : MonoBehaviour {
 
     public void tileTrunUpdate()
     {
+
         if (!_isSafetyCheck && _isIssueIcon && !_isBlockade) setSafetyBer(1);
 
         int RandTile = Random.Range(0, _tileMapList.Count);
@@ -77,6 +83,8 @@ public class TileMapDataCS : MonoBehaviour {
         }
         _isSafetyCheck = false;
     }
+
+    
 
     public void setIssueEvent()
     {
@@ -150,6 +158,8 @@ public class TileMapDataCS : MonoBehaviour {
         if (SafetyCheck()) _SafetyImgGO.SetActive(isUI);
     }
 
+   
+
     public void setSafetyBer(float value)
     {
         if (value > 0) _SafetyImgGO.transform.GetChild(0).GetComponent<Slider>().value += 0.2f * Mathf.Abs(value);
@@ -168,6 +178,8 @@ public class TileMapDataCS : MonoBehaviour {
 
     private void OnDisable()
     {
+        UIMgr._isSafetyUI -= isSafetyUI;
+        UIMgr._tileTurnUpdate -= tileTrunUpdate;
         _IssueImgGO.GetComponent<Canvas>().overrideSorting = false;
     }
 }

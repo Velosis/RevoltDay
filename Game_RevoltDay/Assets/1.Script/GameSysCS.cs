@@ -27,6 +27,11 @@ public class GameSysCS : MonoBehaviour {
         GetComponent<Canvas>().enabled = false;
     }
 
+    private void OnDisable()
+    {
+        GetComponent<AudioSource>().Stop();
+    }
+
     public void isOnOffUI(GameObject _gameObject)
     {
         SaveUiSetting();

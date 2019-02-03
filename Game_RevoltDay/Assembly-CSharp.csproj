@@ -64,11 +64,13 @@
     <Compile Include="Assets\1.Script\DuelSysCS.cs" />
     <Compile Include="Assets\1.Script\EventSysCS.cs" />
     <Compile Include="Assets\1.Script\GameSysCS.cs" />
+    <Compile Include="Assets\1.Script\InGameOpt.cs" />
     <Compile Include="Assets\1.Script\IntroMgrCS.cs" />
     <Compile Include="Assets\1.Script\ItemDataCS.cs" />
     <Compile Include="Assets\1.Script\LodingMgrCS.cs" />
     <Compile Include="Assets\1.Script\NewsMgrCS.cs" />
     <Compile Include="Assets\1.Script\NpcSysMgr.cs" />
+    <Compile Include="Assets\1.Script\OptionMgrCS.cs" />
     <Compile Include="Assets\1.Script\PlayerInfoCS.cs" />
     <Compile Include="Assets\1.Script\ReasoningMgrCS.cs" />
     <Compile Include="Assets\1.Script\ReasoningSysCS.cs" />

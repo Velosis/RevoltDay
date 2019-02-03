@@ -17,6 +17,8 @@ public class SearchSelectData : MonoBehaviour {
 
     public void sceneChange()
     {
+        if (_uIMgrCS._loadingImg.activeSelf) return;
+
         _uIMgrCS._TalkMgr.SetActive(true);
         ReadCsvCS tempReadCsvCS = _uIMgrCS._TalkMgr.transform.GetChild(1).gameObject.transform.GetChild(0).GetComponent<ReadCsvCS>();
         tempReadCsvCS._crimeSceneName = _sceneID;

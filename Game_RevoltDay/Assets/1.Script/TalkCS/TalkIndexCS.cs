@@ -298,7 +298,7 @@ public class TalkIndexCS : MonoBehaviour {
 
         _Se.clip = tempAudio;
         _Se.loop = false;
-        _Se.volume = 1.0f; // 0.0f ~ 1.0f == 0% ~ 100%
+        _Se.volume = (float)OptionMgrCS.getOptionInfo()._SeValue; // 0.0f ~ 1.0f == 0% ~ 100%
         _Se.Play();
     }
 
@@ -311,7 +311,7 @@ public class TalkIndexCS : MonoBehaviour {
 
         _Bgm.clip = tempAudio;
         _Bgm.loop = true;
-        _Bgm.volume = 1.0f; // 0.0f ~ 1.0f == 0% ~ 100%
+        _Bgm.volume = (float)OptionMgrCS.getOptionInfo()._BgmValue; ; // 0.0f ~ 1.0f == 0% ~ 100%
         _Bgm.Play();
     }
 

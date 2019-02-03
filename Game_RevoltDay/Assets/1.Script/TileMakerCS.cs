@@ -30,6 +30,7 @@ public class TileMakerCS : MonoBehaviour {
         int arrIndex = 0;
 
         float tempSize = _tileImage.GetComponent<RectTransform>().rect.width;
+
         for (int x = 0; x < _tileMapSizeX; x++)
         {
             for (int y = 0; y < _tileMapSizeY; y++)
@@ -53,6 +54,11 @@ public class TileMakerCS : MonoBehaviour {
                 UIMgr._tileTurnUpdate += _tileMapList[arrIndex].GetComponent<TileMapDataCS>().tileTrunUpdate;
                 arrIndex++;
             }
+        }
+
+        for (int i = 0; i < _tileMapList.Count; i++)
+        {
+            _tileMapList[i].GetComponent<TileMapDataCS>().setTileMaplist(_tileMapList);
         }
 
         _tileMapList[1].GetComponent<TileMapDataCS>()._isSpShop = true;

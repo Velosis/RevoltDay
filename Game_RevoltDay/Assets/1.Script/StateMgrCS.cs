@@ -332,15 +332,15 @@ public class StateMgrCS : MonoBehaviour {
             TempBox.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = TempBox.GetComponent<ItemDataCS>()._currItemData._sprite;
             TempBox.transform.GetChild(2).gameObject.GetComponent<Text>().text = TempBox.GetComponent<ItemDataCS>()._currItemData._NameKR;
             //기본 우측 정렬
-            TempBox.GetComponent<RectTransform>().position += Vector3.right * (TempBox.GetComponent<RectTransform>().rect.width / 2.0f + 20.0f);
-            TempBox.GetComponent<RectTransform>().position += Vector3.down * (TempBox.GetComponent<RectTransform>().rect.height / 2.0f + 10.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.right * (TempBox.GetComponent<RectTransform>().rect.width / 2.0f + 20.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.down * (TempBox.GetComponent<RectTransform>().rect.height / 2.0f + 10.0f);
 
             //크기에 따른 정렬
-            TempBox.GetComponent<RectTransform>().position += Vector3.right * ((TempBox.GetComponent<RectTransform>().rect.width * WidthCount));
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.right * ((TempBox.GetComponent<RectTransform>().rect.width * WidthCount));
 
-            TempBox.GetComponent<RectTransform>().position += Vector3.down * ((TempBox.GetComponent<RectTransform>().rect.height * HeightCount));
-            if (WidthCount != 0) TempBox.GetComponent<RectTransform>().position += Vector3.right * (WidthCount * 10.0f);
-            TempBox.GetComponent<RectTransform>().position += Vector3.down * (HeightCount * 10.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.down * ((TempBox.GetComponent<RectTransform>().rect.height * HeightCount));
+            if (WidthCount != 0) TempBox.GetComponent<RectTransform>().localPosition += Vector3.right * (WidthCount * 10.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.down * (HeightCount * 10.0f);
 
             WidthCount++;
             if (WidthCount >= 5)
@@ -389,15 +389,15 @@ public class StateMgrCS : MonoBehaviour {
             TempBox.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = TempBox.GetComponent<ItemDataCS>()._currAidData._spriteTile;
             TempBox.transform.GetChild(2).gameObject.GetComponent<Text>().text = TempBox.GetComponent<ItemDataCS>()._currAidData._NameKR;
             //기본 우측 정렬
-            TempBox.GetComponent<RectTransform>().position += Vector3.right * (TempBox.GetComponent<RectTransform>().rect.width / 2.0f + 20.0f);
-            TempBox.GetComponent<RectTransform>().position += Vector3.down * (TempBox.GetComponent<RectTransform>().rect.height / 2.0f + 10.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.right * (TempBox.GetComponent<RectTransform>().rect.width / 2.0f + 20.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.down * (TempBox.GetComponent<RectTransform>().rect.height / 2.0f + 10.0f);
 
             //크기에 따른 정렬
-            TempBox.GetComponent<RectTransform>().position += Vector3.right * ((TempBox.GetComponent<RectTransform>().rect.width * WidthCount));
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.right * ((TempBox.GetComponent<RectTransform>().rect.width * WidthCount));
 
-            TempBox.GetComponent<RectTransform>().position += Vector3.down * ((TempBox.GetComponent<RectTransform>().rect.height * HeightCount));
-            if (WidthCount != 0) TempBox.GetComponent<RectTransform>().position += Vector3.right * (WidthCount * 10.0f);
-            TempBox.GetComponent<RectTransform>().position += Vector3.down * (HeightCount * 10.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.down * ((TempBox.GetComponent<RectTransform>().rect.height * HeightCount));
+            if (WidthCount != 0) TempBox.GetComponent<RectTransform>().localPosition += Vector3.right * (WidthCount * 10.0f);
+            TempBox.GetComponent<RectTransform>().localPosition += Vector3.down * (HeightCount * 10.0f);
 
             WidthCount++;
             if (WidthCount >= 5)
@@ -538,7 +538,7 @@ public class StateMgrCS : MonoBehaviour {
         if (_currSelectAid._Token != 0) _ItemStateText.text += "+" + _currSelectAid._Token + " 단서 토큰";
         else if (_currSelectAid._Restore != 0) _ItemStateText.text += "+" + _currSelectAid._Restore + " 회복";
         else if (_currSelectAid._Money != 0) _ItemStateText.text += "+" + _currSelectAid._Money + " 원";
-        else if (_currSelectAid._Fight != 0) _ItemStateText.text += "+" + _currSelectAid._Fight + " 결투 보너스";
+        else if (_currSelectAid._Fight != 0) _ItemStateText.text += "+" + _currSelectAid._Fight + " 격투 보너스";
         else if (_currSelectAid._Dectective != 0) _ItemStateText.text += "+" + _currSelectAid._Dectective + " 추리 보정";
         else if (_currSelectAid._Move != 0) _ItemStateText.text += "+" + _currSelectAid._Move + " 행동력 보너스";
         if (_currSelectAid._Fight < 0) _ItemStateText.text = "옵션 : " + _currSelectAid._Fight + " 피해 방어";
@@ -767,7 +767,7 @@ public class StateMgrCS : MonoBehaviour {
             if (_currSelectAid._Token != 0) _ItemStateText.text += "+" + _currSelectAid._Token + " 단서 토큰";
             else if (_currSelectAid._Restore != 0) _ItemStateText.text += "+" + _currSelectAid._Restore + " 회복";
             else if (_currSelectAid._Money != 0) _ItemStateText.text += "+" + _currSelectAid._Money + " 원";
-            else if (_currSelectAid._Fight != 0) _ItemStateText.text += "+" + _currSelectAid._Fight + " 결투 보너스";
+            else if (_currSelectAid._Fight != 0) _ItemStateText.text += "+" + _currSelectAid._Fight + " 격투 보너스";
             else if (_currSelectAid._Dectective != 0) _ItemStateText.text += "+" + _currSelectAid._Dectective + " 추리 보정";
             else if (_currSelectAid._Move != 0) _ItemStateText.text += "+" + _currSelectAid._Move + " 행동력 보너스";
             if (_currSelectAid._Fight < 0) _ItemStateText.text = "옵션 : " + _currSelectAid._Fight + " 피해 방어";
@@ -803,8 +803,8 @@ public class StateMgrCS : MonoBehaviour {
     public void StateScreenStting()
     {
         Sprite tempSp;
-        if (_playerInfoCS._eNpcType == eNpcType.gangicon) tempSp = _ChrCgSprites[0];
-        else tempSp = _ChrCgSprites[0];
+        if (!_playerInfoCS._isParkIcon) tempSp = _ChrCgSprites[0];
+        else tempSp = _ChrCgSprites[1];
         _currScreen.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = tempSp;
 
         if (_playerInfoCS._currUseAid._Codex != 0)
@@ -844,8 +844,8 @@ public class StateMgrCS : MonoBehaviour {
         }
 
         GameObject TempStateInfo = _currScreen.transform.GetChild(5).gameObject;
-        TempStateInfo.transform.GetChild(0).gameObject.GetComponent<Text>().text = "이름 : " + (_playerInfoCS._eNpcType == eNpcType.gangicon ? "강원진" : "박우주");
-        TempStateInfo.transform.GetChild(1).gameObject.GetComponent<Text>().text = "직업 : " + (_playerInfoCS._eNpcType == eNpcType.gangicon ? "형사" : "경한기업 연구원");
+        TempStateInfo.transform.GetChild(0).gameObject.GetComponent<Text>().text = "이름 : " + (!_playerInfoCS._isParkIcon ? "강원진" : "박우주");
+        TempStateInfo.transform.GetChild(1).gameObject.GetComponent<Text>().text = "직업 : " + (!_playerInfoCS._isParkIcon ? "형사" : "경한기업 연구원");
         TempStateInfo.transform.GetChild(2).gameObject.GetComponent<Text>().text = "소지금 : " + _playerInfoCS._currMoney.ToString() + "원";
         TempStateInfo.transform.GetChild(3).gameObject.GetComponent<Text>().text = "사건 단서 : " + _playerInfoCS._clueTokenValue.ToString() + "개";
         TempStateInfo.transform.GetChild(4).gameObject.GetComponent<Text>().text = "체력 : " + _playerInfoCS._currHP.ToString() + " / " + _playerInfoCS._MaxHP.ToString();

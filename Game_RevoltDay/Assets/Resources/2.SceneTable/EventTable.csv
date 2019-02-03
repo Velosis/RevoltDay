@@ -126,9 +126,9 @@
 118,null,0,0,118,119,null,0,sceneID_92,0,null
 119,null,0,0,119,120,Parkicon,5,null,0,null
 120,tile,0,7,120,121,null,0,sceneID_94,0,null
-121,null,0,0,121,122,Parkicon,7,null,0,null
+121,null,0,0,121,122,PlayerIcon,7,null,0,null
 122,tile,0,5,122,123,null,0,sceneID_96,0,null
-123,null,0,0,123,124,Parkicon,5,null,0,null
+123,null,0,0,123,124,PlayerIcon,5,null,0,null
 124,tile,0,3,124,125,null,0,sceneID_97,0,null
 125,null,0,0,125,126,null,0,null,0,reasoningID_11
 126,null,0,0,126,127,null,0,sceneID_98,0,null

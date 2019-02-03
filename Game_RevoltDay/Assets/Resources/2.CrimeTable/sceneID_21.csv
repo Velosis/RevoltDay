@@ -1,0 +1,6 @@
+﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+gang03,Lee01,1,이지은,034.Cityholl,"사건이 좀 꼬인 감이 없지 않아 있는데, 어쩌시려고. ",null,null,0,0.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,1,이지은,null,"대치동 사무실로 가든, 아니면 계속 상점가를 찾든. ",null,null,0,0.1,2,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,2,강원진,null,입은 피해가 생각보다 크지 않습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,2,강원진,null,이대로 조사를 진행하는 게 더욱 좋은 조건일 거라 생각됩니다.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang03,Lee01,1,이지은,null,어련하시겠어. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

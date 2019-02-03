@@ -134,6 +134,7 @@ public class EventSysCS : MonoBehaviour {
         {
             for (int i = 0; i < _tileMapList.Count; i++)
             {
+                if (_eventSysDatesList[_currEventID]._eventTile_Index == i) continue;
                 _tileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(false);
             }
         }
@@ -170,6 +171,11 @@ public class EventSysCS : MonoBehaviour {
                         break;
                     case "Youngicon":
                         tempName = eNpcType.Youngicon;
+                        break;
+                    case "Parkicon":
+                        tempName = eNpcType.Parkicon;
+                        _playerInfoCS._isParkIcon = true;
+                        _playerInfoCS._currPlayerImg.sprite = _iconList[2].GetComponent<PlayerInfoCS>()._currPlayerImg.sprite;
                         break;
                     default:
                         Debug.Log("tileSetting() : 잘못된 아이콘 정보 입니다.");
@@ -227,7 +233,7 @@ public class EventSysCS : MonoBehaviour {
 
     public void duelEventStart()
     {
-        Debug.Log("결투 이벤트 시작");
+        Debug.Log("격투 이벤트 시작");
         _uIMgrCS.StartDuel();
         _uIMgrCS._DuelMgr.GetComponent<DuelSysCS>().DuelStartSys(eNpcType.normalEnemy, _eventSysDatesList[_currEventID]._duel_Index, true, eTableType.Non);
     }

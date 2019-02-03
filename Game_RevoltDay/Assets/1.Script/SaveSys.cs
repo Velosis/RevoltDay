@@ -20,18 +20,15 @@ public class SaveSys : MonoBehaviour {
 
     private void Awake()
     {
-
-
         if (!_TEST_BOOL)
         {
             _sceneMgrCS = GameObject.Find("DonTileUI").GetComponent<SceneMgr>();
             _saveFileArr = _sceneMgrCS._currSaveDataList;
-            _saveFile = _saveFileArr[_sceneMgrCS._SaveNumber];
-
+            Debug.Log(_sceneMgrCS._SaveNumber);
+            if (!_sceneMgrCS._IsNewGame) _saveFile = _saveFileArr[_sceneMgrCS._SaveNumber];
+            else _saveFile = _sceneMgrCS._NewStart;
         }
     }
-
-
 
     private void Update()
     {
@@ -155,6 +152,8 @@ public class SaveSys : MonoBehaviour {
         TempSaveData._daleyTurnCount = _playerInfoCS._daleyTurnCount;
         TempSaveData._reasoningValue = _playerInfoCS._reasoningValue;
 
+        TempSaveData._isPark = _playerInfoCS._isParkIcon;
+        TempSaveData._currImg = _playerInfoCS._currPlayerImg.sprite.ToString();
         TempSaveData._currTile = _playerInfoCS._currTile;
         TempSaveData._tempCurrTile = _playerInfoCS._tempCurrTile;
         TempSaveData._currActPoint = _playerInfoCS._currActPoint;

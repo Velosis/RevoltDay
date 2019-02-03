@@ -125,6 +125,8 @@ public class ShopMgr : MonoBehaviour {
     public GameObject _itemBotttomInfo;
     public GameObject _itemBox;
 
+    public GameObject _BuyOrSell;
+
     public ItemData _currSelectItem;
     public EquipData _currSelectEquip;
 
@@ -134,6 +136,10 @@ public class ShopMgr : MonoBehaviour {
 
     public delegate void ItemSelet(bool _is);
     public static event ItemSelet _isItemSelet;
+
+    public bool _isSell = false;
+
+    int[] TempRand = new int[4];
 
     public void isItemSeletSys(bool _is)
     {
@@ -371,16 +377,34 @@ public class ShopMgr : MonoBehaviour {
     {
         if (_currSelectItem == null)
         {
-            _playerInfoCS._currMoney -= _currSelectEquip._Nomalprice;
-            _playerInfoCS._BoxEquipList.Add(ResourceMgrCS.SettingEquipData(_currSelectEquip));
+            if (_isSell)
+            {
+                _playerInfoCS._currMoney += _currSelectEquip._Sellprice;
+                _playerInfoCS.BuyItems(_currSelectEquip._Codex, false);
+                SettingBuyList();
+            }
+            else
+            {
+                _playerInfoCS._currMoney -= _currSelectEquip._Nomalprice;
+                _playerInfoCS._BoxEquipList.Add(ResourceMgrCS.SettingEquipData(_currSelectEquip));
+            }
         }
         else
         {
-            _playerInfoCS._currMoney -= _currSelectItem._Nomalprice;
-            _playerInfoCS._BoxItemList.Add(ResourceMgrCS.SettingItemData(_currSelectItem));
+            if (_isSell)
+            {
+                _playerInfoCS._currMoney += _currSelectItem._Sellprice;
+                _playerInfoCS.BuyItems(_currSelectItem._Codex, true);
+                SettingBuyList();
+            }
+            else
+            {
+                _playerInfoCS._currMoney -= _currSelectItem._Nomalprice;
+                _playerInfoCS._BoxItemList.Add(ResourceMgrCS.SettingItemData(_currSelectItem));
+            }
         }
         _BuyPopup.SetActive(_is);
-        StartCoroutine(MsgEff());
+        if (!_isSell) StartCoroutine(MsgEff());
     }
 
     public IEnumerator MsgEff()
@@ -431,8 +455,30 @@ public class ShopMgr : MonoBehaviour {
         else if (value == 1) _ChrImgGO.GetComponent<Image>().sprite = _chrImg[1];
     }
 
+    public void ItemRandomSys()
+    {
+        // 아이템 셔플
+        #region
+        for (int i = 0; i < 4; i++)
+        {
+            TempRand[i] = Random.Range(0, _EquipDatas.Count);
+            for (int j = 0; j < 4; j++)
+            {
+                if (i == j) continue;
+
+                if (TempRand[i] == TempRand[j])
+                {
+                    TempRand[i] = Random.Range(0, _EquipDatas.Count);
+                    j = 0;
+                }
+            }
+        }
+        #endregion
+    }
+
     public void ShopStart()
     {
+        _isSell = false;
         _itemBox.SetActive(true);
         for (int i = 0; i < _itemBoxs.Count; i++)
         {
@@ -440,7 +486,11 @@ public class ShopMgr : MonoBehaviour {
         }
         _itemBoxs.Clear();
 
-        if (_playerInfoCS._currTile == 1) SettingShopSP();
+        if (_playerInfoCS._currTile == 1)
+        {
+
+            SettingShopSP();
+        }
         else if (_playerInfoCS._currTile == 7) SettingShopNormal();
         _itemBox.SetActive(false);
 
@@ -583,6 +633,71 @@ public class ShopMgr : MonoBehaviour {
         }
     }
 
+
+    public void SellItemListSetting() // 판매 내역
+    {
+        if (_isSell)
+        {
+            _isSell = false;
+
+            for (int i = 0; i < _itemBoxs.Count; i++)
+            {
+                Destroy(_itemBoxs[i]);
+            }
+            _itemBoxs.Clear();
+
+            if (_isShopSP) SettingShopSP();
+            else SettingShopNormal();
+
+            _BuyOrSell.transform.GetChild(1).gameObject.GetComponent<Text>().text = "판매";
+            return;
+        }
+        else
+        {
+            _isSell = true;
+
+            SettingBuyList();
+        }
+
+        _BuyOrSell.transform.GetChild(1).gameObject.GetComponent<Text>().text = "구입";
+    }
+
+    public void SettingBuyList()
+    {
+        for (int i = 0; i < _itemBoxs.Count; i++)
+        {
+            Destroy(_itemBoxs[i]);
+        }
+
+        GameObject tempGO;
+        int tempCount = _isShopSP ? _playerInfoCS._BoxEquipList.Count : _playerInfoCS._BoxItemList.Count;
+
+        for (int i = 0; i < tempCount; i++)
+        {
+            if (_isShopSP && _playerInfoCS._BoxEquipList[i]._isSet) continue;
+
+            tempGO = _isShopSP ? EquipOptionSet(_playerInfoCS._BoxEquipList[i]) : itemOptionSet(_playerInfoCS._BoxItemList[i]);
+
+            if (i != 0)
+            {
+                tempGO.GetComponent<RectTransform>().localPosition -=
+                    Vector3.down * -(tempGO.GetComponent<RectTransform>().rect.height * i);
+            }
+
+            _isItemSelet += tempGO.GetComponent<ItemDataCS>().isSelect;
+            _itemBoxs.Add(tempGO);
+            _itemBoxs[_itemBoxs.Count - 1].SetActive(true);
+        }
+
+        float width = 0.0f;
+        float height = 0.0f;
+
+        width = _itemBox.GetComponent<RectTransform>().rect.width;
+        height = _itemBox.GetComponent<RectTransform>().rect.height * (_isShopSP ? _playerInfoCS._BoxEquipList.Count : _playerInfoCS._BoxItemList.Count);
+
+        _content.GetComponent<RectTransform>().sizeDelta = new Vector2(width, height);
+    }
+
     public void SettingShopNormal()
     {
         _isShopSP = false;
@@ -594,16 +709,18 @@ public class ShopMgr : MonoBehaviour {
             tempGO = itemOptionSet(_itemDatas[i]);
             if (i != 0)
             {
-                tempGO.GetComponent<RectTransform>().position -=
+                tempGO.GetComponent<RectTransform>().localPosition -=
                     Vector3.down * -(tempGO.GetComponent<RectTransform>().rect.height * i);
             }
 
             _isItemSelet += tempGO.GetComponent<ItemDataCS>().isSelect;
             _itemBoxs.Add(tempGO);
+            _itemBoxs[_itemBoxs.Count - 1].SetActive(true);
         }
 
         SetContentSize(false);
     }
+
 
     public void SettingShopSP()
     {
@@ -611,27 +728,7 @@ public class ShopMgr : MonoBehaviour {
 
         ShopSetting(0);
 
-        // 아이템 셔플
-        #region
-        int[] TempRand = new int[4];
-        for (int i = 0; i < 4; i++)
-        {
-            TempRand[i] = Random.Range(0, _EquipDatas.Count);
-            for (int j = 0; j < 4; j++)
-            {
-                if (i == j) continue;
 
-                if (TempRand[i] == TempRand[j])
-                {
-                    TempRand[i] = Random.Range(0, _EquipDatas.Count);
-                    j = 0;
-                }
-            }
-        }
-        Debug.Log(TempRand[0].ToString() + TempRand[1].ToString() + TempRand[2].ToString() + TempRand[3].ToString());
-
-
-        #endregion
 
         GameObject tempGO;
         for (int i = 0; i < TempRand.Length; i++)
@@ -640,11 +737,12 @@ public class ShopMgr : MonoBehaviour {
             if (i != 0)
             {
                 tempGO.GetComponent<RectTransform>().localPosition -=
-                    Vector3.down * -(tempGO.GetComponent<RectTransform>().rect.height - tempGO.GetComponent<RectTransform>().rect.height / 2.0f * i);
+                    Vector3.down * -(tempGO.GetComponent<RectTransform>().rect.height * i);
             }
 
             _isItemSelet += tempGO.GetComponent<ItemDataCS>().isSelect;
             _itemBoxs.Add(tempGO);
+            _itemBoxs[_itemBoxs.Count - 1].SetActive(true);
         }
 
         SetContentSize(true);
@@ -655,7 +753,7 @@ public class ShopMgr : MonoBehaviour {
         GameObject tempItem = Instantiate(_itemBox, _content.transform);
         tempItem.GetComponent<ItemDataCS>()._currItemData = dateInfo;
         tempItem.transform.GetChild(1).gameObject.GetComponent<Text>().text = dateInfo._NameKR;
-        tempItem.transform.GetChild(2).gameObject.GetComponent<Text>().text = dateInfo._Nomalprice.ToString() + "원";
+        tempItem.transform.GetChild(2).gameObject.GetComponent<Text>().text = _isSell ? dateInfo._Sellprice.ToString() + "원" : dateInfo._Nomalprice.ToString() + "원";
 
         return tempItem;
     }
@@ -665,7 +763,7 @@ public class ShopMgr : MonoBehaviour {
         GameObject tempEquip = Instantiate(_itemBox, _content.transform);
         tempEquip.GetComponent<ItemDataCS>()._currEquipData = dateInfo;
         tempEquip.transform.GetChild(1).gameObject.GetComponent<Text>().text = dateInfo._NameKR;
-        tempEquip.transform.GetChild(2).gameObject.GetComponent<Text>().text = dateInfo._Specprice.ToString() + "원";
+        tempEquip.transform.GetChild(2).gameObject.GetComponent<Text>().text = _isSell ? dateInfo._Sellprice.ToString() + "원" : dateInfo._Specprice.ToString() + "원";
 
         return tempEquip;
     }
@@ -675,7 +773,7 @@ public class ShopMgr : MonoBehaviour {
         _itemBotttomInfo.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dateInfo._sprite;
         _itemBotttomInfo.transform.GetChild(3).gameObject.GetComponent<Text>().text = dateInfo._NameKR;
         _itemBotttomInfo.transform.GetChild(4).gameObject.GetComponent<Text>().text = dateInfo._Text;
-        _itemBotttomInfo.transform.GetChild(5).gameObject.GetComponent<Text>().text = dateInfo._Nomalprice.ToString() + "원";
+        _itemBotttomInfo.transform.GetChild(5).gameObject.GetComponent<Text>().text = _isSell ? dateInfo._Sellprice.ToString() + "원" : dateInfo._Nomalprice.ToString() + "원";
     }
 
     public void EquipBottomSetting(EquipData dateInfo)
@@ -683,7 +781,7 @@ public class ShopMgr : MonoBehaviour {
         _itemBotttomInfo.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = dateInfo._sprite;
         _itemBotttomInfo.transform.GetChild(3).gameObject.GetComponent<Text>().text = dateInfo._NameKR;
         _itemBotttomInfo.transform.GetChild(4).gameObject.GetComponent<Text>().text = dateInfo._Text;
-        _itemBotttomInfo.transform.GetChild(5).gameObject.GetComponent<Text>().text = dateInfo._Specprice.ToString() + "원";
+        _itemBotttomInfo.transform.GetChild(5).gameObject.GetComponent<Text>().text = _isSell ? dateInfo._Sellprice.ToString() + "원" : dateInfo._Specprice.ToString() + "원";
     }
 
 
@@ -704,7 +802,7 @@ public class ShopMgr : MonoBehaviour {
             height = _itemBox.GetComponent<RectTransform>().rect.height * _itemDatas.Count;
         }
 
-        _scrollRect.content.sizeDelta = new Vector2(width, height);
+        _content.GetComponent<RectTransform>().sizeDelta = new Vector2(width, height);
     }
 
 }

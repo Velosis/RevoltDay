@@ -51,3 +51,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d38cd765a46cc3348b2fab48ced48225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ShopMgrGO: {fileID: 0}

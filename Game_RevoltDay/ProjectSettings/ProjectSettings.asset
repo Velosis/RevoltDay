@@ -40,7 +40,8 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos: []
-  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: a5f414a770c526c4a9a1b4f284d0870c,
+    type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -118,7 +119,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.3
+  bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -242,7 +243,7 @@ PlayerSettings:
   templateDefaultScene: Assets/Scenes/SampleScene.unity
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
-  androidSplashScreen: {fileID: 0}
+  androidSplashScreen: {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
@@ -254,114 +255,126 @@ PlayerSettings:
   m_AndroidBanners:
   - width: 320
     height: 180
-    banner: {fileID: 2800000, guid: 05b9e659e874ba546ac7f40ea00a5e01, type: 3}
+    banner: {fileID: 2800000, guid: 9942644f3b6b38949a80329c7026685f, type: 3}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons: []
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: a5f414a770c526c4a9a1b4f284d0870c, type: 3}
+      m_Width: 192
+      m_Height: 192
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
+      m_Width: 144
+      m_Height: 144
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 0}
+      m_Width: 96
+      m_Height: 96
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 0}
+      m_Width: 72
+      m_Height: 72
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 0}
+      m_Width: 48
+      m_Height: 48
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 0}
+      m_Width: 36
+      m_Height: 36
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: a640eb2721f4a63489e46b528fe257ab, type: 3}
+      - {fileID: 2800000, guid: a640eb2721f4a63489e46b528fe257ab, type: 3}
       m_Width: 432
       m_Height: 432
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: 7357715ccad3fb345abd9981c97f6b15, type: 3}
+      - {fileID: 2800000, guid: 7357715ccad3fb345abd9981c97f6b15, type: 3}
       m_Width: 324
       m_Height: 324
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: de022bdd032c85e4999ffd05d75ff572, type: 3}
+      - {fileID: 2800000, guid: de022bdd032c85e4999ffd05d75ff572, type: 3}
       m_Width: 216
       m_Height: 216
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: c032e8b722df4e640bb075005ee0d259, type: 3}
+      - {fileID: 2800000, guid: c032e8b722df4e640bb075005ee0d259, type: 3}
       m_Width: 162
       m_Height: 162
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
       m_Width: 108
       m_Height: 108
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
       m_Width: 81
       m_Height: 81
       m_Kind: 2
       m_SubKind: 
     - m_Textures:
-      - {fileID: 0}
+      - {fileID: 2800000, guid: a5f414a770c526c4a9a1b4f284d0870c, type: 3}
       m_Width: 192
       m_Height: 192
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 0}
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
       m_Width: 144
       m_Height: 144
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 0}
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
       m_Width: 96
       m_Height: 96
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 0}
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
       m_Width: 72
       m_Height: 72
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 0}
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
       m_Width: 48
       m_Height: 48
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 0}
+      - {fileID: 2800000, guid: e394cfc7ac775044486a896298be040d, type: 3}
       m_Width: 36
       m_Height: 36
       m_Kind: 1
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 05b9e659e874ba546ac7f40ea00a5e01, type: 3}
-      m_Width: 192
-      m_Height: 192
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 0}
-      m_Width: 144
-      m_Height: 144
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 0}
-      m_Width: 96
-      m_Height: 96
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 0}
-      m_Width: 72
-      m_Height: 72
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 0}
-      m_Width: 48
-      m_Height: 48
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 0}
-      m_Width: 36
-      m_Height: 36
-      m_Kind: 0
       m_SubKind: 
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
@@ -660,8 +673,10 @@ PlayerSettings:
   psp2InfoBarOnStartup: 0
   psp2InfoBarColor: 0
   psp2ScriptOptimizationLevel: 0
-  splashScreenBackgroundSourceLandscape: {fileID: 0}
-  splashScreenBackgroundSourcePortrait: {fileID: 0}
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: e394cfc7ac775044486a896298be040d,
+    type: 3}
+  splashScreenBackgroundSourcePortrait: {fileID: 21300000, guid: e394cfc7ac775044486a896298be040d,
+    type: 3}
   spritePackerPolicy: 
   webGLMemorySize: 256
   webGLExceptionSupport: 1

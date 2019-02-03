@@ -79,6 +79,8 @@ public class SaveData
     public int _daleyTurnCount = 0;
     public int _reasoningValue = 0;
 
+    public bool _isPark = false;
+    public string _currImg = ""; 
     public int _currTile = 0;
     public int _tempCurrTile = 0;
     public int _currActPoint = 0;
@@ -125,7 +127,7 @@ public class SaveDataCS : MonoBehaviour
 
         JsonData infoJson = JsonMapper.ToJson(SaveList);
 
-        File.WriteAllText(Application.dataPath + "/6.SaveData/SaveData.json", infoJson.ToString());
+        File.WriteAllText(Application.persistentDataPath + "/" + "SaveData.json", infoJson.ToString());
         Debug.Log("최초 세이브 데이터 생성");
 
     }
@@ -133,9 +135,9 @@ public class SaveDataCS : MonoBehaviour
 
     public void LoadSaveInfo()
     {
-        if (File.Exists(Application.dataPath + "/6.SaveData/SaveData.json"))
+        if (File.Exists(Application.persistentDataPath + "/" + "SaveData.json"))
         {
-            string jsonStr = File.ReadAllText(Application.dataPath + "/6.SaveData/SaveData.json");
+            string jsonStr = File.ReadAllText(Application.persistentDataPath + "/" + "SaveData.json");
             JsonData JsonSaveData = JsonMapper.ToObject(jsonStr);
 
 

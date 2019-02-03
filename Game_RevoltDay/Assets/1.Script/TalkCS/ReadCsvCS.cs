@@ -21,8 +21,6 @@ public class ReadCsvCS : MonoBehaviour {
     {
         this.GetComponent<TalkIndexCS>().deleteTalkDate();
 
-        object[] tempResList = null;
-        TextAsset tempGO = null;
         List<Dictionary<string, object>> date = null;
 
         switch (_tableType)

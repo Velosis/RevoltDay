@@ -26,6 +26,7 @@ public class ReasoningMgrCS : MonoBehaviour {
     private void Awake()
     {
         _stateValueText = _reasoningUIGO.transform.GetChild(1).gameObject.transform.GetChild(0).GetComponent<Text>();
+
     }
 
     private void OnEnable()
@@ -34,8 +35,10 @@ public class ReasoningMgrCS : MonoBehaviour {
         _missionPopupUI.SetActive(false);
         _trueCheckPopUI.SetActive(false);
         GetComponent<AudioSource>().clip = _BgmSound;
+        GetComponent<AudioSource>().volume = (float)OptionMgrCS.getOptionInfo()._BgmValue;
         GetComponent<AudioSource>().Play();
     }
+
     private void OnDisable()
     {
         GetComponent<AudioSource>().Stop();

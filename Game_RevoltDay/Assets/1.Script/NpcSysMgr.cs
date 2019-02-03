@@ -174,6 +174,8 @@ public class NpcSysMgr : MonoBehaviour {
 
     public IEnumerator NpcAct()
     {
+        _uIMgrCS.PlayerMoveUi(true);
+
         _playerIcon.GetComponent<PlayerInfoCS>().PlayerMoveNot(false);
         int TempTurnValue = 0;
         for (int i = 0; i < _npcList.Length; i++)
@@ -226,7 +228,7 @@ public class NpcSysMgr : MonoBehaviour {
             UIMgr._sNpeTurnEnd = false;
             _playerIcon.GetComponent<PlayerInfoCS>().ResetUseItemList();
             _playerIcon.GetComponent<PlayerInfoCS>().PlayerMoveNot(true);
-
+            _uIMgrCS.PlayerMoveUi(false);
         }
         yield return null;
     }

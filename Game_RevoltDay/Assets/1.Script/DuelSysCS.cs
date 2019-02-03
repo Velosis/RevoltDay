@@ -15,8 +15,8 @@ public enum eDuelType
 
 public enum eDuelState
 {
-    DuelStart, // 결투 시작
-    DiceFighterStart, // 결투 시스템 시작
+    DuelStart, // 격투 시작
+    DiceFighterStart, // 격투 시스템 시작
     AttackDelay, // 공격(주사위 던지기) 대기
     DiceDrop, // 주사위 굴리기 연출
     DiceFirst, // 주사위 계산
@@ -76,7 +76,6 @@ public class DuelSysCS : MonoBehaviour {
     public bool _isNextState;
     public bool _isBackState;
 
-    private eScreenEffColor _flashColor;
     private float _flashValue;
     private float _flashOutValue;
     private bool _isFlashStart;
@@ -225,7 +224,6 @@ public class DuelSysCS : MonoBehaviour {
         _screenHitShow.SetActive(false);
         _screenHitText = GameObject.Find("HitPointText");
         _screenHitText.SetActive(false);
-        _flashColor = eScreenEffColor.Black;
 
         _currTimer = 0.0f;
 
@@ -243,7 +241,7 @@ public class DuelSysCS : MonoBehaviour {
 
         _BgmMgr.clip = _currBgm;
         _BgmMgr.loop = true;
-        _BgmMgr.volume = 1.0f;
+        _BgmMgr.volume = (float)OptionMgrCS.getOptionInfo()._BgmValue;
         _BgmMgr.Play();
 
         AudioClip _currHitSe = null;
@@ -251,7 +249,7 @@ public class DuelSysCS : MonoBehaviour {
 
         _seMgr.clip = _currHitSe;
         _seMgr.loop = false;
-        _seMgr.volume = 1.0f;
+        _seMgr.volume = (float)OptionMgrCS.getOptionInfo()._SeValue;
 
         _currState = eDuelState.DuelStart;
     }
@@ -580,8 +578,8 @@ public class DuelSysCS : MonoBehaviour {
                 tempSwap = _enemyAtkTypeList[tempSwapCount];
                 _enemyAtkTypeList[tempSwapCount] = _enemyAtkTypeList[tempSwapCount + 1];
                 _enemyAtkTypeList[tempSwapCount + 1] = tempSwap;
-                tempSwapCount++; 
-                if (tempSwapCount == 3) tempSwapCount = 0;
+                tempSwapCount++;
+                if (tempSwapCount == 2) tempSwapCount = 0;
                 tempSort = false;
             }
             else
@@ -859,6 +857,7 @@ public class DuelSysCS : MonoBehaviour {
     {
         if (_playerAtk + _playerDice != 0 && _playerInfoCS._currHP > 0)
         {
+            if (_playerAtk + _playerDice + _playerInfoCS._buffAtk <= 0) _playerAtk += 1;
             _enemyCurrHP -= _playerAtk + _playerDice + _playerInfoCS._buffAtk;
             if (_enemyCurrHP < 0) _enemyCurrHP = 0;
             SetDuelText();
@@ -870,6 +869,7 @@ public class DuelSysCS : MonoBehaviour {
         if (_enemyAtk + _enemyDice != 0 && _enemyCurrHP > 0)
         {
             int tempDef = _playerInfoCS._currUseEquipF._Fight < 0 ? _playerInfoCS._currUseEquipF._Fight : 0;
+            if ((_enemyAtk + tempDef) + _enemyDice <= 0) _enemyAtk += 1;
             _playerInfoCS._currHP -= (_enemyAtk + tempDef) + _enemyDice;
             if (_playerInfoCS._currHP < 0) _playerInfoCS._currHP = 0;
             else if (_playerInfoCS._currHP > _playerInfoCS._MaxHP) _playerInfoCS._currHP = _playerInfoCS._MaxHP;
@@ -936,44 +936,41 @@ public class DuelSysCS : MonoBehaviour {
         _screenHitShow.transform.GetChild(0).gameObject.SetActive(false);
         _screenHitShow.transform.GetChild(1).gameObject.SetActive(false);
 
-        switch (_playerInfoCS._eNpcType)
+        if (!_playerInfoCS._isParkIcon)
         {
-            case eNpcType.gangicon:
-                switch (_playerType)
-                {
-                    case eDuelType.S_InFighter:
-                        tempPImg.sprite = _GangSp[1];
-                        break;
-                    case eDuelType.R_OutFighter:
-                        tempPImg.sprite = _GangSp[2];
-                        break;
-                    case eDuelType.P_Grappler:
-                        tempPImg.sprite = _GangSp[0];
-                        break;
-                    default:
-                        break;
-                }
-                break;
-            case eNpcType.Parkicon:
-                switch (_playerType)
-                {
-                    case eDuelType.S_InFighter:
-                        tempPImg.sprite = _ParkSP[1];
-                        break;
-                    case eDuelType.R_OutFighter:
-                        tempPImg.sprite = _ParkSP[2];
+            switch (_playerType)
+            {
+                case eDuelType.S_InFighter:
+                    tempPImg.sprite = _GangSp[1];
+                    break;
+                case eDuelType.R_OutFighter:
+                    tempPImg.sprite = _GangSp[2];
+                    break;
+                case eDuelType.P_Grappler:
+                    tempPImg.sprite = _GangSp[0];
+                    break;
+                default:
+                    break;
+            }
+        }
+        else
+        {
+            switch (_playerType)
+            {
+                case eDuelType.S_InFighter:
+                    tempPImg.sprite = _ParkSP[1];
+                    break;
+                case eDuelType.R_OutFighter:
+                    tempPImg.sprite = _ParkSP[2];
 
-                        break;
-                    case eDuelType.P_Grappler:
-                        tempPImg.sprite = _ParkSP[0];
+                    break;
+                case eDuelType.P_Grappler:
+                    tempPImg.sprite = _ParkSP[0];
 
-                        break;
-                    default:
-                        break;
-                }
-                break;
-            default:
-                break;
+                    break;
+                default:
+                    break;
+            }
         }
 
         switch (_enemyType)
@@ -1113,7 +1110,7 @@ public class DuelSysCS : MonoBehaviour {
                     _rewardMgrCS.StartRewardSys(-1, _currTableType);
                     break;
                 default:
-                    Debug.Log("보상 없는 결투");
+                    Debug.Log("보상 없는 격투");
                     break;
             }
             

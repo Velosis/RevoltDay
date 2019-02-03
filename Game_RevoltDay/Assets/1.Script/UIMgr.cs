@@ -85,6 +85,9 @@ public class UIMgr : MonoBehaviour {
     public int _SaveSelectValue = -1;
 
     public AudioClip _BgmSound;
+    public bool _isPlayerMove = false;
+
+    public int _ResetActPoint = 3;
 
     private void Awake()
     {
@@ -135,6 +138,12 @@ public class UIMgr : MonoBehaviour {
         BgmStartSys();
     }
 
+    private void Start()
+    {
+        _eventSysCS.CrimeCheck();
+
+    }
+
     public bool TileCheck()
     {
         return (_TalkMgr.activeSelf || _DuelMgr.activeSelf || _ReasoningMgr.activeSelf || _ShopMgr.activeSelf || _StateMgr.activeSelf || _OptionMgr.activeSelf);
@@ -150,6 +159,7 @@ public class UIMgr : MonoBehaviour {
         else if (!GetComponent<AudioSource>().isPlaying)
         {
             GetComponent<AudioSource>().clip = _BgmSound;
+            GetComponent<AudioSource>().volume = (float)OptionMgrCS.getOptionInfo()._BgmValue;
             GetComponent<AudioSource>().Play();
         }
     }
@@ -219,8 +229,6 @@ public class UIMgr : MonoBehaviour {
 
         _loadingImg.SetActive(false);
 
-
-
         yield return null;
     }
 
@@ -264,6 +272,8 @@ public class UIMgr : MonoBehaviour {
         }
     }
 
+
+
     public void LoadSelectCheck(int value)
     {
         if (_OptionMgr.transform.GetChild(10).gameObject.transform.GetChild(2).gameObject.GetComponent<Text>().text != "불러오기 옵션") return;
@@ -298,6 +308,28 @@ public class UIMgr : MonoBehaviour {
         _gameObject.SetActive(!_gameObject.activeSelf);
     }
 
+    public void PlayerMoveUi(bool _is)
+    {
+        _isPlayerMove = _is;
+
+        if (_is)
+        {
+            _search_buttonUi.GetComponent<Image>().color = Color.grey;
+            _Item_buttonUi.GetComponent<Image>().color = Color.grey;
+            _safety_buttonUi.GetComponent<Image>().color = Color.grey;
+            _wait_buttonUi.GetComponent<Image>().color = Color.grey;
+            _shop_buttonUi.GetComponent<Image>().color = Color.grey;
+        }
+        else
+        {
+            _search_buttonUi.GetComponent<Image>().color = Color.white;
+            _Item_buttonUi.GetComponent<Image>().color = Color.white;
+            _safety_buttonUi.GetComponent<Image>().color = Color.white;
+            _wait_buttonUi.GetComponent<Image>().color = Color.white;
+            _shop_buttonUi.GetComponent<Image>().color = Color.white;
+        }
+    }
+
     public void StartOption()
     {
         _OptionMgr.SetActive(true);
@@ -311,6 +343,8 @@ public class UIMgr : MonoBehaviour {
 
     public void StartShop()
     {
+        if (_isPlayerMove) return;
+
         _ShopMgr.SetActive(true);
         _ShopMgr.GetComponent<ShopMgr>().ShopStart();
     }
@@ -322,6 +356,8 @@ public class UIMgr : MonoBehaviour {
 
     public void StartStateUI()
     {
+        if (_isPlayerMove) return;
+
         _StateMgr.SetActive(true);
     }
 
@@ -333,9 +369,12 @@ public class UIMgr : MonoBehaviour {
     public void TurnEndSys()
     {
         if (_sNpeTurnEnd) return;
+        if (_isPlayerMove) return;
 
         _sNpeTurnEnd = true;
-        _playerInfoCS.PlayerTileXZ();
+        _playerInfoCS._currActPoint = _ResetActPoint;
+        _playerInfoCS._currTrunPoint++;
+        tileTurnUpdate();
         StartCoroutine(_npcSysMgr.NpcAct());
     }
 
@@ -402,6 +441,8 @@ public class UIMgr : MonoBehaviour {
 
     public void isSafetyUI()
     {
+        if (_isPlayerMove) return;
+
         if (_isSafety) _isSafetyUI(true);
         else _isSafetyUI(false);
 
@@ -410,6 +451,10 @@ public class UIMgr : MonoBehaviour {
 
     public void isOnSearchMgr()
     {
+        if (_isPlayerMove) return;
+
+        if (_loadingImg.activeSelf) return;
+
         if (!_SearchMgr.activeSelf)
         {
             _playerInfoCS.setActPoint(1);
@@ -461,7 +506,7 @@ public class UIMgr : MonoBehaviour {
         if (tempEvent._eventType_Index == 1)
         {
             _SearchSelectList[value].GetComponent<SearchSelectData>()._currSelectType = eSearchSelectType.Duel;
-            tempTypeText.text = "-결투-";
+            tempTypeText.text = "-격투-";
             tempSprite.sprite = _SearchSpriteList[0];
         }
 

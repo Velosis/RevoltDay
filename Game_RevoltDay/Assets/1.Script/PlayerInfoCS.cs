@@ -41,7 +41,7 @@ public class PlayerInfoCS : MonoBehaviour {
     public ePlayerState _currMoveState;
     public GameObject _currPlayerGO;
     public Text _currActText;
-    static public Image _currPlayerImg;
+    public Image _currPlayerImg;
 
     // 타일 관련 정보
     private List<GameObject> _tileMapList;
@@ -52,6 +52,9 @@ public class PlayerInfoCS : MonoBehaviour {
 
     public int _maxMoney = 9999;
     // 현재 정보
+    public bool _isParkIcon = false;
+    public bool _skyItem = false;
+
     public List<ItemData> _BoxItemList = new List<ItemData>();
     public List<EquipData> _BoxEquipList = new List<EquipData>();
     public List<AidData> _BoxAidList = new List<AidData>();
@@ -91,8 +94,7 @@ public class PlayerInfoCS : MonoBehaviour {
     {
         _gameMgr = GameObject.Find("GameMgr");
 
-        if (eNpcType.gangicon == _eNpcType ||
-            eNpcType.Parkicon == _eNpcType)
+        if (eNpcType.gangicon == _eNpcType)
         {
             _clueTokenValue += 0;
             _isAlive = true;
@@ -113,21 +115,32 @@ public class PlayerInfoCS : MonoBehaviour {
 
         _currTrunPoint = 0;
 
+
+
         if (GameObject.Find("MapTileMgr"))
         {
             _tileMapList = GameObject.Find("MapTileMgr").GetComponent<TileMakerCS>().TileMapList;
-            if (_eNpcType == eNpcType.gangicon ||
-                eNpcType.Parkicon == _eNpcType)
+            if (_isAlive && _eNpcType == eNpcType.gangicon)
             {
                 transform.GetComponent<RectTransform>().position = _tileMapList[_tileFirstXZ].GetComponent<RectTransform>().position;
                 _currTile = _tempCurrTile = _tileFirstXZ;
             }
-
         }
 
 
-        if ((eNpcType.gangicon == _eNpcType || eNpcType.Parkicon == _eNpcType) && 
-            _gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData) saveLead();
+        if (eNpcType.gangicon == _eNpcType && _gameMgr.GetComponent<SaveSys>()._saveFile.isSaveData) saveLead();
+
+        Sprite TempSprite;
+        if (!_isParkIcon)
+        {
+            ResourceMgrCS._IconImg.TryGetValue("gangicon", out TempSprite);
+            GetComponent<Image>().sprite = TempSprite;
+        }
+        else
+        {
+            ResourceMgrCS._IconImg.TryGetValue("Parkicon",out TempSprite);
+            GetComponent<Image>().sprite = TempSprite;
+        }
     }
 
     public void saveLead()
@@ -140,6 +153,15 @@ public class PlayerInfoCS : MonoBehaviour {
         _daleyTurnCount = TextSave._saveFile._daleyTurnCount;
         _reasoningValue = TextSave._saveFile._reasoningValue;
 
+        _isParkIcon = TextSave._saveFile._isPark;
+
+        GameObject tempImg;
+        if (TextSave._saveFile._currImg != "")
+        {
+            ResourceMgrCS._imgBox.TryGetValue(TextSave._saveFile._currImg, out tempImg);
+            _currPlayerImg.sprite = tempImg.GetComponent<Image>().sprite;
+        }
+
         _currTile = TextSave._saveFile._currTile;
         setTileValeu(_currTile);
 
@@ -150,8 +172,7 @@ public class PlayerInfoCS : MonoBehaviour {
 
     private void Start()
     {
-        if (_eNpcType == eNpcType.gangicon || eNpcType.Parkicon == _eNpcType) PlayerTileXZ();
-
+        if (_eNpcType == eNpcType.gangicon) PlayerTileXZ();
     }
 
     private void Update()
@@ -171,6 +192,7 @@ public class PlayerInfoCS : MonoBehaviour {
             if (_BoxAidList[i]._currCoolTime > 0) _BoxAidList[i]._currCoolTime--;
         }
 
+        _skyItem = false;
         _currUseAid._isSet = false;
         _currUseAid = new AidData();
 
@@ -211,7 +233,19 @@ public class PlayerInfoCS : MonoBehaviour {
         // 이미 적용 중인게 있고 더 높을 경우를 체크
         for (int i = 0; i < _currUseItemList.Count; i++)
         {
-            if (_currUseItemList[i]._Fight > _itemData._Fight) return false;
+            if (_itemData._Fight > 0) if (_itemData._Fight <= _currUseItemList[i]._Fight) return false;
+            else if (_itemData._Fight > 0) if (_itemData._Fight > _currUseItemList[i]._Fight)
+                {
+                        _buffAtk -= _currUseItemList[i]._Fight;
+                        _currUseItemList.RemoveAt(i);
+                }
+
+            if (_itemData._Dectective > 0) if (_itemData._Dectective <= _currUseItemList[i]._Dectective) return false;
+                else if (_itemData._Dectective > 0) if (_itemData._Dectective > _currUseItemList[i]._Dectective)
+                    {
+                        _buffDectective -= _currUseItemList[i]._Dectective;
+                        _currUseItemList.RemoveAt(i);
+                    }
         }
 
         _currUseItemList.Add(ResourceMgrCS.SettingItemData(_itemData));
@@ -249,8 +283,7 @@ public class PlayerInfoCS : MonoBehaviour {
 
     public void PlayerTileXZ()
     {
-        _currTrunPoint++;
-        _uIMgrCS.tileTurnUpdate();
+        _uIMgrCS._ShopMgr.GetComponent<ShopMgr>().ItemRandomSys();
 
         _uIMgrCS.isUiOnOff(eUiName.all, false);
         _tileMapDataCS = _tileMapList[_tempCurrTile].GetComponent<TileMapDataCS>();
@@ -285,7 +318,6 @@ public class PlayerInfoCS : MonoBehaviour {
 
     public void PlayerMoveSys()
     {
-        if (!_uIMgrCS.TileCheck()) return;
 
         // 터치를 사용한 움직임 구현
         switch (_currMoveState)
@@ -293,17 +325,19 @@ public class PlayerInfoCS : MonoBehaviour {
             case ePlayerState.MoveNon: // 움직이지 않는 상태
                 break;
             case ePlayerState.MoveReady: // 이동할 타일을 선택하는 상태
+                if (_uIMgrCS.TileCheck()) return;
+
                 tempTileXZ = _currTile;
                 _tempCurrTile = _tileMakerCS.getTileVlaue(TouchSysCS._touchPos.x, TouchSysCS._touchPos.y);
-                if ((tempTileXZ == _tempCurrTile && _tileMakerCS.getTileVlaue(TouchSysCS._touchPos.x, TouchSysCS._touchPos.y) != -1) ||
-                (_tempCurrTile == -1) || (_currActPoint <= 0))
+                if ((tempTileXZ == _tempCurrTile && _tileMakerCS.getTileVlaue(TouchSysCS._touchPos.x, TouchSysCS._touchPos.y) != -1) || (_tempCurrTile == -1) || (_currActPoint <= 0))
                 {
                     _tempCurrTile = tempTileXZ;
                     return;
                 }
                 _nextTileMark.SetActive(true);
                 _nextTileMark.transform.position = _tileMapList[_tempCurrTile].transform.position;
-                _nextTileMark.transform.GetChild(0).GetComponent<Text>().text = "-1";
+                if (!_skyItem) _nextTileMark.transform.GetChild(0).GetComponent<Text>().text = "-1";
+                else _nextTileMark.transform.GetChild(0).GetComponent<Text>().text = "하늘철";
                 _currMoveState = ePlayerState.MoveSet;
                 break;
             case ePlayerState.MoveSet: // 이동할 타일이 선택된 상태
@@ -318,9 +352,11 @@ public class PlayerInfoCS : MonoBehaviour {
                 }
                 break;
             case ePlayerState.MoveHot: // 선택된 타일로 이동
-                setActPoint(1);
+                if (!_skyItem) setActPoint(1);
+                else _skyItem = false;
                 _nextTileMark.SetActive(false);
                 _endVec2Pos = _tileMapList[_tempCurrTile].transform.position;
+                _uIMgrCS.PlayerMoveUi(true);
                 StartCoroutine(mpvePlayerMove());
                 break;
             default:
@@ -381,8 +417,11 @@ public class PlayerInfoCS : MonoBehaviour {
         _moveHandImg.SetActive(false);
 
         _currActPoint -= Mathf.Abs(tempTileXZ - _currTile);
-        if (_eNpcType == eNpcType.gangicon ||
-            _eNpcType == eNpcType.Parkicon) PlayerTileXZ();
+        if (_eNpcType == eNpcType.gangicon)
+        {
+            PlayerTileXZ();
+            _uIMgrCS.PlayerMoveUi(false);
+        }
         _currActText.text = _currActPoint.ToString();
         _currTile = _tempCurrTile;
         _currMoveState = ePlayerState.MoveReady;
@@ -451,6 +490,25 @@ public class PlayerInfoCS : MonoBehaviour {
     public void UseItem(int arrIdex)
     {
         _BoxItemList.RemoveAt(arrIdex);
+    }
+
+    public void BuyItems(int arrIndex, bool _isItem)
+    {
+        if (_isItem)
+        {
+            for (int i = 0; i < _BoxItemList.Count; i++)
+            {
+                if (_BoxItemList[i]._Codex == arrIndex) _BoxItemList.RemoveAt(i);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < _BoxEquipList.Count; i++)
+            {
+                if (_BoxEquipList[i]._Codex == arrIndex) _BoxEquipList.RemoveAt(i);
+            }
+            
+        }
     }
 
     public void isDie(bool isAlive)
