@@ -230,6 +230,10 @@ Prefab:
       propertyPath: _uIMgrCS
       value: 
       objectReference: {fileID: 367459760}
+    - target: {fileID: 1876516739805260, guid: ea958b9436b125a4c9e2d1d299776197, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea958b9436b125a4c9e2d1d299776197, type: 2}
   m_IsPrefabAsset: 0
@@ -390,6 +394,30 @@ Prefab:
       propertyPath: _gameMgr
       value: 
       objectReference: {fileID: 701954099}
+    - target: {fileID: 1990196197031338, guid: f16c9dbfd01fe324ca8007691df55c34, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114385304956817094, guid: f16c9dbfd01fe324ca8007691df55c34,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: isOnOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 114385304956817094, guid: f16c9dbfd01fe324ca8007691df55c34,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114385304956817094, guid: f16c9dbfd01fe324ca8007691df55c34,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114385304956817094, guid: f16c9dbfd01fe324ca8007691df55c34,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1475695922}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f16c9dbfd01fe324ca8007691df55c34, type: 2}
   m_IsPrefabAsset: 0
@@ -1055,6 +1083,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1069181950420238, guid: faaeb00e4b6568644bee4b945f3b70a4,
     type: 2}
   m_PrefabInternal: {fileID: 368961782}
+--- !u!1 &1475695922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1990196197031338, guid: f16c9dbfd01fe324ca8007691df55c34,
+    type: 2}
+  m_PrefabInternal: {fileID: 162559347}
 --- !u!1001 &1567527068
 Prefab:
   m_ObjectHideFlags: 0
@@ -1180,6 +1213,11 @@ Prefab:
     - target: {fileID: 1679646843648684, guid: 00e467fd822705b4f9bba2247c1e81f9, type: 2}
       propertyPath: m_Name
       value: ReasoningMgr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114361185842467366, guid: 00e467fd822705b4f9bba2247c1e81f9,
+        type: 2}
+      propertyPath: _trueValue
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00e467fd822705b4f9bba2247c1e81f9, type: 2}

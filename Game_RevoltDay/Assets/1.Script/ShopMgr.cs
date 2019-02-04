@@ -385,7 +385,7 @@ public class ShopMgr : MonoBehaviour {
             }
             else
             {
-                _playerInfoCS._currMoney -= _currSelectEquip._Nomalprice;
+                _playerInfoCS._currMoney -= _currSelectEquip._Specprice;
                 _playerInfoCS._BoxEquipList.Add(ResourceMgrCS.SettingEquipData(_currSelectEquip));
             }
         }

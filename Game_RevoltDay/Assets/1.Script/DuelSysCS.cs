@@ -670,18 +670,19 @@ public class DuelSysCS : MonoBehaviour {
             }
 
             _currTimer = 0.0f;
-            StartCoroutine(DiceEff(_bounsDiceText, 0.5f));
             while (_currTimer <= 1.0f)
             {
                 _currTimer += Time.deltaTime / 2.0f;
 
                 _bounsDice = Random.Range(1, 6 + 1);
                 _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
+                StartCoroutine(DiceEff(_bounsDiceText, 0.5f));
+
                 yield return null;
             }
         }
 
-        if (_isPlayerTypeWin && _playerInfoCS._currUseEquipF._Codex != 0 && _playerInfoCS._currUseEquipF._Fight > 0)
+        if (_isPlayerTypeWin && _playerInfoCS._currUseEquipF._DuelType == _playerType && _playerInfoCS._currUseEquipF._Codex != 0 && _playerInfoCS._currUseEquipF._Fight > 0)
         {
             int tempValue = _playerInfoCS._currUseEquipF._Fight;
             _currTimer = 0.0f;
@@ -694,7 +695,6 @@ public class DuelSysCS : MonoBehaviour {
                     tempValue -= 1;
                     _bounsDiceText.GetComponent<Text>().text = _bounsDice.ToString();
                     _bounsDiceText.GetComponent<Text>().color = Color.green;
-                    StartCoroutine(DiceEff(_bounsDiceText, 0.5f));
                 }
                 else
                 {
@@ -1124,5 +1124,11 @@ public class DuelSysCS : MonoBehaviour {
 
         if (_playerInfoCS._currActPoint > 0) _playerInfoCS._currActPoint--;
         _uIMgrCS.EndDuel();
+    }
+
+    private void OnDisable()
+    {
+        if (_BgmMgr.isPlaying) _BgmMgr.Stop();
+        if (_seMgr.isPlaying) _seMgr.Stop();
     }
 }

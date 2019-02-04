@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/wjdwltn/Desktop/RevoltDay(1.0v).apk
+C:/Users/wjdwltn/Desktop/RevoltDay(1.1v).apk
 SceneListBegin?
 Assets/0.Scenes/0.Tilte.unity
 Assets/0.Scenes/2.Loading.unity

@@ -138,12 +138,6 @@ public class UIMgr : MonoBehaviour {
         BgmStartSys();
     }
 
-    private void Start()
-    {
-        _eventSysCS.CrimeCheck();
-
-    }
-
     public bool TileCheck()
     {
         return (_TalkMgr.activeSelf || _DuelMgr.activeSelf || _ReasoningMgr.activeSelf || _ShopMgr.activeSelf || _StateMgr.activeSelf || _OptionMgr.activeSelf);
@@ -272,8 +266,6 @@ public class UIMgr : MonoBehaviour {
         }
     }
 
-
-
     public void LoadSelectCheck(int value)
     {
         if (_OptionMgr.transform.GetChild(10).gameObject.transform.GetChild(2).gameObject.GetComponent<Text>().text != "불러오기 옵션") return;
@@ -372,7 +364,8 @@ public class UIMgr : MonoBehaviour {
         if (_isPlayerMove) return;
 
         _sNpeTurnEnd = true;
-        _playerInfoCS._currActPoint = _ResetActPoint;
+        _playerInfoCS._currActPoint = 0;
+        _playerInfoCS.setActPoint(+_ResetActPoint);
         _playerInfoCS._currTrunPoint++;
         tileTurnUpdate();
         StartCoroutine(_npcSysMgr.NpcAct());
@@ -433,7 +426,6 @@ public class UIMgr : MonoBehaviour {
 
     public void tileTurnUpdate()
     {
-        _eventSysCS.CrimeCheck();
         _tileTurnUpdate();
 
         if (_isIssueEvent) _isIssueEvent = false;
@@ -452,12 +444,13 @@ public class UIMgr : MonoBehaviour {
     public void isOnSearchMgr()
     {
         if (_isPlayerMove) return;
+        if (_playerInfoCS._currActPoint <= 0) return;
 
         if (_loadingImg.activeSelf) return;
 
         if (!_SearchMgr.activeSelf)
         {
-            _playerInfoCS.setActPoint(1);
+            _playerInfoCS.setActPoint(-1);
             StartCoroutine(loadingEff());
         }
 

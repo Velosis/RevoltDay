@@ -31,6 +31,7 @@ public class ReasoningMgrCS : MonoBehaviour {
 
     private void OnEnable()
     {
+        _currClueValue = 0;
         _checkPopupUI.SetActive(false);
         _missionPopupUI.SetActive(false);
         _trueCheckPopUI.SetActive(false);
@@ -75,7 +76,7 @@ public class ReasoningMgrCS : MonoBehaviour {
 
     public void setText()
     {
-        if (!_allTrue) _stateValueText.text = "단서 " + _currClueValue.ToString() + " / " + _playerInfoCS._reasoningValue;
+        if (!_allTrue) _stateValueText.text = "단서 " + _currClueValue.ToString() + " / " + (_playerInfoCS._reasoningValue + _playerInfoCS._buffDectective);
         else _stateValueText.text = "단서 " + _currClueValue.ToString() + " / " + _trueCount;
 
     }
@@ -93,21 +94,26 @@ public class ReasoningMgrCS : MonoBehaviour {
         {
             _uIMgrCS.EndReasoning();
             Debug.Log("사건 해결");
+            _currScene.SetActive(false);
         }
         else
         {
             _uIMgrCS.EndReasoning();
             Debug.Log("해결 실패!");
             _uIMgrCS.ScenesChange("3.GameOver");
+            _currScene.SetActive(false);
         }
     }
 
     public void selectPoint(GameObject whoPoint)
     {
+        if (_allTrue && _currScene.GetComponent<ReasoningSysCS>()._clueList.Length <= _currClueValue) return;
+        else if (!_allTrue && (_currScene.GetComponent<ReasoningSysCS>()._clueList.Length + _playerInfoCS._buffDectective) <= _currClueValue) return;
+
         ReasoningSysCS tempSysCS = _currScene.GetComponent<ReasoningSysCS>();
         for (int i = 0; i < tempSysCS._clueList.Length; i++)
         {
-            if ((!_allTrue && !tempSysCS._clueList[i]._check && tempSysCS._clueList[i]._cluePoint.name == whoPoint.name && _currClueValue != _playerInfoCS._reasoningValue) ||
+            if ((!_allTrue && !tempSysCS._clueList[i]._check && tempSysCS._clueList[i]._cluePoint.name == whoPoint.name && _currClueValue != (_playerInfoCS._reasoningValue + _playerInfoCS._buffDectective)) ||
                 (_allTrue && !tempSysCS._clueList[i]._check && tempSysCS._clueList[i]._cluePoint.name == whoPoint.name && _currClueValue != _trueCount))
             {
                 tempSysCS.tempCheckGO = whoPoint.transform.GetChild(0).gameObject;

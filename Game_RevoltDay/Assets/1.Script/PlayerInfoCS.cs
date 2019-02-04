@@ -236,16 +236,16 @@ public class PlayerInfoCS : MonoBehaviour {
             if (_itemData._Fight > 0) if (_itemData._Fight <= _currUseItemList[i]._Fight) return false;
             else if (_itemData._Fight > 0) if (_itemData._Fight > _currUseItemList[i]._Fight)
                 {
-                        _buffAtk -= _currUseItemList[i]._Fight;
-                        _currUseItemList.RemoveAt(i);
+                    _buffAtk -= _currUseItemList[i]._Fight;
+                    _currUseItemList.RemoveAt(i);
                 }
 
             if (_itemData._Dectective > 0) if (_itemData._Dectective <= _currUseItemList[i]._Dectective) return false;
-                else if (_itemData._Dectective > 0) if (_itemData._Dectective > _currUseItemList[i]._Dectective)
-                    {
-                        _buffDectective -= _currUseItemList[i]._Dectective;
-                        _currUseItemList.RemoveAt(i);
-                    }
+            else if (_itemData._Dectective > 0) if (_itemData._Dectective > _currUseItemList[i]._Dectective)
+                {
+                    _buffDectective -= _currUseItemList[i]._Dectective;
+                    _currUseItemList.RemoveAt(i);
+                }
         }
 
         _currUseItemList.Add(ResourceMgrCS.SettingItemData(_itemData));
@@ -276,7 +276,7 @@ public class PlayerInfoCS : MonoBehaviour {
 
     public void setActPoint(int value)
     {
-        _currActPoint -= value;
+        _currActPoint += value;
         _currActText.text = _currActPoint.ToString();
     }
 
@@ -352,7 +352,7 @@ public class PlayerInfoCS : MonoBehaviour {
                 }
                 break;
             case ePlayerState.MoveHot: // 선택된 타일로 이동
-                if (!_skyItem) setActPoint(1);
+                if (!_skyItem) setActPoint(-1);
                 else _skyItem = false;
                 _nextTileMark.SetActive(false);
                 _endVec2Pos = _tileMapList[_tempCurrTile].transform.position;

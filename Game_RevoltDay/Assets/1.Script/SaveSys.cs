@@ -24,7 +24,6 @@ public class SaveSys : MonoBehaviour {
         {
             _sceneMgrCS = GameObject.Find("DonTileUI").GetComponent<SceneMgr>();
             _saveFileArr = _sceneMgrCS._currSaveDataList;
-            Debug.Log(_sceneMgrCS._SaveNumber);
             if (!_sceneMgrCS._IsNewGame) _saveFile = _saveFileArr[_sceneMgrCS._SaveNumber];
             else _saveFile = _sceneMgrCS._NewStart;
         }

@@ -90,6 +90,23 @@ public class EventSysCS : MonoBehaviour {
             }
         }
 
+        if (_eventSysDatesList[_currEventID]._playType_Index == "tile" &&
+            _eventSysDatesList[_currEventID]._eventTile_Index != 0)
+        {
+            CrimeShowSys(_eventSysDatesList[_currEventID]._eventTile_Index);
+        }
+        else if (_eventSysDatesList[_currEventID]._playType_Index == "tile")
+        {
+            CrimeShowNot();
+        }
+
+        if (_eventSysDatesList[_currEventID]._playType_Index == "clueToken" &&
+            _eventSysDatesList[_currEventID]._clueToken_Index > 0 &&
+            _eventSysDatesList[_currEventID]._eventTile_Index != 0)
+        {
+            CrimeCheck();
+        }
+
         if (_eventSysDatesList[_currEventID]._playType_Index == "gameStart")
         {
             eventStart();
@@ -102,39 +119,47 @@ public class EventSysCS : MonoBehaviour {
         (_eventSysDatesList[_currEventID]._playType_Index == "tile" &&
         _eventSysDatesList[_currEventID]._eventTile_Index == _playerInfoCS._currTile)
         {
+            
             eventStart();
         }
         else if
         (_eventSysDatesList[_currEventID]._playType_Index == "clueToken" &&
-        _eventSysDatesList[_currEventID]._clueToken_Index <= _playerInfoCS._clueTokenValue)
+        _eventSysDatesList[_currEventID]._clueToken_Index <= _playerInfoCS._clueTokenValue &&
+        _eventSysDatesList[_currEventID]._eventTile_Index == _playerInfoCS._currTile)
         {
-            // 특정 타일에 도착할 필요가 없는 경우 아래 조건은 실행되지 않는다.
-            if (_eventSysDatesList[_currEventID]._eventTile_Index != 0 &&
-                _eventSysDatesList[_currEventID]._eventTile_Index != _playerInfoCS._currTile)
-            {
-                // 특정 타일 정보가 입력된 경우, 플레이어가 특정 타일에 도착하지 않으면 반환한다.
-                return;
-            }
-
-            // 특정 타일에 도착했을 경우 조건 만큼의 단서를 소모하고 이벤트를 실행한다.
-            _playerInfoCS._clueTokenValue -= _eventSysDatesList[_currEventID]._clueToken_Index;
+            // 특정 타일에 도착했을 경우 조건 만큼의 단서를 초기화하고 이벤트를 실행한다.
+            _playerInfoCS._clueTokenValue = 0;
             eventStart();
+        }
+    }
+
+    public void CrimeShowNot()
+    {
+        for (int i = 0; i < _tileMapList.Count; i++)
+        {
+            _tileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(false);
+        }
+    }
+
+    public void CrimeShowSys(int value)
+    {
+        for (int i = 0; i < _tileMapList.Count; i++)
+        {
+            if (value != i) continue;
+            else _tileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(true);
         }
     }
 
     public void CrimeCheck()
     {
-        if ((_playerInfoCS._clueTokenValue >= _eventSysDatesList[_currEventID]._clueToken_Index) && // 조건되는 토큰을 가지고 있는 경우
-            _eventSysDatesList[_currEventID]._eventTile_Index != 0 && // 타일에 정보가 입력되어 있는 경우
-            !_tileMapList[_eventSysDatesList[_currEventID]._eventTile_Index].GetComponent<TileMapDataCS>()._CrimeImgGO.activeSelf) // 도착지 타일이 꺼져 있는 경우
+        if (_playerInfoCS._clueTokenValue >= _eventSysDatesList[_currEventID]._clueToken_Index) // 조건되는 토큰을 가지고 있는 경우
         {
             _tileMapList[_eventSysDatesList[_currEventID]._eventTile_Index].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(true); // 타일을 켜준다.
         }
-        else // 조건에 충족하지 못한 경우 다 꺼준다.
+        else if ((_eventSysDatesList[_currEventID]._clueToken_Index > 0)) // 조건에 충족하지 못한 경우 다 꺼준다.
         {
             for (int i = 0; i < _tileMapList.Count; i++)
             {
-                if (_eventSysDatesList[_currEventID]._eventTile_Index == i) continue;
                 _tileMapList[i].GetComponent<TileMapDataCS>()._CrimeImgGO.SetActive(false);
             }
         }
@@ -148,7 +173,6 @@ public class EventSysCS : MonoBehaviour {
         else if (_eventSysDatesList[_currEventID]._reasoning_Index!= "null") reasoningEventStart(_eventSysDatesList[_currEventID]._reasoning_Index);
 
         _currEventID = _eventSysDatesList[_currEventID]._nextEventID_Index;
-
     }
 
     public void tileSetting()
