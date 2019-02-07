@@ -34,7 +34,7 @@ null,null,0,전민원,null,"정 해산시키고 싶거든, 함정임 그 놈 자
 null,null,0,강소원,null,"뭐야, 어쩌라는 거야 대체. 난 그냥 말단이라고.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,전민원,null,그렇다면 그냥 물러서시우.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,전민원,null,우릴 방해한다면 당신들도 무사하진 않을거외다!,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,강소원,null,"그냥 술집가서 전구워다 막걸리나 잡수시지, 이런 걸 왜하는 거야 대체.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+null,null,0,강소원,null,"그냥 술집가서 전 구워다 막걸리나 잡수시지, 이런 걸 왜하는 거야 대체.",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,강소원,null,그러면 나도 어쩔 수 없어요.,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang03,null,0,강원진,009.revoltDay,……. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang03,Lee01,1,이지은,null,원진씨는 뭘 그리 생각하고 있을까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -44,7 +44,7 @@ gang03,Lee01,1,이지은,null,원진씨는 왜 이런 상황에만 감정적인 
 null,null,0,,null,null,null,null,0,2.1,0,0,FALSE,FALSE,FALSE,FALSE
 Wish01,null,0,강소원,null,"여러분, 셋도 아니고 둘 세라네요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Wish01,null,0,강소원,null,둘 셀 때 동안 해산 안 하시면 많이 아파요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Wish01,null,0,강소원,null,엄연한 불법 시위에요. 해산하세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Wish01,null,0,강소원,null,엄연한 불법 시위예요. 해산하세요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Jeon02,Wish01,2,전민원,null,겁먹지 마시오! ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Jeon02,Wish01,2,전민원,null,저 년놈들이 한 발이라도 쏴 재끼면. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 Jeon02,Wish01,2,전민원,null,그때는 우리도 나서는 거요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE

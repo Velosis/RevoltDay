@@ -10,7 +10,7 @@ gang02,Zhang02,1,미스터 장,null,함정임 엿먹이려고 내가 다 꾸민 
 gang02,Zhang02,2,강원진,null,그럼 배후가 미스터 장이라는 말씀입니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,1,미스터 장,null,단순하기는. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,1,미스터 장,null,이 바닥에서는 내 짓이라는 거 모르는 양반들이 없어요. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang02,1,미스터 장,null,그런 빡대가리로 어떻게 경찰을 할 생각을 했답니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang02,1,미스터 장,null,그런 우동사리 머리로 어떻게 경찰을 할 생각을 했답니까? ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,2,강원진,null,사람이 죽었습니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang03,1,미스터 장,null,내 알바는 아닙니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang04,1,미스터 장,null,같잖은 위선 떨지마. 역겨우니까. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
@@ -23,4 +23,4 @@ gang02,Zhang02,1,미스터 장,null,유구현 청장 따까리주제에 온갖 �
 gang02,Zhang02,2,강원진,null,미스터 장. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang02,2,강원진,null,오늘 일은 반드시 그에 합당한 벌을 받을 겁니다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 gang02,Zhang04,1,미스터 장,null,"예, 예, 그러시겠지요. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-gang02,Zhang04,1,미스터 장,null,잡소리나 지껄이실 거면 어서 나가보십시오. 어서?,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
+gang02,Zhang04,1,미스터 장,null,잡소리나 나불대실 거면 어서 나가보십시오. 어서?,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE
