@@ -18,9 +18,9 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 224567937663876212}
-  - component: {fileID: 222373224658276620}
-  - component: {fileID: 114631214511062918}
+  - component: {fileID: 224316261685716530}
+  - component: {fileID: 222487351867044386}
+  - component: {fileID: 114020057139298192}
   m_Layer: 0
   m_Name: Stage5
   m_TagString: Untagged
@@ -28,7 +28,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114631214511062918
+--- !u!114 &114020057139298192
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,14 +55,14 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!222 &222373224658276620
+--- !u!222 &222487351867044386
 CanvasRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1007778621144718}
   m_CullTransparentMesh: 0
---- !u!224 &224567937663876212
+--- !u!224 &224316261685716530
 RectTransform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,5 +78,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -2.9379873, y: 0.6517265}
-  m_SizeDelta: {x: 5.6, y: 4.07}
+  m_SizeDelta: {x: 5.61, y: 4.08}
   m_Pivot: {x: 0.5, y: 0.5}

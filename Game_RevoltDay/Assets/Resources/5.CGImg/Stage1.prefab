@@ -18,9 +18,9 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 224283027498458134}
-  - component: {fileID: 222074510905394472}
-  - component: {fileID: 114643309039491954}
+  - component: {fileID: 224316261685716530}
+  - component: {fileID: 222487351867044386}
+  - component: {fileID: 114020057139298192}
   m_Layer: 0
   m_Name: Stage1
   m_TagString: Untagged
@@ -28,7 +28,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114643309039491954
+--- !u!114 &114020057139298192
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,14 +55,14 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!222 &222074510905394472
+--- !u!222 &222487351867044386
 CanvasRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1007778621144718}
   m_CullTransparentMesh: 0
---- !u!224 &224283027498458134
+--- !u!224 &224316261685716530
 RectTransform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
