@@ -4046,7 +4046,7 @@ MonoBehaviour:
   _SaveNumber: 0
   _fristVideo: 0
   _eSaveType: 0
-  _BgmSound: {fileID: 8300000, guid: 01d6ad2578c11bc44b6416a81cc02395, type: 3}
+  _BgmSound: {fileID: 8300000, guid: ad8bfe82a10b9e0498c4b698bfe97dae, type: 3}
   _VideoUIClip: {fileID: 32900000, guid: ae050c9f2fcbb8647b06a41acb36a65f, type: 3}
   _SaveUiGO: {fileID: 168171157}
   _RootCreatorVideo: {fileID: 993766695}

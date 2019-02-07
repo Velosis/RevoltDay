@@ -1,11 +1,11 @@
-L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
+ï»¿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
 null,null,0,,009.revoltDay,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-Young01,null,0,¿À¼Ò¿µ,null,º¸½Ã´Ù½ÃÇÇ Àü°æµé¿¡°Ô ¹«ºÐº°ÇÑ Æø·ÂÀ» º¸ÀÌ´Â ½ÃÀ§´ëÀÔ´Ï´Ù. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Young01,null,0,¿À¼Ò¿µ,null,"ºÒ¹ý ½ÃÀ§¶ó´Â Á¡À» »©µµ, ÀÌ¿Í °°ÀÌ Çö ¹ÙÀÌ¿ÀÄ¨ ¹Ý´ë ½ÃÀ§¿¡´Â ´ëÁßÀ» ÇâÇÑ ºñ³­°ú Æø·ÂÁ¶Â÷ ¼­½¿Áö ¾Ê´Â ºñµµ´öÀûÀÎ ºÎºÐÀÌ ¸¹Àºµ¥¿ä. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Young01,null,0,¿À¼Ò¿µ,null,"¹ÙÀÌ¿ÀÄ¨ »ç°ÇÀÌ °æÇÑ±â¾÷ÀÇ °ú½ÇÀÎÁö Á¶Â÷ ¹àÇôÁöÁö ¾ÊÀº ½ÃÁ¡¿¡¼­, ÀÌ¿Í °°Àº ½ÃÀ§°¡ °¡Á®¿Ã »çÈ¸Àû ÆÄ±ÞÀÌ ¾ó¸¸Áö´Â ¿¹ÃøÇÏ±â Èûµì´Ï´Ù. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Young01,null,0,¿À¼Ò¿µ,null,"°ú¿¬ ÀÌ°Ô ¿ÇÀº ÀÏÀÏÁö, µÎ°í ºÁ¾ß ÇÒ °Å °°Àºµ¥¿ä. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Young01,null,0,¿À¼Ò¿µ,null,"KMC, ¿À¼Ò¿µ ±âÀÚ¿´½À´Ï´Ù. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Young01,null,0,ì˜¤ì†Œì˜,null,ë³´ì‹œë‹¤ì‹œí”¼ ì „ê²½ë“¤ì—ê²Œ ë¬´ë¶„ë³„í•œ í­ë ¥ì„ ë³´ì´ëŠ” ì‹œìœ„ëŒ€ìž…ë‹ˆë‹¤. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Young01,null,0,ì˜¤ì†Œì˜,null,"ë¶ˆë²• ì‹œìœ„ë¼ëŠ” ì ì„ ë¹¼ë„, ì´ì™€ ê°™ì´ í˜„ ë°”ì´ì˜¤ì¹© ë°˜ëŒ€ ì‹œìœ„ì—ëŠ” ëŒ€ì¤‘ì„ í–¥í•œ ë¹„ë‚œê³¼ í­ë ¥ì¡°ì°¨ ì„œìŠ´ì§€ ì•ŠëŠ” ë¹„ë„ë•ì ì¸ ë¶€ë¶„ì´ ë§Žì€ë°ìš”. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Young01,null,0,ì˜¤ì†Œì˜,null,"ë°”ì´ì˜¤ì¹© ì‚¬ê±´ì´ ê²½í•œê¸°ì—…ì˜ ê³¼ì‹¤ì¸ì§€ ì¡°ì°¨ ë°í˜€ì§€ì§€ ì•Šì€ ì‹œì ì—ì„œ, ì´ì™€ ê°™ì€ ì‹œìœ„ê°€ ê°€ì ¸ì˜¬ ì‚¬íšŒì  íŒŒê¸‰ì´ ì–¼ë§Œì§€ëŠ” ì˜ˆì¸¡í•˜ê¸° íž˜ë“­ë‹ˆë‹¤. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Young01,null,0,ì˜¤ì†Œì˜,null,"ê³¼ì—° ì´ê²Œ ì˜³ì€ ì¼ì¼ì§€, ë‘ê³  ë´ì•¼ í•  ê²ƒ ê°™ì€ë°ìš”. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Young01,null,0,ì˜¤ì†Œì˜,null,"KMC, ì˜¤ì†Œì˜ ê¸°ìžì˜€ìŠµë‹ˆë‹¤. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Jeon03,null,0,Àü¹Î¿ø,null,¡¦¡¦. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-Jeon03,null,0,Àü¹Î¿ø,null,"ÇÔÁ¤ÀÓ, ¿Â°® ¼ú¼ö¶õ ¼ú¼ö´Â ´Ù ¾²´Â ±º. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon03,null,0,ì „ë¯¼ì›,null,â€¦â€¦. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
+Jeon03,null,0,ì „ë¯¼ì›,null,"í•¨ì •ìž„, ì˜¨ê°– ìˆ ìˆ˜ëž€ ìˆ ìˆ˜ëŠ” ë‹¤ ì“°ëŠ” êµ°. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
 null,null,0,,null,null,null,null,0,2.1,0,2,FALSE,FALSE,FALSE,FALSE

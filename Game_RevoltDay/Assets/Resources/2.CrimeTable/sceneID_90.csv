@@ -1,7 +1,0 @@
-﻿L_chrImg_Index,R_chrImg_Index,Shadow_Index,talk_name_Index,CGImg_Index,Talk_Index,soundEff_Index,BGM_Index,ShakingEff_Index,wait_Index,fadeIn_Index,fadeOut_Index,fadeIn_quick_Index,fadeOut_quick_Index,RedFlash_Index,whiteFlash_Index
-null,null,0,,023.daechidongOffice,null,null,null,0,2.1,2,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,아무도 없는 방에 나홀로 앉았다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,나는 팬을 쥐었다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,"자, 누가 이 판을 벌렸나. ",null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,그리고 무슨 이유로 모두를 이용하고 있나. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
-null,null,0,,null,나는 백지 상태의 메모장에 이름을 적었다. ,null,null,0,0.1,0,0,FALSE,FALSE,FALSE,FALSE
